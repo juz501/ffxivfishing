@@ -4,7 +4,7 @@ import Vue from 'vue';
 const getEorzeaTime = () => {
   const eorzeaTime = new EorzeaTime();
   const AmOrPm = eorzeaTime.getHours() >= 12 ? 'pm': 'am';
-  const hours = eorzeaTime.getHours() % 12;
+  let hours = eorzeaTime.getHours() % 12;
   if ( hours == 0 ) {
     hours = 12;
   }
