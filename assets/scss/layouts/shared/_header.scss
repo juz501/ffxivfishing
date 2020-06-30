@@ -1,17 +1,14 @@
 header {
   display: flex;
+  justify-content: space-between;
   padding: rem-calc(20);
   margin: rem-calc(20);
 
   background-color: $white;
 
-  .h1 {
-    flex: 1;
-  }
-
   .timer {
-    display: inline-block;
     margin: auto 0;
+    font-size: rem-calc(20);
   }
 }
 
