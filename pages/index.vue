@@ -1,7 +1,7 @@
 <template>
   <div class="content wrapper">
     <header>
-      <span class="h1">FFXIV Fishing Tool</span>
+      <h1>FFXIV Fishing Tool</h1>
       <span class="timer">Eorzea Time: {{ et }}</span> 
     </header>
     <main>

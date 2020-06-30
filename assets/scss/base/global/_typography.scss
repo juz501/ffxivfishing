@@ -17,5 +17,9 @@ h1,
 .h1 {
   color: $heading-color;
   font-weight: 700;
-  font-size: rem-calc(20);
+  font-size: rem-calc(40);
+}
+
+body {
+  font-family: $body-font-family;;
 }
