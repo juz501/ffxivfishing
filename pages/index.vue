@@ -1,17 +1,15 @@
 <template>
   <div class="content wrapper">
     <header>
-      <span class="h1">FFXIV Fishing Tool</span>  
+      <span class="h1">FFXIV Fishing Tool</span>
+      <span class="timer">Eorzea Time: {{ et }}</span> 
     </header>
     <main>
         <img id="orca" :src="orcaImage" alt="Skadi with Orca"
           :srcset="orcaSourceSet"
           sizes="(max-width: 1021px) 769w, (max-width: 1919px) 1024w, (max-width: 3839px) 1920w, 3840w" width="100%"
         />
-    </main>
-    <footer>
-      Current Eorzea Time: {{ et }}
-    </footer>
+    </main>    
   </div>
 </template>
 <script>
