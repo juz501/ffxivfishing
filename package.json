@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "eorzea-time": "^2.0.0"
+    "eorzea-time": "^2.0.0",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.13.2",
+    "sass-loader": "^8.0.2"
   },
   "name": "ffxivfishing",
   "version": "1.0.0",
@@ -8,5 +11,10 @@
   "main": "index.js",
   "repository": "git@github.com:juz501/ffxivfishing.git",
   "author": "Julian <julianc@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "start": "yarn run build && nuxt start"
+  }
 }
