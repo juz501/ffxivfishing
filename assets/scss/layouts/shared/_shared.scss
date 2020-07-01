@@ -11,6 +11,10 @@ main {
 .wrapper {
   padding: rem-calc(20);
   margin: rem-calc(5) rem-calc(20);
+  
+  &.no-padding {
+    padding: 0;
+  }
 }
 
 .white-bg {
