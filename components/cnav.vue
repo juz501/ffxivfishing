@@ -1,8 +1,8 @@
 <template>
   <nav class="wrapper no-padding white-bg">
-    <nuxt-link to="/fishleves">Fishing Leves</nuxt-link>
-    <nuxt-link to="/fishtimers">Fishing Timers</nuxt-link>
-    <nuxt-link to="/fishdb">Fish Database</nuxt-link>
+    <nuxt-link to="/fish-leves">Fishing Leves</nuxt-link>
+    <nuxt-link to="/fish-timers">Fishing Timers</nuxt-link>
+    <nuxt-link to="/fish-db">Fish Database</nuxt-link>
   </nav>
 </template>
 <style scoped>
