@@ -6,3 +6,8 @@ body {
   background-color: $default-background-color;
   font-size: $body-font-size-px + 'px';
 }
+
+ul {
+  list-style-type: disc;
+  margin: rem-calc(5) rem-calc(25);
+}

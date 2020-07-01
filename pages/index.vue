@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="no-padding">
       <img id="orca" :src="orcaImage" alt="Skadi with Orca"
         :srcset="orcaSourceSet"
         sizes="(max-width: 1021px) 769w, (max-width: 1919px) 1024w, (max-width: 3839px) 1920w, 3840w" width="100%"
@@ -7,6 +7,7 @@
   </main>    
 </template>
 <script>
+
 const baseOrcaFileName = 'orca';
 
 export default {

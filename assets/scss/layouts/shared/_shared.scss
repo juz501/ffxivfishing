@@ -1,7 +1,22 @@
-@import 'layouts/shared/header';
-@import 'layouts/shared/footer';
-
 main {
   margin: 0 rem-calc(20);
+  padding: rem-calc(20);
   background-color: $white;
+  
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.wrapper {
+  padding: rem-calc(20);
+  margin: rem-calc(5) rem-calc(20);
+}
+
+.white-bg {
+  background-color: $white;
+}
+
+header .timer {
+  margin: auto 0;
 }
