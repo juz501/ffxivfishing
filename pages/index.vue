@@ -1,29 +1,18 @@
 <template>
-  <div class="content wrapper">
-    <header>
-      <h1>FFXIV Fishing Tool</h1>
-      <span class="timer">Eorzea Time: {{ et }}</span> 
-    </header>
-    <main>
-        <img id="orca" :src="orcaImage" alt="Skadi with Orca"
-          :srcset="orcaSourceSet"
-          sizes="(max-width: 1021px) 769w, (max-width: 1919px) 1024w, (max-width: 3839px) 1920w, 3840w" width="100%"
-        />
-    </main>    
-  </div>
+  <main>
+      <img id="orca" :src="orcaImage" alt="Skadi with Orca"
+        :srcset="orcaSourceSet"
+        sizes="(max-width: 1021px) 769w, (max-width: 1919px) 1024w, (max-width: 3839px) 1920w, 3840w" width="100%"
+      />
+  </main>    
 </template>
 <script>
-import { mapGetters, mapActions } from 'vuex';
-
 const baseOrcaFileName = 'orca';
 
 export default {
   name: 'homepage',
   layout: 'default',
   computed: {
-    ...mapGetters({
-      et: 'eorzeaTime/getTime'
-    }),
     orcaSourceSet() {
       return `${require(`~/assets/images/${baseOrcaFileName}_768.jpg`)} 768w,` +
       ` ${require(`~/assets/images/${baseOrcaFileName}_1024.jpg`)} 1024w,` +
@@ -34,18 +23,9 @@ export default {
       return `~/assets/images/${baseOrcaFileName}_3840.jpg`;
     }
   },
-  methods: {
-    ...mapActions({
-      updateTime: 'eorzeaTime/updateTime'
-    })
-  },
   mounted() {
-    const self = this;
-    self.updateTime();
-    
-    self.intervalID1 = setInterval( function() {
-      self.updateTime();
-    }, 500 );
+  },
+  beforeDestroy() {
   }
 }
 </script>
