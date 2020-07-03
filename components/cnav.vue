@@ -8,8 +8,22 @@
       </ul>
     </nav>
     <nav data-netlify-identity-menu></nav>
+    <button v-on="user"></button>
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    user() {
+      let username = '';
+      if (window && window.netlifyIdentity ) {
+        const user = window.netlifyIdentity.currentUser();
+        console.log( user );
+      }
+    }
+  }
+}
+</script>
 <style scoped>
   .menu-bar {
     display: flex;
