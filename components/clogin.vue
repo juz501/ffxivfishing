@@ -7,19 +7,21 @@
   </nav>
 </template>
 <script>
-import { mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   mounted() {
     if ( process.client && window.netlifyIdentity ) {
       const ni = window.netlifyIdentity;
-      ni.on( 'login', user => this.$store.dispatch( 'setUser', user));
-      ni.on( 'logout', () => this.$store.dispatch( 'setUser', null));
+      ni.on( 'login', user => this.$store.dispatch( 'user/setUser', user));
+      ni.on( 'logout', () => this.$store.dispatch( 'user/setUser', null));
     }
   },
-  computed: mapState({
-    currentUser: state => state.currentUser,
-    fullName: state => state.currentUser ? state.currentUser.user_metadata.full_name : ''
-  })
+  computed: {
+    ...mapGetters({
+      currentUser: 'user/getUser',
+      fullName: 'user/getFullName',
+    })
+  }
 }
 </script>
