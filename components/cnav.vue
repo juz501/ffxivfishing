@@ -8,11 +8,7 @@
           <li><nuxt-link to="/fish-db">Fish Database</nuxt-link></li>
         </ul>
       </nav>
-      <nav>
-        <ul>
-          <li data-netlify-identity-button></li>
-        </ul>
-      </nav>
+      <clogin />
     </div>
   </div>
 </template>
