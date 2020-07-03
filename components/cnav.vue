@@ -20,7 +20,7 @@ export default {
   computed: {
     user() {
       let username = '';
-      if (window && window.netlifyIdentity ) {
+      if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
         const loginUser = window.netlifyIdentity.currentUser();
         data.user = loginUser;
       }
