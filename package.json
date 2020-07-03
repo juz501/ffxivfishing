@@ -13,7 +13,6 @@
   "author": "Julian <julianc@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt generate",
-    "dev": "nuxt"
+    "build": "nuxt generate"
   }
 }

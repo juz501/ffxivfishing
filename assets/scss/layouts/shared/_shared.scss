@@ -25,3 +25,21 @@ header .timer {
   margin: auto 0;
   font-size: rem-calc(20);
 }
+
+nav ul {
+  display: flex;
+  margin: 0;
+
+  justify-items: center;    
+  list-style-type: none;
+  li {
+    display: flex;
+    padding: 0;
+    a {
+      padding: 1rem 0.5rem;
+      margin-right: 0.1rem;    
+
+      background-color: $nav-background-color;
+    }
+  }
+}
