@@ -10,8 +10,8 @@ export default {
   mounted() {
     if ( process.client && window.netlifyIdentity ) {
       const ni = window.netlifyIdentity;
-      ni.on( 'login', user => this.$store.user.setUser(user));
-      ni.on( 'logout', () => this.$store.user.setUser(null));
+      ni.on( 'login', user => this.$store.dispatch( 'setUser', user));
+      ni.on( 'logout', () => this.$store.dispatch( 'setUser', null));
     }
   }
 }
