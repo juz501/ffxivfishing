@@ -6,6 +6,18 @@ export const state = () => (
   }
 )
 
+export const getters = {
+  getUser: state => {
+    return state.currentUser;
+  },
+  getFullName: state => {
+    if ( state.currentUser !== null ) {
+      return state.currentUser.user_metadata.full_name;
+    }
+    return '';
+  }
+}
+
 export const actions = {
   setUser( { commit }, payload ) {
     commit( 'SET_USER', { id: 'currentUser', data: payload } );
