@@ -10,9 +10,9 @@
       </nav>
       <nav>
         <ul>
-          <li v-if="loggedIn !== true"><a @click="login" href='#'>Login</a></li>
-          <li v-if="loggedIn === true"><span>Logged In as {{ nickname }}</span>
-          <li v-if="loggedIn === true"><a @click="logout" href='#'>Logout</a></li>
+          <li v-if="!isLoggedIn"><a @click="login" href='#'>Login</a></li>
+          <li v-if="isLoggedIn"><span>Logged In as {{ isLoggedIn.user_metadata.full_name }}</span>
+          <li v-if="isLoggedIn"><a @click="logout" href='#'>Logout</a></li>
         </ul>
       </nav>
     </div>
@@ -20,42 +20,38 @@
   </div>
 </template>
 <script>
+import { mapActions, mapState } from "vuex";
+import netlifyIdentity from "netlify-identity-widget";
+
+netlifyIdentity.init();
+
 export default {
-  data: {
-    loggedIn: false,
-    nickname: ''
-  },
-  mounted() {
-    window.netlifyIdentity = require( 'netlify-identity-widget' );
-    netlifyIdentity.init({
-      container: '#netlify-modal',
-      locale: 'en'
-    });
-    window.netlifyIdentity.on( 'login',
-      ( user ) => {
-        this.loggedIn = true; 
-        this.nickname = user.user_metadata.full_name; 
-      }
-    );
-    window.netlifyIdentity.on( 'logout', 
-      () => {
-        this.loggedIn = false;
-        this.nickname = ''; 
-      } 
-    );
-  },
   methods: {
+    ...mapActions({
+      setUser: 'user/setUser'
+    }),
     login() {
       if ( process.client && window && window.netlifyIdentity ) {
-        window.netlifyIdentity.open();
+        netlifyIdentity.open( 'login' );
+        netlifyIdentity.on( 'login',
+          ( user ) => {
+            this.setUser( user );
+            netlifyIdentity.close();
+          }
+        );
       }
     },
     logout() {
       if ( process.client && window && window.netlifyIdentity ) {
+        this.setUser( null );
         window.netlifyIdentity.logout();
+        this.$router.push('/');
       }
     }
-  }
+  },
+  computed: mapState({
+    isLoggedIn: state => state.user.currentUser
+  })
 }
 </script>
 <style scoped>
