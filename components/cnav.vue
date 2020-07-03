@@ -16,7 +16,6 @@
         </ul>
       </nav>
     </div>
-    <div id="netlify-modal"></div>
   </div>
 </template>
 <script>
