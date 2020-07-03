@@ -22,13 +22,14 @@
 import { mapActions, mapState } from "vuex";
 import netlifyIdentity from "netlify-identity-widget";
 
-netlifyIdentity.init();
-
 export default {
   methods: {
     ...mapActions({
       setUser: 'user/setUser'
     }),
+    mounted() {
+      netlifyIdentity.init();
+    },
     login() {
       if ( process.client && window && window.netlifyIdentity ) {
         netlifyIdentity.open( 'login' );
