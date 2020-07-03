@@ -2,7 +2,7 @@ import Vue from 'vue';
 
 export const state = () => (
   {
-    currentUser: window.localStorage.getItem( 'user' )
+    currentUser: ( process.client && window ) ? window.localStorage.getItem( 'user' ) : null
   }
 )
 
@@ -16,11 +16,15 @@ export const mutations = {
   SET_USER( state, {id, data} ) {
     if ( !data ) {
       Vue.set( state, id, null );
-      window.localStorage.removeItem( 'user' );
+      if ( process.client && window ) {
+        window.localStorage.removeItem( 'user' );
+      }
       return;
     }
     let theUser = JSON.stringify( data );
     Vue.set( state , id, data );
-    window.localStorage.setItem( 'user', theUser );
+    if ( process.client && window ) {
+      window.localStorage.setItem( 'user', theUser );
+    }
   }  
 }
