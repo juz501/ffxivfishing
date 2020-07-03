@@ -14,4 +14,6 @@ export default {
     '@/assets/scss/style.scss'
   ],
   components: true,
+  productionTop: false,
+  devtools: true
 }
