@@ -20,7 +20,6 @@
 </template>
 <script>
 import { mapActions, mapState } from "vuex";
-import netlifyIdentity from "netlify-identity-widget";
 
 export default {
   methods: {
@@ -28,6 +27,7 @@ export default {
       setUser: 'user/setUser'
     }),
     mounted() {
+      window.netlifyIdentity = require( 'netlify-identity-widget' );
       netlifyIdentity.init();
     },
     login() {
