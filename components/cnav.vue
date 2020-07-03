@@ -8,7 +8,7 @@
       </ul>
     </nav>
     <nav data-netlify-identity-menu></nav>
-    <button v-on="user"></button>
+    <button @click="user"></button>
     {{ user }}
   </div>
 </template>
