@@ -7,26 +7,8 @@
         <li><nuxt-link to="/fish-db">Fish Database</nuxt-link></li>
       </ul>
     </nav>
-    <nav data-netlify-identity-menu></nav>
-    {{ nickname }}
   </div>
 </template>
-<script>
-export default {
-  data: {
-    nickname: '',
-    roles: []
-  },
-  mounted() {
-    if ( process.client && typeof (window) !== "undefined" && window.netlifyIdentity ) {
-      window.netlifyIdentity.on('login', user => {
-        this.nickname = user.user_metadata.full_name;
-        this.roles = user.roles
-      });
-    }
-  }
-}
-</script>
 <style scoped>
   .menu-bar {
     display: flex;
