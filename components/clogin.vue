@@ -1,7 +1,7 @@
 <template>
   <nav>
     <ul>
-      <li v-if="currentUser">{{ fullName }}</li>
+      <li v-if="currentUser"><span>Logged In as {{ fullName }}</span></li>
       <li data-netlify-identity-button></li>
     </ul>
   </nav>
