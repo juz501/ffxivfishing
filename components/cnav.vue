@@ -1,19 +1,18 @@
 <template>
-  <nav class="wrapper no-padding white-bg">
-    <nuxt-link to="/fish-leves">Fishing Leves</nuxt-link>
-    <nuxt-link to="/fish-timers">Fishing Timers</nuxt-link>
-    <nuxt-link to="/fish-db">Fish Database</nuxt-link>
-  </nav>
+  <div class="wrapper no-padding white-bg menu-bar">
+    <nav>
+      <ul>
+        <li><nuxt-link to="/fish-leves">Fishing Leves</nuxt-link></li>
+        <li><nuxt-link to="/fish-timers">Fishing Timers</nuxt-link></li>
+        <li><nuxt-link to="/fish-db">Fish Database</nuxt-link></li>
+      </ul>
+    </nav>
+    <nav data-netlify-identity-menu></nav>
+  </div>
 </template>
 <style scoped>
-  nav {
+  .menu-bar {
     display: flex;
-    justify-items: center;
-  }
-
-  nav > a {
-    background-color: #cce;
-    padding: 1rem 0.5rem;
-    margin-right: 0.1rem;    
+    justify-content: space-between;
   }
 </style>
