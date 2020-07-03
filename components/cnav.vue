@@ -19,7 +19,7 @@ export default {
   },
   mounted() {
     if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
-      window.netlifyIdentity.on(login, user => {
+      window.netlifyIdentity.on('login', user => {
         this.nickname = user.user_metadata.full_name;
         this.roles = user.roles
       })
