@@ -18,11 +18,11 @@ export default {
     roles: []
   },
   mounted() {
-    if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
+    if ( process.client && typeof (window) !== "undefined" && window.netlifyIdentity ) {
       window.netlifyIdentity.on('login', user => {
         this.nickname = user.user_metadata.full_name;
         this.roles = user.roles
-      })
+      });
     }
   }
 }
