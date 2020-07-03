@@ -8,22 +8,21 @@
       </ul>
     </nav>
     <nav data-netlify-identity-menu></nav>
-    <button @click="user"></button>
-    {{ user }}
+    {{ nickname }}
   </div>
 </template>
 <script>
 export default {
   data: {
-    user: ''
+    nickname: '',
+    roles: []
   },
-  computed: {
-    user() {
-      let username = '';
-      if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
-        const loginUser = window.netlifyIdentity.currentUser();
-        this.user = loginUser.toString();
-      }
+  mounted() {
+    if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
+      window.netlifyIdentity.on(login, user => {
+        this.nickname = user.user_metadata.full_name;
+        this.roles = user.roles
+      })
     }
   }
 }
