@@ -14,6 +14,7 @@
         <li v-if="loggedIn === true"><a @click="logout" href='#'>Logout</a></li>
       </ul>
     </nav>
+    <div id="netlify-modal"></div>
   </div>
 </template>
 <script>
@@ -22,8 +23,26 @@ export default {
     loggedIn: false,
     nickname: ''
   },
+  mounted() {
+    window.netlifyIdentity = require( 'netlify-identity-widget' );
+    netlifyIdentity.init({
+      container: '#netlify-modal',
+      locale: 'en'
+    });
+    window.netlifyIdentity.on('login', this.onLogin());
+  },
   methods: {
     login() {
+      if ( process.client && window && window.netlifyIdentity ) {
+        window.netlifyIdentity.open();
+      }
+    },
+    logout() {
+      if ( process.client && window && window.netlifyIdentity ) {
+        window.netlifyIdentity.logout();
+      }
+    },
+    onLogin() {
       if ( process.client && window && window.netlifyIdentity ) {
         const user = window.netlifyIdentity.currentUser();
         if ( user ) {
