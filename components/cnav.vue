@@ -9,16 +9,20 @@
     </nav>
     <nav data-netlify-identity-menu></nav>
     <button v-on="user"></button>
+    {{ user }}
   </div>
 </template>
 <script>
 export default {
+  data: {
+    user: ''
+  },
   computed: {
     user() {
       let username = '';
       if (window && window.netlifyIdentity ) {
-        const user = window.netlifyIdentity.currentUser();
-        console.log( user );
+        const loginUser = window.netlifyIdentity.currentUser();
+        data.user = loginUser;
       }
     }
   }
