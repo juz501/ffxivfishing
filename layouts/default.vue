@@ -6,8 +6,9 @@
   </div>
 </template>
 <script>
+import { mapActions, mapState } from "vuex";
 
 export default {
-  name: 'defaultLayout',
+  name: 'defaultLayout'
 }
 </script>
