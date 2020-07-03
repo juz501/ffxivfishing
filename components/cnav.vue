@@ -10,48 +10,17 @@
       </nav>
       <nav>
         <ul>
-          <li v-if="!isLoggedIn"><a @click="login" href='#'>Login</a></li>
-          <li v-if="isLoggedIn"><span>Logged In as {{ isLoggedIn.user_metadata.full_name }}</span>
-          <li v-if="isLoggedIn"><a @click="logout" href='#'>Logout</a></li>
+          <li data-netlify-identity-button></li>
         </ul>
       </nav>
     </div>
   </div>
 </template>
 <script>
-import { mapActions, mapState } from "vuex";
-
 export default {
-  methods: {
-    ...mapActions({
-      setUser: 'user/setUser'
-    }),
-    mounted() {
-      window.netlifyIdentity = require( 'netlify-identity-widget' );
-      netlifyIdentity.init();
-    },
-    login() {
-      if ( process.client && window && window.netlifyIdentity ) {
-        netlifyIdentity.open( 'login' );
-        netlifyIdentity.on( 'login',
-          ( user ) => {
-            this.setUser( user );
-            netlifyIdentity.close();
-          }
-        );
-      }
-    },
-    logout() {
-      if ( process.client && window && window.netlifyIdentity ) {
-        this.setUser( null );
-        window.netlifyIdentity.logout();
-        this.$router.push('/');
-      }
-    }
-  },
-  computed: mapState({
-    isLoggedIn: state => state.user.currentUser
-  })
+  props: [
+    'login'
+  ]
 }
 </script>
 <style scoped>
