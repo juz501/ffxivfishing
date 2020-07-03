@@ -23,8 +23,7 @@
 export default {
   data: {
     loggedIn: false,
-    nickname: '',
-    self: this
+    nickname: ''
   },
   mounted() {
     window.netlifyIdentity = require( 'netlify-identity-widget' );
@@ -32,8 +31,18 @@ export default {
       container: '#netlify-modal',
       locale: 'en'
     });
-    window.netlifyIdentity.on('login', self.onLogin );
-    window.netlifyIdentity.on('logout', self.onLogout );
+    window.netlifyIdentity.on( 'login',
+      ( user ) => {
+        this.loggedIn = true; 
+        this.nickname = user.user_metadata.full_name; 
+      }
+    );
+    window.netlifyIdentity.on( 'logout', 
+      () => {
+        this.loggedIn = false;
+        this.nickname = ''; 
+      } 
+    );
   },
   methods: {
     login() {
@@ -45,14 +54,6 @@ export default {
       if ( process.client && window && window.netlifyIdentity ) {
         window.netlifyIdentity.logout();
       }
-    },
-    onLogin( user ) {
-      self.loggedIn = true;
-      self.nickname = user.user_metadata.full_name;
-    },
-    onLogout() {
-      self.loggedIn = false;
-      self.nickname = '';
     }
   }
 }
