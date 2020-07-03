@@ -3,6 +3,7 @@
     <nuxt-link to="/fish-leves">Fishing Leves</nuxt-link>
     <nuxt-link to="/fish-timers">Fishing Timers</nuxt-link>
     <nuxt-link to="/fish-db">Fish Database</nuxt-link>
+    <div data-netlify-identity-menu></div>
   </nav>
 </template>
 <style scoped>
