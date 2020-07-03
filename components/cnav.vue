@@ -16,13 +16,6 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  props: [
-    'login'
-  ]
-}
-</script>
 <style scoped>
   .menu-bar {
     display: flex;

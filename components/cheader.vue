@@ -7,14 +7,11 @@
       </nuxt-link>
       <cclock />
     </header>
-    <cnav login="login" />
+    <cnav />
   </div>
 </template>
 <script>
 export default {
-  props: [
-    'login'
-  ],
   data() {
     return {
       isHomepage: this.$route.path == "/"

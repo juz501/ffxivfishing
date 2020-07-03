@@ -1,6 +1,6 @@
 <template>
   <div class="content wrapper">
-    <cheader login="login"/>
+    <cheader />
     <nuxt />
     <cfooter />
   </div>
