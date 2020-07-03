@@ -1,19 +1,21 @@
 <template>
-  <div class="wrapper no-padding white-bg menu-bar">
-    <nav>
-      <ul>
-        <li><nuxt-link to="/fish-leves">Fishing Leves</nuxt-link></li>
-        <li><nuxt-link to="/fish-timers">Fishing Timers</nuxt-link></li>
-        <li><nuxt-link to="/fish-db">Fish Database</nuxt-link></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul>
-        <li v-if="loggedIn !== true"><a @click="login" href='#'>Login</a></li>
-        <li v-if="loggedIn === true"><span>Logged In as {{ nickname }}</span>
-        <li v-if="loggedIn === true"><a @click="logout" href='#'>Logout</a></li>
-      </ul>
-    </nav>
+  <div>
+    <div class="wrapper no-padding white-bg menu-bar">
+      <nav>
+        <ul>
+          <li><nuxt-link to="/fish-leves">Fishing Leves</nuxt-link></li>
+          <li><nuxt-link to="/fish-timers">Fishing Timers</nuxt-link></li>
+          <li><nuxt-link to="/fish-db">Fish Database</nuxt-link></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li v-if="loggedIn !== true"><a @click="login" href='#'>Login</a></li>
+          <li v-if="loggedIn === true"><span>Logged In as {{ nickname }}</span>
+          <li v-if="loggedIn === true"><a @click="logout" href='#'>Logout</a></li>
+        </ul>
+      </nav>
+    </div>
     <div id="netlify-modal"></div>
   </div>
 </template>
@@ -29,7 +31,8 @@ export default {
       container: '#netlify-modal',
       locale: 'en'
     });
-    window.netlifyIdentity.on('login', this.onLogin());
+    window.netlifyIdentity.on('login', this.onLogin );
+    window.netlifyIdentity.on('logout', this.onLogout );
   },
   methods: {
     login() {
@@ -42,17 +45,13 @@ export default {
         window.netlifyIdentity.logout();
       }
     },
-    onLogin() {
-      if ( process.client && window && window.netlifyIdentity ) {
-        const user = window.netlifyIdentity.currentUser();
-        if ( user ) {
-          this.loggedIn = true;
-          this.nickname = user.user_metadata.full_name;
-        } else {
-          this.loggedIn = false;
-          this.nickname = '';
-        }
-      }
+    onLogin( user ) {
+      this.loggedIn = true;
+      this.nickname = user.user_metadata.full_name;
+    },
+    onLogout() {
+      this.loggedIn = false;
+      this.nickname = '';
     }
   }
 }
