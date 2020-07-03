@@ -22,7 +22,7 @@ export default {
       let username = '';
       if (typeof (window) !== "undefined" && window.netlifyIdentity ) {
         const loginUser = window.netlifyIdentity.currentUser();
-        data.user = loginUser;
+        this.user = loginUser.toString();
       }
     }
   }
