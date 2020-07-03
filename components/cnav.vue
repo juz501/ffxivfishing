@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     login() {
-      if ( process.client && window && window.netlifyIdentity )
+      if ( process.client && window && window.netlifyIdentity ) {
         const user = window.netlifyIdentity.currentUser();
         if ( user ) {
           this.loggedIn = true;
