@@ -25,6 +25,6 @@ exports.handler = ( event, context, callback ) => {
   }
   callback( null, {
     statusCode: 200,
-    body: "Hello, CID: " + payload
+    body: "Hello, CID: " + payload + JSON.stringify( context )
   });
 }
