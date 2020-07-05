@@ -33,7 +33,7 @@ exports.handler = ( event, context, callback ) => {
   } catch (e) {
     callback( null, {
       statusCode: 200,
-      body: "Hello, Fake Moogle"
+      body: "Hello, Fake Moogle" + e
     });
   }
 }
