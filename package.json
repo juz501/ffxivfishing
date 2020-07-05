@@ -16,7 +16,6 @@
   "scripts": {
     "build": "nuxt generate",
     "netlify": "netlify",
-    "lfsdev": "git lfs push --all origin dev",
-    "lfsprod": "git lfs push --all origin master"
+    "pushlfs": "git lfs push --all origin"
   }
 }
