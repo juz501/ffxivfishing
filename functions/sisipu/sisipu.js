@@ -18,7 +18,7 @@ exports.handler = ( event, context, callback ) => {
     const payload = body.payload;
     callback( null, {
       statusCode: 200,
-      body: "Hello, CID: " + payload + JSON.stringify( context )
+      body: "Hello, CID: " + payload
     });
   } catch (e) {
     callback( null, {
