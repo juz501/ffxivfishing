@@ -15,7 +15,6 @@ exports.handler = ( event, context, callback ) => {
   }
   try {
     const body = JSON.parse( event.body );
-    const payload = body.payload;
   } catch (e) {
     callback( null, {
       statusCode: 200,
@@ -23,6 +22,7 @@ exports.handler = ( event, context, callback ) => {
     });
     return;
   }
+  const payload = body.payload;
   callback( null, {
     statusCode: 200,
     body: "Hello, CID: " + payload + JSON.stringify( context )
