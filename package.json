@@ -14,7 +14,7 @@
   "author": "Julian <julianc@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "nuxt generate",
+    "build": "nuxt build",
     "netlify": "netlify"
   }
 }
