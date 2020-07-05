@@ -15,6 +15,8 @@
   "license": "MIT",
   "scripts": {
     "build": "nuxt generate",
-    "netlify": "netlify"
+    "netlify": "netlify",
+    "lfsdev": "git lfs push --all origin dev",
+    "lfsprod": "git lfs push --all origin master"
   }
 }

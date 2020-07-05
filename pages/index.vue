@@ -15,13 +15,13 @@ export default {
   layout: 'default',
   computed: {
     orcaSourceSet() {
-      return `${require(`~/assets/images/${baseOrcaFileName}_768.jpg`)} 768w,` +
-      ` ${require(`~/assets/images/${baseOrcaFileName}_1024.jpg`)} 1024w,` +
-      ` ${require(`~/assets/images/${baseOrcaFileName}_1920.jpg`)} 1920w,` + 
-      ` ${require(`~/assets/images/${baseOrcaFileName}_3840.jpg`)} 3840w,` ;
+      return `/img/${baseOrcaFileName}_768.jpg 768w,` +
+      ` /img/${baseOrcaFileName}_1024.jpg 1024w,` +
+      ` /img/${baseOrcaFileName}_1920.jpg 1920w,` + 
+      ` /img/${baseOrcaFileName}_3840.jpg 3840w` ;
     },
     orcaImage() {
-      return `~/assets/images/${baseOrcaFileName}_3840.jpg`;
+      return `/img/${baseOrcaFileName}_3840.jpg`;
     }
   },
   mounted() {
