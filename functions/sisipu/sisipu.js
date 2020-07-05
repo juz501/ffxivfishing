@@ -1,9 +1,9 @@
 exports.handler = ( event, context, callback ) => {
+  let user = null;
   if ( event.httpMethod !== 'POST' ) {
     const clientContext = context.clientContext;
-    let user = null;
     if ( clientContext && clientContext.user ) {
-      user = context.clientContext.user;
+      user = clientContext.user;
       callback( null, {
         statusCode: 200,
         body: "Hello " + user.user_metadata.full_name
@@ -33,7 +33,7 @@ exports.handler = ( event, context, callback ) => {
   } catch (e) {
     callback( null, {
       statusCode: 200,
-      body: "Hello, Fake Moogle"
+      body: "Hello, Fake Moogle" + e
     });
   }
 }
