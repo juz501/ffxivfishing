@@ -105,7 +105,3 @@ dist
 
 # Local Netlify folder
 .netlify
-
-# gitkeep public folder
-public/*
-!public/.gitkeep
