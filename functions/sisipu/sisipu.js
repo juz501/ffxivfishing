@@ -6,9 +6,24 @@ exports.handler = ( event, context, callback ) => {
     });
     return;
   }
-  const payload = JSON.parse( event.body ).payload
-  callback( null, {
-    statusCode: 200,
-    body: "Hello, CID: " + payload
-  });
+  if ( ! event.body ) {
+    callback( null, {
+      statusCode: 200,
+      body: "Hello, Moogle with no letters"
+    });
+    return;
+  }
+  try {
+    const body = JSON.parse( event.body );
+    const payload = body.payload;
+    callback( null, {
+      statusCode: 200,
+      body: "Hello, CID: " + payload + JSON.stringify( context )
+    });
+  } catch (e) {
+    callback( null, {
+      statusCode: 200,
+      body: "Hello, Fake Moogle"
+    });
+  }
 }
