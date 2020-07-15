@@ -1,9 +1,14 @@
 exports.handler = ( event, context, callback ) => {
   let user = null;
+  const clientContext = context.clientContext;
+  if ( clientContext && clientContext.user ) {
+    user = clientContext.user;
+  }
   if ( event.httpMethod !== 'POST' ) {
-    const clientContext = context.clientContext;
-    if ( clientContext && clientContext.user ) {
-      user = clientContext.user;
+    if ( user !== null ) {
+
+      // Try to call db and get data here
+
       callback( null, {
         statusCode: 200,
         body: "Hello " + user.user_metadata.full_name
