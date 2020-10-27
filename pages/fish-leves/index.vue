@@ -15,7 +15,7 @@
           <td>Wyrkhoisk (x31, y20)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
           <td>Lominsan Anchovy x 3 (10,980 xp)</td>
-          <td>Unsynwilf (x31, y20)</td>
+          <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>          
         </tr>
   </main>    
