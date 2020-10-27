@@ -254,21 +254,21 @@ To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny W
         </tr>
       </table>
       <!--
-        Needs More Egg	Concord	70	Shue-Hann	???	(x10,y9)	The Crystarium	3,556,856	900	Sand Egg	Deliver a Sand Egg to Eirikur. 0/3
-Eco-Warrior of Light	Concord	70	Shue-Hann	???	(x10,y9)	The Crystarium	3,556,856	910	Xanthic Bass	Deliver a Xanthic Bass to Eirikur. 0/3
-The Source of the Problem	Sincerity	70	Shue-Hann	???	(x10,y9)	The Crystarium	3,201,171	920	Purple Ghost	Deliver a Purple Ghost to Eirikur. 0/6
-Jelly Salad	Concord	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,444,570	956	Blood Cloud	Deliver a Blood Cloud to Eirikur. 0/3
-Aetherquake	Sincerity	72	Shue-Hann	???	(x10,y9)	The Crystarium	4,000,113	977	Finned Eggplant	Deliver a Finned Eggplant to Eirikur. 0/6
-Full of Fish	Concord	72	Shue-Hann	???	(x10,y9)	The Crystarium	4,444,570	977	Geayi	Deliver a Geayi to Eirikur. 0/6
-The Bride Aquatic	Concord	74	Shue-Hann	???	(x10,y9)	The Crystarium	5,642,856	1,034	Little Flirt	Deliver a Little Flirt to Eirikur. 0/6
-Faerie Fish	Concord	74	Shue-Hann	???	(x10,y9)	The Crystarium	5,642,856	1,034	Lemonfish	Deliver a Lemonfish to Eirikur. 0/3
-A Cherry-red Herring	Sincerity	74	Shue-Hann	???	(x10,y9)	The Crystarium	5,078,571	1,056	Cherry Herring	Deliver a Cherry Herring to Eirikur. 0/3
-Crab Corps	Concord	76	Shue-Hann	???	(x10,y9)	The Crystarium	7,240,000	1,127	Gourmand Crab	Deliver a Gourmand Crab to Eirikur. 0/6
-Fish for Days	Sincerity	76	Shue-Hann	???	(x10,y9)	The Crystarium	6,516,000	1,150	Hucho Taimen	Deliver a Hucho Taimen to Eirikur. 0/3
-Magic Mushrooms	Concord	76	Shue-Hann	???	(x10,y9)	The Crystarium	7,240,000	1,127	Paradise Crab	Deliver a Paradise Crab to Eirikur. 0/6
-Deep-sea Diving	Concord	78	Shue-Hann	???	(x10,y9)	The Crystarium	4,678,571	1,200	Azure Sea Spider	Deliver a Azure Sea Spider to Eirikur. 0/3
-Short-term Gains	Concord	78	Shue-Hann	???	(x10,y9)	The Crystarium	4,678,571	1,200	Black Tri-star	Deliver a Black Tri-star to Eirikur. 0/3
-A Feast for the Senses	Sincerity	78	Shue-Hann	???	(x10,y9)	The Crystarium	2,339,285	1,200	Stippled Eel	Deliver a Stippled Eel to Eirikur. 0/3
+        Needs More Egg	Concord	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,556,856	900	Sand Egg	Deliver a Sand Egg to Shu-Hann. 0/3
+Eco-Warrior of Light	Concord	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,556,856	910	Xanthic Bass	Deliver a Xanthic Bass to Shu-Hann. 0/3
+The Source of the Problem	Sincerity	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,201,171	920	Purple Ghost	Deliver a Purple Ghost to Shu-Hann. 0/6
+Jelly Salad	Concord	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,444,570	956	Blood Cloud	Deliver a Blood Cloud to Shu-Hann. 0/3
+Aetherquake	Sincerity	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,000,113	977	Finned Eggplant	Deliver a Finned Eggplant to Shu-Hann. 0/6
+Full of Fish	Concord	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,444,570	977	Geayi	Deliver a Geayi to Shu-Hann. 0/6
+The Bride Aquatic	Concord	74	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	5,642,856	1,034	Little Flirt	Deliver a Little Flirt to Shu-Hann. 0/6
+Faerie Fish	Concord	74	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	5,642,856	1,034	Lemonfish	Deliver a Lemonfish to Shu-Hann. 0/3
+A Cherry-red Herring	Sincerity	74	Eirikur The Crystarium	(x9.7,y9.0)	The Crystarium	5,078,571	1,056	Cherry Herring	Deliver a Cherry Herring to Shu-Hann. 0/3
+Crab Corps	Concord	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	7,240,000	1,127	Gourmand Crab	Deliver a Gourmand Crab to Shu-Hann. 0/6
+Fish for Days	Sincerity	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	6,516,000	1,150	Hucho Taimen	Deliver a Hucho Taimen to Shu-Hann. 0/3
+Magic Mushrooms	Concord	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	7,240,000	1,127	Paradise Crab	Deliver a Paradise Crab to Shu-Hann. 0/6
+Deep-sea Diving	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Azure Sea Spider	Deliver a Azure Sea Spider to Shu-Hann. 0/3
+Short-term Gains	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Black Tri-star	Deliver a Black Tri-star to Shu-Hann. 0/3
+A Feast for the Senses	Sincerity	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	2,339,285	1,200	Stippled Eel	Deliver a Stippled Eel to Shu-Hann. 0/3
 
       -->
     </div>
