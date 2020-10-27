@@ -157,17 +157,24 @@
           <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
         </tr>
-         <tr>
+        <tr>
           <td>The Long and the Shortcrust<br/>Level 20</td>
           <td>Nyell<br/>(x25, y20)</td>
           <td>South Shroud<br/>Quarrymill</td>
-          <td>Black Eel x3<br/>18,524 x3</td>
+          <td>Black Eel x3<br/>18,524xp x3</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+        </tr>
+        <tr>
+          <td>Food Chain Reaction<br/>Level 20</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Faerie Bass x3<br/>6,109xp x3</td>
           <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
         </tr>
       </table>
 <!--
-Food Chain Reaction	Sincerity	20	Nyell	South Shroud	Quarrymill	(x25,y20)	6,109	196-215	Faerie Bass	Deliver faerie bass to Daca Jinjahl. 0/3
 Fishing 101	Sincerity	25	Nyell	South Shroud	Quarrymill	(x25,y20)	9,262	235-253	Dark Bass	Deliver dark bass to Daca Jinjahl. 0/3
 A Shocking Soiree	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	11,033	233	Black Ghost	Deliver black ghosts to Daca Jinjahl. 0/3
 A Watery Web of Lies	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	29,450	233-273	Yugr'am Salmon	Deliver Yugr'am salmon to Daca Jinjahl. 0/3
