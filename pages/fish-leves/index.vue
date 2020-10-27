@@ -14,100 +14,100 @@
           <th>End Zone/Area</th>
         </tr>
         <tr>
-          <td>Adventurers' Relish - Level 1</td>
-          <td>Wyrkhoisk (x31, y20)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
-          <td>Lominsan Anchovy x 3 (10,980 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>          
+          <td>Adventurers' Relish<br/>Level 1</td>
+          <td>Wyrkhoisk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Lominsan Anchovy x 3<br/>10,980 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>          
         </tr>
         <tr>
-          <td>Soup to Guts - Level 1</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Merlthor Goby	x3 (10,980 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>Soup to Guts<br/>Level 1</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Merlthor Goby	x3<br/>10,980 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>A Kelping Hand - Level 1</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Malm Kelp	x3 (860 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>A Kelping Hand<br/>Level 1</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Malm Kelp	x3<br/>860 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Poor Boys Eat Well - Level 1</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Finger Shrimp	x3 (860 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>Poor Boys Eat Well<br/>Level 1</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Finger Shrimp	x3<br/>860 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Splendor in the Glass - Level 5</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Harbor Herring x3 (28,431 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>Splendor in the Glass<br/>Level 5</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Harbor Herring x3<br/>28,431 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Splendor in the Glass - Level 5</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Ocean Cloud x3 (1,053 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>Splendor in the Glass<br/>Level 5</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Ocean Cloud x3<br/>1,053 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>They Taste Just as Pretty - Level 5</td>
-          <td>Wyrkholsk (x31, y20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Coral Butterfly x3 (31,590 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>They Taste Just as Pretty<br/>Level 5</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Coral Butterfly x3<br/>31,590 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Yummy in the Tummy - Level 5</td>
-          <td>Wyrkholsk (x31,y 20)</td>
-          <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Sea Cucumber x3 (1,137 xp)</td>
-          <td>Unsynwilf (x10, y8)</td>
-          <td>Lower La Noscea - Limsa Lominsa</td>
+          <td>Yummy in the Tummy<br/>Level 5</td>
+          <td>Wyrkholsk<br/>(x31,y 20)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Sea Cucumber x3<br/>1,137 xp</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Fish by Many Other Names - Level 10</td>
-          <td>Swygskyf (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
-          <td>Moraby Flounder x3 (2,022 xp)</td>
-          <td>Q'molosi (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
+          <td>Fish by Many Other Names<br/>Level 10</td>
+          <td>Swygskyf<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Moraby Flounder x3<br/>2,022 xp</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
         <tr>
-          <td>Just Add Water - Level 10</td>
-          <td>Swygskyf (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
-          <td>Tiger Cod x3 (60,660 xp)</td>
-          <td>Q'molosi (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
+          <td>Just Add Water<br/>Level 10</td>
+          <td>Swygskyf<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Tiger Cod x3<br/>60,660 xp</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
         <tr>
-          <td>The Fertile Incandescent - Level 10</td>
-          <td>Swygskyf (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
-          <td>Harbor Herring x3 (54,594 xp)</td>
-          <td>Q'molosi (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
+          <td>The Fertile Incandescent<br/>Level 10</td>
+          <td>Swygskyf<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Harbor Herring x3<br/>54,594 xp</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
         <tr>
-          <td>Brain Candy - Level 10</td>
-          <td>Swygskyf (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
-          <td>Pebble Crab x3 (2,410 xp)</td>
-          <td>Q'molosi (x34, y31)</td>
-          <td>Western La Noscea - Swiftperch</td>
+          <td>Brain Candy<br/>Level 10</td>
+          <td>Swygskyf<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Pebble Crab x3<br/>2,410 xp</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
       </table>
 <!--
@@ -153,12 +153,12 @@ Putting the Zap on Nature	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x2
           <th>End Zone/Area</th>
         </tr>
         <tr>
-          <td>Name - Level XX</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
-          <td>Item x 3 (xp)</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
+          <td>Name<br/>Level XX</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
+          <td>Item x 3<br/>xp</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
         </tr>
       </table>
       <!--
@@ -207,12 +207,12 @@ Angling for Ailments (L)	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	267,52
           <th>End Zone/Area</th>
         </tr>
         <tr>
-          <td>Name - Level XX</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
-          <td>Item x 3 (xp)</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
+          <td>Name<br/>Level XX</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
+          <td>Item x 3<br/>xp</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
         </tr>
       </table>
       <!-- 
@@ -245,12 +245,12 @@ To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny W
           <th>End Zone/Area</th>
         </tr>
         <tr>
-          <td>Name - Level XX</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
-          <td>Item x 3 (xp)</td>
-          <td>NPC (x, y)</td>
-          <td>Zone - Area</td>
+          <td>Name<br/>Level XX</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
+          <td>Item x 3<br/>xp</td>
+          <td>NPC<br/>(x, y)</td>
+          <td>Zone<br/>Area</td>
         </tr>
       </table>
       <!--
