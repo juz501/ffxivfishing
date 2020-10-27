@@ -100,8 +100,16 @@
           <td>Q'molosi (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
         </tr>
+        <tr>
+          <td>Brain Candy - Level 10</td>
+          <td>Swygskyf (x34, y31)</td>
+          <td>Western La Noscea - Swiftperch</td>
+          <td>Pebble Crab x3 (2,410 xp)</td>
+          <td>Q'molosi (x34, y31)</td>
+          <td>Western La Noscea - Swiftperch</td>
+        </tr>
       </table>
-<!--Brain Candy	Sincerity	10	Swygskyf	Western La Noscea	Swiftperch	(x34,y31)	2,410	103	Pebble Crab	Deliver Pebble Crabs to Q'molosi. 0/3
+<!--
 The Deepest Cut	Concord	15	Orwen	Western La Noscea	Aleport	(x27,y27)	12,218	156	Razor Clam	Deliver Razor Clams to Fupepe.
 The Moral of the Coral	Sincerity	15	Orwen	Western La Noscea	Aleport	(x27,y27)	3,872	142	White Coral	Deliver pieces of White Coral to Fupepe.
 Crab Life by the Horns	Sincerity	15	Orwen	Western La Noscea	Aleport	(x27,y27)	4,057	158	Helmet Crab	Deliver Helmet Crabs to Fupepe.
