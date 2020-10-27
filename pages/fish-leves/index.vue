@@ -1,7 +1,7 @@
 <template>
   <main>
-      <h1 class="h2">Fishing Levequests</h1>
-      <div class="levequests-wrapper">
+    <h1 class="h2">Fishing Levequests</h1>
+    <div class="levequests-wrapper">
       <h2 class="h3">A Realm Reborn</h2>
       <table class="levequests">
         <tr>
@@ -100,6 +100,7 @@
           <td>Q'molosi (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
         </tr>
+      </table>
 <!--Brain Candy	Sincerity	10	Swygskyf	Western La Noscea	Swiftperch	(x34,y31)	2,410	103	Pebble Crab	Deliver Pebble Crabs to Q'molosi. 0/3
 The Deepest Cut	Concord	15	Orwen	Western La Noscea	Aleport	(x27,y27)	12,218	156	Razor Clam	Deliver Razor Clams to Fupepe.
 The Moral of the Coral	Sincerity	15	Orwen	Western La Noscea	Aleport	(x27,y27)	3,872	142	White Coral	Deliver pieces of White Coral to Fupepe.
@@ -130,6 +131,6 @@ Awash in Evidence	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	7
 Sleeper Creeper	Sincerity	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	32,572	468	Sludgeskipper	Deliver Sludgeskippers to Clifton. 0/3
 Putting the Zap on Nature	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	35,520	482	Boltfish	Deliver Boltfish to Clifton. 0/3
 -->
-      </div>
+    </div>
   </main>    
 </template>
