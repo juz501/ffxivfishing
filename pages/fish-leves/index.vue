@@ -23,7 +23,7 @@
           <td>Soup to Guts - Level 1</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Merlthor Goby	x3 (10,980 xp)<td>
+          <td>Merlthor Goby	x3 (10,980 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -31,7 +31,7 @@
           <td>A Kelping Hand - Level 1</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Malm Kelp	x3 (860 xp)<td>
+          <td>Malm Kelp	x3 (860 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -39,7 +39,7 @@
           <td>Poor Boys Eat Well - Level 1</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Finger Shrimp	x3 (860 xp)<td>
+          <td>Finger Shrimp	x3 (860 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -47,7 +47,7 @@
           <td>Splendor in the Glass - Level 5</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Harbor Herring x3 (28,431 xp)<td>
+          <td>Harbor Herring x3 (28,431 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -55,7 +55,7 @@
           <td>Splendor in the Glass - Level 5</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Ocean Cloud x3 (1,053 xp)<td>
+          <td>Ocean Cloud x3 (1,053 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -63,7 +63,7 @@
           <td>They Taste Just as Pretty - Level 5</td>
           <td>Wyrkholsk (x31, y20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Coral Butterfly x3 (31,590 xp)<td>
+          <td>Coral Butterfly x3 (31,590 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -71,7 +71,7 @@
           <td>Yummy in the Tummy - Level 5</td>
           <td>Wyrkholsk (x31,y 20)</td>
           <td>Lower La Noscea	- Limsa Lominsa</td>
-          <td>Sea Cucumber x3 (1,137 xp)<td>
+          <td>Sea Cucumber x3 (1,137 xp)</td>
           <td>Unsynwilf (x10, y8)</td>
           <td>Lower La Noscea - Limsa Lominsa</td>
         </tr>
@@ -79,7 +79,7 @@
           <td>Fish by Many Other Names - Level 10</td>
           <td>Swygskyf (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
-          <td>Moraby Flounder x3 (2,022 xp)<td>
+          <td>Moraby Flounder x3 (2,022 xp)</td>
           <td>Q'molosi (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
         </tr>
@@ -87,7 +87,7 @@
           <td>Just Add Water - Level 10</td>
           <td>Swygskyf (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
-          <td>Tiger Cod x3 (60,660 xp)<td>
+          <td>Tiger Cod x3 (60,660 xp)</td>
           <td>Q'molosi (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
         </tr>
@@ -95,7 +95,7 @@
           <td>The Fertile Incandescent - Level 10</td>
           <td>Swygskyf (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
-          <td>Harbor Herring x3 (54,594 xp)<td>
+          <td>Harbor Herring x3 (54,594 xp)</td>
           <td>Q'molosi (x34, y31)</td>
           <td>Western La Noscea - Swiftperch</td>
         </tr>
