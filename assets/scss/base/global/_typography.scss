@@ -46,15 +46,3 @@ a {
     color: $hover-color;    
   }
 }
-
-th {
-  font-weight: 700;
-  font-family: $heading-font-family;
-  font-size: rem-calc(20);
-  padding: 0px 10px;
-  border-bottom: 1px solid $nav-background-color;
-}
-
-td {
-  padding: 10px 10px;
-}
