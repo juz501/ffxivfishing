@@ -21,7 +21,7 @@ export const getters = {
 export const actions = {
   setUser( { commit }, payload ) {
     commit( 'SET_USER', { id: 'currentUser', data: payload } );
-  }  
+  }
 }
 
 export const mutations = {
