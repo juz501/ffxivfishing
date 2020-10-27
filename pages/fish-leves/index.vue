@@ -17,7 +17,7 @@
           <td>Adventurers' Relish<br/>Level 1</td>
           <td>Wyrkhoisk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Lominsan Anchovy x 3<br/>10,980 xp</td>
+          <td>Lominsan Anchovy x 3<br/>10,980xp</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>          
         </tr>
@@ -25,7 +25,7 @@
           <td>Soup to Guts<br/>Level 1</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Merlthor Goby	x3<br/>10,980 xp</td>
+          <td>Merlthor Goby	x3<br/>10,980xp</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
@@ -33,7 +33,7 @@
           <td>A Kelping Hand<br/>Level 1</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Malm Kelp	x3<br/>860 xp</td>
+          <td>Malm Kelp	x3<br/>860xp x3</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
@@ -41,7 +41,7 @@
           <td>Poor Boys Eat Well<br/>Level 1</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Finger Shrimp	x3<br/>860 xp</td>
+          <td>Finger Shrimp	x3<br/>860xp x3</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
@@ -49,15 +49,15 @@
           <td>Splendor in the Glass<br/>Level 5</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Harbor Herring x3<br/>28,431 xp</td>
+          <td>Harbor Herring x3<br/>28,431xp x3</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
-          <td>Splendor in the Glass<br/>Level 5</td>
+          <td>Cloud Cutlet<br/>Level 5</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Ocean Cloud x3<br/>1,053 xp</td>
+          <td>Ocean Cloud x3<br/>1,053xp</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
@@ -65,15 +65,15 @@
           <td>They Taste Just as Pretty<br/>Level 5</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Coral Butterfly x3<br/>31,590 xp</td>
+          <td>Coral Butterfly x3<br/>31,590xp</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
         <tr>
           <td>Yummy in the Tummy<br/>Level 5</td>
-          <td>Wyrkholsk<br/>(x31,y 20)</td>
+          <td>Wyrkholsk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
-          <td>Sea Cucumber x3<br/>1,137 xp</td>
+          <td>Sea Cucumber x3<br/>1,137xp 3</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
         </tr>
@@ -97,7 +97,7 @@
           <td>The Fertile Incandescent<br/>Level 10</td>
           <td>Swygskyf<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
-          <td>Harbor Herring x3<br/>54,594 xp</td>
+          <td>Harbor Herring x3<br/>54,594xp x3</td>
           <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
@@ -105,18 +105,60 @@
           <td>Brain Candy<br/>Level 10</td>
           <td>Swygskyf<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
-          <td>Pebble Crab x3<br/>2,410 xp</td>
+          <td>Pebble Crab x3<br/>2,410xp x3</td>
           <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
         </tr>
+        <tr>
+          <td>The Deepest Cut<br/>Level 15</td>
+          <td>Orwen<br/>(x27, y27)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+          <td>Razor Clam x3<br/>12,218xp</td>
+          <td>Fupepe<br/>(x27, y26)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+        </tr>
+        <tr>
+          <td>The Moral of the Coral<br/>Level 15</td>
+          <td>Orwen<br/>(x27, y27)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+          <td>White Coral x3<br/>3,872xp x3</td>
+          <td>Fupepe<br/>(x27, y26)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+        </tr>
+        <tr>
+          <td>Crab Life by the Horns<br/>Level 15</td>
+          <td>Orwen<br/>(x27, y27)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+          <td>Helmet Crab x3<br/>4,057xp x3</td>
+          <td>Fupepe<br/>(x27, y26)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+        </tr>
+        <tr>
+          <td>Shell Game (Fisher)<br/>Level 15</td>
+          <td>Orwen<br/>(x27, y27)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+          <td>Rothlyt Oyster x3<br/>4,227xp</td>
+          <td>Fupepe<br/>(x27, y26)</td>
+          <td>Western La Noscea<br/>Aleport</td>
+        </tr>
+        <tr>
+          <td>Sounds Fishy to Me<br/>Level 20</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Copperfish x3<br/>12,218xp</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+        </tr>
+        <tr>
+          <td>Blind Ambition<br/>Level 20</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Dark Sleeper x3<br/>6,109xp x3</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+        </tr>
       </table>
 <!--
-The Deepest Cut	Concord	15	Orwen	Western La Noscea	Aleport	(x27,y27)	12,218	156	Razor Clam	Deliver Razor Clams to Fupepe.
-The Moral of the Coral	Sincerity	15	Orwen	Western La Noscea	Aleport	(x27,y27)	3,872	142	White Coral	Deliver pieces of White Coral to Fupepe.
-Crab Life by the Horns	Sincerity	15	Orwen	Western La Noscea	Aleport	(x27,y27)	4,057	158	Helmet Crab	Deliver Helmet Crabs to Fupepe.
-Shell Game (Fisher)	Concord	15	Orwen	Western La Noscea	Aleport	(x27,y27)	4,227	162	Rothlyt Oyster	Deliver Rothlyt Oysters to Fupepe.
-Sounds Fishy to Me	Concord	20	Nyell	South Shroud	Quarrymill	(x25,y20)	12,218	210	Copperfish	Deliver copperfish to Daca Jinjahl. 0/3
-Blind Ambition	Sincerity	20	Nyell	South Shroud	Quarrymill	(x25,y20)	6,109	196-215	Dark Sleeper	Deliver dark sleepers to Daca Jinjahl. 0/3
 The Long and the Shortcrust	Concord	20	Nyell	South Shroud	Quarrymill	(x25,y20)	18,524	202-212	Black Eel	Deliver black eels to Daca Jinjahl. 0/3
 Food Chain Reaction	Sincerity	20	Nyell	South Shroud	Quarrymill	(x25,y20)	6,109	196-215	Faerie Bass	Deliver faerie bass to Daca Jinjahl. 0/3
 Fishing 101	Sincerity	25	Nyell	South Shroud	Quarrymill	(x25,y20)	9,262	235-253	Dark Bass	Deliver dark bass to Daca Jinjahl. 0/3
