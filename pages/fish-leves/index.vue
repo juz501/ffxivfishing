@@ -1,7 +1,7 @@
 <template>
   <main>
       <h1 class="h2">Fishing Levequests</h1>
-      <table>
+      <table class="levequests">
         <tr>
           <th>Guildeve</th>
           <th>Start NPC</th>
