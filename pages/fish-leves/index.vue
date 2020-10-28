@@ -173,9 +173,16 @@
           <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
         </tr>
+        <tr>
+          <td>Fishing 101<br/>Level 25</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Dark Bass x3<br/>9,262xp x3</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+          <td>South Shroud<br/>Quarrymill</td>
+        </tr>
       </table>
 <!--
-Fishing 101	Sincerity	25	Nyell	South Shroud	Quarrymill	(x25,y20)	9,262	235-253	Dark Bass	Deliver dark bass to Daca Jinjahl. 0/3
 A Shocking Soiree	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	11,033	233	Black Ghost	Deliver black ghosts to Daca Jinjahl. 0/3
 A Watery Web of Lies	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	29,450	233-273	Yugr'am Salmon	Deliver Yugr'am salmon to Daca Jinjahl. 0/3
 The Truth Will Set You Free	Sincerity	25	Nyell	South Shroud	Quarrymill	(x25,y20)	9,885	225-253	Five-ilm Pleco	Deliver five-ilm pleco to Daca Jinjahl. 0/3
