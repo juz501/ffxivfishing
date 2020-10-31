@@ -73,7 +73,7 @@
           <td><strong>Yummy in the Tummy</strong><br/>Level 5</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Wyrkholsk</strong><br/>(x31, y20)</td>
-          <td><strong>Sea Cucumber x3</strong><br/>1,137xp 3</td>
+          <td><strong>Sea Cucumber x3</strong><br/>1,137xp x3</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
         </tr>
