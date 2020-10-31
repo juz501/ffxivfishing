@@ -7,193 +7,270 @@
       <table class="levequests">
         <tr>
           <th>Guildeve</th>
-          <th>Start NPC</th>
           <th>Start Zone/Area</th>          
+          <th>Start NPC</th>
           <th>Items Needed</th>
-          <th>End NPC</th>
           <th>End Zone/Area</th>
+          <th>End NPC</th>
         </tr>
         <tr>
           <td>Adventurers' Relish<br/>Level 1</td>
-          <td>Wyrkhoisk<br/>(x31, y20)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Wyrkhoisk<br/>(x31, y20)</td>
           <td>Lominsan Anchovy x 3<br/>10,980xp</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Unsynwilf<br/>(x10, y8)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>          
         </tr>
         <tr>
           <td>Soup to Guts<br/>Level 1</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Merlthor Goby	x3<br/>10,980xp</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>A Kelping Hand<br/>Level 1</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Malm Kelp	x3<br/>860xp x3</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>Poor Boys Eat Well<br/>Level 1</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Finger Shrimp	x3<br/>860xp x3</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>Splendor in the Glass<br/>Level 5</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Harbor Herring x3<br/>28,431xp x3</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>Cloud Cutlet<br/>Level 5</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Ocean Cloud x3<br/>1,053xp</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>They Taste Just as Pretty<br/>Level 5</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Coral Butterfly x3<br/>31,590xp</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>Yummy in the Tummy<br/>Level 5</td>
+          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Wyrkholsk<br/>(x31, y20)</td>
-          <td>Lower La Noscea<br/>Limsa Lominsa</td>
           <td>Sea Cucumber x3<br/>1,137xp 3</td>
-          <td>Unsynwilf<br/>(x10, y8)</td>
           <td>Lower La Noscea<br/>Limsa Lominsa</td>
+          <td>Unsynwilf<br/>(x10, y8)</td>
         </tr>
         <tr>
           <td>Fish by Many Other Names<br/>Level 10</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Swygskyf<br/>(x34, y31)</td>
-          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Moraby Flounder x3<br/>2,022 xp</td>
-          <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
         </tr>
         <tr>
           <td>Just Add Water<br/>Level 10</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Swygskyf<br/>(x34, y31)</td>
-          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Tiger Cod x3<br/>60,660 xp</td>
-          <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
         </tr>
         <tr>
           <td>The Fertile Incandescent<br/>Level 10</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Swygskyf<br/>(x34, y31)</td>
-          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Harbor Herring x3<br/>54,594xp x3</td>
-          <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
         </tr>
         <tr>
           <td>Brain Candy<br/>Level 10</td>
+          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Swygskyf<br/>(x34, y31)</td>
-          <td>Western La Noscea<br/>Swiftperch</td>
           <td>Pebble Crab x3<br/>2,410xp x3</td>
-          <td>Q'molosi<br/>(x34, y31)</td>
           <td>Western La Noscea<br/>Swiftperch</td>
+          <td>Q'molosi<br/>(x34, y31)</td>
         </tr>
         <tr>
           <td>The Deepest Cut<br/>Level 15</td>
+          <td>Western La Noscea<br/>Aleport</td>
           <td>Orwen<br/>(x27, y27)</td>
-          <td>Western La Noscea<br/>Aleport</td>
           <td>Razor Clam x3<br/>12,218xp</td>
-          <td>Fupepe<br/>(x27, y26)</td>
           <td>Western La Noscea<br/>Aleport</td>
+          <td>Fupepe<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>The Moral of the Coral<br/>Level 15</td>
+          <td>Western La Noscea<br/>Aleport</td>
           <td>Orwen<br/>(x27, y27)</td>
-          <td>Western La Noscea<br/>Aleport</td>
           <td>White Coral x3<br/>3,872xp x3</td>
-          <td>Fupepe<br/>(x27, y26)</td>
           <td>Western La Noscea<br/>Aleport</td>
+          <td>Fupepe<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Crab Life by the Horns<br/>Level 15</td>
+          <td>Western La Noscea<br/>Aleport</td>
           <td>Orwen<br/>(x27, y27)</td>
-          <td>Western La Noscea<br/>Aleport</td>
           <td>Helmet Crab x3<br/>4,057xp x3</td>
-          <td>Fupepe<br/>(x27, y26)</td>
           <td>Western La Noscea<br/>Aleport</td>
+          <td>Fupepe<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Shell Game (Fisher)<br/>Level 15</td>
+          <td>Western La Noscea<br/>Aleport</td>
           <td>Orwen<br/>(x27, y27)</td>
-          <td>Western La Noscea<br/>Aleport</td>
           <td>Rothlyt Oyster x3<br/>4,227xp</td>
-          <td>Fupepe<br/>(x27, y26)</td>
           <td>Western La Noscea<br/>Aleport</td>
+          <td>Fupepe<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Sounds Fishy to Me<br/>Level 20</td>
+          <td>South Shroud<br/>Quarrymill</td>
           <td>Nyell<br/>(x25, y20)</td>
-          <td>South Shroud<br/>Quarrymill</td>
           <td>Copperfish x3<br/>12,218xp</td>
-          <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Blind Ambition<br/>Level 20</td>
+          <td>South Shroud<br/>Quarrymill</td>
           <td>Nyell<br/>(x25, y20)</td>
-          <td>South Shroud<br/>Quarrymill</td>
           <td>Dark Sleeper x3<br/>6,109xp x3</td>
-          <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>The Long and the Shortcrust<br/>Level 20</td>
+          <td>South Shroud<br/>Quarrymill</td>
           <td>Nyell<br/>(x25, y20)</td>
-          <td>South Shroud<br/>Quarrymill</td>
           <td>Black Eel x3<br/>18,524xp x3</td>
-          <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Food Chain Reaction<br/>Level 20</td>
+          <td>South Shroud<br/>Quarrymill</td>
           <td>Nyell<br/>(x25, y20)</td>
-          <td>South Shroud<br/>Quarrymill</td>
           <td>Faerie Bass x3<br/>6,109xp x3</td>
-          <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
         </tr>
         <tr>
           <td>Fishing 101<br/>Level 25</td>
+          <td>South Shroud<br/>Quarrymill</td>
           <td>Nyell<br/>(x25, y20)</td>
-          <td>South Shroud<br/>Quarrymill</td>
           <td>Dark Bass x3<br/>9,262xp x3</td>
-          <td>Daca Jinjahl<br/>(x27, y26)</td>
           <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+        </tr>
+        <tr>
+          <td>A Shocking Soiree<br/>Level 25</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>Black Ghost x3<br/>11,033xp</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+        </tr>
+        <tr>
+          <td>A Watery Web of Lies<br/>Level 25</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>Yugr'am Salmon x3<br/>29,450xp</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+        </tr>
+        <tr>
+          <td>The Truth Will Set You Free<br/>Level 25</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Nyell<br/>(x25, y20)</td>
+          <td>Five-ilm Pleco x3<br/>9,885xp x3</td>
+          <td>South Shroud<br/>Quarrymill</td>
+          <td>Daca Jinjahl<br/>(x27, y26)</td>
+        </tr>
+        <tr>
+          <td>The Blue Period<br/>Level 30</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>Nahctahr<br/>(x30, y30)</td>
+          <td>Sea Pickle x3<br/>14,725xp x3</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>F'abodji<br/>(x30, y31)</td>
+        </tr>
+        <tr>
+          <td>Kitchen Nightmares No More<br/>Level 30</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>Nahctahr<br/>(x30, y30)</td>
+          <td>Black Sole x3<br/>14,725xp x3</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>F'abodji<br/>(x30, y31)</td>
+        </tr>
+        <tr>
+          <td>A Recipe for Disaster<br/>Level 30</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>Nahctahr<br/>(x30, y30)</td>
+          <td>Ash Tuna x3<br/>31,098xp</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>F'abodji<br/>(x30, y31)</td>
+        </tr>
+        <tr>
+          <td>Just Call Me Late for Dinner<br/>Level 30</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>Nahctahr<br/>(x30, y30)</td>
+          <td>Indigo Herring x3<br/>30,282xp</td>
+          <td>Eastern La Noscea<br/>Costa del Sol</td>
+          <td>F'abodji<br/>(x30, y31)</td>
+        </tr>
+        <tr>
+          <td>Fry Me a River<br/>Level 35</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Cimeaurant<br/>(x26, y28)</td>
+          <td>Giant Bass x3<br/>21,057xp x3</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Drividot<br/>(x28, y28)</td>
+        </tr>
+        <tr>
+          <td>The Perks of Politics<br/>Level 35</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Cimeaurant<br/>(x26, y28)</td>
+          <td>Seema x3<br/>19,950xp</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Drividot<br/>(x28, y28)</td>
+        </tr>
+        <tr>
+          <td>Gathering Light<br/>Level 35</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Cimeaurant<br/>(x26, y28)</td>
+          <td>Lamp Marimo x3<br/>19,950xp x3</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Drividot<br/>(x28, y28)</td>
+        </tr>
+        <tr>
+          <td>Hands Off Our Fish<br/>Level 35</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Cimeaurant<br/>(x26, y28)</td>
+          <td>Crimson Trout x3<br/>26,707xp</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Drividot<br/>(x28, y28)</td>
         </tr>
       </table>
 <!--
-A Shocking Soiree	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	11,033	233	Black Ghost	Deliver black ghosts to Daca Jinjahl. 0/3
-A Watery Web of Lies	Concord	25	Nyell	South Shroud	Quarrymill	(x25,y20)	29,450	233-273	Yugr'am Salmon	Deliver Yugr'am salmon to Daca Jinjahl. 0/3
-The Truth Will Set You Free	Sincerity	25	Nyell	South Shroud	Quarrymill	(x25,y20)	9,885	225-253	Five-ilm Pleco	Deliver five-ilm pleco to Daca Jinjahl. 0/3
-The Blue Period	Sincerity	30	Nahctahr	Eastern La Noscea	Costa del Sol	(x30,y30)	14,725	279-330	Sea Pickle	Deliver Sea Pickles to F'abodji. 0/3
-Kitchen Nightmares No More	Sincerity	30	Nahctahr	Eastern La Noscea	Costa del Sol	(x30,y30)	14,725	291	Black Sole	Deliver Black Sole to F'abodji. 0/3
-A Recipe for Disaster	Concord	30	Nahctahr	Eastern La Noscea	Costa del Sol	(x30,y30)	31,098	300	Ash Tuna	Deliver Ash Tuna to F'abodji. 0/3
-Just Call Me Late for Dinner	Concord	30	Nahctahr	Eastern La Noscea	Costa del Sol	(x30,y30)	30,282	285	Indigo Herring	Deliver Indigo Herring to F'abodji. 0/3
-Fry Me a River	Sincerity	35	Cimeaurant	Coerthas Central Highlands	First Dicasterial Observatorium of Aetherial and Astrological Phenomena	(x26,y28)	21,057	319-361	Giant Bass	Deliver Giant Bass to Drividot. 0/3
-The Perks of Politics	Concord	35	Cimeaurant	Coerthas Central Highlands	First Dicasterial Observatorium of Aetherial and Astrological Phenomena	(x26,y28)	19,950	322-343	Seema	Deliver Seema to Drividot. 0/3
-Gathering Light	Sincerity	35	Cimeaurant	Coerthas Central Highlands	First Dicasterial Observatorium of Aetherial and Astrological Phenomena	(x26,y28)	19,950	364	Lamp Marimo	Deliver Lamp Marimo to Drividot. 0/3
-Hands Off Our Fish	Concord	35	Cimeaurant	Coerthas Central Highlands	First Dicasterial Observatorium of Aetherial and Astrological Phenomena	(x26,y28)	26,707	319	Crimson Trout	Deliver Crimson Trout to Drividot. 0/3
 Empire Builder	Concord	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	54,214	380	Bronze Lake Trout	Deliver Bronze Lake Trout to Louviaune. 0/3
 Laird of the Lakes	Concord	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	65,144	360	Northern Pike	Deliver Northern Pike to Louviaune. 0/3
 Make a Fish	Sincerity	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	26,707	364-392	Abalathian Smelt	Deliver Abalathian Smelts to Louviaune. 0/3
@@ -209,19 +286,19 @@ Putting the Zap on Nature	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x2
       <table class="levequests">
         <tr>
           <th>Guildeve</th>
+          <th>Start Zone/Area</th>
           <th>Start NPC</th>
-          <th>Start Zone/Area</th>          
           <th>Items Needed</th>
-          <th>End NPC</th>
           <th>End Zone/Area</th>
+          <th>End NPC</th>
         </tr>
         <tr>
           <td>Name<br/>Level XX</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
           <td>Item x 3<br/>xp</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
         </tr>
       </table>
       <!--
@@ -263,19 +340,19 @@ Angling for Ailments (L)	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	267,52
       <table class="levequests">
         <tr>
           <th>Guildeve</th>
+          <th>Start Zone/Area</th>
           <th>Start NPC</th>
-          <th>Start Zone/Area</th>          
           <th>Items Needed</th>
-          <th>End NPC</th>
           <th>End Zone/Area</th>
+          <th>End NPC</th>
         </tr>
         <tr>
           <td>Name<br/>Level XX</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
           <td>Item x 3<br/>xp</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
         </tr>
       </table>
       <!-- 
@@ -301,19 +378,19 @@ To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny W
       <table class="levequests">
         <tr>
           <th>Guildeve</th>
+          <th>Start Zone/Area</th>
           <th>Start NPC</th>
-          <th>Start Zone/Area</th>          
           <th>Items Needed</th>
-          <th>End NPC</th>
           <th>End Zone/Area</th>
+          <th>End NPC</th>
         </tr>
         <tr>
           <td>Name<br/>Level XX</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
           <td>Item x 3<br/>xp</td>
-          <td>NPC<br/>(x, y)</td>
           <td>Zone<br/>Area</td>
+          <td>NPC<br/>(x, y)</td>
         </tr>
       </table>
       <!--
@@ -332,7 +409,6 @@ Magic Mushrooms	Concord	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	7,2
 Deep-sea Diving	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Azure Sea Spider	Deliver a Azure Sea Spider to Shu-Hann. 0/3
 Short-term Gains	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Black Tri-star	Deliver a Black Tri-star to Shu-Hann. 0/3
 A Feast for the Senses	Sincerity	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	2,339,285	1,200	Stippled Eel	Deliver a Stippled Eel to Shu-Hann. 0/3
-
       -->
     </div>
   </main>    
