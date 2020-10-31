@@ -239,34 +239,34 @@
         </tr>
         <tr>
           <td>Fry Me a River<br/>Level 35</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Cimeaurant<br/>(x26, y28)</td>
           <td>Giant Bass x3<br/>21,057xp x3</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Drividot<br/>(x28, y28)</td>
         </tr>
         <tr>
           <td>The Perks of Politics<br/>Level 35</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Cimeaurant<br/>(x26, y28)</td>
           <td>Seema x3<br/>19,950xp</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Drividot<br/>(x28, y28)</td>
         </tr>
         <tr>
           <td>Gathering Light<br/>Level 35</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Cimeaurant<br/>(x26, y28)</td>
           <td>Lamp Marimo x3<br/>19,950xp x3</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Drividot<br/>(x28, y28)</td>
         </tr>
         <tr>
           <td>Hands Off Our Fish<br/>Level 35</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Cimeaurant<br/>(x26, y28)</td>
           <td>Crimson Trout x3<br/>26,707xp</td>
-          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of Aetherial and Astrological Phenomena</td>
+          <td>Coerthas Central Highlands<br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td>Drividot<br/>(x28, y28)</td>
         </tr>
       </table>
