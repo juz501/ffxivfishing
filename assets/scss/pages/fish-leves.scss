@@ -11,12 +11,18 @@
       font-size: rem-calc(20);
       padding: 5px 10px;
       border-bottom: 1px solid $nav-background-color;
+      &.vertical {
+        vertical-align: middle;
+      }
     }
   
     td {
       padding: 10px 10px;
       text-align: center;
-      vertical-align: middle;
+      
+      &.vertical {
+        vertical-align: middle;
+      }
     }
   }
 }

@@ -21,7 +21,7 @@
           <td><strong>Lominsan Anchovy x 3</strong><br/>10,980xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Soup to Guts</strong><br/>Level 1</td>
@@ -30,7 +30,7 @@
           <td><strong>Merlthor Goby	x3</strong><br/>10,980xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>A Kelping Hand</strong><br/>Level 1</td>
@@ -39,7 +39,7 @@
           <td><strong>Malm Kelp	x3</strong><br/>860xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Poor Boys Eat Well</strong><br/>Level 1</td>
@@ -48,7 +48,7 @@
           <td><strong>Finger Shrimp	x3</strong><br/>860xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Splendor in the Glass</strong><br/>Level 5</td>
@@ -57,7 +57,7 @@
           <td><strong>Harbor Herring x3</strong><br/>28,431xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Cloud Cutlet</strong><br/>Level 5</td>
@@ -66,7 +66,7 @@
           <td><strong>Ocean Cloud x3</strong><br/>1,053xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>They Taste Just as Pretty</strong><br/>Level 5</td>
@@ -75,7 +75,7 @@
           <td><strong>Coral Butterfly x3</strong><br/>31,590xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Yummy in the Tummy</strong><br/>Level 5</td>
@@ -84,7 +84,7 @@
           <td><strong>Sea Cucumber x3</strong><br/>1,137xp</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Fish by Many Other Names</strong><br/>Level 10</td>
@@ -93,7 +93,7 @@
           <td><strong>Moraby Flounder x3</strong><br/>2,022xp</td>
           <td><strong>Western La Noscea</strong><br/>Swiftperch</td>
           <td><strong>Q'molosi</strong><br/>(x34, y31)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Just Add Water</strong><br/>Level 10</td>
@@ -102,7 +102,7 @@
           <td><strong>Tiger Cod x3</strong><br/>60,660xp</td>
           <td><strong>Western La Noscea</strong><br/>Swiftperch</td>
           <td><strong>Q'molosi</strong><br/>(x34, y31)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>The Fertile Incandescent</strong><br/>Level 10</td>
@@ -111,7 +111,7 @@
           <td><strong>Harbor Herring x3</strong><br/>54,594xp</td>
           <td><strong>Western La Noscea</strong><br/>Swiftperch</td>
           <td><strong>Q'molosi</strong><br/>(x34, y31)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Brain Candy</strong><br/>Level 10</td>
@@ -120,7 +120,7 @@
           <td><strong>Pebble Crab x3</strong><br/>2,410xp</td>
           <td><strong>Western La Noscea</strong><br/>Swiftperch</td>
           <td><strong>Q'molosi</strong><br/>(x34, y31)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>The Deepest Cut</strong><br/>Level 15</td>
@@ -129,7 +129,7 @@
           <td><strong>Razor Clam x3</strong><br/>12,218xp</td>
           <td><strong>Western La Noscea</strong><br/>Aleport</td>
           <td><strong>Fupepe</strong><br/>(x27, y26)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>The Moral of the Coral</strong><br/>Level 15</td>
@@ -138,7 +138,7 @@
           <td><strong>White Coral x3</strong><br/>3,872xp</td>
           <td><strong>Western La Noscea</strong><br/>Aleport</td>
           <td><strong>Fupepe</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Crab Life by the Horns</strong><br/>Level 15</td>
@@ -147,7 +147,7 @@
           <td><strong>Helmet Crab x3</strong><br/>4,057xp</td>
           <td><strong>Western La Noscea</strong><br/>Aleport</td>
           <td><strong>Fupepe</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Shell Game (Fisher)</strong><br/>Level 15</td>
@@ -156,7 +156,7 @@
           <td><strong>Rothlyt Oyster x3</strong><br/>4,227xp</td>
           <td><strong>Western La Noscea</strong><br/>Aleport</td>
           <td><strong>Fupepe</strong><br/>(x27, y26)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Sounds Fishy to Me</strong><br/>Level 20</td>
@@ -165,7 +165,7 @@
           <td><strong>Copperfish x3</strong><br/>12,218xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Blind Ambition</strong><br/>Level 20</td>
@@ -174,7 +174,7 @@
           <td><strong>Dark Sleeper x3</strong><br/>6,109xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>The Long and the Shortcrust</strong><br/>Level 20</td>
@@ -183,7 +183,7 @@
           <td><strong>Black Eel x3</strong><br/>18,524xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Food Chain Reaction</strong><br/>Level 20</td>
@@ -192,7 +192,7 @@
           <td><strong>Faerie Bass x3</strong><br/>6,109xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Fishing 101</strong><br/>Level 25</td>
@@ -201,7 +201,7 @@
           <td><strong>Dark Bass x3</strong><br/>9,262xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>A Shocking Soiree</strong><br/>Level 25</td>
@@ -210,7 +210,7 @@
           <td><strong>Black Ghost x3</strong><br/>11,033xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>A Watery Web of Lies</strong><br/>Level 25</td>
@@ -219,7 +219,7 @@
           <td><strong>Yugr'am Salmon x3</strong><br/>29,450xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>The Truth Will Set You Free</strong><br/>Level 25</td>
@@ -228,7 +228,7 @@
           <td><strong>Five-ilm Pleco x3</strong><br/>9,885xp</td>
           <td><strong>South Shroud</strong><br/>Quarrymill</td>
           <td><strong>Daca Jinjahl</strong><br/>(x27, y26)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>The Blue Period</strong><br/>Level 30</td>
@@ -237,7 +237,7 @@
           <td><strong>Sea Pickle x3</strong><br/>14,725xp</td>
           <td><strong>Eastern La Noscea</strong><br/>Costa del Sol</td>
           <td><strong>F'abodji</strong><br/>(x30, y31)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Kitchen Nightmares No More</strong><br/>Level 30</td>
@@ -246,7 +246,7 @@
           <td><strong>Black Sole x3</strong><br/>14,725xp</td>
           <td><strong>Eastern La Noscea</strong><br/>Costa del Sol</td>
           <td><strong>F'abodji</strong><br/>(x30, y31)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>A Recipe for Disaster</strong><br/>Level 30</td>
@@ -255,7 +255,7 @@
           <td><strong>Ash Tuna x3</strong><br/>31,098xp</td>
           <td><strong>Eastern La Noscea</strong><br/>Costa del Sol</td>
           <td><strong>F'abodji</strong><br/>(x30, y31)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Just Call Me Late for Dinner</strong><br/>Level 30</td>
@@ -264,7 +264,7 @@
           <td><strong>Indigo Herring x3</strong><br/>30,282xp</td>
           <td><strong>Eastern La Noscea</strong><br/>Costa del Sol</td>
           <td><strong>F'abodji</strong><br/>(x30, y31)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Fry Me a River</strong><br/>Level 35</td>
@@ -273,7 +273,7 @@
           <td><strong>Giant Bass x3</strong><br/>21,057xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td><strong>Drividot</strong><br/>(x28, y28)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>The Perks of Politics</strong><br/>Level 35</td>
@@ -282,7 +282,7 @@
           <td><strong>Seema x3</strong><br/>19,950xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td><strong>Drividot</strong><br/>(x28, y28)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Gathering Light</strong><br/>Level 35</td>
@@ -291,7 +291,7 @@
           <td><strong>Lamp Marimo x3</strong><br/>19,950xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td><strong>Drividot</strong><br/>(x28, y28)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Hands Off Our Fish</strong><br/>Level 35</td>
@@ -300,7 +300,7 @@
           <td><strong>Crimson Trout x3</strong><br/>26,707xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td><strong>Drividot</strong><br/>(x28, y28)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Empire Builder</strong><br/>Level 40</td>
@@ -309,7 +309,7 @@
           <td><strong>Bronze Lake Trout x3</strong><br/>54,214xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
           <td><strong>Louviaune</strong><br/>(x13, y16)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Laird of the Lakes</strong><br/>Level 40</td>
@@ -318,7 +318,7 @@
           <td><strong>Northern Pike x3</strong><br/>65,144xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
           <td><strong>Louviaune</strong><br/>(x13, y16)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Make a Fish</strong><br/>Level 40</td>
@@ -327,7 +327,7 @@
           <td><strong>Abalathian Smelt x3</strong><br/>26,707xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
           <td><strong>Louviaune</strong><br/>(x13, y16)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Rationally Speaking</strong><br/>Level 40</td>
@@ -336,7 +336,7 @@
           <td><strong>Golden Loach x3</strong><br/>26,707xp</td>
           <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
           <td><strong>Louviaune</strong><br/>(x13, y16)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Snail Fail</strong><br/>Level 45</td>
@@ -345,7 +345,7 @@
           <td><strong>Ignus Snail x3</strong><br/>35,572xp</td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
           <td><strong>Clifton</strong><br/>(x30, y12)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Awash in Evidence</strong><br/>Level 45</td>
@@ -354,7 +354,7 @@
           <td><strong>Ilsabardian Bass x3</strong><br/>71,040xp</td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
           <td><strong>Clifton</strong><br/>(x30, y12)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
         <tr>
           <td><strong>Sleeper Creeper</strong><br/>Level 45</td>
@@ -363,7 +363,7 @@
           <td><strong>Sludgeskipper x3</strong><br/>32,572xp</td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>          
           <td><strong>Clifton</strong><br/>(x30, y12)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
         <tr>
           <td><strong>Putting the Zap on Nature</strong><br/>Level 45</td>
@@ -372,7 +372,7 @@
           <td><strong>Boltfish x3</strong><br/>35,520xp</td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
           <td><strong>Clifton</strong><br/>(x30, y12)</td>
-          <td></td>
+          <td class="vertical"></td>
         </tr>
       </table>
     </div>
@@ -395,7 +395,7 @@
           <td><strong>Item x 3</strong><br/>xp</td>
           <td><strong>Zone</strong><br/>Area</td>
           <td><strong>NPC</strong><br/>(x, y)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
       </table>
       <!--
@@ -451,7 +451,7 @@ Angling for Ailments (L)	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	267,52
           <td><strong>Item x 3</strong><br/>xp</td>
           <td><strong>Zone</strong><br/>Area</td>
           <td><strong>NPC</strong><br/>(x, y)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
       </table>
       <!-- 
@@ -491,7 +491,7 @@ To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny W
           <td><strong>Item x 3</strong><br/>xp</td>
           <td><strong>Zone</strong><br/>Area</td>
           <td><strong>NPC</strong><br/>(x, y)</td>
-          <td><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
       </table>
       <!--
