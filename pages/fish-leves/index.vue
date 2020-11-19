@@ -33,7 +33,7 @@
           <td><strong>A Kelping Hand</strong><br/>Level 1</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Wyrkholsk</strong><br/>(x31, y20)</td>
-          <td><strong>Malm Kelp	x3</strong><br/>860xp x3</td>
+          <td><strong>Malm Kelp	x3</strong><br/>860xp<br /><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="100%" height="auto" /></td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
         </tr>
@@ -305,7 +305,7 @@
           <td><strong>Snail Fail</strong><br/>Level 45</td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
           <td><strong>K'leytai</strong><br/>(x29, y12)</td>
-          <td><strong>Ignus Snail x3</strong><br/>35,572xp x3</td>
+          <td><strong>Ignus Snail x3</strong><br/>35,572xp<br /><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="100%" height="auto" /></td>
           <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
           <td><strong>Clifton</strong><br/>(x30, y12)</td>
         </tr>
