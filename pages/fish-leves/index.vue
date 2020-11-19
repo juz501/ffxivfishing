@@ -269,17 +269,71 @@
           <td><strong>Coerthas Central Highlands</strong><br/>First Dicasterial Observatorium of<br/>Aetherial and Astrological Phenomena</td>
           <td><strong>Drividot</strong><br/>(x28, y28)</td>
         </tr>
+        <tr>
+          <td><strong>Empire Builder</strong><br/>Level 40</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Voilinaut</strong><br/>(x12, y16)</td>
+          <td><strong>Bronze Lake Trout x3</strong><br/>54,214xp</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Louviaune</strong><br/>(x13, y16)</td>
+        </tr>
+        <tr>
+          <td><strong>Laird of the Lakes</strong><br/>Level 40</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Voilinaut</strong><br/>(x12, y16)</td>
+          <td><strong>Northern Pike x3</strong><br/>65,144xp</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Louviaune</strong><br/>(x13, y16)</td>
+        </tr>
+        <tr>
+          <td><strong>Make a Fish</strong><br/>Level 40</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Voilinaut</strong><br/>(x12, y16)</td>
+          <td><strong>Abalathian Smelt x3</strong><br/>26,707xp x3</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Louviaune</strong><br/>(x13, y16)</td>
+        </tr>
+        <tr>
+          <td><strong>Rationally Speaking</strong><br/>Level 40</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Voilinaut</strong><br/>(x12, y16)</td>
+          <td><strong>Golden Loach x3</strong><br/>26,707xp x3</td>
+          <td><strong>Coerthas Central Highlands</strong><br/>Whitebrim Front</td>
+          <td><strong>Louviaune</strong><br/>(x13, y16)</td>
+        </tr>
+        <tr>
+          <td><strong>Snail Fail</strong><br/>Level 45</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>K'leytai</strong><br/>(x29, y12)</td>
+          <td><strong>Ignus Snail x3</strong><br/>35,572xp x3</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>Clifton</strong><br/>(x30, y12)</td>
+        </tr>
+        <tr>
+          <td><strong>Awash in Evidence</strong><br/>Level 45</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>K'leytai</strong><br/>(x29, y12)</td>
+          <td><strong>Ilsabardian Bass x3</strong><br/>71,040xp</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>Clifton</strong><br/>(x30, y12)</td>
+        </tr>
+        <tr>
+          <td><strong>Sleeper Creeper</strong><br/>Level 45</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>K'leytai</strong><br/>(x29, y12)</td>
+          <td><strong>Sludgeskipper x3</strong><br/>32,572xp x3</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>Clifton</strong><br/>(x30, y12)</td>
+        </tr>
+        <tr>
+          <td><strong>Putting the Zap on Nature</strong><br/>Level 45</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>K'leytai</strong><br/>(x29, y12)</td>
+          <td><strong>Boltfish x3</strong><br/>35,520xp</td>
+          <td><strong>Mor Dhona</strong><br/>Saint Coinach's Find</td>
+          <td><strong>Clifton</strong><br/>(x30, y12)</td>
+        </tr>
       </table>
-<!--
-Empire Builder	Concord	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	54,214	380	Bronze Lake Trout	Deliver Bronze Lake Trout to Louviaune. 0/3
-Laird of the Lakes	Concord	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	65,144	360	Northern Pike	Deliver Northern Pike to Louviaune. 0/3
-Make a Fish	Sincerity	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	26,707	364-392	Abalathian Smelt	Deliver Abalathian Smelts to Louviaune. 0/3
-Rationally Speaking	Sincerity	40	Voilinaut	Coerthas Central Highlands	Whitebrim Front	(x12,y16)	26,707	396	Golden Loach	Deliver Golden Loach to Louviaune. 0/3
-Snail Fail	Sincerity	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	32,572	464	Ignus Snail	Deliver Ignus Snails to Clifton. 0/3
-Awash in Evidence	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	71,040	410	Ilsabardian Bass	Deliver Ilsabardian Bass to Clifton. 0/3
-Sleeper Creeper	Sincerity	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	32,572	468	Sludgeskipper	Deliver Sludgeskippers to Clifton. 0/3
-Putting the Zap on Nature	Concord	45	K'leytai	Mor Dhona	Saint Coinach's Find	(x29,y12)	35,520	482	Boltfish	Deliver Boltfish to Clifton. 0/3
--->
     </div>
     <h2 class="h3">Heavensward</h2>
     <div class="levequests-wrapper">
