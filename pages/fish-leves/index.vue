@@ -674,32 +674,141 @@
           <th>Bonus</th>
         </tr>
         <tr>
-          <td><strong>Name</strong><br/>Level XX</td>
-          <td><strong>Zone</strong><br/>Area</td>
-          <td><strong>NPC</strong><br/>(x, y)</td>
-          <td><strong>Item x 3</strong></td>
-          <td><strong>Zone</strong><br/>Area</td>
-          <td><strong>NPC</strong><br/>(x, y)</td>
+          <td><strong>Slow Wash, Rapids Jumper</strong><br/>Level 60</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Rapids Jumper x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>If a Leaf Falls in the Water</strong><br/>Level 60</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Fallen Leaf x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>There Can Be Only One</strong><br/>Level 60</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Highland Perch x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Lighter Wallets</strong><br/>Level 62</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Glass Manta x 6</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>In a Pickle</strong><br/>Level 62</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Eastern Sea Pickle x 6</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Perhaps Not-So-Common</strong><br/>Level 62</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Common Whelk x 4</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Catfish Scheme</strong><br/>Level 64</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Longhair Catfish x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Curtains for Pleco</strong><br/>Level 64</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Curtain Pleco x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Marooned Minnow</strong><br/>Level 64</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Tail Mountains Minnow x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Peculiar De-light</strong><br/>Level 66</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Sea Lamp x 6</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Step by Steppe</strong><br/>Level 66</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Redfin x 6</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Unbeliebubble</strong><br/>Level 66</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Doman Bubble Eye x 4</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Blood in the Water</strong><br/>Level 68</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Steelshark x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>To the Teeth</strong><br/>Level 68</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Tawny Wench Shark x 3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Pre-octopied</strong><br/>Level 68</td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Keltraeng</strong><br/>(x11.6, y9.6)</td>
+          <td><strong>Koromo Octopus x3</strong></td>
+          <td><strong>Hingashi</strong><br/>Kugane</td>
+          <td><strong>Geimrael</strong><br/>(x11.7, y9.6)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
       </table>
-      <!-- 
-There Can Be Only One	Sincerity	60	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	1,920,946	818	Highland Perch	Deliver Highland Perch to Geimrael. 0/3
-If a Leaf Falls in the Water	Concord	60	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,134,384	811	Fallen Leaf	Deliver Fallen Leaves to Geimrael. 0/3
-Slow Wash, Rapids Jumper	Concord	60	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,134,384	811	Rapids Jumper	Deliver Rapids Jumpers to Geimrael. 0/3
-Perhaps Not-So-Common	Sincerity	62	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,015,723	720	Common Whelk	Deliver Common Whelks to Geimrael. 0/4
-In a Pickle	Concord	62	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,239,692	880	Eastern Sea Pickle	Deliver Eastern Sea Pickles to Geimrael. 0/6
-Lighter Wallets	Concord	62	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,239,692	880	Glass Manta	Deliver Glass Mantas to Geimrael. 0/6
-Marooned Minnow	Sincerity	64	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,120,480	782	Tail Mountains Minnow	Deliver Tail Mountains Minnows to Geimrael. 0/3
-Catfish Scheme	Concord	64	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,356,088	765	Longhair Catfish	Deliver Longhair Catfish to Geimrael. 0/3
-Curtains for Pleco	Concord	64	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,356,088	774	Curtain Pleco	Deliver Curtain Plecos to Geimrael. 0/3
-Unbeliebubble	Sincerity	66	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,223,812	837	Doman Bubble Eye	Deliver Doman Bubble Eyes to Geimrael. 0/4
-Step By Steppe	Concord	66	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,470,902	837	Redfin	Deliver Redfins to Geimrael. 0/6
-Peculiar De-light	Concord	66	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	2,470,902	828	Sea Lamp	Deliver Sea Lamps to Geimrael. 0/6
-Pre-octopied	Sincerity	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	213,205	912	Koromo Octopus	Deliver Koromo Octopodes to Geimrael. 0/3
-Blood in the Water (68)	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	475,610	950	Steelshark	Deliver Steelsharks to Geimrael. 0/3
-To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny Wench Shark	Deliver Tawny Wench Sharks to Geimrael. 0/3
-      -->
     </div>
     <h2 class="h3">Shadowbringers</h2>
     <div class="levequests-wrapper">
@@ -714,32 +823,141 @@ To the Teeth	Concord	68	Keltraeng	Kugane	(x11.6,y9.6)	Kugane	451,010	903	Tawny W
           <th>Bonus</th>
         </tr>
         <tr>
-          <td><strong>Name</strong><br/>Level XX</td>
-          <td><strong>Zone</strong><br/>Area</td>
-          <td><strong>NPC</strong><br/>(x, y)</td>
-          <td><strong>Item x 3</strong></td>
-          <td><strong>Zone</strong><br/>Area</td>
-          <td><strong>NPC</strong><br/>(x, y)</td>
+          <td><strong>Eco-Warrior of Light</strong><br/>Level 70</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Xanthic Bass x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Needs More Egg</strong><br/>Level 70</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Sand Egg x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>The Source of the Problem</strong><br/>Level 70</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Purple Ghost x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Jelly Salad</strong><br/>Level 72</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Blood Cloud x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Full of Fish</strong><br/>Level 72</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Geayi x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Aetherquake</strong><br/>Level 72</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Finned Eggplant x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Faerie Fish</strong><br/>Level 74</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Lemonfish x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>The Bride Aquatic</strong><br/>Level 74</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Little Flirt x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>A Cherry-red Herring</strong><br/>Level 74</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Cherry Herring x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Crab Corps</strong><br/>Level 76</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Gourmand Crab x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Magic Mushrooms</strong><br/>Level 76</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Paradise Crab x 6</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Fish for Days</strong><br/>Level 76</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Hucho Taimen x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Short-term Gains</strong><br/>Level 78</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Black Tri-star x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Deep-sea Diving</strong><br/>Level 78</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Azure Sea Spider x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>A Feast for the Senses</strong><br/>Level 78</td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Eirikur</strong><br/>(x9.7, y9.0)</td>
+          <td><strong>Stippled Eel x 3</strong></td>
+          <td><strong>Norvrandt</strong><br/>The Crystarium</td>
+          <td><strong>Shue-Hann</strong><br/>(x9.7, y9.0)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
       </table>
-      <!--
-        Needs More Egg	Concord	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,556,856	900	Sand Egg	Deliver a Sand Egg to Shu-Hann. 0/3
-Eco-Warrior of Light	Concord	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,556,856	910	Xanthic Bass	Deliver a Xanthic Bass to Shu-Hann. 0/3
-The Source of the Problem	Sincerity	70	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	3,201,171	920	Purple Ghost	Deliver a Purple Ghost to Shu-Hann. 0/6
-Jelly Salad	Concord	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,444,570	956	Blood Cloud	Deliver a Blood Cloud to Shu-Hann. 0/3
-Aetherquake	Sincerity	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,000,113	977	Finned Eggplant	Deliver a Finned Eggplant to Shu-Hann. 0/6
-Full of Fish	Concord	72	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,444,570	977	Geayi	Deliver a Geayi to Shu-Hann. 0/6
-The Bride Aquatic	Concord	74	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	5,642,856	1,034	Little Flirt	Deliver a Little Flirt to Shu-Hann. 0/6
-Faerie Fish	Concord	74	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	5,642,856	1,034	Lemonfish	Deliver a Lemonfish to Shu-Hann. 0/3
-A Cherry-red Herring	Sincerity	74	Eirikur The Crystarium	(x9.7,y9.0)	The Crystarium	5,078,571	1,056	Cherry Herring	Deliver a Cherry Herring to Shu-Hann. 0/3
-Crab Corps	Concord	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	7,240,000	1,127	Gourmand Crab	Deliver a Gourmand Crab to Shu-Hann. 0/6
-Fish for Days	Sincerity	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	6,516,000	1,150	Hucho Taimen	Deliver a Hucho Taimen to Shu-Hann. 0/3
-Magic Mushrooms	Concord	76	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	7,240,000	1,127	Paradise Crab	Deliver a Paradise Crab to Shu-Hann. 0/6
-Deep-sea Diving	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Azure Sea Spider	Deliver a Azure Sea Spider to Shu-Hann. 0/3
-Short-term Gains	Concord	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	4,678,571	1,200	Black Tri-star	Deliver a Black Tri-star to Shu-Hann. 0/3
-A Feast for the Senses	Sincerity	78	Eirikur	The Crystarium	(x9.7,y9.0)	The Crystarium	2,339,285	1,200	Stippled Eel	Deliver a Stippled Eel to Shu-Hann. 0/3
-      -->
     </div>
   </main>    
 </template>
