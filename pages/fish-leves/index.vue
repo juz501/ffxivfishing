@@ -550,21 +550,115 @@
           <td><strong>Cesteline</strong><br/>(x10, y10)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
+        <tr>
+          <td><strong>Dining with Dravanians</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Hundred Fin x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Hundred Fins for a Hundred Wings (L)</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Hundred Fin x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Solo Out the Bolo</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Brown Bolo x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Sucking on Face (L)</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Brown Bolo x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Pipira Pirouette</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Pipira Pira x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Plus One or Two or Three (L)</strong><br/>Level 56</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Pipira Pira x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Spew Forth and Spawn</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Fountfish x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Unleash the Hydro Cannons (L)</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Fountfish x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>They Call It the Kissing Disease</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Yalm Lobster x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Angling for Ailments (L)</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Yalm Lobster x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Warmer than Wine</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Bullwhip x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>What Does Not Break Us, Devours Us (L)</strong><br/>Level 58</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Bullwhip x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
       </table>
-      <!--
-Solo Out the Bolo	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	151,273	650	Brown Bolo	Deliver brown bolo to Cesteline. 0/2
-Sucking on Face (L)	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	226,909	3,200	Brown Bolo	Deliver brown bolo to Cesteline. 0/4
-Dining with Dravanians	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	1,654,464	689	Hundred Fin	Deliver hundred fins to Cesteline. 0/3
-Hundred Fins for a Hundred Wings (L)	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	7,445,088	3,457	Hundred Fin	Deliver hundred fins to Cesteline. 0/6
-Pipira Pirouette	Sincerity	56	Eloin	Foundation	(x10,y10)	Foundation	1,489,018	702	Pipira Pira	Deliver pipira pira to Cesteline 0/3
-Plus One or Two or Three (L)	Sincerity	56	Eloin	Foundation	(x10,y10)	Foundation	1,985,357	935	Pipira Pira	Deliver pipira pira to Cesteline. 0/6
-Warmer than Wine	Sincerity	58	Eloin	Foundation	(x10,y10)	Foundation	1,779,506	637	Bullwhip	Deliver bullwhips to Cesteline. 0/3
-What Does Not Break Us, Devours Us (L)	Sincerity	58	Eloin	Foundation	(x10,y10)	Foundation	2,372,674	837	Bullwhip	Deliver bullwhips to Cesteline. 0/6
-Spew Forth and Spawn	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	1,977,228	770	Fountfish	Deliver fountfish to Cesteline. 0/3
-Unleash the Hydro Cannons (L)	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	8,897,526	3,185	Fountfish	Deliver fountfish to Cesteline. 0/6
-They Call It the Kissing Disease	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	178,349	700	Yalm Lobster	Deliver yalm lobsters to Cesteline. 0/3
-Angling for Ailments (L)	Concord	58	Eloin	Foundation	(x10,y10)	Foundation	267,523	3,500	Yalm Lobster	Deliver yalm lobsters to Cesteline. 0/6
-       -->
     </div>
 
     <h2 class="h3">Stormblood</h2>
