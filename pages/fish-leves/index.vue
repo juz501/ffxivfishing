@@ -442,20 +442,116 @@
           <td><strong>Cesteline</strong><br/>(x10, y10)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
         </tr>
+        <tr>
+          <td><strong>Fish Oils and Forgotten Spoils</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Grass Carp x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Valuing the Vintage (L)</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Grass Carp x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Loose Lips Heal (Broken) Hips</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Three-lip Carp x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Prayer and Prejudice (L)</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Three-lip Carp x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Bounty of Sky, Bounty of Earth</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Cloudfish x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Eating Like the Natives (L)</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Cloudfish x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Analysis of Paralysis</strong><br/>Level 54</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Mahu Wai x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Sending a Feeling to My Spine (L)</strong><br/>Level 54</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Mahu Wai x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>The Aquariums of Ishgard</strong><br/>Level 54</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Buoyant Oviform x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>A Win-win Situation (L)</strong><br/>Level 54</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Buoyant Oviform x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"></td>
+        </tr>
+        <tr>
+          <td><strong>Bearing of the Blue</strong><br/>Level 54</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Blue Cloud Coral x 3</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
+        <tr>
+          <td><strong>Blue of Sky and Sea (L)</strong><br/>Level 52</td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Eloin</strong><br/>(x10, y10)</td>
+          <td><strong>Blue Cloud Coral x 6</strong></td>
+          <td><strong>Coerthas</strong><br />Foundation</td>
+          <td><strong>Cesteline</strong><br/>(x10, y10)</td>
+          <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
+        </tr>
       </table>
       <!--
-Fish Oils and Forgotten Spoils	Concord	52	Eloin	Foundation	(x10,y10)	Foundation	98,430	550	Grass Carp	Deliver grass carp to Cesteline. 0/2
-Valuing the Vintage (L)	Concord	52	Eloin	Foundation	(x10,y10)	Foundation	147,645	2,700	Grass Carp	Deliver grass carp to Cesteline. 0/4
-Bounty of Sky, Bounty of Earth	Sincerity	52	Eloin	Foundation	(x10,y10)	Foundation	1,001,778	550	Cloudfish	Deliver cloudfish to Cesteline. 0/3
-Eating Like the Natives (L)	Sincerity	52	Eloin	Foundation	(x10,y10)	Foundation	1,335,704	765	Cloudfish	Deliver cloudfish to Cesteline. 0/6
-Loose Lips Heal (Broken) Hips	Concord	52	Eloin	Foundation	(x10,y10)	Foundation	1,113,086	545	Three-lip Carp	Deliver three-lip carp to Cesteline. 0/3
-Prayer and Prejudice (L)	Concord	52	Eloin	Foundation	(x10,y10)	Foundation	5,008,887	2,727	Three-lip Carp	Deliver three-lip carp to Cesteline. 0/6
-The Aquariums of Ishgard	Concord	54	Eloin	Foundation	(x10,y10)	Foundation	124,584	600	Buoyant Oviform	Deliver buoyant oviforms to Cesteline. 0/3
-A Win-win Situation (L)	Concord	54	Eloin	Foundation	(x10,y10)	Foundation	186,876	3,000	Buoyant Oviform	Deliver buoyant oviforms to Cesteline. 0/6
-Analysis of Paralysis	Concord	54	Eloin	Foundation	(x10,y10)	Foundation	1,337,148	612	Mahu Wai	Deliver mahu wai to Cesteline. 0/3
-Send a Feeling to My Spine (L)	Concord	54	Eloin	Foundation	(x10,y10)	Foundation	6,017,166	3,120	Mahu Wai	Deliver mahu wai to Cesteline. 0/6
-Bearing of the Blue	Sincerity	54	Eloin	Foundation	(x10,y10)	Foundation	1,203,434	624	Blue Cloud Coral	Deliver pieces of blue cloud coral to Cesteline. 0/3
-Blue of Sky and Sea (L)	Sincerity	54	Eloin	Foundation	(x10,y10)	Foundation	1,604,578	848	Blue Cloud Coral	Deliver pieces of blue cloud coral to Cesteline. 0/6
 Solo Out the Bolo	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	151,273	650	Brown Bolo	Deliver brown bolo to Cesteline. 0/2
 Sucking on Face (L)	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	226,909	3,200	Brown Bolo	Deliver brown bolo to Cesteline. 0/4
 Dining with Dravanians	Concord	56	Eloin	Foundation	(x10,y10)	Foundation	1,654,464	689	Hundred Fin	Deliver hundred fins to Cesteline. 0/3
