@@ -27,7 +27,7 @@
           <td><strong>Soup to Guts</strong><br/>Level 1</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Wyrkholsk</strong><br/>(x31, y20)</td>
-          <td><strong>Merlthor Goby	x3</strong></td>
+          <td><strong>Merlthor Goby x3</strong></td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
           <td class="vertical"></td>
@@ -36,7 +36,7 @@
           <td><strong>A Kelping Hand</strong><br/>Level 1</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Wyrkholsk</strong><br/>(x31, y20)</td>
-          <td><strong>Malm Kelp	x3</strong></td>
+          <td><strong>Malm Kelp x3</strong></td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
@@ -45,7 +45,7 @@
           <td><strong>Poor Boys Eat Well</strong><br/>Level 1</td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Wyrkholsk</strong><br/>(x31, y20)</td>
-          <td><strong>Finger Shrimp	x3</strong></td>
+          <td><strong>Finger Shrimp x3</strong></td>
           <td><strong>Lower La Noscea</strong><br/>Limsa Lominsa</td>
           <td><strong>Unsynwilf</strong><br/>(x10, y8)</td>
           <td class="vertical"><img src="/img/triple-turn-in.png" alt="Triple Turn In" width="120" height="30" /></td>
