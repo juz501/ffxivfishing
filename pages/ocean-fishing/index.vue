@@ -2,21 +2,15 @@
   <main>
     <h1 class="h2">Ocean Fishing</h1>
     <p>
-      If want to get into fishing and don't have the patience for the regular chasing of fishing nodes,
-      ocean fishing is for you.  Ocean fishing is great for both leveling and farming gatherer's
-      scrips. To unlock Ocean Fishing, find Fhilsnoe (x7.8, y14.5) at Limsa Lominsa Lower Decks and
-      finish the short quest called 'All the Fish in the Sea' available at level 1 after obtaining
-      the Fisher Class.
+      Ocean fishing is great for both leveling and farming gatherer's
+      scrips. To unlock, find Fhilsnoe (x7.8, y14.5) at Limsa Lominsa Lower Decks and
+      finish 'All the Fish in the Sea' available at Fisher Level 1.
     </p>
     <p>
       Ships depart regularly from the Ferry Docks at Limsa Lominsa Lower Decks every two hours.
       Find Dryskthota (x3.0, y12.7) to check when the next ship is leaving and register with
       them when the ship is about to depart.  
     </p>  
-    <p>
-      There is a bonus only available when you are in a party, so if you want to
-      get that bonus, be sure to join the trip with a friend or two.
-    </p>
     <p>
       A Merchant &amp; Mender (x3.2, y12.8) sells the standard bait for your
       trip to the sea.  Buy a stack or more of the bait and you're good to go. 
