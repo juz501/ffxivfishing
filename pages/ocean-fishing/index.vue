@@ -9,10 +9,7 @@
     <p>
       Ships depart regularly from the Ferry Docks at Limsa Lominsa Lower Decks every two hours.
       Find Dryskthota (x3.0, y12.7) to check when the next ship is leaving and register with
-      them when the ship is about to depart.  
-    </p>  
-    <p>
-      A Merchant &amp; Mender (x3.2, y12.8) sells the standard bait for your
+      them when the ship is about to depart. A Merchant &amp; Mender (x3.2, y12.8) sells the standard bait for your
       trip to the sea.  Buy a stack or more of the bait and you're good to go. 
     </p>
     <h2 class="h3">Strategy and Baits</h2>
