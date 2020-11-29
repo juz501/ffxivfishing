@@ -30,7 +30,7 @@
       locations and bait to start off with in each location.
     </p>
 
-    <table>
+    <table class="location-baits">
       <tr>
         <th>Location</th>
         <th>Preferred Bait</th>
