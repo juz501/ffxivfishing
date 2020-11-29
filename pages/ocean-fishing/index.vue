@@ -1,7 +1,6 @@
 <template>
   <main>
     <h1 class="h2">Ocean Fishing</h1>
-
     <p>
       If want to get into fishing and don't have the patience for the regular chasing of fishing nodes,
       ocean fishing is for you.  Ocean fishing is great for both leveling and farming gatherer's
@@ -29,32 +28,33 @@
       This means you need to be careful which bait you use at which location. Here is a list of
       locations and bait to start off with in each location.
     </p>
-
-    <table class="location-baits">
-      <tr>
-        <th>Location</th>
-        <th>Preferred Bait</th>
-      </tr>
-      <tr>
-        <td>Gladion Bay</td>
-        <td>Plump Worm</td>
-      </tr>
-      <tr>
-        <td>Rhotano Sea</td>
-        <td>Plump Worm</td>
-      </tr>
-      <tr>
-        <td>Northern Strait</td>
-        <td>Ragworm</td>
-      </tr>
-      <tr>
-        <td>Southern Strait</td>
-        <td>Krill</td>
-      </tr>
-    </table>
+    <div class="location-baits-wrapper">
+      <table class="location-baits">
+        <tr>
+          <th>Location</th>
+          <th>Preferred Bait</th>
+        </tr>
+        <tr>
+          <td>Gladion Bay</td>
+          <td>Plump Worm</td>
+        </tr>
+        <tr>
+          <td>Rhotano Sea</td>
+          <td>Plump Worm</td>
+        </tr>
+        <tr>
+          <td>Northern Strait</td>
+          <td>Ragworm</td>
+        </tr>
+        <tr>
+          <td>Southern Strait</td>
+          <td>Krill</td>
+        </tr>
+      </table>
+    </div>
     <p>
-        Once the Spectral rainbow event appears (it is triggered on an RNG by one person on the
-        boat fishing up a spectral fish), switch your bait to Plump Worm to get the best score.
+      Once the Spectral rainbow event appears (it is triggered on an RNG by one person on the
+      boat fishing up a spectral fish), switch your bait to Plump Worm to get the best score.
     </p>
   </main>
 </template>
