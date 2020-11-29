@@ -45,6 +45,8 @@
     </div>
     <p>
       Once the Spectral rainbow event appears switch your bait to <strong>Plump Worm</strong>.
+    </p>
+    <p>
       <strong>Double Hook</strong> skill on !! or !!!.
     </p>
   </main>
