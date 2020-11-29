@@ -14,19 +14,16 @@
       them when the ship is about to depart.  
     </p>  
     <p>
-      There is also a Merchant &amp; Mender (x3.2, y12.8) who sells the standard bait for your
-      trip to the sea.  Buy a stack or more of the bait and you're good to go. 
-    </p>
-    <p>
-      Know that there is a bonus only available when you are in a party, so if you want to
+      There is a bonus only available when you are in a party, so if you want to
       get that bonus, be sure to join the trip with a friend or two.
     </p>
-
+    <p>
+      A Merchant &amp; Mender (x3.2, y12.8) sells the standard bait for your
+      trip to the sea.  Buy a stack or more of the bait and you're good to go. 
+    </p>
     <h2 class="h3">Strategy and Baits</h2>
     <p>
-      You will be going to 3 random destinations on your trip and each area has different fish. 
-      This means you need to be careful which bait you use at which location. Here is a list of
-      locations and bait to start off with in each location.
+      You will be going to 3 out of 4 random destinations on your trip, check baits for best results.
     </p>
     <div class="location-baits-wrapper">
       <table class="location-baits">
@@ -53,8 +50,8 @@
       </table>
     </div>
     <p>
-      Once the Spectral rainbow event appears (it is triggered on an RNG by one person on the
-      boat fishing up a spectral fish), switch your bait to Plump Worm to get the best score.
+      Once the Spectral rainbow event appears switch your bait to <strong>Plump Worm</strong>.
+      If you have the <strong>Double Hook</strong> skill on !! or !!!.
     </p>
   </main>
 </template>
