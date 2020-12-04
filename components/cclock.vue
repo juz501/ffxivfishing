@@ -1,5 +1,7 @@
-<template>  
-  <span class="timer">Eorzea Time: {{ et }}</span>
+<template>
+  <no-ssr>
+    <span class="timer">Eorzea Time: {{ et }}</span>
+  </no-ssr>
 </template>
 <script>
 import { mapGetters, mapActions } from 'vuex';

@@ -15,5 +15,6 @@ export default {
   ],
   components: true,
   productionTip: false,
-  devtools: true
+  devtools: true,
+  target: 'static'
 }
