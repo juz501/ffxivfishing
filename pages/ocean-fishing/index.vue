@@ -5,12 +5,12 @@
       <div class="locationFilter filter">
         Location:
         <button @click="toggleGladionBay" :class="{ 'filter-on': gladionBay }">Gladion Bay</button>
-        <button @click="toggleRhotanoSea" :class="{ 'filter-on': rhotanoSea }">RhotanoSea</button>
+        <button @click="toggleRhotanoSea" :class="{ 'filter-on': rhotanoSea }">Rhotano Sea</button>
         <button @click="toggleNorthern" :class="{ 'filter-on': northern }">Northern Strait of Merlthor</button>
         <button @click="toggleSouthern" :class="{ 'filter-on': southern }">Southern Strait of Merlthor</button>
       </div>
       <div class="timeOfDayFilter filter" v-if="gladionBay || rhotanoSea || northern || southern">
-        Spectral Weather:
+        Spectral Time of Day:
         <button @click="toggleDay" :class="{ 'filter-on': day }">Day</button>
         <button @click="toggleEvening" :class="{ 'filter-on': evening }">Evening</button>
         <button @click="toggleNight" :class="{ 'filter-on': night }">Night</button>        
