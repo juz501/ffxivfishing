@@ -50,3 +50,18 @@ nav ul {
     }
   }
 }
+
+.filters {
+  & + div {
+    margin-top: 20px;
+  }
+
+  .filter {
+    margin-bottom: 5px;
+  }
+
+  .filter-on {
+    background-color: $filter-color;
+    color: $white;
+  }
+}

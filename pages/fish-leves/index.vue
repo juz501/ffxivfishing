@@ -1143,18 +1143,31 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/scss/base/shared/_variables.scss';
 
-  .filters {
-    & + div {
-      margin-top: 20px;
-    }
+  .levequests-wrapper {
+    display: flex;
 
-    .filter {
-      margin-bottom: 5px;
-    }
+    .levequests {
+      flex: 1;
 
-    .filter-on {
-      background-color: $filter-color;
-      color: $white;
+      th {
+        font-weight: 700;
+        font-family: $heading-font-family;
+        font-size: rem-calc(20);
+        padding: 5px;
+        border-bottom: 1px solid $nav-background-color;
+        &.vertical {
+          vertical-align: middle;
+        }
+      }
+    
+      td {
+        padding: 10px 5px;
+        text-align: center;
+        
+        &.vertical {
+          vertical-align: middle;
+        }
+      }
     }
   }
 </style>
