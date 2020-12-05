@@ -51,235 +51,234 @@
             <th>Strategy</th>
           </tr>
           <tr v-if="((northernDayRoute || northernEveningRoute || northernNightRoute ) && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Before Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill</td>
-            <td>Surface Slap (Momora Mora !!!)<br />Reel only !!!</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.beforeSpectral.phase}}</td>
+            <td>{{southernContent.beforeSpectral.weather}}</td>
+            <td>{{southernContent.beforeSpectral.time}}</td>
+            <td v-html="southernContent.beforeSpectral.bait"></td>
+            <td v-html="southernContent.beforeSpectral.strategy"></td>
           </tr>
           <tr v-if="( northernDayRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Day</td>
-            <td>Krill</td>
-            <td>Doublehook on !! (@ 5 secs)</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralDay.phase}}</td>
+            <td>{{southernContent.spectralDay.weather}}</td>
+            <td>{{southernContent.spectralDay.time}}</td>
+            <td v-html="southernContent.spectralDay.bait"></td>
+            <td v-html="southernContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="( northernEveningRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Evening</td>
-            <td>Ragworm + Mooch</td>
-            <td>(Hi-Aetherlouse !) + (Doublehook on !!!) <br /> or (Doublehook on ! when > 5 secs)</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralEvening.phase}}</td>
+            <td>{{southernContent.spectralEvening.weather}}</td>
+            <td>{{southernContent.spectralEvening.time}}</td>
+            <td v-html="southernContent.spectralEvening.bait"></td>
+            <td v-html="southernContent.spectralEvening.strategy"></td>
           </tr>
           <tr v-if="( northernNightRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Night</td>
-            <td>( Ragworm + Mooch ) x2 <br />= <strong>Shrimp Cage Feeder</strong></td>
-            <td>(Hi-Aetherlouse ! + Great Grandmarlyn !!) x2 <br />= <strong>(Coral Manta)</strong></td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralNight.phase}}</td>
+            <td>{{southernContent.spectralNight.weather}}</td>
+            <td>{{southernContent.spectralNight.time}}</td>
+            <td v-html="southernContent.spectralNight.bait"></td>
+            <td v-html="southernContent.spectralNight.strategy"></td>
           </tr>
           <tr v-if="((northernDayRoute || northernEveningRoute || northernNightRoute ) && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>After Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill + Mooch <br />= <strong>Plump Worm</strong></td>
-            <td> (Barracuda !!) + (Gladdius !!) <br />= <strong>(Leviathan !!!)</strong></td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.afterSpectral.phase}}</td>
+            <td>{{southernContent.afterSpectral.weather}}</td>
+            <td>{{southernContent.afterSpectral.time}}</td>
+            <td v-html="southernContent.afterSpectral.bait"></td>
+            <td v-html="southernContent.afterSpectral.strategy"></td>
           </tr>
           <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
               northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>Before Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill</td>
-            <td>Surface Slap - Tarnished Shark !!! <br /> Reel only !!!</td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.beforeSpectral.phase}}</td>
+            <td>{{gladionBayContent.beforeSpectral.weather}}</td>
+            <td>{{gladionBayContent.beforeSpectral.time}}</td>
+            <td v-html="gladionBayContent.beforeSpectral.bait"></td>
+            <td v-html="gladionBayContent.beforeSpectral.strategy"></td>
           </tr>
           <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
               northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>Before Spectral</td>
-            <td>Showers</td>
-            <td>Any</td>
-            <td>Plump Worm</td>
-            <td>Surface Slap - Goby or chovy <br /> Reel only !!!</td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.beforeSpectralShowers.phase}}</td>
+            <td>{{gladionBayContent.beforeSpectralShowers.weather}}</td>
+            <td>{{gladionBayContent.beforeSpectralShowers.time}}</td>
+            <td v-html="gladionBayContent.beforeSpectralShowers.bait"></td>
+            <td v-html="gladionBayContent.beforeSpectralShowers.strategy"></td>
           </tr>
           <tr v-if="( gladionBayDay && perLocationTime ) || ((rhotanoSeaDayRoute || northernNightRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Day</td>
-            <td>Ragworm</td>
-            <td>Doublehook ! when > 5 secs</td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.spectralDay.phase}}</td>
+            <td>{{gladionBayContent.spectralDay.weather}}</td>
+            <td>{{gladionBayContent.spectralDay.time}}</td>
+            <td v-html="gladionBayContent.spectralDay.bait"></td>
+            <td v-html="gladionBayContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="( gladionBayEvening && perLocationTime ) || ((rhotanoSeaEveningRoute || northernDayRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Evening</td>
-            <td>Plump Worm</td>
-            <td>Doublehook !!!</td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.spectralEvening.phase}}</td>
+            <td>{{gladionBayContent.spectralEvening.weather}}</td>
+            <td>{{gladionBayContent.spectralEvening.time}}</td>
+            <td v-html="gladionBayContent.spectralEvening.bait"></td>
+            <td v-html="gladionBayContent.spectralEvening.strategy"></td>
           </tr>
           <tr v-if="( gladionBayNight && perLocationTime ) || ((rhotanoSeaNightRoute || northernEveningRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Night</td>
-            <td>Krill + Krill x2 <br />= <strong>Glowworm</strong></td>
-            <td>(Navigator's Print) + (Heavenskey) x2 <br />= <strong>Sothis</strong></td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.spectralNight.phase}}</td>
+            <td>{{gladionBayContent.spectralNight.weather}}</td>
+            <td>{{gladionBayContent.spectralNight.time}}</td>
+            <td v-html="gladionBayContent.spectralNight.bait"></td>
+            <td v-html="gladionBayContent.spectralNight.strategy"></td>
           </tr>
           <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
               northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Gladion Bay</td>
-            <td>After Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill  x3 <br />= <strong>Krill</strong></td>
-            <td>(Gladion chovy) x3 <br />= <strong>Drunkfish</strong></td>
+            <td>{{gladionBayContent.location}}</td>
+            <td>{{gladionBayContent.afterSpectral.phase}}</td>
+            <td>{{gladionBayContent.afterSpectral.weather}}</td>
+            <td>{{gladionBayContent.afterSpectral.time}}</td>
+            <td v-html="gladionBayContent.afterSpectral.bait"></td>
+            <td v-html="gladionBayContent.afterSpectral.strategy"></td>
           </tr>
           <tr v-if="((southernDay || southernEvening || southernNight) && perLocationTime ) || 
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ) && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Before Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill</td>
-            <td>Surface Slap (Momora Mora !!!)<br />Reel only !!!</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.beforeSpectral.phase}}</td>
+            <td>{{southernContent.beforeSpectral.weather}}</td>
+            <td>{{southernContent.beforeSpectral.time}}</td>
+            <td v-html="southernContent.beforeSpectral.bait"></td>
+            <td v-html="southernContent.beforeSpectral.strategy"></td>
           </tr>
           <tr v-if="( southernDay && perLocationTime )|| ( rhotanoSeaNightRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Day</td>
-            <td>Krill</td>
-            <td>Doublehook on !! (@ 5 secs)</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralDay.phase}}</td>
+            <td>{{southernContent.spectralDay.weather}}</td>
+            <td>{{southernContent.spectralDay.time}}</td>
+            <td v-html="southernContent.spectralDay.bait"></td>
+            <td v-html="southernContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="( southernEvening && perLocationTime ) || ( rhotanoSeaDayRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Evening</td>
-            <td>Ragworm + Mooch</td>
-            <td>(Hi-Aetherlouse !) + (Doublehook on !!!) <br /> or (Doublehook on ! when > 5 secs)</td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralEvening.phase}}</td>
+            <td>{{southernContent.spectralEvening.weather}}</td>
+            <td>{{southernContent.spectralEvening.time}}</td>
+            <td v-html="southernContent.spectralEvening.bait"></td>
+            <td v-html="southernContent.spectralEvening.strategy"></td>
           </tr>
           <tr v-if="( southernNight && perLocationTime ) || ( rhotanoSeaEveningRoute && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Night</td>
-            <td>( Ragworm + Mooch ) x2 <br />= <strong>Shrimp Cage Feeder</strong></td>
-            <td>(Hi-Aetherlouse ! + Great Grandmarlyn !!) x2 <br />= <strong>(Coral Manta)</strong></td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.spectralNight.phase}}</td>
+            <td>{{southernContent.spectralNight.weather}}</td>
+            <td>{{southernContent.spectralNight.time}}</td>
+            <td v-html="southernContent.spectralNight.bait"></td>
+            <td v-html="southernContent.spectralNight.strategy"></td>
           </tr>
           <tr v-if="((southernDay || southernEvening || southernNight) && perLocationTime ) || 
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ) && perRoute )">
-            <td>Southern Strait of Merlthor</td>
-            <td>After Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill + Mooch <br />= <strong>Plump Worm</strong></td>
-            <td> (Barracuda !!) + (Gladdius !!) <br />= <strong>(Leviathan !!!)</strong></td>
+            <td>{{southernContent.location}}</td>
+            <td>{{southernContent.afterSpectral.phase}}</td>
+            <td>{{southernContent.afterSpectral.weather}}</td>
+            <td>{{southernContent.afterSpectral.time}}</td>
+            <td v-html="southernContent.afterSpectral.bait"></td>
+            <td v-html="southernContent.afterSpectral.strategy"></td>
           </tr>
           <tr v-if="((rhotanoSeaDay || rhotanoSeaEvening || rhotanoSeaNight) && perLocationTime) ||
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute) && perRoute)">
-            <td>Rhotano Sea</td>
-            <td>Before Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Plump Worm</td>
-            <td>Surface Slap (Chrome Hammerhead !!!) <br /> Reel only !!!</td>
+            <td>{{rhotanoSeaContent.location}}</td>
+            <td>{{rhotanoSeaContent.beforeSpectral.phase}}</td>
+            <td>{{rhotanoSeaContent.beforeSpectral.weather}}</td>
+            <td>{{rhotanoSeaContent.beforeSpectral.time}}</td>
+            <td v-html="rhotanoSeaContent.beforeSpectral.bait"></td>
+            <td v-html="rhotanoSeaContent.beforeSpectral.strategy"></td>
           </tr>
           <tr v-if="(rhotanoSeaDay && perLocationTime) || (rhotanoSeaEveningRoute && perRoute)">
-            <td>Rhotano Sea</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Day</td>
-            <td>Plump Worm</td>
-            <td>Doublehook !!!</td>
+            <td>{{rhotanoSeaContent.location}}</td>
+            <td>{{rhotanoSeaContent.spectralDay.phase}}</td>
+            <td>{{rhotanoSeaContent.spectralDay.weather}}</td>
+            <td>{{rhotanoSeaContent.spectralDay.time}}</td>
+            <td v-html="rhotanoSeaContent.spectralDay.bait"></td>
+            <td v-html="rhotanoSeaContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="(rhotanoSeaEvening && perLocationTime) || (rhotanoSeaNightRoute && perRoute)">
-            <td>Rhotano Sea</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Evening</td>
-            <td>Ragworm + Rat Tail <br />= <strong>Rat Tail</strong></td>
-            <td>(Silencer !) + (Deep Sea Eel !!) <br />= <strong>(Stonescale)</strong></td>
+            <td>{{rhotanoSeaContent.location}}</td>
+            <td>{{rhotanoSeaContent.spectralEvening.phase}}</td>
+            <td>{{rhotanoSeaContent.spectralEvening.weather}}</td>
+            <td>{{rhotanoSeaContent.spectralEvening.time}}</td>
+            <td v-html="rhotanoSeaContent.spectralDay.bait"></td>
+            <td v-html="rhotanoSeaContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="( rhotanoSeaNight && perLocationTime) || (rhotanoSeaDayRoute && perRoute)">
-            <td>Rhotano Sea</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Night</td>
-            <td>Krill</td>
-            <td>Doublehook ! when > 5secs</td>
+            <td>{{rhotanoSeaContent.location}}</td>
+            <td>{{rhotanoSeaContent.spectralNight.phase}}</td>
+            <td>{{rhotanoSeaContent.spectralNight.weather}}</td>
+            <td>{{rhotanoSeaContent.spectralNight.time}}</td>
+            <td v-html="rhotanoSeaContent.spectralNight.bait"></td>
+            <td v-html="rhotanoSeaContent.spectralNight.strategy"></td>
           </tr>
           <tr v-if="((rhotanoSeaDay || rhotanoSeaEvening || rhotanoSeaNight) && perLocationTime) ||
             ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute) && perRoute)">
-            <td>Rhotano Sea</td>
-            <td>After Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Plump Worm x2 <br />= <strong>Krill</strong></td>
-            <td>(Crimson Monkfish) x2 <br />= <strong>(Sabaton !!!)</strong></td>
+            <td>{{rhotanoSeaContent.location}}</td>
+            <td>{{rhotanoSeaContent.afterSpectral.phase}}</td>
+            <td>{{rhotanoSeaContent.afterSpectral.weather}}</td>
+            <td>{{rhotanoSeaContent.afterSpectral.time}}</td>
+            <td v-html="rhotanoSeaContent.afterSpectral.bait"></td>
+            <td v-html="rhotanoSeaContent.afterSpectral.strategy"></td>
           </tr>
           <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
             ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Northern Strait of Merlthor</td>
-            <td>Before Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Krill</td>
-            <td>Surface Slap (Oschon's stone !!)<br /> Reel only !!!</td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.beforeSpectral.phase}}</td>
+            <td>{{northernContent.beforeSpectral.weather}}</td>
+            <td>{{northernContent.beforeSpectral.time}}</td>
+            <td v-html="northernContent.beforeSpectral.bait"></td>
+            <td v-html="northernContent.beforeSpectral.strategy"></td>
           </tr>
           <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
             ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Northern Strait of Merlthor</td>
-            <td>Before Spectral</td>
-            <td>Snow/Blizzard</td>
-            <td>Any</td>
-            <td>Ragworm</td>
-            <td>Surface Slap (Megasquid !!)<br /> Reel only !!!</td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.beforeSpectralSnow.phase}}</td>
+            <td>{{northernContent.beforeSpectralSnow.weather}}</td>
+            <td>{{northernContent.beforeSpectralSnow.time}}</td>
+            <td v-html="northernContent.beforeSpectralSnow.bait"></td>
+            <td v-html="northernContent.beforeSpectralSnow.strategy"></td>
           </tr>
           <tr v-if="( northernDay && perLocationTime ) || ( northernEveningRoute && perRoute )">
-            <td>Northern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Day</td>
-            <td>Plump Worm x 3 <br />= <strong>Heavey Steel Jig</strong></td>
-            <td>(Gugrusaurus !!!) x 3 <br />= <strong>(Elasmosaurus)</strong></td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.spectralDay.phase}}</td>
+            <td>{{northernContent.spectralDay.weather}}</td>
+            <td>{{northernContent.spectralDay.time}}</td>
+            <td v-html="northernContent.spectralDay.bait"></td>
+            <td v-html="northernContent.spectralDay.strategy"></td>
           </tr>
           <tr v-if="( northernEvening && perLocationTime ) || ( northernNightRoute && perRoute )">
-            <td>Northern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Evening</td>
-            <td>Ragworm</td>
-            <td>Doublehook ! when > 5secs</td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.spectralEvening.phase}}</td>
+            <td>{{northernContent.spectralEvening.weather}}</td>
+            <td>{{northernContent.spectralEvening.time}}</td>
+            <td v-html="northernContent.spectralEvening.bait"></td>
+            <td v-html="northernContent.spectralEvening.strategy"></td>
           </tr>
           <tr v-if="( northernNight && perLocationTime ) || ( northernDayRoute && perRoute )">
-            <td>Northern Strait of Merlthor</td>
-            <td>Spectral</td>
-            <td>Normal</td>
-            <td>Night</td>
-            <td>Krill</td>
-            <td>Doublehook !! when > 5secs</td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.spectralNight.phase}}</td>
+            <td>{{northernContent.spectralNight.weather}}</td>
+            <td>{{northernContent.spectralNight.time}}</td>
+            <td v-html="northernContent.spectralNight.bait"></td>
+            <td v-html="northernContent.spectralNight.strategy"></td>
           </tr>
           <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
             ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>Northern Strait of Merlthor</td>
-            <td>After Spectral</td>
-            <td>Normal</td>
-            <td>Any</td>
-            <td>Ragworm + Mooch <br />= <strong>Ragworm</strong></td>
-            <td>(Tossed dagger !) + (Elder Dinicthys !!) <br />= <strong>(Shooting Star !!!)</strong></td>
+            <td>{{northernContent.location}}</td>
+            <td>{{northernContent.afterSpectral.phase}}</td>
+            <td>{{northernContent.afterSpectral.weather}}</td>
+            <td>{{northernContent.afterSpectral.time}}</td>
+            <td v-html="northernContent.afterSpectral.bait"></td>
+            <td v-html="northernContent.afterSpectral.strategy"></td>
           </tr>
-          
         </table>
       </div>
     </div>    
@@ -309,6 +308,172 @@ export default {
       northernDayRoute: false,
       northernEveningRoute: false,
       northernNightRoute: false,
+      gladionBayContent: {
+        location: 'Gladion Bay',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Surface Slap (Momora Mora !!!)<br />Reel only !!!'
+        },
+        beforeSpectralShowers: {
+          phase: 'Before Spectral',
+          weather: 'Showers',
+          time: 'Any',
+          bait: 'Plump Worm',
+          strategy: 'Surface Slap - Goby or chovy <br /> Reel only !!!'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Ragworm',
+          strategy: 'Doublehook ! when > 5 secs'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Plump Worm',
+          strategy: 'Doublehook !!!'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill + Krill x2 <br />= <strong>Glowworm</strong>',
+          strategy: '(Navigator\'s Print) + (Heavenskey) x2 <br />= <strong>Sothis</strong>'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill  x3 <br />= <strong>Krill</strong>',
+          strategy: '(Gladion chovy) x3 <br />= <strong>Drunkfish</strong>'
+        }
+      },
+      southernContent: {
+        location: 'Southern Strait of Merlthor',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Surface Slap (Momora Mora !!!)<br />Reel only !!!'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Krill',
+          strategy: 'Doublehook on !! (@ 5 secs)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm + Mooch',
+          strategy: '(Hi-Aetherlouse !) + (Doublehook on !!!) <br /> or (Doublehook on ! when > 5 secs)'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: '( Ragworm + Mooch ) x2 <br />= <strong>Shrimp Cage Feeder</strong>',
+          strategy: '(Hi-Aetherlouse ! + Great Grandmarlyn !!) x2 <br />= <strong>(Coral Manta)</strong>'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill + Mooch <br />= <strong>Plump Worm</strong>',
+          strategy: '(Barracuda !!) + (Gladdius !!) <br />= <strong>(Leviathan !!!)</strong>'
+        }
+      },
+      rhotanoSeaContent: {
+        location: 'Rhotano Sea',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump Worm',
+          strategy: 'Surface Slap (Chrome Hammerhead !!!) <br /> Reel only !!!'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Plump Worm',
+          strategy: 'Doublehook !!!'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm + Rat Tail <br />= <strong>Rat Tail</strong>',
+          strategy: '(Silencer !) + (Deep Sea Eel !!) <br />= <strong>(Stonescale)</strong>'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Doublehook ! when > 5secs'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump Worm x2 <br />= <strong>Krill</strong>',
+          strategy: '(Crimson Monkfish) x2 <br />= <strong>(Sabaton !!!)</strong>'
+        }
+      },
+      northernContent: {
+        location: 'Northern Strait of Merlthor',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Surface Slap (Oschon\'s stone !!)<br /> Reel only !!!'
+        },
+        beforeSpectralSnow: {
+          phase: 'Before Spectral',
+          weather: 'Snow/Blizzard',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Surface Slap (Megasquid !!)<br /> Reel only !!!'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Plump Worm x 3 <br />= <strong>Heavy Steel Jig',
+          strategy: '(Gugrusaurus !!!) x 3 <br />= <strong>(Elasmosaurus)</strong>'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm',
+          strategy: 'Doublehook ! when > 5secs'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Doublehook !! when > 5secs'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm + Mooch <br />= <strong>Ragworm</strong>',
+          strategy: '(Tossed dagger !) + (Elder Dinicthys !!) <br />= <strong>(Shooting Star !!!)</strong>'
+        }
+      }
     }
   },
   methods: {   
