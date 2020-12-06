@@ -314,6 +314,12 @@ export const getters = {
   getRoutePattern(state) {
     return state.routePattern;
   },
+  getOriginalRoutePattern(state) {
+    return state.originalRoutePattern;
+  },
+  getRouteScheduleByDatetime: (state) => (datetime) => {
+    return [];
+  },
   getRouteTitles(state) {
     return state.routeTitles;
   },
