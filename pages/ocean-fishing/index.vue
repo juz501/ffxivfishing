@@ -241,7 +241,6 @@ export default {
     ...mapGetters({
       sectionTitles: 'oceanFishing/getSectionTitles',
       typeTitles: 'oceanFishing/getTypeTitles',
-      routePattern: 'oceanFishing/getRoutePattern',
       routeTitles: 'oceanFishing/getRouteTitles',
       content: 'oceanFishing/getContent',
       locationFilterTitles: 'oceanFishing/getLocationFilterTitles',
