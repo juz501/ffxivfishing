@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1 class="h2">Ocean Fishing</h1>
+    <h1 class="h2">Ocean Fishing Reference</h1>
     <div class="filters">
       <div class="filter mainFilter">
         <h2 class="h3">{{sectionTitles.type}}</h2>
@@ -96,7 +96,7 @@
   </main>
 </template>
 <script>
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
   data() {
@@ -241,7 +241,6 @@ export default {
     ...mapGetters({
       sectionTitles: 'oceanFishing/getSectionTitles',
       typeTitles: 'oceanFishing/getTypeTitles',
-      routePattern: 'oceanFishing/getRoutePattern',
       routeTitles: 'oceanFishing/getRouteTitles',
       content: 'oceanFishing/getContent',
       locationFilterTitles: 'oceanFishing/getLocationFilterTitles',
