@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <div v-if="( currentState.route !== null && filters.perRoute ) || ( hasLocations && filters.perLocationTime )">
       <h3 class="h4">{{sectionTitles.strat}}</h3>
       <div class="location-baits-wrapper">
         <table class="location-baits" v-if="filters.perRoute">
@@ -124,8 +124,7 @@ export default {
         northernNightDayEveningRoute: false,
       },
       currentState: {
-        route: null,
-        locations: null
+        route: null     
       },
       routes: {
         northernNightDayEveningRoute: 0,
@@ -250,6 +249,22 @@ export default {
     }),
     locationTimes() {
       return this.locationTimeOrder(this.filters);
+    },
+    hasLocations() {
+      return (
+        this.filters.gladionBayDay ||
+        this.filters.gladionBayEvening ||
+        this.filters.gladionBayNight ||
+        this.filters.southernDay ||
+        this.filters.southernEvening ||
+        this.filters.southernNight ||
+        this.filters.rhotanoSeaDay ||
+        this.filters.rhotanoSeaEvening ||
+        this.filters.rhotanoSeaNight ||
+        this.filters.northernDay ||
+        this.filters.northernEvening ||
+        this.filters.northernNight
+        );
     }
   }
 }
