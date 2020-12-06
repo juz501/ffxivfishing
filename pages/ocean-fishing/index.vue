@@ -315,7 +315,7 @@ export default {
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface Slap (Momora Mora !!!)<br />Reel only !!!'
+          strategy: 'Surface Slap (Tarnished Shark !!!)<br />Reel only !!!'
         },
         beforeSpectralShowers: {
           phase: 'Before Spectral',
@@ -342,7 +342,7 @@ export default {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: 'Krill + Krill x2 <br />= <strong>Glowworm</strong>',
+          bait: 'Krill + Glowworm x2 <br />= <strong>Glowworm</strong>',
           strategy: '(Navigator\'s Print) + (Heavenskey) x2 <br />= <strong>Sothis</strong>'
         },
         afterSpectral: {
