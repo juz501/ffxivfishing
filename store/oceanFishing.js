@@ -158,37 +158,37 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface Slap (Tarnished Shark !!!)<br />Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!!' },
         beforeSpectralShowers: {
           phase: 'Before Spectral',
           weather: 'Showers',
           time: 'Any',
           bait: 'Plump Worm',
-          strategy: 'Surface Slap - Goby or chovy <br /> Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Goby&nbsp;or&nbsp;chovy) Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
           bait: 'Ragworm',
-          strategy: 'Doublehook ! when > 5 secs' },
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
           bait: 'Plump Worm',
-          strategy: 'Doublehook !!!' },
+          strategy: 'Doublehook&nbsp;!!!' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: 'Krill + Glowworm x2 <br />= <strong>Glowworm</strong>',
-          strategy: '(Navigator\'s Print) + (Heavenskey) x2 <br />= <strong>Sothis</strong>' },
+          bait: 'Krill + Glowworm&nbsp;x2 =&nbsp;<strong>Glowworm</strong>',
+          strategy: '(Navigator\'s&nbsp;Print) + (Heavenskey)&nbsp;x2 =&nbsp;<strong>Sothis</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Krill  x3 <br />= <strong>Krill</strong>',
-          strategy: '(Gladion chovy) x3 <br />= <strong>Drunkfish</strong>'
+          bait: 'Krill&nbsp;x3 =&nbsp;<strong>Krill</strong>',
+          strategy: '(Gladion&nbsp;chovy)&nbsp;x3 =&nbsp;<strong>Drunkfish</strong>'
         }
       },
       southern: {
@@ -198,31 +198,31 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface Slap (Momora Mora !!!)<br />Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Momora&nbsp;Mora&nbsp;!!!), Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
           bait: 'Krill',
-          strategy: 'Doublehook on !! (@ 5 secs)' },
+          strategy: 'Doublehook&nbsp;!! (@&nbsp;5secs)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm + Mooch',
-          strategy: '(Hi-Aetherlouse !) + (Doublehook on !!!) <br /> or (Doublehook on ! when > 5 secs)' },
+          strategy: '(Hi-Aetherlouse&nbsp;!) + (Doublehook&nbsp;!!!) or (Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs)' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: '( Ragworm + Mooch ) x2 <br />= <strong>Shrimp Cage Feeder</strong>',
-          strategy: '(Hi-Aetherlouse ! + Great Grandmarlyn !!) x2 <br />= <strong>(Coral Manta)</strong>' },
+          bait: '(&nbsp;Ragworm + Mooch&nbsp;)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
+          strategy: '(Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta)</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Krill + Mooch <br />= <strong>Plump Worm</strong>',
-          strategy: '(Barracuda !!) + (Gladdius !!) <br />= <strong>(Leviathan !!!)</strong>'
+          bait: 'Krill&nbsp;+&nbsp;Mooch =&nbsp;<strong>Plump&nbsp;Worm</strong>',
+          strategy: '(Barracuda&nbsp;!!) + (Gladdius&nbsp;!!) =&nbsp;<strong>(Leviathan&nbsp;!!!)</strong>'
         }
       },
       rhotanoSea: {
@@ -232,31 +232,31 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Plump Worm',
-          strategy: 'Surface Slap (Chrome Hammerhead !!!) <br /> Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Chrome&nbsp;Hammerhead&nbsp;!!!) Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
           bait: 'Plump Worm',
-          strategy: 'Doublehook !!!' },
+          strategy: 'Doublehook&nbsp;!!!' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
-          bait: 'Ragworm + Rat Tail <br />= <strong>Rat Tail</strong>',
-          strategy: '(Silencer !) + (Deep Sea Eel !!) <br />= <strong>(Stonescale)</strong>' },
+          bait: 'Ragworm + Rat&nbsp;Tail =&nbsp;<strong>Rat&nbsp;Tail</strong>',
+          strategy: '(Silencer&nbsp;!) + (Deep&nbsp;Sea&nbsp;Eel&nbsp;!!) =&nbsp;<strong>(Stonescale)</strong>' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
           bait: 'Krill',
-          strategy: 'Doublehook ! when > 5secs' },
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Plump Worm x2 <br />= <strong>Krill</strong>',
-          strategy: '(Crimson Monkfish) x2 <br />= <strong>(Sabaton !!!)</strong>'
+          bait: 'Plump&nbsp;Worm&nbsp;x2 =&nbsp;<strong>Krill</strong>',
+          strategy: '(Crimson&nbsp;Monkfish)&nbsp;x2 =&nbsp;<strong>(Sabaton&nbsp;!!!)</strong>'
         }
       },
       northern: {
@@ -266,37 +266,37 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface Slap (Oschon\'s stone !!)<br /> Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Oschon\'s&nbsp;stone&nbsp;!!) Reel&nbsp;only&nbsp;!!!' },
         beforeSpectralSnow: {
           phase: 'Before Spectral',
           weather: 'Snow/Blizzard',
           time: 'Any',
           bait: 'Ragworm',
-          strategy: 'Surface Slap (Megasquid !!)<br /> Reel only !!!' },
+          strategy: 'Surface&nbsp;Slap (Megasquid&nbsp;!!) Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Plump Worm x 3 <br />= <strong>Heavy Steel Jig',
-          strategy: '(Gugrusaurus !!!) x 3 <br />= <strong>(Elasmosaurus)</strong>' },
+          bait: 'Plump&nbsp;Worm&nbsp;x3 =&nbsp;<strong>Heavy&nbsp;Steel&nbsp;Jig</strong>',
+          strategy: '(Gugrusaurus&nbsp;!!!)&nbsp;x3 =&nbsp;<strong>(Elasmosaurus)</strong>' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm',
-          strategy: 'Doublehook ! when > 5secs' },
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
           bait: 'Krill',
-          strategy: 'Doublehook !! when > 5secs' },
+          strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Ragworm + Mooch <br />= <strong>Ragworm</strong>',
-          strategy: '(Tossed dagger !) + (Elder Dinicthys !!) <br />= <strong>(Shooting Star !!!)</strong>'
+          bait: 'Ragworm + Mooch =&nbsp;<strong>Ragworm</strong>',
+          strategy: '(Tossed&nbsp;dagger&nbsp;!) + (Elder&nbsp;Dinicthys&nbsp;!!) =&nbsp;<strong>(Shooting&nbsp;Star&nbsp;!!!)</strong>'
         }
       }
     }
