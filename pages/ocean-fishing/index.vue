@@ -3,573 +3,256 @@
     <h1 class="h2">Ocean Fishing</h1>
     <div class="filters">
       <div class="filter mainFilter">
-        <h2 class="h3">Type</h2>
-        <button @click="gotoPerRoute" :class="{ 'filter-on': perRoute}">Per Route</button>
-        <button @click="gotoPerLocationTime" :class="{ 'filter-on': perLocationTime}">Per Location</button>
+        <h2 class="h3">{{sectionTitles.type}}</h2>
+        <button @click="gotoPerRoute" :class="{ 'filter-on': filters.perRoute}">{{typeTitles.route}}</button>
+        <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}">{{typeTitles.location}}</button>
       </div>
-      <div class="filter routeFilter" v-if="perRoute">        
-        <button @click="gotoRhotanaoSeaDayRoute" :class="{ 'filter-on': rhotanoSeaDayRoute}">Rhotano Sea (Day > Evening > Night)</button>
-        <button @click="gotoRhotanoSeaEveningRoute" :class="{ 'filter-on': rhotanoSeaEveningRoute}">Rhotano Sea (Evening > Night > Day)</button>
-        <button @click="gotoRhotanoSeaNightRoute" :class="{ 'filter-on': rhotanoSeaNightRoute}">Rhotano Sea (Night > Day > Evening)</button>
+      <div v-if="filters.perRoute">
+        <h2 class="h3">{{sectionTitles.route}}</h2>
+        <div class="filter routeFilter">
+          <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}">{{routeTitles[routes.northernNightDayEveningRoute]}}</button>
+          <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}">{{routeTitles[routes.northernDayEveningNightRoute]}}</button>
+          <button @click="gotoNorthernEveningNightDayRoute" :class="{ 'filter-on': filters.northernEveningNightDayRoute}">{{routeTitles[routes.northernEveningNightDayRoute]}}</button>
+        </div>      
+        <div class="filter routeFilter">
+          <button @click="gotoRhotanoSeaNightDayEveningRoute" :class="{ 'filter-on': filters.rhotanoSeaNightDayEveningRoute}">{{routeTitles[routes.rhotanoSeaNightDayEveningRoute]}}</button>
+          <button @click="gotoRhotanoSeaDayEveningNightRoute" :class="{ 'filter-on': filters.rhotanoSeaDayEveningNightRoute}">{{routeTitles[routes.rhotanoSeaDayEveningNightRoute]}}</button>
+          <button @click="gotoRhotanoSeaEveningNightDayRoute" :class="{ 'filter-on': filters.rhotanoSeaEveningNightDayRoute}">{{routeTitles[routes.rhotanoSeaEveningNightDayRoute]}}</button>
+        </div>
       </div>
-      <div class="filter routeFilter" v-if="perRoute">
-        <button @click="gotoNorthernDayRoute" :class="{ 'filter-on': northernDayRoute}">Northern Strait (Day > Evening > Night)</button>
-        <button @click="gotoNorthernEveningRoute" :class="{ 'filter-on': northernEveningRoute}">Northern Strait (Evening > Night > Day)</button>
-        <button @click="gotoNorthernNightRoute" :class="{ 'filter-on': northernNightRoute}">Northern Strait (Night > Day > Evening)</button>
-      </div>
-      <div class="filter locationFilter" v-if="perLocationTime">
-        <button @click="toggleGladionBayDay" :class="{ 'filter-on': gladionBayDay }">Gladion Bay (Day)</button>
-        <button @click="toggleGladionBayEvening" :class="{ 'filter-on': gladionBayEvening }">Gladion Bay (Evening)</button>
-        <button @click="toggleGladionBayNight" :class="{ 'filter-on': gladionBayNight }">Gladion Bay (Night)</button>
-      </div>
-      <div class="filter locationFilter" v-if="perLocationTime">
-        <button @click="toggleSouthernDay" :class="{ 'filter-on': southernDay }">Southern Strait of Merlthor (Day)</button>
-        <button @click="toggleSouthernEvening" :class="{ 'filter-on': southernEvening }">Southern Strait of Merlthor (Evening)</button>
-        <button @click="toggleSouthernNight" :class="{ 'filter-on': southernNight }">Southern Strait of Merlthor (Night)</button>
-      </div>
-      <div class="filter locationFilter" v-if="perLocationTime">
-        <button @click="toggleRhotanoSeaDay" :class="{ 'filter-on': rhotanoSeaDay }">Rhotano Sea (Day)</button>
-        <button @click="toggleRhotanoSeaEvening" :class="{ 'filter-on': rhotanoSeaEvening }">Rhotano Sea (Evening)</button>
-        <button @click="toggleRhotanoSeaNight" :class="{ 'filter-on': rhotanoSeaNight }">Rhotano Sea (Night)</button>
-      </div>
-      <div class="filter locationFilter" v-if="perLocationTime">
-        <button @click="toggleNorthernDay" :class="{ 'filter-on': northernDay }">Northern Strait of Merlthor (Day)</button>
-        <button @click="toggleNorthernEvening" :class="{ 'filter-on': northernEvening }">Northern Strait of Merlthor (Evening)</button>
-        <button @click="toggleNorthernNight" :class="{ 'filter-on': northernNight }">Northern Strait of Merlthor (Night)</button>
+      <div v-if="filters.perLocationTime">
+        <h2 class="h3">{{sectionTitles.location}}</h2>
+        <div class="filter routeFilter">
+          <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }">{{locationFilterTitles.gladionBay.day}}</button>
+          <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }">{{locationFilterTitles.gladionBay.evening}}</button>
+          <button @click="toggleGladionBayNight" :class="{ 'filter-on': filters.gladionBayNight }">{{locationFilterTitles.gladionBay.night}}</button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="toggleSouthernDay" :class="{ 'filter-on': filters.southernDay }">{{locationFilterTitles.southern.day}}</button>
+          <button @click="toggleSouthernEvening" :class="{ 'filter-on': filters.southernEvening }">{{locationFilterTitles.southern.evening}}</button>
+          <button @click="toggleSouthernNight" :class="{ 'filter-on': filters.southernNight }">{{locationFilterTitles.southern.night}}</button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="toggleRhotanoSeaDay" :class="{ 'filter-on': filters.rhotanoSeaDay }">{{locationFilterTitles.rhotanoSea.day}}</button>
+          <button @click="toggleRhotanoSeaEvening" :class="{ 'filter-on': filters.rhotanoSeaEvening }">{{locationFilterTitles.rhotanoSea.evening}}</button>
+          <button @click="toggleRhotanoSeaNight" :class="{ 'filter-on': filters.rhotanoSeaNight }">{{locationFilterTitles.rhotanoSea.night}}</button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="toggleNorthernDay" :class="{ 'filter-on': filters.northernDay }">{{locationFilterTitles.northern.day}}</button>
+          <button @click="toggleNorthernEvening" :class="{ 'filter-on': filters.northernEvening }">{{locationFilterTitles.northern.evening}}</button>
+          <button @click="toggleNorthernNight" :class="{ 'filter-on': filters.northernNight }">{{locationFilterTitles.northern.night}}</button>
+        </div>
       </div>
     </div>
     <div>
-      <h3 class="h4">Point Strategy</h3>
+      <h3 class="h4">{{sectionTitles.strat}}</h3>
       <div class="location-baits-wrapper">
-        <table class="location-baits">
-          <tr>
-            <th>Location</th>
-            <th>Phase</th>
-            <th>Weather</th>
-            <th>Time</th>
-            <th>Bait</th>
-            <th>Strategy</th>
-          </tr>
-          <tr v-if="((northernDayRoute || northernEveningRoute || northernNightRoute ) && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.beforeSpectral.phase}}</td>
-            <td>{{southernContent.beforeSpectral.weather}}</td>
-            <td>{{southernContent.beforeSpectral.time}}</td>
-            <td v-html="southernContent.beforeSpectral.bait"></td>
-            <td v-html="southernContent.beforeSpectral.strategy"></td>
-          </tr>
-          <tr v-if="( northernDayRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralDay.phase}}</td>
-            <td>{{southernContent.spectralDay.weather}}</td>
-            <td>{{southernContent.spectralDay.time}}</td>
-            <td v-html="southernContent.spectralDay.bait"></td>
-            <td v-html="southernContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="( northernEveningRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralEvening.phase}}</td>
-            <td>{{southernContent.spectralEvening.weather}}</td>
-            <td>{{southernContent.spectralEvening.time}}</td>
-            <td v-html="southernContent.spectralEvening.bait"></td>
-            <td v-html="southernContent.spectralEvening.strategy"></td>
-          </tr>
-          <tr v-if="( northernNightRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralNight.phase}}</td>
-            <td>{{southernContent.spectralNight.weather}}</td>
-            <td>{{southernContent.spectralNight.time}}</td>
-            <td v-html="southernContent.spectralNight.bait"></td>
-            <td v-html="southernContent.spectralNight.strategy"></td>
-          </tr>
-          <tr v-if="((northernDayRoute || northernEveningRoute || northernNightRoute ) && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.afterSpectral.phase}}</td>
-            <td>{{southernContent.afterSpectral.weather}}</td>
-            <td>{{southernContent.afterSpectral.time}}</td>
-            <td v-html="southernContent.afterSpectral.bait"></td>
-            <td v-html="southernContent.afterSpectral.strategy"></td>
-          </tr>
-          <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
-              northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.beforeSpectral.phase}}</td>
-            <td>{{gladionBayContent.beforeSpectral.weather}}</td>
-            <td>{{gladionBayContent.beforeSpectral.time}}</td>
-            <td v-html="gladionBayContent.beforeSpectral.bait"></td>
-            <td v-html="gladionBayContent.beforeSpectral.strategy"></td>
-          </tr>
-          <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
-              northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.beforeSpectralShowers.phase}}</td>
-            <td>{{gladionBayContent.beforeSpectralShowers.weather}}</td>
-            <td>{{gladionBayContent.beforeSpectralShowers.time}}</td>
-            <td v-html="gladionBayContent.beforeSpectralShowers.bait"></td>
-            <td v-html="gladionBayContent.beforeSpectralShowers.strategy"></td>
-          </tr>
-          <tr v-if="( gladionBayDay && perLocationTime ) || ((rhotanoSeaDayRoute || northernNightRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.spectralDay.phase}}</td>
-            <td>{{gladionBayContent.spectralDay.weather}}</td>
-            <td>{{gladionBayContent.spectralDay.time}}</td>
-            <td v-html="gladionBayContent.spectralDay.bait"></td>
-            <td v-html="gladionBayContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="( gladionBayEvening && perLocationTime ) || ((rhotanoSeaEveningRoute || northernDayRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.spectralEvening.phase}}</td>
-            <td>{{gladionBayContent.spectralEvening.weather}}</td>
-            <td>{{gladionBayContent.spectralEvening.time}}</td>
-            <td v-html="gladionBayContent.spectralEvening.bait"></td>
-            <td v-html="gladionBayContent.spectralEvening.strategy"></td>
-          </tr>
-          <tr v-if="( gladionBayNight && perLocationTime ) || ((rhotanoSeaNightRoute || northernEveningRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.spectralNight.phase}}</td>
-            <td>{{gladionBayContent.spectralNight.weather}}</td>
-            <td>{{gladionBayContent.spectralNight.time}}</td>
-            <td v-html="gladionBayContent.spectralNight.bait"></td>
-            <td v-html="gladionBayContent.spectralNight.strategy"></td>
-          </tr>
-          <tr v-if="((gladionBayDay || gladionBayEvening || gladionBayNight) && perLocationTime ) ||
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ||
-              northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{gladionBayContent.location}}</td>
-            <td>{{gladionBayContent.afterSpectral.phase}}</td>
-            <td>{{gladionBayContent.afterSpectral.weather}}</td>
-            <td>{{gladionBayContent.afterSpectral.time}}</td>
-            <td v-html="gladionBayContent.afterSpectral.bait"></td>
-            <td v-html="gladionBayContent.afterSpectral.strategy"></td>
-          </tr>
-          <tr v-if="((southernDay || southernEvening || southernNight) && perLocationTime ) || 
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ) && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.beforeSpectral.phase}}</td>
-            <td>{{southernContent.beforeSpectral.weather}}</td>
-            <td>{{southernContent.beforeSpectral.time}}</td>
-            <td v-html="southernContent.beforeSpectral.bait"></td>
-            <td v-html="southernContent.beforeSpectral.strategy"></td>
-          </tr>
-          <tr v-if="( southernDay && perLocationTime )|| ( rhotanoSeaNightRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralDay.phase}}</td>
-            <td>{{southernContent.spectralDay.weather}}</td>
-            <td>{{southernContent.spectralDay.time}}</td>
-            <td v-html="southernContent.spectralDay.bait"></td>
-            <td v-html="southernContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="( southernEvening && perLocationTime ) || ( rhotanoSeaDayRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralEvening.phase}}</td>
-            <td>{{southernContent.spectralEvening.weather}}</td>
-            <td>{{southernContent.spectralEvening.time}}</td>
-            <td v-html="southernContent.spectralEvening.bait"></td>
-            <td v-html="southernContent.spectralEvening.strategy"></td>
-          </tr>
-          <tr v-if="( southernNight && perLocationTime ) || ( rhotanoSeaEveningRoute && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.spectralNight.phase}}</td>
-            <td>{{southernContent.spectralNight.weather}}</td>
-            <td>{{southernContent.spectralNight.time}}</td>
-            <td v-html="southernContent.spectralNight.bait"></td>
-            <td v-html="southernContent.spectralNight.strategy"></td>
-          </tr>
-          <tr v-if="((southernDay || southernEvening || southernNight) && perLocationTime ) || 
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute ) && perRoute )">
-            <td>{{southernContent.location}}</td>
-            <td>{{southernContent.afterSpectral.phase}}</td>
-            <td>{{southernContent.afterSpectral.weather}}</td>
-            <td>{{southernContent.afterSpectral.time}}</td>
-            <td v-html="southernContent.afterSpectral.bait"></td>
-            <td v-html="southernContent.afterSpectral.strategy"></td>
-          </tr>
-          <tr v-if="((rhotanoSeaDay || rhotanoSeaEvening || rhotanoSeaNight) && perLocationTime) ||
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute) && perRoute)">
-            <td>{{rhotanoSeaContent.location}}</td>
-            <td>{{rhotanoSeaContent.beforeSpectral.phase}}</td>
-            <td>{{rhotanoSeaContent.beforeSpectral.weather}}</td>
-            <td>{{rhotanoSeaContent.beforeSpectral.time}}</td>
-            <td v-html="rhotanoSeaContent.beforeSpectral.bait"></td>
-            <td v-html="rhotanoSeaContent.beforeSpectral.strategy"></td>
-          </tr>
-          <tr v-if="(rhotanoSeaDay && perLocationTime) || (rhotanoSeaEveningRoute && perRoute)">
-            <td>{{rhotanoSeaContent.location}}</td>
-            <td>{{rhotanoSeaContent.spectralDay.phase}}</td>
-            <td>{{rhotanoSeaContent.spectralDay.weather}}</td>
-            <td>{{rhotanoSeaContent.spectralDay.time}}</td>
-            <td v-html="rhotanoSeaContent.spectralDay.bait"></td>
-            <td v-html="rhotanoSeaContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="(rhotanoSeaEvening && perLocationTime) || (rhotanoSeaNightRoute && perRoute)">
-            <td>{{rhotanoSeaContent.location}}</td>
-            <td>{{rhotanoSeaContent.spectralEvening.phase}}</td>
-            <td>{{rhotanoSeaContent.spectralEvening.weather}}</td>
-            <td>{{rhotanoSeaContent.spectralEvening.time}}</td>
-            <td v-html="rhotanoSeaContent.spectralDay.bait"></td>
-            <td v-html="rhotanoSeaContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="( rhotanoSeaNight && perLocationTime) || (rhotanoSeaDayRoute && perRoute)">
-            <td>{{rhotanoSeaContent.location}}</td>
-            <td>{{rhotanoSeaContent.spectralNight.phase}}</td>
-            <td>{{rhotanoSeaContent.spectralNight.weather}}</td>
-            <td>{{rhotanoSeaContent.spectralNight.time}}</td>
-            <td v-html="rhotanoSeaContent.spectralNight.bait"></td>
-            <td v-html="rhotanoSeaContent.spectralNight.strategy"></td>
-          </tr>
-          <tr v-if="((rhotanoSeaDay || rhotanoSeaEvening || rhotanoSeaNight) && perLocationTime) ||
-            ((rhotanoSeaDayRoute || rhotanoSeaEveningRoute || rhotanoSeaNightRoute) && perRoute)">
-            <td>{{rhotanoSeaContent.location}}</td>
-            <td>{{rhotanoSeaContent.afterSpectral.phase}}</td>
-            <td>{{rhotanoSeaContent.afterSpectral.weather}}</td>
-            <td>{{rhotanoSeaContent.afterSpectral.time}}</td>
-            <td v-html="rhotanoSeaContent.afterSpectral.bait"></td>
-            <td v-html="rhotanoSeaContent.afterSpectral.strategy"></td>
-          </tr>
-          <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
-            ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.beforeSpectral.phase}}</td>
-            <td>{{northernContent.beforeSpectral.weather}}</td>
-            <td>{{northernContent.beforeSpectral.time}}</td>
-            <td v-html="northernContent.beforeSpectral.bait"></td>
-            <td v-html="northernContent.beforeSpectral.strategy"></td>
-          </tr>
-          <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
-            ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.beforeSpectralSnow.phase}}</td>
-            <td>{{northernContent.beforeSpectralSnow.weather}}</td>
-            <td>{{northernContent.beforeSpectralSnow.time}}</td>
-            <td v-html="northernContent.beforeSpectralSnow.bait"></td>
-            <td v-html="northernContent.beforeSpectralSnow.strategy"></td>
-          </tr>
-          <tr v-if="( northernDay && perLocationTime ) || ( northernEveningRoute && perRoute )">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.spectralDay.phase}}</td>
-            <td>{{northernContent.spectralDay.weather}}</td>
-            <td>{{northernContent.spectralDay.time}}</td>
-            <td v-html="northernContent.spectralDay.bait"></td>
-            <td v-html="northernContent.spectralDay.strategy"></td>
-          </tr>
-          <tr v-if="( northernEvening && perLocationTime ) || ( northernNightRoute && perRoute )">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.spectralEvening.phase}}</td>
-            <td>{{northernContent.spectralEvening.weather}}</td>
-            <td>{{northernContent.spectralEvening.time}}</td>
-            <td v-html="northernContent.spectralEvening.bait"></td>
-            <td v-html="northernContent.spectralEvening.strategy"></td>
-          </tr>
-          <tr v-if="( northernNight && perLocationTime ) || ( northernDayRoute && perRoute )">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.spectralNight.phase}}</td>
-            <td>{{northernContent.spectralNight.weather}}</td>
-            <td>{{northernContent.spectralNight.time}}</td>
-            <td v-html="northernContent.spectralNight.bait"></td>
-            <td v-html="northernContent.spectralNight.strategy"></td>
-          </tr>
-          <tr v-if="(( northernDay || northernEvening || northernNight ) && perLocationTime ) ||
-            ((northernDayRoute || northernEveningRoute || northernNightRoute) && perRoute)">
-            <td>{{northernContent.location}}</td>
-            <td>{{northernContent.afterSpectral.phase}}</td>
-            <td>{{northernContent.afterSpectral.weather}}</td>
-            <td>{{northernContent.afterSpectral.time}}</td>
-            <td v-html="northernContent.afterSpectral.bait"></td>
-            <td v-html="northernContent.afterSpectral.strategy"></td>
-          </tr>
+        <table class="location-baits" v-if="filters.perRoute">
+          <thead>
+            <tr>
+              <th>{{stratHeadings.location}}</th>
+              <th>{{stratHeadings.phase}}</th>
+              <th>{{stratHeadings.weather}}</th>
+              <th>{{stratHeadings.time}}</th>
+              <th>{{stratHeadings.bait}}</th>
+              <th>{{stratHeadings.strat}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, i) in routeLocationOrder[currentState.route]" :key="i">
+              <td>{{ content[item.location].location }}</td>
+              <td>{{ content[item.location][item.phase].phase }}</td>
+              <td>{{ content[item.location][item.phase].weather }}</td>
+              <td>{{ content[item.location][item.phase].time }}</td>
+              <td v-html="content[item.location][item.phase].bait"></td>
+              <td v-html="content[item.location][item.phase].strategy"></td>              
+            </tr>
+          </tbody>
+        </table>
+        <table class="location-baits" v-if="filters.perLocationTime">
+          <thead>
+            <tr>
+              <th>{{stratHeadings.location}}</th>
+              <th>{{stratHeadings.phase}}</th>
+              <th>{{stratHeadings.weather}}</th>
+              <th>{{stratHeadings.time}}</th>
+              <th>{{stratHeadings.bait}}</th>
+              <th>{{stratHeadings.strat}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, i) in locationTimes" :key="i">
+              <td>{{content[item.location].location}}</td>
+              <td>{{content[item.location][item.phase].phase}}</td>
+              <td>{{content[item.location][item.phase].weather}}</td>
+              <td>{{content[item.location][item.phase].time}}</td>
+              <td v-html="content[item.location][item.phase].bait"></td>
+              <td v-html="content[item.location][item.phase].strategy"></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>    
   </main>
 </template>
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
   data() {
     return {
-      perRoute: true,
-      perLocationTime: false,
-      gladionBayDay: false,
-      gladionBayEvening: false,
-      gladionBayNight: false,
-      rhotanoSeaDay: false,
-      rhotanoSeaEvening: false,
-      rhotanoSeaNight: false,
-      northernDay: false,
-      northernEvening: false,
-      northernNight: false,
-      southernDay: false,
-      southernEvening: false,
-      southernNight: false,
-      rhotanoSeaDayRoute: false,
-      rhotanoSeaEveningRoute: false,
-      rhotanoSeaNightRoute: false,
-      northernDayRoute: false,
-      northernEveningRoute: false,
-      northernNightRoute: false,
-      gladionBayContent: {
-        location: 'Gladion Bay',
-        beforeSpectral: {
-          phase: 'Before Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Krill',
-          strategy: 'Surface Slap (Tarnished Shark !!!)<br />Reel only !!!'
-        },
-        beforeSpectralShowers: {
-          phase: 'Before Spectral',
-          weather: 'Showers',
-          time: 'Any',
-          bait: 'Plump Worm',
-          strategy: 'Surface Slap - Goby or chovy <br /> Reel only !!!'
-        },
-        spectralDay: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Day',
-          bait: 'Ragworm',
-          strategy: 'Doublehook ! when > 5 secs'
-        },
-        spectralEvening: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Evening',
-          bait: 'Plump Worm',
-          strategy: 'Doublehook !!!'
-        },
-        spectralNight: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Night',
-          bait: 'Krill + Glowworm x2 <br />= <strong>Glowworm</strong>',
-          strategy: '(Navigator\'s Print) + (Heavenskey) x2 <br />= <strong>Sothis</strong>'
-        },
-        afterSpectral: {
-          phase: 'After Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Krill  x3 <br />= <strong>Krill</strong>',
-          strategy: '(Gladion chovy) x3 <br />= <strong>Drunkfish</strong>'
-        }
+      filters: {
+        perRoute: true,
+        perLocationTime: false,
+        gladionBayDay: false,
+        gladionBayEvening: false,
+        gladionBayNight: false,
+        rhotanoSeaDay: false,
+        rhotanoSeaEvening: false,
+        rhotanoSeaNight: false,
+        northernDay: false,
+        northernEvening: false,
+        northernNight: false,
+        southernDay: false,
+        southernEvening: false,
+        southernNight: false,
+        rhotanoSeaDayEveningNightRoute: false,
+        rhotanoSeaEveningNightDayRoute: false,
+        rhotanoSeaNightDayEveningRoute: false,
+        northernDayEveningNightRoute: false,
+        northernEveningNightDayRoute: false,
+        northernNightDayEveningRoute: false,
       },
-      southernContent: {
-        location: 'Southern Strait of Merlthor',
-        beforeSpectral: {
-          phase: 'Before Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Krill',
-          strategy: 'Surface Slap (Momora Mora !!!)<br />Reel only !!!'
-        },
-        spectralDay: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Day',
-          bait: 'Krill',
-          strategy: 'Doublehook on !! (@ 5 secs)'
-        },
-        spectralEvening: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Evening',
-          bait: 'Ragworm + Mooch',
-          strategy: '(Hi-Aetherlouse !) + (Doublehook on !!!) <br /> or (Doublehook on ! when > 5 secs)'
-        },
-        spectralNight: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Night',
-          bait: '( Ragworm + Mooch ) x2 <br />= <strong>Shrimp Cage Feeder</strong>',
-          strategy: '(Hi-Aetherlouse ! + Great Grandmarlyn !!) x2 <br />= <strong>(Coral Manta)</strong>'
-        },
-        afterSpectral: {
-          phase: 'After Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Krill + Mooch <br />= <strong>Plump Worm</strong>',
-          strategy: '(Barracuda !!) + (Gladdius !!) <br />= <strong>(Leviathan !!!)</strong>'
-        }
+      currentState: {
+        route: null,
+        locations: null
       },
-      rhotanoSeaContent: {
-        location: 'Rhotano Sea',
-        beforeSpectral: {
-          phase: 'Before Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Plump Worm',
-          strategy: 'Surface Slap (Chrome Hammerhead !!!) <br /> Reel only !!!'
-        },
-        spectralDay: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Day',
-          bait: 'Plump Worm',
-          strategy: 'Doublehook !!!'
-        },
-        spectralEvening: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Evening',
-          bait: 'Ragworm + Rat Tail <br />= <strong>Rat Tail</strong>',
-          strategy: '(Silencer !) + (Deep Sea Eel !!) <br />= <strong>(Stonescale)</strong>'
-        },
-        spectralNight: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Night',
-          bait: 'Krill',
-          strategy: 'Doublehook ! when > 5secs'
-        },
-        afterSpectral: {
-          phase: 'After Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Plump Worm x2 <br />= <strong>Krill</strong>',
-          strategy: '(Crimson Monkfish) x2 <br />= <strong>(Sabaton !!!)</strong>'
-        }
-      },
-      northernContent: {
-        location: 'Northern Strait of Merlthor',
-        beforeSpectral: {
-          phase: 'Before Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Krill',
-          strategy: 'Surface Slap (Oschon\'s stone !!)<br /> Reel only !!!'
-        },
-        beforeSpectralSnow: {
-          phase: 'Before Spectral',
-          weather: 'Snow/Blizzard',
-          time: 'Any',
-          bait: 'Ragworm',
-          strategy: 'Surface Slap (Megasquid !!)<br /> Reel only !!!'
-        },
-        spectralDay: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Day',
-          bait: 'Plump Worm x 3 <br />= <strong>Heavy Steel Jig',
-          strategy: '(Gugrusaurus !!!) x 3 <br />= <strong>(Elasmosaurus)</strong>'
-        },
-        spectralEvening: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Evening',
-          bait: 'Ragworm',
-          strategy: 'Doublehook ! when > 5secs'
-        },
-        spectralNight: {
-          phase: 'Spectral',
-          weather: 'Normal',
-          time: 'Night',
-          bait: 'Krill',
-          strategy: 'Doublehook !! when > 5secs'
-        },
-        afterSpectral: {
-          phase: 'After Spectral',
-          weather: 'Normal',
-          time: 'Any',
-          bait: 'Ragworm + Mooch <br />= <strong>Ragworm</strong>',
-          strategy: '(Tossed dagger !) + (Elder Dinicthys !!) <br />= <strong>(Shooting Star !!!)</strong>'
-        }
+      routes: {
+        northernNightDayEveningRoute: 0,
+        northernDayEveningNightRoute: 1,
+        northernEveningNightDayRoute: 2,
+        rhotanoSeaNightDayEveningRoute: 3,
+        rhotanoSeaDayEveningNightRoute: 4,
+        rhotanoSeaEveningNightDayRoute: 5,
       }
     }
   },
   methods: {   
     gotoPerRoute() {
-      this.perRoute = true;
-      this.perLocationTime = false;
+      this.filters.perRoute = true;
+      this.filters.perLocationTime = false;
     },
     gotoPerLocationTime() {
-      this.perRoute = false;
-      this.perLocationTime = true;
+      this.filters.perRoute = false;
+      this.filters.perLocationTime = true;
     },
-    gotoRhotanaoSeaDayRoute() {  // Gladion Day, Southern Evening, Rhotano Night
-      this.rhotanoSeaDayRoute = true;
-      this.rhotanoSeaEveningRoute = false;
-      this.rhotanoSeaNightRoute = false;
-      this.northernDayRoute = false;
-      this.northernEveningRoute = false;
-      this.northernNightRoute = false;
+    gotoNorthernNightDayEveningRoute() { // Southern Night, Gladdion Day, Northern Evening
+      this.filters.northernNightDayEveningRoute = true;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.northernNightDayEveningRoute;
     },
-    gotoRhotanoSeaEveningRoute() { // Gladion Evening, Southern Night, Rhotano Day
-      this.rhotanoSeaDayRoute = false;
-      this.rhotanoSeaEveningRoute = true;
-      this.rhotanoSeaNightRoute = false;
-      this.northernDayRoute = false;
-      this.northernEveningRoute = false;
-      this.northernNightRoute = false;
+    gotoNorthernDayEveningNightRoute() { // Southern Day, Gladion Evening, Northern Night
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = true;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.northernDayEveningNightRoute;
     },
-    gotoRhotanoSeaNightRoute() { // Gladion Night, Southern Day, Rhotano Evening
-      this.rhotanoSeaDayRoute = false;
-      this.rhotanoSeaEveningRoute = false;
-      this.rhotanoSeaNightRoute = true;
-      this.northernDayRoute = false;
-      this.northernEveningRoute = false;
-      this.northernNightRoute = false;
+    gotoNorthernEveningNightDayRoute() { // Southern Evening, Gladion Night, Northern Day
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = true;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.northernEveningNightDayRoute;
     },
-    gotoNorthernDayRoute() { // Southern Day, Gladion Evening, Northern Night
-      this.rhotanoSeaDayRoute = false;
-      this.rhotanoSeaEveningRoute = false;
-      this.rhotanoSeaNightRoute = false;
-      this.northernDayRoute = true;
-      this.northernEveningRoute = false;
-      this.northernNightRoute = false;
+    gotoRhotanoSeaNightDayEveningRoute() { // Gladion Night, Southern Day, Rhotano Evening
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = true;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.rhotanoSeaNightDayEveningRoute;
     },
-    gotoNorthernEveningRoute() { // Southern Evening, Gladion Night, Northern Day
-      this.rhotanoSeaDayRoute = false;
-      this.rhotanoSeaEveningRoute = false;
-      this.rhotanoSeaNightRoute = false;
-      this.northernDayRoute = false;
-      this.northernEveningRoute = true;
-      this.northernNightRoute = false;
+    gotoRhotanoSeaDayEveningNightRoute() {  // Gladion Day, Southern Evening, Rhotano Night
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = true;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.rhotanoSeaDayEveningNightRoute;
     },
-    gotoNorthernNightRoute() { // Southern Night, Gladdion Day, Northern Evening
-      this.rhotanoSeaDayRoute = false;
-      this.rhotanoSeaEveningRoute = false;
-      this.rhotanoSeaNightRoute = false;
-      this.northernDayRoute = false;
-      this.northernEveningRoute = false;
-      this.northernNightRoute = true;
+    gotoRhotanoSeaEveningNightDayRoute() { // Gladion Evening, Southern Night, Rhotano Day
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = true;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.currentState.route = this.routes.rhotanoSeaEveningNightDayRoute;
     },
     toggleGladionBayDay() {
-      this.gladionBayDay = !this.gladionBayDay;
+      this.filters.gladionBayDay = !this.filters.gladionBayDay;
     },
     toggleGladionBayEvening() {
-      this.gladionBayEvening = !this.gladionBayEvening;
+      this.filters.gladionBayEvening = !this.filters.gladionBayEvening;
     },
     toggleGladionBayNight() {
-      this.gladionBayNight = !this.gladionBayNight;
+      this.filters.gladionBayNight = !this.filters.gladionBayNight;
     },
     toggleRhotanoSeaDay() {
-      this.rhotanoSeaDay = !this.rhotanoSeaDay;
+      this.filters.rhotanoSeaDay = !this.filters.rhotanoSeaDay;
     },
     toggleRhotanoSeaEvening() {
-      this.rhotanoSeaEvening = !this.rhotanoSeaEvening;
+      this.filters.rhotanoSeaEvening = !this.filters.rhotanoSeaEvening;
     },
     toggleRhotanoSeaNight() {
-      this.rhotanoSeaNight = !this.rhotanoSeaNight;
+      this.filters.rhotanoSeaNight = !this.filters.rhotanoSeaNight;
     },
     toggleNorthernDay() {
-      this.northernDay = !this.northernDay;
+      this.filters.northernDay = !this.filters.northernDay;
     },
     toggleNorthernEvening() {
-      this.northernEvening = !this.northernEvening;
+      this.filters.northernEvening = !this.filters.northernEvening;
     },
     toggleNorthernNight() {
-      this.northernNight = !this.northernNight;
+      this.filters.northernNight = !this.filters.northernNight;
     },
     toggleSouthernDay() {
-      this.southernDay = !this.southernDay;
+      this.filters.southernDay = !this.filters.southernDay;
     },
     toggleSouthernEvening() {
-      this.southernEvening = !this.southernEvening;
+      this.filters.southernEvening = !this.filters.southernEvening;
     },
     toggleSouthernNight() {
-      this.southernNight = !this.southernNight;
+      this.filters.southernNight = !this.filters.southernNight;
+    }    
+  },
+  computed: {
+    ...mapGetters({
+      sectionTitles: 'oceanFishing/getSectionTitles',
+      typeTitles: 'oceanFishing/getTypeTitles',
+      routePattern: 'oceanFishing/getRoutePattern',
+      routeTitles: 'oceanFishing/getRouteTitles',
+      content: 'oceanFishing/getContent',
+      locationFilterTitles: 'oceanFishing/getLocationFilterTitles',
+      stratHeadings: 'oceanFishing/getStratHeadings',
+      routeLocationOrder: 'oceanFishing/getRouteLocationOrder',
+      locationTimeOrder: 'oceanFishing/getLocationTimeOrder'
+    }),
+    locationTimes() {
+      return this.locationTimeOrder(this.filters);
     }
-  }  
+  }
 }
 </script>
 <style lang="scss" scoped>
