@@ -24,6 +24,11 @@
           <button @click="gotoRothlytSoundDayEveningNightRoute" :class="{ 'filter-on': filters.rothlytSoundDayEveningNightRoute}">{{routeTitles[routes.rothlytSoundDayEveningNightRoute]}}</button>
           <button @click="gotoRothlytSoundEveningNightDayRoute" :class="{ 'filter-on': filters.rothlytSoundEveningNightDayRoute}">{{routeTitles[routes.rothlytSoundEveningNightDayRoute]}}</button>
         </div>
+        <div class="filter routeFilter">
+          <button @click="gotoBloodbrineSeaNightDayEveningRoute" :class="{ 'filter-on': filters.bloodbrineSeaNightDayEveningRoute}">{{routeTitles[routes.bloodbrineSeaNightDayEveningRoute]}}</button>
+          <button @click="gotoBloodbrineSeaDayEveningNightRoute" :class="{ 'filter-on': filters.bloodbrineSeaDayEveningNightRoute}">{{routeTitles[routes.bloodbrineSeaDayEveningNightRoute]}}</button>
+          <button @click="gotoBloodbrineSeaEveningNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaEveningNightDayRoute}">{{routeTitles[routes.bloodbrineSeaEveningNightDayRoute]}}</button>
+        </div>
       </div>
       <div v-if="filters.perLocationTime">
         <h2 class="h3">{{sectionTitles.location}}</h2>
@@ -56,6 +61,11 @@
           <button @click="toggleRothlytSoundDay" :class="{ 'filter-on': filters.rothlytSoundDay }">{{locationFilterTitles.rothlytSound.day}}</button>
           <button @click="toggleRothlytSoundEvening" :class="{ 'filter-on': filters.rothlytSoundEvening }">{{locationFilterTitles.rothlytSound.evening}}</button>
           <button @click="toggleRothlytSoundNight" :class="{ 'filter-on': filters.rothlytSoundNight }">{{locationFilterTitles.rothlytSound.night}}</button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="toggleBloodbrineSeaDay" :class="{ 'filter-on': filters.bloodbrineSeaDay }">{{locationFilterTitles.bloodbrineSea.day}}</button>
+          <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }">{{locationFilterTitles.bloodbrineSea.evening}}</button>
+          <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }">{{locationFilterTitles.bloodbrineSea.night}}</button>
         </div>
       </div>
     </div>
@@ -137,6 +147,9 @@ export default {
         rothlytSoundDay: false,
         rothlytSoundEvening: false,
         rothlytSoundNight: false,
+        bloodbrineSeaDay: false,
+        bloodbrineSeaEvening: false,
+        bloodbrineSeaNight: false,
         rhotanoSeaDayEveningNightRoute: false,
         rhotanoSeaEveningNightDayRoute: false,
         rhotanoSeaNightDayEveningRoute: false,
@@ -146,6 +159,9 @@ export default {
         rothlytSoundDayEveningNightRoute: false,
         rothlytSoundEveningNightDayRoute: false,
         rothlytSoundNightDayEveningRoute: false,
+        bloodbrineSeaDayEveningNightRoute: false,
+        bloodbrineSeaEveningNightDayRoute: false,
+        bloodbrineSeaNightDayEveningRoute: false
       },
       currentState: {
         route: null     
@@ -159,7 +175,10 @@ export default {
         rhotanoSeaEveningNightDayRoute: 5,
         rothlytSoundNightDayEveningRoute: 6,
         rothlytSoundDayEveningNightRoute: 7,
-        rothlytSoundEveningNightDayRoute: 8
+        rothlytSoundEveningNightDayRoute: 8,
+        bloodbrineSeaNightDayEveningRoute: 9,
+        bloodbrineSeaDayEveningNightRoute: 10,
+        bloodbrineSeaEveningNightDayRoute: 11
       }
     }
   },
@@ -179,9 +198,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.northernNightDayEveningRoute;
     },
     gotoNorthernDayEveningNightRoute() { // Southern Day, Gladion Evening, Northern Night
@@ -191,9 +213,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.northernDayEveningNightRoute;
     },
     gotoNorthernEveningNightDayRoute() { // Southern Evening, Gladion Night, Northern Day
@@ -203,9 +228,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.northernEveningNightDayRoute;
     },
     gotoRhotanoSeaNightDayEveningRoute() { // Gladion Night, Southern Day, Rhotano Evening
@@ -215,9 +243,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = true;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.rhotanoSeaNightDayEveningRoute;
     },
     gotoRhotanoSeaDayEveningNightRoute() {  // Gladion Day, Southern Evening, Rhotano Night
@@ -227,9 +258,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = true;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.rhotanoSeaDayEveningNightRoute;
     },
     gotoRhotanoSeaEveningNightDayRoute() { // Gladion Evening, Southern Night, Rhotano Day
@@ -239,9 +273,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;      
       this.filters.rhotanoSeaDayEveningNightRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = true;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
       this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.rhotanoSeaEveningNightDayRoute;
     },
     gotoRothlytSoundNightDayEveningRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Evening
@@ -251,9 +288,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = true;
+      this.filters.rothlytSoundNightDayEveningRoute = true;
       this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;      
+      this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.rothlytSoundNightDayEveningRoute;
     },
     gotoRothlytSoundDayEveningNightRoute() { // Cieldalaes Day, Rhotano Evening, Rothlyt Night
@@ -263,9 +303,12 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = true;
-      this.filters.rothlytSoundEveningNightDayRoute = false;      
+      this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;      
       this.currentState.route = this.routes.rothlytSoundDayEveningNightRoute;
     },
     gotoRothlytSoundEveningNightDayRoute() { // Cieldalaes Evening, Rhotano Night, Rothlyt Day
@@ -275,10 +318,58 @@ export default {
       this.filters.rhotanoSeaNightDayEveningRoute = false;
       this.filters.rhotanoSeaEveningNightDayRoute = false;
       this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundSeaNightDayEveningRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
       this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = true;      
+      this.filters.rothlytSoundEveningNightDayRoute = true;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
       this.currentState.route = this.routes.rothlytSoundEveningNightDayRoute;
+    },
+    gotoBloodbrineSeaNightDayEveningRoute() { // Cieldalaes Night, Northrn Day, Bloodbrine Evening
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
+      this.filters.rothlytSoundDayEveningNightRoute = false;
+      this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = true;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;
+      this.currentState.route = this.routes.bloodbrineSeaNightDayEveningRoute;
+    },
+    gotoBloodbrineSeaDayEveningNightRoute() { // Cieldalaes Day, Northern Evening, Bloodbrine Night
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
+      this.filters.rothlytSoundDayEveningNightRoute = false;
+      this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = true;
+      this.filters.bloodbrineSeaEveningNightDayRoute = false;      
+      this.currentState.route = this.routes.bloodbrineSeaDayEveningNightRoute;
+    },
+    gotoBloodbrineSeaEveningNightDayRoute() { // Cieldalaes Evening, Northern Night, Bloodbrine Day
+      this.filters.northernNightDayEveningRoute = false;
+      this.filters.northernDayEveningNightRoute = false;
+      this.filters.northernEveningNightDayRoute = false;
+      this.filters.rhotanoSeaNightDayEveningRoute = false;
+      this.filters.rhotanoSeaEveningNightDayRoute = false;
+      this.filters.rhotanoSeaDayEveningNightRoute = false;
+      this.filters.rothlytSoundNightDayEveningRoute = false;
+      this.filters.rothlytSoundDayEveningNightRoute = false;
+      this.filters.rothlytSoundEveningNightDayRoute = false;
+      this.filters.bloodbrineSeaNightDayEveningRoute = false;
+      this.filters.bloodbrineSeaDayEveningNightRoute = false;
+      this.filters.bloodbrineSeaEveningNightDayRoute = true;
+      this.currentState.route = this.routes.bloodbrineSeaEveningNightDayRoute;
     },
     toggleGladionBayDay() {
       this.filters.gladionBayDay = !this.filters.gladionBayDay;
@@ -333,6 +424,15 @@ export default {
     },
     toggleRothlytSoundNight() {
       this.filters.rothlytSoundNight = !this.filters.rothlytSoundNight;
+    },
+    toggleBloodbrineSeaDay() {
+      this.filters.bloodbrineSeaDay = !this.filters.bloodbrineSeaDay;
+    },
+    toggleBloodbrineSeaEvening() {
+      this.filters.bloodbrineSeaEvening = !this.filters.bloodbrineSeaEvening;
+    },
+    toggleBloodbrineSeaNight() {
+      this.filters.bloodbrineSeaNight = !this.filters.bloodbrineSeaNight;
     }
   },
   computed: {
@@ -368,7 +468,10 @@ export default {
         this.filters.cieldalaesNight ||
         this.filters.rothlytSoundDay ||
         this.filters.rothlytSoundEvening ||
-        this.filters.rothlytSoundNight
+        this.filters.rothlytSoundNight ||
+        this.filters.bloodbrineSeaDay ||
+        this.filters.bloodbrineSeaEvening ||
+        this.filters.bloodbrineSeaNight
         );
     }
   }

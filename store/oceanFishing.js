@@ -9,6 +9,9 @@ export const RHOTANO_EVENING_NIGHT_DAY = 5;
 export const ROTHLYT_NIGHT_DAY_EVENING = 6;
 export const ROTHLYT_DAY_EVENING_NIGHT = 7;
 export const ROTHLYT_EVENING_NIGHT_DAY = 8;
+export const BLOODBRINE_NIGHT_DAY_EVENING = 9;
+export const BLOODBRINE_DAY_EVENING_NIGHT = 10;
+export const BLOODBRINE_EVENING_NIGHT_DAY = 11;
 
 export const state = () => (
   {
@@ -47,7 +50,10 @@ export const state = () => (
       'Rhotano Sea (Evening > Night > Day)',
       'Rothlyt Sound (Night > Day > Evening)',
       'Rothlyt Sound (Day > Evening > Night)',
-      'Rothlyt Sound (Evening > Night > Day)'
+      'Rothlyt Sound (Evening > Night > Day)',
+      'Bloodbrine Sea (Night > Day > Evening)',
+      'Bloodbrine Sea (Day > Evening > Night)',
+      'Bloodbrine Sea (Evening > Night > Day)'
     ],
     routeLocationOrder: [
       [ // 'Northern Strait (Night > Day > Evening)'
@@ -157,6 +163,42 @@ export const state = () => (
         { location: 'rothlytSound', phase: 'beforeSpectral' },
         { location: 'rothlytSound', phase: 'spectralDay' },
         { location: 'rothlytSound', phase: 'afterSpectral' }
+      ],
+      [ // 'Bloodbrine Sea (Night > Day > Evening)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralNight' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'beforeSpectral' },
+        { location: 'northern', phase: 'beforeSpectralSnow' },
+        { location: 'northern', phase: 'spectralDay' },
+        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'bloodbrineSea', phase: 'beforeSpectral' },
+        { location: 'bloodbrineSea', phase: 'spectralEvening' },
+        { location: 'bloodbrineSea', phase: 'afterSpectral' }
+      ],
+      [ // 'Bloodbrine Sea (Day > Evening > Night)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralDay' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'beforeSpectral' },
+        { location: 'northern', phase: 'beforeSpectralSnow' },
+        { location: 'northern', phase: 'spectralEvening' },
+        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'bloodbrineSea', phase: 'beforeSpectral' },
+        { location: 'bloodbrineSea', phase: 'spectralNight' },
+        { location: 'bloodbrineSea', phase: 'afterSpectral' }
+      ],
+      [ // 'Bloodbrine Sea (Evening > Night > Day)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralEvening' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'beforeSpectral' },
+        { location: 'northern', phase: 'beforeSpectralSnow' },
+        { location: 'northern', phase: 'spectralNight' },
+        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'bloodbrineSea', phase: 'beforeSpectral' },
+        { location: 'bloodbrineSea', phase: 'spectralDay' },
+        { location: 'bloodbrineSea', phase: 'afterSpectral' }
       ]
     ],
     locationFilterTitles: {
@@ -189,6 +231,11 @@ export const state = () => (
         day: 'Rothlyt Sound (Day)',
         evening: 'Rothlyt Sound (Evening)',
         night: 'Rothlyt Sound (Night)'
+      },
+      bloodbrineSea: {
+        day: 'Bloodbrine Sea (Day)',
+        evening: 'Bloodbrine Sea (Evening)',
+        night: 'Bloodbrine Sea (Night)'
       }
     },
     stratHeadings: {
@@ -349,7 +396,7 @@ export const state = () => (
         }
       },
       cieldalaes: {
-        location: 'cieldalaes',
+        location: 'Cieldalaes',
         beforeSpectral: {
           phase: 'Before Spectral',
           weather: 'Normal',
@@ -360,20 +407,20 @@ export const state = () => (
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          bait: 'Ragworm',
+          strategy: 'Identical Cast + Double Hook (Mythril Boxfish !)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
-          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          bait: 'Krill',
+          strategy: 'Doublehook&nbsp;!!!' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          bait: 'Krill, Squid Strip',
+          strategy: 'Doublehook&nbsp;!!! (Cieldalaes&nbsp;Geode&nbsp;!!!, Hafgufa&nbsp;!!!)' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
@@ -394,20 +441,54 @@ export const state = () => (
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          bait: 'Ragworm',
+          strategy: 'Doublehook&nbsp;!!!' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
-          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          bait: 'Ragworm',
+          strategy: 'Doublehook&nbsp;!!! (Rothlyt&nbsp;Mussel&nbsp;!!!, Placodus&nbsp;!!!)' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
+          bait: 'Ragworm',
+          strategy: 'Target + Doublehook ! (Crow&nbsp;Puffer&nbsp;!, Honeycomb&nbsp;Fish&nbsp;!, Garum&nbsp;Jug&nbsp;!, Perl&nbsp;Bombfish&nbsp;!)' },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
           bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
-          strategy: 'Collating Strategies' },
+          strategy: 'Collating Strategies'
+        }
+      },
+      bloodbrineSea: {
+        location: 'Bloodbrine Sea',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Reel&nbsp;only&nbsp;!!! (Spectral&nsbp;Eel&nbsp;!!!)' },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Pillbug',
+          strategy: 'Identical Cast + Double Hook (Seafaring&nbsp;Toad&nbsp;!!!)' },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Krill',
+          strategy: 'Doublehook&nbsp;!!! (Bareface&nbsp;!!!)' },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Doublehook&nbsp;!! (Skaldminni&nbsp;!!!)' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
@@ -547,6 +628,21 @@ export const getters = {
     }
     if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
       results.push({ location: 'rothlytSound', phase: 'afterSpectral' });
+    }
+    if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+      results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral' });      
+    }
+    if (filters.bloodbrineSeaDay) {
+      results.push({ location: 'bloodbrineSea', phase: 'spectralDay' });
+    }
+    if (filters.bloodbrineSeaEvening) {
+      results.push({ location: 'bloodbrineSea', phase: 'spectralEvening' });
+    }
+    if (filters.bloodbrineSeaNight) {
+      results.push({ location: 'bloodbrineSea', phase: 'spectralNight' });
+    }
+    if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+      results.push({ location: 'bloodbrineSea', phase: 'afterSpectral' });
     }
     return results;
   },
