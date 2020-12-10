@@ -1,11 +1,14 @@
 import Vue from 'vue';
 
-export const NORTHERN_NIGHT_DAY_EVENING = 1;
-export const NORTHERN_DAY_EVENING_NIGHT = 2;
-export const NORTHERN_EVENING_NIGHT_DAY = 3;
-export const RHOTANO_NIGHT_DAY_EVENING = 4;
-export const RHOTANO_DAY_EVENING_NIGHT = 5;
-export const RHOTANO_EVENING_NIGHT_DAY = 6;
+export const NORTHERN_NIGHT_DAY_EVENING = 0;
+export const NORTHERN_DAY_EVENING_NIGHT = 1;
+export const NORTHERN_EVENING_NIGHT_DAY = 2;
+export const RHOTANO_NIGHT_DAY_EVENING = 3;
+export const RHOTANO_DAY_EVENING_NIGHT = 4;
+export const RHOTANO_EVENING_NIGHT_DAY = 5;
+export const ROTHLYT_NIGHT_DAY_EVENING = 6;
+export const ROTHLYT_DAY_EVENING_NIGHT = 7;
+export const ROTHLYT_EVENING_NIGHT_DAY = 8;
 
 export const state = () => (
   {
@@ -41,7 +44,10 @@ export const state = () => (
       'Northern Strait (Evening > Night > Day)',
       'Rhotano Sea (Night > Day > Evening)',
       'Rhotano Sea (Day > Evening > Night)',
-      'Rhotano Sea (Evening > Night > Day)'
+      'Rhotano Sea (Evening > Night > Day)',
+      'Rothlyt Sound (Night > Day > Evening)',
+      'Rothlyt Sound (Day > Evening > Night)',
+      'Rothlyt Sound (Evening > Night > Day)'
     ],
     routeLocationOrder: [
       [ // 'Northern Strait (Night > Day > Evening)'
@@ -55,7 +61,7 @@ export const state = () => (
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralEvening' },
-        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'afterSpectral' }
       ],
       [ // 'Northern Strait (Day > Evening > Night)'
         { location: 'southern', phase: 'beforeSpectral' },
@@ -68,7 +74,7 @@ export const state = () => (
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralNight' },
-        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'afterSpectral' }
       ],
       [ // 'Northern Strait (Evening > Night > Day)'
         { location: 'southern', phase: 'beforeSpectral' },
@@ -81,7 +87,7 @@ export const state = () => (
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralDay' },
-        { location: 'northern', phase: 'afterSpectral' },
+        { location: 'northern', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Night > Day > Evening)'
         { location: 'gladionBay', phase: 'beforeSpectral' },
@@ -93,7 +99,7 @@ export const state = () => (
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
         { location: 'rhotanoSea', phase: 'spectralEvening' },
-        { location: 'rhotanoSea', phase: 'afterSpectral' },
+        { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Day > Evening > Night)'
         { location: 'gladionBay', phase: 'beforeSpectral' },
@@ -105,7 +111,7 @@ export const state = () => (
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
         { location: 'rhotanoSea', phase: 'spectralNight' },
-        { location: 'rhotanoSea', phase: 'afterSpectral' },
+        { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Evening > Night > Day)'
         { location: 'gladionBay', phase: 'beforeSpectral' },
@@ -117,7 +123,40 @@ export const state = () => (
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
         { location: 'rhotanoSea', phase: 'spectralDay' },
+        { location: 'rhotanoSea', phase: 'afterSpectral' }
+      ],
+      [ // 'Rothlyt Sound (Night > Day > Evening)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralNight' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'rhotanoSea', phase: 'beforeSpectral' },
+        { location: 'rhotanoSea', phase: 'spectralDay' },
         { location: 'rhotanoSea', phase: 'afterSpectral' },
+        { location: 'rothlytSound', phase: 'beforeSpectral' },
+        { location: 'rothlytSound', phase: 'spectralEvening' },
+        { location: 'rothlytSound', phase: 'afterSpectral' }
+      ],
+      [ // 'Rothlyt Sound (Day > Evening > Night)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralDay' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'rhotanoSea', phase: 'beforeSpectral' },
+        { location: 'rhotanoSea', phase: 'spectralEvening' },
+        { location: 'rhotanoSea', phase: 'afterSpectral' },
+        { location: 'rothlytSound', phase: 'beforeSpectral' },
+        { location: 'rothlytSound', phase: 'spectralNight' },
+        { location: 'rothlytSound', phase: 'afterSpectral' }
+      ],
+      [ // 'Rothlyt Sound (Evening > Night > Day)'
+        { location: 'cieldalaes', phase: 'beforeSpectral' },
+        { location: 'cieldalaes', phase: 'spectralEvening' },
+        { location: 'cieldalaes', phase: 'afterSpectral' },
+        { location: 'rhotanoSea', phase: 'beforeSpectral' },
+        { location: 'rhotanoSea', phase: 'spectralNight' },
+        { location: 'rhotanoSea', phase: 'afterSpectral' },
+        { location: 'rothlytSound', phase: 'beforeSpectral' },
+        { location: 'rothlytSound', phase: 'spectralDay' },
+        { location: 'rothlytSound', phase: 'afterSpectral' }
       ]
     ],
     locationFilterTitles: {
@@ -140,6 +179,16 @@ export const state = () => (
         day: 'Northern Strait of Merlthor (Day)',
         evening: 'Northern Strait of Merlthor (Evening)',
         night: 'Northern Strait of Merlthor (Night)'
+      },
+      cieldalaes: {
+        day: 'Cieldalaes (Day)',
+        evening: 'Cieldalaes (Evening)',
+        night: 'Cieldalaes (Night)'
+      },
+      rothlytSound: {
+        day: 'Rothlyt Sound (Day)',
+        evening: 'Rothlyt Sound (Evening)',
+        night: 'Rothlyt Sound (Night)'
       }
     },
     stratHeadings: {
@@ -298,6 +347,74 @@ export const state = () => (
           bait: 'Ragworm + Mooch =&nbsp;<strong>Ragworm</strong>',
           strategy: '(Tossed&nbsp;dagger&nbsp;!) + (Elder&nbsp;Dinicthys&nbsp;!!) =&nbsp;<strong>(Shooting&nbsp;Star&nbsp;!!!)</strong>'
         }
+      },
+      cieldalaes: {
+        location: 'cieldalaes',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Spectral Butterfly for Spectral' },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies'
+        }
+      },
+      rothlytSound: {
+        location: 'Rothlyt Sound',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Spectresaur for Spectral' },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies' },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm, Krill, Plump&nbsp;Worm, Versatile&nbsp;Lure',
+          strategy: 'Collating Strategies'
+        }
       }
     }
   }
@@ -368,6 +485,21 @@ export const getters = {
     if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
       results.push({ location: 'southern', phase: 'afterSpectral' });
     }
+    if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+      results.push({ location: 'cieldalaes', phase: 'beforeSpectral' });      
+    }
+    if (filters.cieldalaesDay) {
+      results.push({ location: 'cieldalaes', phase: 'spectralDay' });
+    }
+    if (filters.cieldalaesEvening) {
+      results.push({ location: 'cieldalaes', phase: 'spectralEvening' });
+    }
+    if (filters.cieldalaesNight) {
+      results.push({ location: 'cieldalaes', phase: 'spectralNight' });
+    }
+    if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+      results.push({ location: 'cieldalaes', phase: 'afterSpectral' });
+    }
     if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
       results.push({ location: 'rhotanoSea', phase: 'beforeSpectral' });      
     }
@@ -400,6 +532,21 @@ export const getters = {
     }
     if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
       results.push({ location: 'northern', phase: 'afterSpectral' });
+    }
+    if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+      results.push({ location: 'rothlytSound', phase: 'beforeSpectral' });      
+    }
+    if (filters.rothlytSoundDay) {
+      results.push({ location: 'rothlytSound', phase: 'spectralDay' });
+    }
+    if (filters.rothlytSoundEvening) {
+      results.push({ location: 'rothlytSound', phase: 'spectralEvening' });
+    }
+    if (filters.rothlytSoundNight) {
+      results.push({ location: 'rothlytSound', phase: 'spectralNight' });
+    }
+    if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+      results.push({ location: 'rothlytSound', phase: 'afterSpectral' });
     }
     return results;
   },
