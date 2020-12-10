@@ -355,7 +355,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Ragworm',
-          strategy: 'Spectral Butterfly for Spectral' },
+          strategy: 'Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -389,7 +389,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Plump&nbsp;Worm',
-          strategy: 'Spectresaur for Spectral' },
+          strategy: 'Reel&nbsp;only&nbsp;!!!' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
