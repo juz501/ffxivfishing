@@ -42,18 +42,18 @@ export const state = () => (
       6,3,4,1,5,2,6,3,4,1,5,2
     ],
     routeTitles: [
-      'Northern Strait (Night > Day > Evening)',
-      'Northern Strait (Day > Evening > Night)',
-      'Northern Strait (Evening > Night > Day)',
-      'Rhotano Sea (Night > Day > Evening)',
-      'Rhotano Sea (Day > Evening > Night)',
-      'Rhotano Sea (Evening > Night > Day)',
-      'Rothlyt Sound (Night > Day > Evening)',
-      'Rothlyt Sound (Day > Evening > Night)',
-      'Rothlyt Sound (Evening > Night > Day)',
-      'Bloodbrine Sea (Night > Day > Evening)',
-      'Bloodbrine Sea (Day > Evening > Night)',
-      'Bloodbrine Sea (Evening > Night > Day)'
+      'Northern Strait (Night > Day > Evening) - SeaDragon Coral',
+      'Northern Strait (Day > Evening > Night) - Octo',
+      'Northern Strait (Evening > Night > Day) - Sothis Elasmo',
+      'Rhotano Sea (Night > Day > Evening) - Sothis Stonescale',
+      'Rhotano Sea (Day > Evening > Night) - Jelly',
+      'Rhotano Sea (Evening > Night > Day) - Shark Coral',
+      'Rothlyt Sound (Night > Day > Evening) - Hafgufa Placodus',
+      'Rothlyt Sound (Day > Evening > Night) - Balloon Stonescale',
+      'Rothlyt Sound (Evening > Night > Day) - Balloon Manta',
+      'Bloodbrine Sea (Night > Day > Evening) - Hafgufa Elasmo',
+      'Bloodbrine Sea (Day > Evening > Night) - Manta Score',
+      'Bloodbrine Sea (Evening > Night > Day) - Toad Crab'
     ],
     routeLocationOrder: [
       [ // 'Northern Strait (Night > Day > Evening)'
