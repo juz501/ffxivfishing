@@ -1,6 +1,6 @@
 <template>
   <footer class="wrapper white-bg">
-    <span>&copy; Ice Phoenix 2020 - <a href="https://discord.gg/UCjXqNr" target="_blank" rel="noopener">Penguin Logistics</a></span>
+    <span>&copy; Ice &amp; Gale Phoenix 2020</span>
     <span><nuxt-link to="/credits">credits</nuxt-link></span>
   </footer>
 </template>
