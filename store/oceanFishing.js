@@ -25,22 +25,6 @@ export const state = () => (
       route: 'Per Route',
       location: 'Per Location'
     },
-    routePattern: [
-      0,3,1,4,2,5,0,3,1,4,2,5,
-      3,0,4,1,5,2,3,0,4,1,5,2,
-      1,4,2,5,0,3,1,4,2,5,0,3,
-      4,1,5,2,3,0,4,1,5,2,3,0,
-      2,5,0,3,1,4,2,5,0,3,1,4,
-      5,2,3,0,4,1,5,2,3,0,4,1
-    ],
-    originalRoutePattern: [
-      1,4,2,5,3,6,1,4,2,5,3,6,
-      4,1,5,2,6,3,4,1,5,2,6,3,
-      2,5,3,6,1,4,2,5,3,6,1,4,
-      5,2,6,3,4,1,5,2,6,3,4,1,
-      3,6,1,4,2,5,3,6,1,4,2,5,
-      6,3,4,1,5,2,6,3,4,1,5,2
-    ],
     routeTitles: [
       'Northern Strait (Night > Day > Evening) - Seadragon Coral',
       'Northern Strait (Day > Evening > Night) - Octo',
@@ -508,15 +492,6 @@ export const getters = {
   },
   getTypeTitles(state) {
     return state.typeTitles;
-  },
-  getRoutePattern(state) {
-    return state.routePattern;
-  },
-  getOriginalRoutePattern(state) {
-    return state.originalRoutePattern;
-  },
-  getRouteScheduleByDatetime: (state) => (datetime) => {
-    return [];
   },
   getRouteTitles(state) {
     return state.routeTitles;

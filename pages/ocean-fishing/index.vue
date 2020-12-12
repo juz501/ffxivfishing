@@ -9,6 +9,9 @@
       </div>
       <div v-if="filters.perRoute">
         <h2 class="h3">{{sectionTitles.route}}</h2>
+        <div class="filter">
+          <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
+        </div>
         <div class="filter routeFilter">
           <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}">{{routeTitles[routes.northernNightDayEveningRoute]}}</button>
           <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}">{{routeTitles[routes.northernDayEveningNightRoute]}}</button>
@@ -32,6 +35,9 @@
       </div>
       <div v-if="filters.perLocationTime">
         <h2 class="h3">{{sectionTitles.location}}</h2>
+        <div class="filter">
+          <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
+        </div>
         <div class="filter routeFilter">
           <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }">{{locationFilterTitles.gladionBay.day}}</button>
           <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }">{{locationFilterTitles.gladionBay.evening}}</button>
@@ -67,7 +73,7 @@
           <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }">{{locationFilterTitles.bloodbrineSea.evening}}</button>
           <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }">{{locationFilterTitles.bloodbrineSea.night}}</button>
         </div>
-      </div>
+      </div>      
     </div>
     <div v-if="( currentState.route !== null && filters.perRoute ) || ( hasLocations && filters.perLocationTime )">
       <h3 class="h4">{{sectionTitles.strat}}</h3>
