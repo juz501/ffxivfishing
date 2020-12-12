@@ -459,7 +459,7 @@ export const state = () => (
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Ragworm',
+          bait: '<strong>Ragworm</strong>',
           strategy: 'Crow&nbsp;Puffer&nbsp;! &amp; Honeycomb&nbsp;Fish&nbsp;!, <strong>Ginkgo Fin</strong>'
         }
       },
@@ -493,8 +493,8 @@ export const state = () => (
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Krill',
-          strategy: 'Doublehook&nbsp;!!! (Bareface&nbsp;!!!)'
+          bait: '<strong>Krill</strong>',
+          strategy: 'Doublehook&nbsp;!!! (<strong>Bareface&nbsp;!!!</strong>)'
         }
       }
     }
