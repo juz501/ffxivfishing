@@ -470,7 +470,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Reel&nbsp;only&nbsp;!!! (Spectral&nsbp;Eel&nbsp;!!!)' },
+          strategy: 'Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Eel&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
