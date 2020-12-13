@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "eorzea-time": "^2.0.0",
+    "eorzea-time": "^2.0.0",    
     "netlify-cli": "^2.69.6",
     "node-sass": "^4.14.1",
     "nuxt": "^2.13.2",
@@ -18,6 +18,12 @@
     "build": "nuxt generate",
     "dev": "nuxt",
     "netlify": "netlify",
-    "pushlfs": "git lfs push --all origin"
+    "pushlfs": "git lfs push --all origin",
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-nuxt": "^2.0.0"
   }
 }
