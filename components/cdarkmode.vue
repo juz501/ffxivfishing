@@ -40,7 +40,7 @@ export default {
         .v-switch-label {
           color: $white;  
         }
-        
+
       }
 
             
