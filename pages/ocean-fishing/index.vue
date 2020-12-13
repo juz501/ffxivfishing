@@ -8,7 +8,7 @@
         <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}">{{typeTitles.location}}</button>
       </div>
       <div class="filter">
-        <h2 class="h3">Voyage Schedule</h2>
+        <h2 class="h3">Route Schedule</h2>
         <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
       </div>
       <div v-if="filters.perRoute">
