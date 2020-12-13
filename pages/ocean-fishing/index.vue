@@ -7,11 +7,12 @@
         <button @click="gotoPerRoute" :class="{ 'filter-on': filters.perRoute}">{{typeTitles.route}}</button>
         <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}">{{typeTitles.location}}</button>
       </div>
+      <div class="filter">
+        <h2 class="h3">Voyage Schedule</h2>
+        <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
+      </div>
       <div v-if="filters.perRoute">
         <h2 class="h3">{{sectionTitles.route}}</h2>
-        <div class="filter">
-          <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
-        </div>
         <div class="filter routeFilter">
           <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}">{{routeTitles[routes.northernNightDayEveningRoute]}}</button>
           <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}">{{routeTitles[routes.northernDayEveningNightRoute]}}</button>
@@ -35,9 +36,6 @@
       </div>
       <div v-if="filters.perLocationTime">
         <h2 class="h3">{{sectionTitles.location}}</h2>
-        <div class="filter">
-          <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
-        </div>
         <div class="filter routeFilter">
           <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }">{{locationFilterTitles.gladionBay.day}}</button>
           <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }">{{locationFilterTitles.gladionBay.evening}}</button>
