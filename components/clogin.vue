@@ -11,7 +11,7 @@ import { mapGetters } from 'vuex';
 
 export default {
   mounted() {
-    if ( process.client && window.netlifyIdentity ) {
+    if ( window.netlifyIdentity ) {
       const ni = window.netlifyIdentity;
       ni.on( 'login', user => this.$store.dispatch( 'user/setUser', user));
       ni.on( 'logout', () => this.$store.dispatch( 'user/setUser', null));

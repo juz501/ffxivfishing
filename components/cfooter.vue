@@ -1,5 +1,5 @@
 <template>
-  <footer class="wrapper white-bg">
+  <footer class="wrapper default-bg">
     <span>&copy; Ice &amp; Gale Phoenix 2020</span>
     <span><nuxt-link to="/credits">credits</nuxt-link></span>
   </footer>

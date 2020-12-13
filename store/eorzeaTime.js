@@ -25,7 +25,7 @@ export const getters = {
 }
 
 export const actions = {
-  updateTime( { commit }, e ) {
+  updateTime( { commit } ) {
     commit( 'updateTimeData', { id: 'et', data: getEorzeaTime() } );
   }  
 }

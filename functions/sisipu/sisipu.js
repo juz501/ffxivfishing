@@ -29,8 +29,6 @@ exports.handler = ( event, context, callback ) => {
     return;
   }
   try {
-    const body = JSON.parse( event.body );
-    const payload = body.payload;
     callback( null, {
       statusCode: 200,
       body: "Hello" + ( user !== null ? user.user_metadata.full_name : " World")

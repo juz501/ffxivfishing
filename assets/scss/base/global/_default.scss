@@ -4,7 +4,11 @@
 
 body {
   background-color: $default-background-color;
-  font-size: $body-font-size-px + 'px';
+  font-size: rem-calc($body-font-size-px);
+  &.dark {
+    background-color: $dark-background-color;
+    color: $white;
+  }
 }
 
 ul {

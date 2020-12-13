@@ -21,6 +21,11 @@ h1,
   font-size: rem-calc(40);
 }
 
+.dark h1,
+.dark .h1 {
+  color: $white;
+}
+
 h2,
 .h2 {
   font-weight: 400;
@@ -44,6 +49,15 @@ a {
   
   &:hover {
     color: $hover-color;    
+  }
+}
+
+.dark a {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
   }
 }
 

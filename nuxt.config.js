@@ -13,6 +13,12 @@ export default {
   css: [
     '@/assets/scss/style.scss'
   ],
+  plugins: [
+    {
+      src: '~/plugins/vue-toggle-button.js',
+      ssr: false
+    }
+  ],  
   components: true,
   productionTip: false,
   devtools: true,

@@ -1,5 +1,3 @@
-import Vue from 'vue';
-
 export const NORTHERN_NIGHT_DAY_EVENING = 0;
 export const NORTHERN_DAY_EVENING_NIGHT = 1;
 export const NORTHERN_EVENING_NIGHT_DAY = 2;
@@ -485,6 +483,142 @@ export const state = () => (
   }
 )
 
+const pushFiltersGladionBay = (filters, results) => {
+  if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
+    results.push({ location: 'gladionBay', phase: 'beforeSpectral' });
+    results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' });
+  }
+  if (filters.gladionBayDay) {
+    results.push({ location: 'gladionBay', phase: 'spectralDay' });
+  }
+  if (filters.gladionBayEvening) {
+    results.push({ location: 'gladionBay', phase: 'spectralEvening' });
+  }
+  if (filters.gladionBayNight) {
+    results.push({ location: 'gladionBay', phase: 'spectralNight' });
+  }
+  if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
+    results.push({ location: 'gladionBay', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersSouthern = (filters, results) => {
+  if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
+    results.push({ location: 'southern', phase: 'beforeSpectral' });      
+  }
+  if (filters.southernDay) {
+    results.push({ location: 'southern', phase: 'spectralDay' });
+  }
+  if (filters.southernEvening) {
+    results.push({ location: 'southern', phase: 'spectralEvening' });
+  }
+  if (filters.southernNight) {
+    results.push({ location: 'southern', phase: 'spectralNight' });
+  }
+  if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
+    results.push({ location: 'southern', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersCieldalaes = (filters, results) => {
+  if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+    results.push({ location: 'cieldalaes', phase: 'beforeSpectral' });      
+  }
+  if (filters.cieldalaesDay) {
+    results.push({ location: 'cieldalaes', phase: 'spectralDay' });
+  }
+  if (filters.cieldalaesEvening) {
+    results.push({ location: 'cieldalaes', phase: 'spectralEvening' });
+  }
+  if (filters.cieldalaesNight) {
+    results.push({ location: 'cieldalaes', phase: 'spectralNight' });
+  }
+  if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+    results.push({ location: 'cieldalaes', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersRhotanoSea = (filters, results) => {
+  if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
+    results.push({ location: 'rhotanoSea', phase: 'beforeSpectral' });      
+  }
+  if (filters.rhotanoSeaDay) {
+    results.push({ location: 'rhotanoSea', phase: 'spectralDay' });
+  }
+  if (filters.rhotanoSeaEvening) {
+    results.push({ location: 'rhotanoSea', phase: 'spectralEvening' });
+  }
+  if (filters.rhotanoSeaNight) {
+    results.push({ location: 'rhotanoSea', phase: 'spectralNight' });
+  }
+  if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
+    results.push({ location: 'rhotanoSea', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersNorthern = (filters, results) => {
+  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+    results.push({ location: 'northern', phase: 'beforeSpectral' });      
+  }
+  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+    results.push({ location: 'northern', phase: 'beforeSpectralSnow' });      
+  }
+  if (filters.northernDay) {
+    results.push({ location: 'northern', phase: 'spectralDay' });
+  }
+  if (filters.northernEvening) {
+    results.push({ location: 'northern', phase: 'spectralEvening' });
+  }
+  if (filters.northernNight) {
+    results.push({ location: 'northern', phase: 'spectralNight' });
+  }
+  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+    results.push({ location: 'northern', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersRothlytSound = (filters, results) => {
+  if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+    results.push({ location: 'rothlytSound', phase: 'beforeSpectral' });      
+  }
+  if (filters.rothlytSoundDay) {
+    results.push({ location: 'rothlytSound', phase: 'spectralDay' });
+  }
+  if (filters.rothlytSoundEvening) {
+    results.push({ location: 'rothlytSound', phase: 'spectralEvening' });
+  }
+  if (filters.rothlytSoundNight) {
+    results.push({ location: 'rothlytSound', phase: 'spectralNight' });
+  }
+  if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+    results.push({ location: 'rothlytSound', phase: 'afterSpectral' });
+  }
+  return results;
+}
+
+const pushFiltersBloodbrineSea = (filters, results) => {
+  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+    results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral' });      
+  }
+  if (filters.bloodbrineSeaDay) {
+    results.push({ location: 'bloodbrineSea', phase: 'spectralDay' });
+  }
+  if (filters.bloodbrineSeaEvening) {
+    results.push({ location: 'bloodbrineSea', phase: 'spectralEvening' });
+  }
+  if (filters.bloodbrineSeaNight) {
+    results.push({ location: 'bloodbrineSea', phase: 'spectralNight' });
+  }
+  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+    results.push({ location: 'bloodbrineSea', phase: 'afterSpectral' });
+  }
+  return results;
+}
 
 export const getters = {
   getSectionTitles(state) {
@@ -508,117 +642,16 @@ export const getters = {
   getRouteLocationOrder(state) {
     return state.routeLocationOrder;
   },
-  getLocationTimeOrder: (state) => (filters) => {
+  getLocationTimeOrder: () => (filters) => {
     let results = [];
-    if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
-      results.push({ location: 'gladionBay', phase: 'beforeSpectral' });
-      results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' });
-    }
-    if (filters.gladionBayDay) {
-      results.push({ location: 'gladionBay', phase: 'spectralDay' });
-    }
-    if (filters.gladionBayEvening) {
-      results.push({ location: 'gladionBay', phase: 'spectralEvening' });
-    }
-    if (filters.gladionBayNight) {
-      results.push({ location: 'gladionBay', phase: 'spectralNight' });
-    }
-    if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
-      results.push({ location: 'gladionBay', phase: 'afterSpectral' });
-    }
-    if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
-      results.push({ location: 'southern', phase: 'beforeSpectral' });      
-    }
-    if (filters.southernDay) {
-      results.push({ location: 'southern', phase: 'spectralDay' });
-    }
-    if (filters.southernEvening) {
-      results.push({ location: 'southern', phase: 'spectralEvening' });
-    }
-    if (filters.southernNight) {
-      results.push({ location: 'southern', phase: 'spectralNight' });
-    }
-    if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
-      results.push({ location: 'southern', phase: 'afterSpectral' });
-    }
-    if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
-      results.push({ location: 'cieldalaes', phase: 'beforeSpectral' });      
-    }
-    if (filters.cieldalaesDay) {
-      results.push({ location: 'cieldalaes', phase: 'spectralDay' });
-    }
-    if (filters.cieldalaesEvening) {
-      results.push({ location: 'cieldalaes', phase: 'spectralEvening' });
-    }
-    if (filters.cieldalaesNight) {
-      results.push({ location: 'cieldalaes', phase: 'spectralNight' });
-    }
-    if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
-      results.push({ location: 'cieldalaes', phase: 'afterSpectral' });
-    }
-    if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
-      results.push({ location: 'rhotanoSea', phase: 'beforeSpectral' });      
-    }
-    if (filters.rhotanoSeaDay) {
-      results.push({ location: 'rhotanoSea', phase: 'spectralDay' });
-    }
-    if (filters.rhotanoSeaEvening) {
-      results.push({ location: 'rhotanoSea', phase: 'spectralEvening' });
-    }
-    if (filters.rhotanoSeaNight) {
-      results.push({ location: 'rhotanoSea', phase: 'spectralNight' });
-    }
-    if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
-      results.push({ location: 'rhotanoSea', phase: 'afterSpectral' });
-    }
-    if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
-      results.push({ location: 'northern', phase: 'beforeSpectral' });      
-    }
-    if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
-      results.push({ location: 'northern', phase: 'beforeSpectralSnow' });      
-    }
-    if (filters.northernDay) {
-      results.push({ location: 'northern', phase: 'spectralDay' });
-    }
-    if (filters.northernEvening) {
-      results.push({ location: 'northern', phase: 'spectralEvening' });
-    }
-    if (filters.northernNight) {
-      results.push({ location: 'northern', phase: 'spectralNight' });
-    }
-    if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
-      results.push({ location: 'northern', phase: 'afterSpectral' });
-    }
-    if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
-      results.push({ location: 'rothlytSound', phase: 'beforeSpectral' });      
-    }
-    if (filters.rothlytSoundDay) {
-      results.push({ location: 'rothlytSound', phase: 'spectralDay' });
-    }
-    if (filters.rothlytSoundEvening) {
-      results.push({ location: 'rothlytSound', phase: 'spectralEvening' });
-    }
-    if (filters.rothlytSoundNight) {
-      results.push({ location: 'rothlytSound', phase: 'spectralNight' });
-    }
-    if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
-      results.push({ location: 'rothlytSound', phase: 'afterSpectral' });
-    }
-    if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
-      results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral' });      
-    }
-    if (filters.bloodbrineSeaDay) {
-      results.push({ location: 'bloodbrineSea', phase: 'spectralDay' });
-    }
-    if (filters.bloodbrineSeaEvening) {
-      results.push({ location: 'bloodbrineSea', phase: 'spectralEvening' });
-    }
-    if (filters.bloodbrineSeaNight) {
-      results.push({ location: 'bloodbrineSea', phase: 'spectralNight' });
-    }
-    if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
-      results.push({ location: 'bloodbrineSea', phase: 'afterSpectral' });
-    }
+    results = pushFiltersGladionBay(filters, results);
+    results = pushFiltersSouthern(filters, results);
+    results = pushFiltersCieldalaes(filters, results);
+    results = pushFiltersRhotanoSea(filters, results);
+    results = pushFiltersNorthern(filters, results);
+    results = pushFiltersRothlytSound(filters, results);
+    results = pushFiltersBloodbrineSea(filters, results);
+    
     return results;
   },
 }

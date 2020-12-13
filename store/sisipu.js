@@ -12,7 +12,7 @@ export const getters = {
   }
 }
 
-const getLevesAPI = ( params ) => {
+const getLevesAPI = () => {
   // API call to get leves data here
   return {};
 }
@@ -20,12 +20,14 @@ const getLevesAPI = ( params ) => {
 export const actions = {
   sisipu( { commit }, { func, params } ) {
     switch (func) {
-      case 'getLeves':
+      case 'getLeves': {
         const data = getLevesAPI( params );
         commit( 'SET_LEVES', { id: 'leves', data: data } )
         break;
-      default:
+      }
+      default: {
         break;
+      }
     }
   }
 }
