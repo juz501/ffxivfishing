@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "eorzea-time": "^2.0.0",
-    "netlify-cli": "^2.57.0",
+    "netlify-cli": "^2.69.6",
     "node-sass": "^4.14.1",
     "nuxt": "^2.13.2",
     "sass-loader": "^8.0.2",
