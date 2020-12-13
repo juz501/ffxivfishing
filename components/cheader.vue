@@ -1,10 +1,11 @@
 <template>
   <div>
-    <header class="wrapper white-bg">
-      <nuxt-link to="/">
+    <header class="wrapper default-bg">
+      <nuxt-link :class="['logo-link']" to="/">
         <h1 v-if="isHomepage">FFXIV Fishing Tool</h1>
         <span v-if="!isHomepage" class="h1">FFXIV Fishing Tool</span>
       </nuxt-link>
+      <cdarkmode :handleDarkMode="handleDarkMode"/>
       <cclock />
     </header>
     <cnav />
@@ -12,6 +13,9 @@
 </template>
 <script>
 export default {
+  props: {
+    handleDarkMode: Function
+  },
   data() {
     return {
       isHomepage: this.$route.path == "/"
@@ -19,13 +23,17 @@ export default {
   }  
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 header {
   display: flex;
-  justify-content: space-between;
+
+  .logo-link {
+    flex: 1 1 auto;
+  }
+
+  .darkmode-toggle {
+    margin-right: 50px;
+  }  
 }
 
-header .timer {
-  margin: auto 0;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="wrapper no-padding white-bg menu-bar">
+    <div class="wrapper no-padding default-bg menu-bar">
       <nav>
         <ul>
           <li><nuxt-link to="/ocean-fishing">Ocean Fishing Reference</nuxt-link></li>          

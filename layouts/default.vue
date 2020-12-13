@@ -1,12 +1,30 @@
 <template>
-  <div class="content wrapper">
-    <cheader />
+  <div :class="['content', 'wrapper']">
+    <cheader :handleDarkMode="handleDarkMode"/>
     <nuxt />
     <cfooter />
   </div>
 </template>
 <script>
 export default {
-  name: 'defaultLayout'
+  name: 'defaultLayout',
+  data() {
+    return {
+      darkMode: false
+    }
+  },
+  head() {
+    return {
+      bodyAttrs: {
+        class: this.darkMode ? ['dark'] : []
+      }
+    }
+  },
+  methods: {
+    handleDarkMode() {
+      this.darkMode = !this.darkMode;
+      console.log( this.darkMode );
+    }
+  }
 }
 </script>
