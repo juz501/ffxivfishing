@@ -4,8 +4,8 @@
     <div class="filters">
       <div class="filter mainFilter">
         <h2 class="h3">{{sectionTitles.type}}</h2>
-        <button @click="gotoPerRoute" :class="{ 'filter-on': filters.perRoute}">{{typeTitles.route}}</button>
-        <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}">{{typeTitles.location}}</button>
+        <button @click="gotoPerRoute" :class="{ 'filter-on': filters.perRoute}" v-html="typeTitles.route"></button>
+        <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}" v-html="typeTitles.location"></button>
       </div>
       <div class="filter">
         <h2 class="h3">Route Schedule</h2>
@@ -14,62 +14,62 @@
       <div v-if="filters.perRoute">
         <h2 class="h3">{{sectionTitles.route}}</h2>
         <div class="filter routeFilter">
-          <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}">{{routeTitles[routes.northernNightDayEveningRoute]}}</button>
-          <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}">{{routeTitles[routes.northernDayEveningNightRoute]}}</button>
-          <button @click="gotoNorthernEveningNightDayRoute" :class="{ 'filter-on': filters.northernEveningNightDayRoute}">{{routeTitles[routes.northernEveningNightDayRoute]}}</button>
+          <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}" v-html="routeTitles[routes.northernNightDayEveningRoute]"></button>
+          <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}" v-html="routeTitles[routes.northernDayEveningNightRoute]"></button>
+          <button @click="gotoNorthernEveningNightDayRoute" :class="{ 'filter-on': filters.northernEveningNightDayRoute}" v-html="routeTitles[routes.northernEveningNightDayRoute]"></button>
         </div>      
         <div class="filter routeFilter">
-          <button @click="gotoRhotanoSeaNightDayEveningRoute" :class="{ 'filter-on': filters.rhotanoSeaNightDayEveningRoute}">{{routeTitles[routes.rhotanoSeaNightDayEveningRoute]}}</button>
-          <button @click="gotoRhotanoSeaDayEveningNightRoute" :class="{ 'filter-on': filters.rhotanoSeaDayEveningNightRoute}">{{routeTitles[routes.rhotanoSeaDayEveningNightRoute]}}</button>
-          <button @click="gotoRhotanoSeaEveningNightDayRoute" :class="{ 'filter-on': filters.rhotanoSeaEveningNightDayRoute}">{{routeTitles[routes.rhotanoSeaEveningNightDayRoute]}}</button>
+          <button @click="gotoRhotanoSeaNightDayEveningRoute" :class="{ 'filter-on': filters.rhotanoSeaNightDayEveningRoute}" v-html="routeTitles[routes.rhotanoSeaNightDayEveningRoute]"></button>
+          <button @click="gotoRhotanoSeaDayEveningNightRoute" :class="{ 'filter-on': filters.rhotanoSeaDayEveningNightRoute}" v-html="routeTitles[routes.rhotanoSeaDayEveningNightRoute]"></button>
+          <button @click="gotoRhotanoSeaEveningNightDayRoute" :class="{ 'filter-on': filters.rhotanoSeaEveningNightDayRoute}" v-html="routeTitles[routes.rhotanoSeaEveningNightDayRoute]"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="gotoRothlytSoundNightDayEveningRoute" :class="{ 'filter-on': filters.rothlytSoundNightDayEveningRoute}">{{routeTitles[routes.rothlytSoundNightDayEveningRoute]}}</button>
-          <button @click="gotoRothlytSoundDayEveningNightRoute" :class="{ 'filter-on': filters.rothlytSoundDayEveningNightRoute}">{{routeTitles[routes.rothlytSoundDayEveningNightRoute]}}</button>
-          <button @click="gotoRothlytSoundEveningNightDayRoute" :class="{ 'filter-on': filters.rothlytSoundEveningNightDayRoute}">{{routeTitles[routes.rothlytSoundEveningNightDayRoute]}}</button>
+          <button @click="gotoRothlytSoundNightDayEveningRoute" :class="{ 'filter-on': filters.rothlytSoundNightDayEveningRoute}" v-html="routeTitles[routes.rothlytSoundNightDayEveningRoute]"></button>
+          <button @click="gotoRothlytSoundDayEveningNightRoute" :class="{ 'filter-on': filters.rothlytSoundDayEveningNightRoute}" v-html="routeTitles[routes.rothlytSoundDayEveningNightRoute]"></button>
+          <button @click="gotoRothlytSoundEveningNightDayRoute" :class="{ 'filter-on': filters.rothlytSoundEveningNightDayRoute}" v-html="routeTitles[routes.rothlytSoundEveningNightDayRoute]"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="gotoBloodbrineSeaNightDayEveningRoute" :class="{ 'filter-on': filters.bloodbrineSeaNightDayEveningRoute}">{{routeTitles[routes.bloodbrineSeaNightDayEveningRoute]}}</button>
-          <button @click="gotoBloodbrineSeaDayEveningNightRoute" :class="{ 'filter-on': filters.bloodbrineSeaDayEveningNightRoute}">{{routeTitles[routes.bloodbrineSeaDayEveningNightRoute]}}</button>
-          <button @click="gotoBloodbrineSeaEveningNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaEveningNightDayRoute}">{{routeTitles[routes.bloodbrineSeaEveningNightDayRoute]}}</button>
+          <button @click="gotoBloodbrineSeaNightDayEveningRoute" :class="{ 'filter-on': filters.bloodbrineSeaNightDayEveningRoute}" v-html="routeTitles[routes.bloodbrineSeaNightDayEveningRoute]"></button>
+          <button @click="gotoBloodbrineSeaDayEveningNightRoute" :class="{ 'filter-on': filters.bloodbrineSeaDayEveningNightRoute}" v-html="routeTitles[routes.bloodbrineSeaDayEveningNightRoute]"></button>
+          <button @click="gotoBloodbrineSeaEveningNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaEveningNightDayRoute}" v-html="routeTitles[routes.bloodbrineSeaEveningNightDayRoute]"></button>
         </div>
       </div>
       <div v-if="filters.perLocationTime">
         <h2 class="h3">{{sectionTitles.location}}</h2>
         <div class="filter routeFilter">
-          <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }">{{locationFilterTitles.gladionBay.day}}</button>
-          <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }">{{locationFilterTitles.gladionBay.evening}}</button>
-          <button @click="toggleGladionBayNight" :class="{ 'filter-on': filters.gladionBayNight }">{{locationFilterTitles.gladionBay.night}}</button>
+          <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }" v-html="locationFilterTitles.gladionBay.day"></button>
+          <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }" v-html="locationFilterTitles.gladionBay.evening"></button>
+          <button @click="toggleGladionBayNight" :class="{ 'filter-on': filters.gladionBayNight }" v-html="locationFilterTitles.gladionBay.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleSouthernDay" :class="{ 'filter-on': filters.southernDay }">{{locationFilterTitles.southern.day}}</button>
-          <button @click="toggleSouthernEvening" :class="{ 'filter-on': filters.southernEvening }">{{locationFilterTitles.southern.evening}}</button>
-          <button @click="toggleSouthernNight" :class="{ 'filter-on': filters.southernNight }">{{locationFilterTitles.southern.night}}</button>
+          <button @click="toggleSouthernDay" :class="{ 'filter-on': filters.southernDay }" v-html="locationFilterTitles.southern.day"></button>
+          <button @click="toggleSouthernEvening" :class="{ 'filter-on': filters.southernEvening }" v-html="locationFilterTitles.southern.evening"></button>
+          <button @click="toggleSouthernNight" :class="{ 'filter-on': filters.southernNight }" v-html="locationFilterTitles.southern.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleCieldalaesDay" :class="{ 'filter-on': filters.cieldalaesDay }">{{locationFilterTitles.cieldalaes.day}}</button>
-          <button @click="toggleCieldalaesEvening" :class="{ 'filter-on': filters.cieldalaesEvening }">{{locationFilterTitles.cieldalaes.evening}}</button>
-          <button @click="toggleCieldalaesNight" :class="{ 'filter-on': filters.cieldalaesNight }">{{locationFilterTitles.cieldalaes.night}}</button>
+          <button @click="toggleCieldalaesDay" :class="{ 'filter-on': filters.cieldalaesDay }" v-html="locationFilterTitles.cieldalaes.day"></button>
+          <button @click="toggleCieldalaesEvening" :class="{ 'filter-on': filters.cieldalaesEvening }" v-html="locationFilterTitles.cieldalaes.evening"></button>
+          <button @click="toggleCieldalaesNight" :class="{ 'filter-on': filters.cieldalaesNight }" v-html="locationFilterTitles.cieldalaes.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleRhotanoSeaDay" :class="{ 'filter-on': filters.rhotanoSeaDay }">{{locationFilterTitles.rhotanoSea.day}}</button>
-          <button @click="toggleRhotanoSeaEvening" :class="{ 'filter-on': filters.rhotanoSeaEvening }">{{locationFilterTitles.rhotanoSea.evening}}</button>
-          <button @click="toggleRhotanoSeaNight" :class="{ 'filter-on': filters.rhotanoSeaNight }">{{locationFilterTitles.rhotanoSea.night}}</button>
+          <button @click="toggleRhotanoSeaDay" :class="{ 'filter-on': filters.rhotanoSeaDay }" v-html="locationFilterTitles.rhotanoSea.day"></button>
+          <button @click="toggleRhotanoSeaEvening" :class="{ 'filter-on': filters.rhotanoSeaEvening }" v-html="locationFilterTitles.rhotanoSea.evening"></button>
+          <button @click="toggleRhotanoSeaNight" :class="{ 'filter-on': filters.rhotanoSeaNight }" v-html="locationFilterTitles.rhotanoSea.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleNorthernDay" :class="{ 'filter-on': filters.northernDay }">{{locationFilterTitles.northern.day}}</button>
-          <button @click="toggleNorthernEvening" :class="{ 'filter-on': filters.northernEvening }">{{locationFilterTitles.northern.evening}}</button>
-          <button @click="toggleNorthernNight" :class="{ 'filter-on': filters.northernNight }">{{locationFilterTitles.northern.night}}</button>
+          <button @click="toggleNorthernDay" :class="{ 'filter-on': filters.northernDay }" v-html="locationFilterTitles.northern.day"></button>
+          <button @click="toggleNorthernEvening" :class="{ 'filter-on': filters.northernEvening }" v-html="locationFilterTitles.northern.evening"></button>
+          <button @click="toggleNorthernNight" :class="{ 'filter-on': filters.northernNight }" v-html="locationFilterTitles.northern.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleRothlytSoundDay" :class="{ 'filter-on': filters.rothlytSoundDay }">{{locationFilterTitles.rothlytSound.day}}</button>
-          <button @click="toggleRothlytSoundEvening" :class="{ 'filter-on': filters.rothlytSoundEvening }">{{locationFilterTitles.rothlytSound.evening}}</button>
-          <button @click="toggleRothlytSoundNight" :class="{ 'filter-on': filters.rothlytSoundNight }">{{locationFilterTitles.rothlytSound.night}}</button>
+          <button @click="toggleRothlytSoundDay" :class="{ 'filter-on': filters.rothlytSoundDay }" v-html="locationFilterTitles.rothlytSound.day"></button>
+          <button @click="toggleRothlytSoundEvening" :class="{ 'filter-on': filters.rothlytSoundEvening }" v-html="locationFilterTitles.rothlytSound.evening"></button>
+          <button @click="toggleRothlytSoundNight" :class="{ 'filter-on': filters.rothlytSoundNight }" v-html="locationFilterTitles.rothlytSound.night"></button>
         </div>
         <div class="filter routeFilter">
-          <button @click="toggleBloodbrineSeaDay" :class="{ 'filter-on': filters.bloodbrineSeaDay }">{{locationFilterTitles.bloodbrineSea.day}}</button>
-          <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }">{{locationFilterTitles.bloodbrineSea.evening}}</button>
-          <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }">{{locationFilterTitles.bloodbrineSea.night}}</button>
+          <button @click="toggleBloodbrineSeaDay" :class="{ 'filter-on': filters.bloodbrineSeaDay }" v-html="locationFilterTitles.bloodbrineSea.day"></button>
+          <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }" v-html="locationFilterTitles.bloodbrineSea.evening"></button>
+          <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }" v-html="locationFilterTitles.bloodbrineSea.night"></button>
         </div>
       </div>      
     </div>
@@ -79,20 +79,20 @@
         <table class="location-baits" v-if="filters.perRoute">
           <thead>
             <tr>
-              <th>{{stratHeadings.location}}</th>
-              <th>{{stratHeadings.phase}}</th>
-              <th>{{stratHeadings.weather}}</th>
-              <th>{{stratHeadings.time}}</th>
-              <th>{{stratHeadings.bait}}</th>
-              <th>{{stratHeadings.strat}}</th>
+              <th v-html="stratHeadings.location"></th>
+              <th v-html="stratHeadings.phase"></th>
+              <th v-html="stratHeadings.weather"></th>
+              <th v-html="stratHeadings.time"></th>
+              <th v-html="stratHeadings.bait"></th>
+              <th v-html="stratHeadings.strat"></th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item, i) in routeLocationOrder[currentRoute]" :key="i">
-              <td v-if="item.location && content[item.location]">{{ content[item.location].location }}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{ content[item.location][item.phase].phase }}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{ content[item.location][item.phase].weather }}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{ content[item.location][item.phase].time }}</td>
+              <td v-if="item.location && content[item.location]" v-html="content[item.location].location"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].phase"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>              
             </tr>
@@ -101,20 +101,20 @@
         <table class="location-baits" v-if="filters.perLocationTime">
           <thead>
             <tr>
-              <th>{{stratHeadings.location}}</th>
-              <th>{{stratHeadings.phase}}</th>
-              <th>{{stratHeadings.weather}}</th>
-              <th>{{stratHeadings.time}}</th>
-              <th>{{stratHeadings.bait}}</th>
-              <th>{{stratHeadings.strat}}</th>
+              <th v-html="stratHeadings.location"></th>
+              <th v-html="stratHeadings.phase"></th>
+              <th v-html="stratHeadings.weather"></th>
+              <th v-html="stratHeadings.time"></th>
+              <th v-html="stratHeadings.bait"></th>
+              <th v-html="stratHeadings.strat"></th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(item, i) in locationTimeOrder" :key="i">
-              <td v-if="item.location && content[item.location]">{{content[item.location].location}}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{content[item.location][item.phase].phase}}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{content[item.location][item.phase].weather}}</td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{content[item.location][item.phase].time}}</td>
+              <td v-if="item.location && content[item.location]" v-html="content[item.location].location"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].phase"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>
             </tr>

@@ -10,11 +10,13 @@ JAMStack on Netlify
 
 - [NuxtJS](https://nuxtjs.org/) - static generation mode
 - [Netlify](https://www.netlify.com/)
-- [Netlify Functions](https://www.netlify.com/products/functions/)
 - [Netlify Large Media](https://www.netlify.com/products/large-media/)
 - [Netlify Identity](https://docs.netlify.com/visitor-access/identity/)
 
 ### Additional Technologies in pipeline
 
-- [FaunaDB](https://fauna.com/)
 - [Discord](https://discord.com/)
+
+## Roadmap
+
+- Update baits/strategies for 5.4 when found

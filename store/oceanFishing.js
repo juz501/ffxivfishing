@@ -76,18 +76,18 @@ export const state = () => (
       location: 'Per Location'
     },
     routeTitles: [
-      'Northern Strait (Night > Day > Evening) - Seadragon Coral',
-      'Northern Strait (Day > Evening > Night) - Octo',
-      'Northern Strait (Evening > Night > Day) - Sothis Elasmo',
-      'Rhotano Sea (Night > Day > Evening) - Sothis Stonescale',
-      'Rhotano Sea (Day > Evening > Night) - Jelly',
-      'Rhotano Sea (Evening > Night > Day) - Shark Coral',
-      'Rothlyt Sound (Night > Day > Evening) - Hafgufa Placodus',
-      'Rothlyt Sound (Day > Evening > Night) - Balloon Stonescale',
-      'Rothlyt Sound (Evening > Night > Day) - Balloon',
-      'Bloodbrine Sea (Night > Day > Evening) - Hafgufa Elasmo',
-      'Bloodbrine Sea (Day > Evening > Night) - Star Bareface',
-      'Bloodbrine Sea (Evening > Night > Day) - Toad Crab'
+      'Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Seadragon&nbsp;Coral',
+      'Northern&nbsp;Strait (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Octo',
+      'Northern&nbsp;Strait (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Sothis&nbsp;Elasmo',
+      'Rhotano&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Sothis&nbsp;Stonescale',
+      'Rhotano&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Jelly',
+      'Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Shark&nbsp;Coral',
+      'Rothlyt&nbsp;Sound (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Placodus',
+      'Rothlyt&nbsp;Sound (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Balloon&nbsp;Stonescale',
+      'Rothlyt&nbsp;Sound (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Balloon',
+      'Bloodbrine&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Elasmo',
+      'Bloodbrine&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Star&nbsp;Bareface',
+      'Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Toad&nbsp;Crab'
     ],
     routeLocationOrder: [
       [ // 'Northern Strait (Night > Day > Evening)'
@@ -237,24 +237,24 @@ export const state = () => (
     ],
     locationFilterTitles: {
       gladionBay: {
-        day: 'Gladion Bay (Day)',
-        evening: 'Gladion Bay (Evening)',
-        night: 'Gladion Bay (Night)'
+        day: 'Gladion&nbsp;Bay (Day)',
+        evening: 'Gladion&nbsp;Bay (Evening)',
+        night: 'Gladion&nbsp;Bay (Night)'
       },
       southern: {
-        day: 'Southern Strait of Merlthor (Day)',
-        evening: 'Southern Strait of Merlthor (Evening)',
-        night: 'Southern Strait of Merlthor (Night)'
+        day: 'Southern&nbsp;Strait of Merlthor (Day)',
+        evening: 'Southern&nbsp;Strait of Merlthor (Evening)',
+        night: 'Southern&nbsp;Strait of Merlthor (Night)'
       },
       rhotanoSea: {
-        day: 'Rhotano Sea (Day)',
-        evening: 'Rhotano Sea (Evening)',
-        night: 'Rhotano Sea (Night)'
+        day: 'Rhotano&nbsp;Sea (Day)',
+        evening: 'Rhotano&nbsp;Sea (Evening)',
+        night: 'Rhotano&nbsp;Sea (Night)'
       },
       northern: {
-        day: 'Northern Strait of Merlthor (Day)',
-        evening: 'Northern Strait of Merlthor (Evening)',
-        night: 'Northern Strait of Merlthor (Night)'
+        day: 'Northern&nbsp;Strait of Merlthor (Day)',
+        evening: 'Northern&nbsp;Strait of Merlthor (Evening)',
+        night: 'Northern&nbsp;Strait of Merlthor (Night)'
       },
       cieldalaes: {
         day: 'Cieldalaes (Day)',
@@ -262,14 +262,14 @@ export const state = () => (
         night: 'Cieldalaes (Night)'
       },
       rothlytSound: {
-        day: 'Rothlyt Sound (Day)',
-        evening: 'Rothlyt Sound (Evening)',
-        night: 'Rothlyt Sound (Night)'
+        day: 'Rothlyt&nbsp;Sound (Day)',
+        evening: 'Rothlyt&nbsp;Sound (Evening)',
+        night: 'Rothlyt&nbsp;Sound (Night)'
       },
       bloodbrineSea: {
-        day: 'Bloodbrine Sea (Day)',
-        evening: 'Bloodbrine Sea (Evening)',
-        night: 'Bloodbrine Sea (Night)'
+        day: 'Bloodbrine&nbsp;Sea (Day)',
+        evening: 'Bloodbrine&nbsp;Sea (Evening)',
+        night: 'Bloodbrine&nbsp;Sea (Night)'
       }
     },
     stratHeadings: {
@@ -288,7 +288,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!!' },
+          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
         beforeSpectralShowers: {
           phase: 'Before Spectral',
           weather: 'Showers',
@@ -300,13 +300,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Day',
           bait: 'Ragworm',
-          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs' },
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Casket&nbsp;Oyster&nbsp;! or Nimble&nbsp;Dancer&nbsp;!)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
           bait: 'Plump Worm',
-          strategy: 'Doublehook&nbsp;!!!' },
+          strategy: 'Doublehook&nbsp;!!! (Funnel&nbsp;Shark&nbsp;!!!)' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
