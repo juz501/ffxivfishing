@@ -288,7 +288,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!!' },
+          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
         beforeSpectralShowers: {
           phase: 'Before Spectral',
           weather: 'Showers',
@@ -300,13 +300,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Day',
           bait: 'Ragworm',
-          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs' },
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Casket&nbsp;Oyster&nbsp;! or Nimble&nbsp;Dancer&nbsp;!)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
           bait: 'Plump Worm',
-          strategy: 'Doublehook&nbsp;!!!' },
+          strategy: 'Doublehook&nbsp;!!! (Funnel&nbsp;Shark&nbsp;!!!)' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
