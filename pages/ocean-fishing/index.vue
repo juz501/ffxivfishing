@@ -73,7 +73,7 @@
         </div>
       </div>      
     </div>
-    <div v-if="( currentState.route !== null && filters.perRoute ) || ( hasLocations && filters.perLocationTime )">
+    <div v-if="( currentRoute !== null && filters.perRoute ) || ( hasLocations && filters.perLocationTime )">
       <h3 class="h4">{{sectionTitles.strat}}</h3>
       <div class="location-baits-wrapper">
         <table class="location-baits" v-if="filters.perRoute">
@@ -88,7 +88,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(item, i) in routeLocationOrder[currentState.route]" :key="i">
+            <tr v-for="(item, i) in routeLocationOrder[currentRoute]" :key="i">
               <td v-if="item.location && content[item.location]">{{ content[item.location].location }}</td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{ content[item.location][item.phase].phase }}</td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{ content[item.location][item.phase].weather }}</td>
@@ -110,7 +110,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(item, i) in locationTimes" :key="i">
+            <tr v-for="(item, i) in locationTimeOrder" :key="i">
               <td v-if="item.location && content[item.location]">{{content[item.location].location}}</td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{content[item.location][item.phase].phase}}</td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]">{{content[item.location][item.phase].weather}}</td>
@@ -125,321 +125,11 @@
   </main>
 </template>
 <script>
-import { mapGetters } from 'vuex';
+import { mapState, mapGetters } from 'vuex';
 
 export default {
-  data() {
-    return {
-      filters: {
-        perRoute: true,
-        perLocationTime: false,
-        gladionBayDay: false,
-        gladionBayEvening: false,
-        gladionBayNight: false,
-        rhotanoSeaDay: false,
-        rhotanoSeaEvening: false,
-        rhotanoSeaNight: false,
-        northernDay: false,
-        northernEvening: false,
-        northernNight: false,
-        southernDay: false,
-        southernEvening: false,
-        southernNight: false,
-        cieldalaesDay: false,
-        cieldalaesEvening: false,
-        cieldalaesNight: false,
-        rothlytSoundDay: false,
-        rothlytSoundEvening: false,
-        rothlytSoundNight: false,
-        bloodbrineSeaDay: false,
-        bloodbrineSeaEvening: false,
-        bloodbrineSeaNight: false,
-        rhotanoSeaDayEveningNightRoute: false,
-        rhotanoSeaEveningNightDayRoute: false,
-        rhotanoSeaNightDayEveningRoute: false,
-        northernDayEveningNightRoute: false,
-        northernEveningNightDayRoute: false,
-        northernNightDayEveningRoute: false,
-        rothlytSoundDayEveningNightRoute: false,
-        rothlytSoundEveningNightDayRoute: false,
-        rothlytSoundNightDayEveningRoute: false,
-        bloodbrineSeaDayEveningNightRoute: false,
-        bloodbrineSeaEveningNightDayRoute: false,
-        bloodbrineSeaNightDayEveningRoute: false
-      },
-      currentState: {
-        route: null     
-      },
-      routes: {
-        northernNightDayEveningRoute: 0,
-        northernDayEveningNightRoute: 1,
-        northernEveningNightDayRoute: 2,
-        rhotanoSeaNightDayEveningRoute: 3,
-        rhotanoSeaDayEveningNightRoute: 4,
-        rhotanoSeaEveningNightDayRoute: 5,
-        rothlytSoundNightDayEveningRoute: 6,
-        rothlytSoundDayEveningNightRoute: 7,
-        rothlytSoundEveningNightDayRoute: 8,
-        bloodbrineSeaNightDayEveningRoute: 9,
-        bloodbrineSeaDayEveningNightRoute: 10,
-        bloodbrineSeaEveningNightDayRoute: 11
-      }
-    }
-  },
-  methods: {   
-    gotoPerRoute() {
-      this.filters.perRoute = true;
-      this.filters.perLocationTime = false;
-    },
-    gotoPerLocationTime() {
-      this.filters.perRoute = false;
-      this.filters.perLocationTime = true;
-    },
-    gotoNorthernNightDayEveningRoute() { // Southern Night, Gladdion Day, Northern Evening
-      this.filters.northernNightDayEveningRoute = true;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.northernNightDayEveningRoute;
-    },
-    gotoNorthernDayEveningNightRoute() { // Southern Day, Gladion Evening, Northern Night
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = true;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.northernDayEveningNightRoute;
-    },
-    gotoNorthernEveningNightDayRoute() { // Southern Evening, Gladion Night, Northern Day
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = true;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.northernEveningNightDayRoute;
-    },
-    gotoRhotanoSeaNightDayEveningRoute() { // Gladion Night, Southern Day, Rhotano Evening
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = true;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.rhotanoSeaNightDayEveningRoute;
-    },
-    gotoRhotanoSeaDayEveningNightRoute() {  // Gladion Day, Southern Evening, Rhotano Night
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = true;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.rhotanoSeaDayEveningNightRoute;
-    },
-    gotoRhotanoSeaEveningNightDayRoute() { // Gladion Evening, Southern Night, Rhotano Day
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;      
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = true;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.rhotanoSeaEveningNightDayRoute;
-    },
-    gotoRothlytSoundNightDayEveningRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Evening
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = true;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.rothlytSoundNightDayEveningRoute;
-    },
-    gotoRothlytSoundDayEveningNightRoute() { // Cieldalaes Day, Rhotano Evening, Rothlyt Night
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = true;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;      
-      this.currentState.route = this.routes.rothlytSoundDayEveningNightRoute;
-    },
-    gotoRothlytSoundEveningNightDayRoute() { // Cieldalaes Evening, Rhotano Night, Rothlyt Day
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = true;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.rothlytSoundEveningNightDayRoute;
-    },
-    gotoBloodbrineSeaNightDayEveningRoute() { // Cieldalaes Night, Northrn Day, Bloodbrine Evening
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = true;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;
-      this.currentState.route = this.routes.bloodbrineSeaNightDayEveningRoute;
-    },
-    gotoBloodbrineSeaDayEveningNightRoute() { // Cieldalaes Day, Northern Evening, Bloodbrine Night
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = true;
-      this.filters.bloodbrineSeaEveningNightDayRoute = false;      
-      this.currentState.route = this.routes.bloodbrineSeaDayEveningNightRoute;
-    },
-    gotoBloodbrineSeaEveningNightDayRoute() { // Cieldalaes Evening, Northern Night, Bloodbrine Day
-      this.filters.northernNightDayEveningRoute = false;
-      this.filters.northernDayEveningNightRoute = false;
-      this.filters.northernEveningNightDayRoute = false;
-      this.filters.rhotanoSeaNightDayEveningRoute = false;
-      this.filters.rhotanoSeaEveningNightDayRoute = false;
-      this.filters.rhotanoSeaDayEveningNightRoute = false;
-      this.filters.rothlytSoundNightDayEveningRoute = false;
-      this.filters.rothlytSoundDayEveningNightRoute = false;
-      this.filters.rothlytSoundEveningNightDayRoute = false;
-      this.filters.bloodbrineSeaNightDayEveningRoute = false;
-      this.filters.bloodbrineSeaDayEveningNightRoute = false;
-      this.filters.bloodbrineSeaEveningNightDayRoute = true;
-      this.currentState.route = this.routes.bloodbrineSeaEveningNightDayRoute;
-    },
-    toggleGladionBayDay() {
-      this.filters.gladionBayDay = !this.filters.gladionBayDay;
-    },
-    toggleGladionBayEvening() {
-      this.filters.gladionBayEvening = !this.filters.gladionBayEvening;
-    },
-    toggleGladionBayNight() {
-      this.filters.gladionBayNight = !this.filters.gladionBayNight;
-    },
-    toggleRhotanoSeaDay() {
-      this.filters.rhotanoSeaDay = !this.filters.rhotanoSeaDay;
-    },
-    toggleRhotanoSeaEvening() {
-      this.filters.rhotanoSeaEvening = !this.filters.rhotanoSeaEvening;
-    },
-    toggleRhotanoSeaNight() {
-      this.filters.rhotanoSeaNight = !this.filters.rhotanoSeaNight;
-    },
-    toggleNorthernDay() {
-      this.filters.northernDay = !this.filters.northernDay;
-    },
-    toggleNorthernEvening() {
-      this.filters.northernEvening = !this.filters.northernEvening;
-    },
-    toggleNorthernNight() {
-      this.filters.northernNight = !this.filters.northernNight;
-    },
-    toggleSouthernDay() {
-      this.filters.southernDay = !this.filters.southernDay;
-    },
-    toggleSouthernEvening() {
-      this.filters.southernEvening = !this.filters.southernEvening;
-    },
-    toggleSouthernNight() {
-      this.filters.southernNight = !this.filters.southernNight;
-    },
-    toggleCieldalaesDay() {
-      this.filters.cieldalaesDay = !this.filters.cieldalaesDay;
-    },
-    toggleCieldalaesEvening() {
-      this.filters.cieldalaesEvening = !this.filters.cieldalaesEvening;
-    },
-    toggleCieldalaesNight() {
-      this.filters.cieldalaesNight = !this.filters.cieldalaesNight;
-    },
-    toggleRothlytSoundDay() {
-      this.filters.rothlytSoundDay = !this.filters.rothlytSoundDay;
-    },
-    toggleRothlytSoundEvening() {
-      this.filters.rothlytSoundEvening = !this.filters.rothlytSoundEvening;
-    },
-    toggleRothlytSoundNight() {
-      this.filters.rothlytSoundNight = !this.filters.rothlytSoundNight;
-    },
-    toggleBloodbrineSeaDay() {
-      this.filters.bloodbrineSeaDay = !this.filters.bloodbrineSeaDay;
-    },
-    toggleBloodbrineSeaEvening() {
-      this.filters.bloodbrineSeaEvening = !this.filters.bloodbrineSeaEvening;
-    },
-    toggleBloodbrineSeaNight() {
-      this.filters.bloodbrineSeaNight = !this.filters.bloodbrineSeaNight;
-    }
-  },
   computed: {
+    ...mapState('oceanFishing', ['filters', 'routes', 'currentRoute']),
     ...mapGetters({
       sectionTitles: 'oceanFishing/getSectionTitles',
       typeTitles: 'oceanFishing/getTypeTitles',
@@ -447,36 +137,116 @@ export default {
       content: 'oceanFishing/getContent',
       locationFilterTitles: 'oceanFishing/getLocationFilterTitles',
       stratHeadings: 'oceanFishing/getStratHeadings',
-      routeLocationOrder: 'oceanFishing/getRouteLocationOrder',
-      locationTimeOrder: 'oceanFishing/getLocationTimeOrder'
-    }),
-    locationTimes() {
-      return this.locationTimeOrder(this.filters);
+      routeLocationOrder: 'oceanFishing/getRouteLocationOrder',      
+      locationTimeOrder: 'oceanFishing/getLocationTimeOrder',
+      hasLocations: 'oceanFishing/hasLocations'
+    })   
+  },
+  methods: {
+    gotoPerRoute() {
+      this.$store.commit('oceanFishing/updateFilters', { perRoute: true, perLocationTime: false });
     },
-    hasLocations() {
-      return (
-        this.filters.gladionBayDay ||
-        this.filters.gladionBayEvening ||
-        this.filters.gladionBayNight ||
-        this.filters.southernDay ||
-        this.filters.southernEvening ||
-        this.filters.southernNight ||
-        this.filters.rhotanoSeaDay ||
-        this.filters.rhotanoSeaEvening ||
-        this.filters.rhotanoSeaNight ||
-        this.filters.northernDay ||
-        this.filters.northernEvening ||
-        this.filters.northernNight ||
-        this.filters.cieldalaesDay ||
-        this.filters.cieldalaesEvening ||
-        this.filters.cieldalaesNight ||
-        this.filters.rothlytSoundDay ||
-        this.filters.rothlytSoundEvening ||
-        this.filters.rothlytSoundNight ||
-        this.filters.bloodbrineSeaDay ||
-        this.filters.bloodbrineSeaEvening ||
-        this.filters.bloodbrineSeaNight
-        );
+    gotoPerLocationTime() {
+      this.$store.commit('oceanFishing/updateFilters', { perRoute: false, perLocationTime: true });
+    },
+    gotoNorthernNightDayEveningRoute() { // Southern Night, Gladion Day, Northern Evening
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernNightDayEveningRoute);
+    },
+    gotoNorthernDayEveningNightRoute() { // Southern Day, Gladion Evening, Northern Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernDayEveningNightRoute);
+    },
+    gotoNorthernEveningNightDayRoute() { // Southern Evening, Gladion Night, Northern Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernEveningNightDayRoute);      
+    },
+    gotoRhotanoSeaNightDayEveningRoute() { // Gladion Night, Southern Day, Rhotano Evening
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaNightDayEveningRoute);
+    },
+    gotoRhotanoSeaDayEveningNightRoute() {  // Gladion Day, Southern Evening, Rhotano Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaDayEveningNightRoute);
+    },
+    gotoRhotanoSeaEveningNightDayRoute() { // Gladion Evening, Southern Night, Rhotano Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaEveningNightDayRoute);      
+    },
+    gotoRothlytSoundNightDayEveningRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Evening
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundNightDayEveningRoute);      
+    },
+    gotoRothlytSoundDayEveningNightRoute() { // Cieldalaes Day, Rhotano Evening, Rothlyt Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundDayEveningNightRoute);
+    },
+    gotoRothlytSoundEveningNightDayRoute() { // Cieldalaes Evening, Rhotano Night, Rothlyt Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundEveningNightDayRoute);      
+    },
+    gotoBloodbrineSeaNightDayEveningRoute() { // Cieldalaes Night, Northrn Day, Bloodbrine Evening
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaNightDayEveningRoute);      
+    },
+    gotoBloodbrineSeaDayEveningNightRoute() { // Cieldalaes Day, Northern Evening, Bloodbrine Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaDayEveningNightRoute);
+    },
+    gotoBloodbrineSeaEveningNightDayRoute() { // Cieldalaes Evening, Northern Night, Bloodbrine Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaEveningNightDayRoute);      
+    },
+    toggleGladionBayDay() {
+      this.$store.commit('oceanFishing/updateFilters', { gladionBayDay: !this.filters.gladionBayDay });      
+    },
+    toggleGladionBayEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { gladionBayEvening: !this.filters.gladionBayEvening });
+    },
+    toggleGladionBayNight() {
+      this.$store.commit('oceanFishing/updateFilters', { gladionBayNight: !this.filters.gladionBayNight });
+    },
+    toggleRhotanoSeaDay() {
+      this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaDay: !this.filters.rhotanoSeaDay });
+    },
+    toggleRhotanoSeaEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaEvening: !this.filters.rhotanoSeaEvening });
+    },
+    toggleRhotanoSeaNight() {
+      this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaNight: !this.filters.rhotanoSeaNight });
+    },
+    toggleNorthernDay() {
+      this.$store.commit('oceanFishing/updateFilters', { northernDay: !this.filters.northernDay });
+    },
+    toggleNorthernEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { northernEvening: !this.filters.northernEvening });
+    },
+    toggleNorthernNight() {
+      this.$store.commit('oceanFishing/updateFilters', { northernNight: !this.filters.northernNight });
+    },
+    toggleSouthernDay() {
+      this.$store.commit('oceanFishing/updateFilters', { southernDay: !this.filters.southernDay });
+    },
+    toggleSouthernEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { southernEvening: !this.filters.southernEvening });
+    },
+    toggleSouthernNight() {
+      this.$store.commit('oceanFishing/updateFilters', { southernNight: !this.filters.southernNight });
+    },
+    toggleCieldalaesDay() {
+      this.$store.commit('oceanFishing/updateFilters', { cieldalaesDay: !this.filters.cieldalaesDay });
+    },
+    toggleCieldalaesEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { cieldalaesEvening: !this.filters.cieldalaesEvening });
+    },
+    toggleCieldalaesNight() {
+      this.$store.commit('oceanFishing/updateFilters', { cieldalaesNight: !this.filters.cieldalaesNight });
+    },
+    toggleRothlytSoundDay() {
+      this.$store.commit('oceanFishing/updateFilters', { rothlytSoundDay: !this.filters.rothlytSoundDay });
+    },
+    toggleRothlytSoundEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { rothlytSoundEvening: !this.filters.rothlytSoundEvening });
+    },
+    toggleRothlytSoundNight() {
+      this.$store.commit('oceanFishing/updateFilters', { rothlytSoundNight: !this.filters.rothlytSoundNight });      
+    },
+    toggleBloodbrineSeaDay() {
+      this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaDay: !this.filters.bloodbrineSeaDay });
+    },
+    toggleBloodbrineSeaEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaEvening: !this.filters.bloodbrineSeaEvening });
+    },
+    toggleBloodbrineSeaNight() {
+      this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaNight: !this.filters.bloodbrineSeaNight });
     }
   }
 }

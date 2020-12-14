@@ -13,6 +13,58 @@ export const BLOODBRINE_EVENING_NIGHT_DAY = 11;
 
 export const state = () => (
   {
+    filters: {
+      perRoute: true,
+      perLocationTime: false,
+      gladionBayDay: false,
+      gladionBayEvening: false,
+      gladionBayNight: false,
+      rhotanoSeaDay: false,
+      rhotanoSeaEvening: false,
+      rhotanoSeaNight: false,
+      northernDay: false,
+      northernEvening: false,
+      northernNight: false,
+      southernDay: false,
+      southernEvening: false,
+      southernNight: false,
+      cieldalaesDay: false,
+      cieldalaesEvening: false,
+      cieldalaesNight: false,
+      rothlytSoundDay: false,
+      rothlytSoundEvening: false,
+      rothlytSoundNight: false,
+      bloodbrineSeaDay: false,
+      bloodbrineSeaEvening: false,
+      bloodbrineSeaNight: false,
+      rhotanoSeaDayEveningNightRoute: false,
+      rhotanoSeaEveningNightDayRoute: false,
+      rhotanoSeaNightDayEveningRoute: false,
+      northernDayEveningNightRoute: false,
+      northernEveningNightDayRoute: false,
+      northernNightDayEveningRoute: false,
+      rothlytSoundDayEveningNightRoute: false,
+      rothlytSoundEveningNightDayRoute: false,
+      rothlytSoundNightDayEveningRoute: false,
+      bloodbrineSeaDayEveningNightRoute: false,
+      bloodbrineSeaEveningNightDayRoute: false,
+      bloodbrineSeaNightDayEveningRoute: false
+    },
+    routes: {
+      northernNightDayEveningRoute: NORTHERN_NIGHT_DAY_EVENING,
+      northernDayEveningNightRoute: NORTHERN_DAY_EVENING_NIGHT,
+      northernEveningNightDayRoute: NORTHERN_EVENING_NIGHT_DAY,
+      rhotanoSeaNightDayEveningRoute: RHOTANO_NIGHT_DAY_EVENING,
+      rhotanoSeaDayEveningNightRoute: RHOTANO_DAY_EVENING_NIGHT,
+      rhotanoSeaEveningNightDayRoute: RHOTANO_EVENING_NIGHT_DAY,
+      rothlytSoundNightDayEveningRoute: ROTHLYT_NIGHT_DAY_EVENING,
+      rothlytSoundDayEveningNightRoute: ROTHLYT_DAY_EVENING_NIGHT,
+      rothlytSoundEveningNightDayRoute: ROTHLYT_EVENING_NIGHT_DAY,
+      bloodbrineSeaNightDayEveningRoute: BLOODBRINE_NIGHT_DAY_EVENING,
+      bloodbrineSeaDayEveningNightRoute: BLOODBRINE_DAY_EVENING_NIGHT,
+      bloodbrineSeaEveningNightDayRoute: BLOODBRINE_EVENING_NIGHT_DAY
+    },
+    currentRoute: null,
     sectionTitles: {
       type: 'Display Type',
       route: 'Routes',
@@ -642,16 +694,102 @@ export const getters = {
   getRouteLocationOrder(state) {
     return state.routeLocationOrder;
   },
-  getLocationTimeOrder: () => (filters) => {
+  getLocationTimeOrder(state) {
     let results = [];
-    results = pushFiltersGladionBay(filters, results);
-    results = pushFiltersSouthern(filters, results);
-    results = pushFiltersCieldalaes(filters, results);
-    results = pushFiltersRhotanoSea(filters, results);
-    results = pushFiltersNorthern(filters, results);
-    results = pushFiltersRothlytSound(filters, results);
-    results = pushFiltersBloodbrineSea(filters, results);
+    results = pushFiltersGladionBay(state.filters, results);
+    results = pushFiltersSouthern(state.filters, results);
+    results = pushFiltersCieldalaes(state.filters, results);
+    results = pushFiltersRhotanoSea(state.filters, results);
+    results = pushFiltersNorthern(state.filters, results);
+    results = pushFiltersRothlytSound(state.filters, results);
+    results = pushFiltersBloodbrineSea(state.filters, results);
     
     return results;
   },
+  hasLocations(state) {
+    return (
+      state.filters.gladionBayDay ||
+      state.filters.gladionBayEvening ||
+      state.filters.gladionBayNight ||
+      state.filters.southernDay ||
+      state.filters.southernEvening ||
+      state.filters.southernNight ||
+      state.filters.rhotanoSeaDay ||
+      state.filters.rhotanoSeaEvening ||
+      state.filters.rhotanoSeaNight ||
+      state.filters.northernDay ||
+      state.filters.northernEvening ||
+      state.filters.northernNight ||
+      state.filters.cieldalaesDay ||
+      state.filters.cieldalaesEvening ||
+      state.filters.cieldalaesNight ||
+      state.filters.rothlytSoundDay ||
+      state.filters.rothlytSoundEvening ||
+      state.filters.rothlytSoundNight ||
+      state.filters.bloodbrineSeaDay ||
+      state.filters.bloodbrineSeaEvening ||
+      state.filters.bloodbrineSeaNight
+    );
+  }
+}
+
+export const mutations = {
+  updateFilters(state, filters) {
+    state.filters = {...state.filters, ...filters};
+  },
+  updateCurrentRoute(state, currentRoute) {
+    state.currentRoute = currentRoute;
+    const resetRouteFilters = {
+      rhotanoSeaDayEveningNightRoute: false,
+      rhotanoSeaEveningNightDayRoute: false,
+      rhotanoSeaNightDayEveningRoute: false,
+      northernDayEveningNightRoute: false,
+      northernEveningNightDayRoute: false,
+      northernNightDayEveningRoute: false,
+      rothlytSoundDayEveningNightRoute: false,
+      rothlytSoundEveningNightDayRoute: false,
+      rothlytSoundNightDayEveningRoute: false,
+      bloodbrineSeaDayEveningNightRoute: false,
+      bloodbrineSeaEveningNightDayRoute: false,
+      bloodbrineSeaNightDayEveningRoute: false
+    };
+    switch (currentRoute) {
+      case NORTHERN_NIGHT_DAY_EVENING:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernNightDayEveningRoute: true }};
+      break;
+      case NORTHERN_DAY_EVENING_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernDayEveningNightRoute: true }};
+      break;
+      case NORTHERN_EVENING_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernEveningNightDayRoute: true }};
+      break;
+      case RHOTANO_NIGHT_DAY_EVENING:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaNightDayEveningRoute: true }};
+      break;
+      case RHOTANO_DAY_EVENING_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaDayEveningNightRoute: true }};
+      break;
+      case RHOTANO_EVENING_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaEveningNightDayRoute: true }};
+      break;
+      case ROTHLYT_NIGHT_DAY_EVENING:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundNightDayEveningRoute: true }};
+      break;
+      case ROTHLYT_DAY_EVENING_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundDayEveningNightRoute: true }};
+      break;
+      case ROTHLYT_EVENING_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundEveningNightDayRoute: true }};
+      break;
+      case BLOODBRINE_NIGHT_DAY_EVENING:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaNightDayEveningRoute: true }};
+      break;
+      case BLOODBRINE_DAY_EVENING_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaDayEveningNightRoute: true }};
+      break;
+      case BLOODBRINE_EVENING_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaEveningNightDayRoute: true }};
+      break;
+    }
+  }
 }
