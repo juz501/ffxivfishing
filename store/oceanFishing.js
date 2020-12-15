@@ -288,13 +288,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
+          strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
         beforeSpectralShowers: {
           phase: 'Before Spectral',
           weather: 'Showers',
           time: 'Any',
           bait: 'Plump Worm',
-          strategy: 'Surface&nbsp;Slap (Goby&nbsp;or&nbsp;chovy) Reel&nbsp;only&nbsp;!!!' },
+          strategy: 'Surface&nbsp;Slap (Goby&nbsp;or&nbsp;chovy) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -328,7 +328,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Surface&nbsp;Slap (Momora&nbsp;Mora&nbsp;!!!), Reel&nbsp;only&nbsp;!!! (Spectral&nsbp;Discus&nbsp;!!!)' },
+          strategy: 'Surface&nbsp;Slap (Momora&nbsp;Mora&nbsp;!!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Discus&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
