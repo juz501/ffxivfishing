@@ -345,8 +345,8 @@ export const state = () => (
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: '(Ragworm + Mooch) or (Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
-          strategy: '(Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!) or (Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
+          bait: '(Ragworm + Mooch), (Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
+          strategy: '(Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!), (Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
