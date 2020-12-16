@@ -340,7 +340,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm + Mooch, <em>Ragworm</em>',
-          strategy: 'Doublehook&nbsp;!!! (Hi-Aetherlouse&nbsp;! + Roguesaurus&nbsp;!!!) or <em>Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs (Sea&nbsp;Nettle&nbsp;!)</em>' },
+          strategy: 'Doublehook&nbsp;!!! (Hi-Aetherlouse&nbsp;! + Roguesaurus&nbsp;!!!), <em>Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs (Sea&nbsp;Nettle&nbsp;!)</em>' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
