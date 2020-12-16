@@ -361,13 +361,13 @@ export const state = () => (
           phase: 'Before Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Plump Worm, <em>Ragworm</em>',
-          strategy: 'Surface&nbsp;Slap (Chrome&nbsp;Hammerhead&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Bass&nbsp;!!!), <em>Lampfish&nbsp;!</em>' },
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Surface&nbsp;Slap (Chrome&nbsp;Hammerhead&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Bass&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Plump Worm',
+          bait: 'Plump&nbsp;Worm',
           strategy: 'Doublehook&nbsp;!!! (Executioner&nbsp;!!!)' },
         spectralEvening: {
           phase: 'Spectral',
@@ -441,14 +441,14 @@ export const state = () => (
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Ragworm',
-          strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Devil\'s&nbsp;Sting&nbsp;!!)' },
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Doublehook&nbsp;!!! when&nbsp;>&nbsp;5secs (Jetborne&nbsp;Manta&nbsp;!!! or Callichthyid&nbsp;!!!)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Evening',
-          bait: 'Plumpworm &amp; <em>Krill</em>',
-          strategy: 'Doublehook&nbsp;!! (Meandering&nbsp;Mora&nbsp;!! &amp; <em>Flaming&nbsp;Eel&nbsp;!!</em>)' },
+          bait: 'Plump&nbsp;Worm, <em>Krill</em>',
+          strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Meandering&nbsp;Mora&nbsp;!!), <em>Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Flaming&nbsp;Eel&nbsp;!!)</em>' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -504,13 +504,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill',
-          strategy: 'Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Eel&nbsp;!!!)' },
+          strategy: 'Surface&nbsp;Slap (True&nbsp;Scad&nbsp;!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Eel&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Day',
-          bait: 'Krill x3 = <strong>Pillbug</strong>',
-          strategy: '(Beatific&nbsp;Vision&nbsp;!!) x3 =(<strong>Seafaring&nbsp;Toad&nbsp;!!!</strong>)' },
+          bait: 'Krill&nbsp;x3 =<strong>Pillbug</strong>, <em>Ragworm</em>',
+          strategy: '(Beatific&nbsp;Vision&nbsp;!!)&nbsp;x3 =(<strong>Seafaring&nbsp;Toad&nbsp;!!!</strong>), <em>Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Exterminator&nbsp;!)</em>' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -522,12 +522,12 @@ export const state = () => (
           weather: 'Normal',
           time: 'Night',
           bait: 'Krill',
-          strategy: 'Doublehook&nbsp;!! (Skaldminni&nbsp;!!)' },
+          strategy: 'Doublehook&nbsp;!! (Beatific&nbsp;Vision&nbsp;!! or Skaldminni&nbsp;!!)' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
-          bait: 'Snagging&nbsp;+&nbsp;Ragworm =<strong>Krill</strong>',
+          bait: 'Snagging&nbsp;&amp;&nbsp;Ragworm =<strong>Krill</strong>',
           strategy: '(Sunken&nbsp;Mask&nbsp;!!!) =(<strong>Bareface&nbsp;!!!</strong>)'
         }
       }
