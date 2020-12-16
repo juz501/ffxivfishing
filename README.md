@@ -13,10 +13,8 @@ JAMStack on Netlify
 - [Netlify Large Media](https://www.netlify.com/products/large-media/)
 - [Netlify Identity](https://docs.netlify.com/visitor-access/identity/)
 
-### Additional Technologies in pipeline
-
-- [Discord](https://discord.com/)
-
 ## Roadmap
 
 - Update baits/strategies for 5.4 when found
+- Save settings in localStorage so settings stick when coming back to the site
+- Add title route mode to show strats for specific titles
