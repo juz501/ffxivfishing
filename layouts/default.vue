@@ -10,7 +10,7 @@ export default {
   name: 'defaultLayout',
   data() {
     return {
-      darkMode: false
+      darkMode: true
     }
   },
   head() {
