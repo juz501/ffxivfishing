@@ -294,7 +294,7 @@ export const state = () => (
           weather: 'Showers',
           time: 'Any',
           bait: 'Plump&nbsp;Worm',
-          strategy: 'Surface&nbsp;Slap (Goby&nbsp;or&nbsp;chovy) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
+          strategy: 'Surface&nbsp;Slap (Gladion&nbsp;Goby&nbsp;! or Gladion&nbsp;Chovy&nbsp;!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
         spectralDay: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -312,13 +312,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Night',
           bait: 'Krill + Glowworm&nbsp;x2 =&nbsp;<strong>Glowworm</strong>',
-          strategy: '(Navigator\'s&nbsp;Print) + (Heavenskey)&nbsp;x2 =&nbsp;<strong>Sothis</strong>' },
+          strategy: '(Navigator\'s&nbsp;Print&nbsp;!) + (Heavenskey&nbsp;!)&nbsp;x2 =&nbsp;<strong>Sothis</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
           bait: 'Krill&nbsp;x3 =&nbsp;<strong>Krill</strong>',
-          strategy: '(Gladion&nbsp;chovy)&nbsp;x3 =&nbsp;<strong>Drunkfish</strong>'
+          strategy: '(Gladion&nbsp;chovy&nbsp;!)&nbsp;x3 =&nbsp;(<strong>Drunkfish&nbsp;!!!</strong>)'
         }
       },
       southern: {
@@ -346,7 +346,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Night',
           bait: '(Ragworm + Mooch) or (Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
-          strategy: '(Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!) or (Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta)</strong>' },
+          strategy: '(Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!) or (Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
@@ -374,7 +374,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm + Rat&nbsp;Tail =&nbsp;<strong>Rat&nbsp;Tail</strong>',
-          strategy: '(Silencer&nbsp;!) + (Deep&nbsp;Sea&nbsp;Eel&nbsp;!!) =&nbsp;<strong>(Stonescale)</strong>' },
+          strategy: '(Silencer&nbsp;!) + (Deep&nbsp;Sea&nbsp;Eel&nbsp;!!) =&nbsp;<strong>(Stonescale&nbsp;!!!)</strong>' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -386,7 +386,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Plump&nbsp;Worm&nbsp;x2 =&nbsp;<strong>Krill</strong>',
-          strategy: '(Crimson&nbsp;Monkfish)&nbsp;x2 =&nbsp;<strong>(Sabaton&nbsp;!!!)</strong>'
+          strategy: '(Crimson&nbsp;Monkfish&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Sabaton&nbsp;!!!)</strong>'
         }
       },
       northern: {
@@ -408,7 +408,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Day',
           bait: 'Plump&nbsp;Worm&nbsp;x3 =&nbsp;<strong>Heavy&nbsp;Steel&nbsp;Jig</strong>',
-          strategy: '(Gugrusaurus&nbsp;!!!)&nbsp;x3 =&nbsp;<strong>(Elasmosaurus)</strong>' },
+          strategy: '(Gugrusaurus&nbsp;!!!)&nbsp;x3 =&nbsp;<strong>(Elasmosaurus&nbsp;!!!)</strong>' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -454,13 +454,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Night',
           bait: 'Plump&nbsp;Wormx2 + Krill =<strong>Squid Strip</strong>',
-          strategy: 'Jetborne&nbsp;Manta&nbsp;!!!&nbsp;x2 + Mistbeard\'s&nbsp;Cup&nbsp!! =<strong>Hafgufa&nbsp;!!!</strong>)' },
+          strategy: '(Jetborne&nbsp;Manta&nbsp;!!!)&nbsp;x2 + (Mistbeard\'s&nbsp;Cup&nbsp!!) =(<strong>Hafgufa&nbsp;!!!</strong>)' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
           time: 'Any',
           bait: 'Ragworm&nbsp;x3 =<strong>Krill</strong>',
-          strategy: 'Metalic&nbsp;Boxfish&nbsp;!&nbsp;x3 =<strong>Cieldalaes&nbsp;Geode&nbsp;!!!</strong>'
+          strategy: '(Metalic&nbsp;Boxfish&nbsp;!)&nbsp;x3 =(<strong>Cieldalaes&nbsp;Geode&nbsp;!!!</strong>)'
         }
       },
       rothlytSound: {
@@ -482,7 +482,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm + Mooch =<strong>Ragworm</strong>',
-          strategy: 'Rothlyt&nbsp;Mussel&nbsp;!!! + Trollfish&nbsp;! =<strong>Placodus&nbsp;!!!</strong>' },
+          strategy: '(Rothlyt&nbsp;Mussel&nbsp;!!!) + (Trollfish&nbsp;!) =(<strong>Placodus&nbsp;!!!</strong>)' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -494,7 +494,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Ragworm&nbsp;x3 =<strong>Ragworm</strong>',
-          strategy: '(Rothlyt&nbsp;Kelp&nbsp;!)&nbsp;x3= <strong>Ginkgo Fin</strong>'
+          strategy: '(Rothlyt&nbsp;Kelp&nbsp;!)&nbsp;x3 =(<strong>Ginkgo&nbsp;Fin&nbsp;!!!</strong>)'
         }
       },
       bloodbrineSea: {
@@ -510,7 +510,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Day',
           bait: 'Krill x3 = <strong>Pillbug</strong>',
-          strategy: '(Beatific&nbsp;Vision&nbsp;!!) x3 = <strong>Seafaring&nbsp;Toad&nbsp;!!!</strong>' },
+          strategy: '(Beatific&nbsp;Vision&nbsp;!!) x3 =(<strong>Seafaring&nbsp;Toad&nbsp;!!!</strong>)' },
         spectralEvening: {
           phase: 'Spectral',
           weather: 'Normal',
@@ -528,7 +528,7 @@ export const state = () => (
           weather: 'Normal',
           time: 'Any',
           bait: 'Snagging&nbsp;+&nbsp;Ragworm =<strong>Krill</strong>',
-          strategy: 'Sunken&nbsp;Mask&nbsp;!!! =<strong>Bareface&nbsp;!!!</strong>'
+          strategy: '(Sunken&nbsp;Mask&nbsp;!!!) =(<strong>Bareface&nbsp;!!!</strong>)'
         }
       }
     }
