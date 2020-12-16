@@ -2,6 +2,7 @@ main {
   margin: 0 rem-calc(20);
   padding: rem-calc(20);
   background-color: $white;
+  color: $body-font-color;
   
   &.no-padding {
     padding: 0;

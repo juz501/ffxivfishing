@@ -1,7 +1,7 @@
 <template>
   <client-only>
     <div class="darkmode-toggle">
-      <toggle-button @change="handleDarkMode" :labels="{checked: 'Dark Mode', unchecked: 'Light Mode'}" :css-colors="true" :width="90"/>
+      <toggle-button @change="handleDarkMode" :labels="{checked: 'Light Mode', unchecked: 'Dark Mode'}" :css-colors="true" :width="90"/>
     </div>
   </client-only>
 </template>

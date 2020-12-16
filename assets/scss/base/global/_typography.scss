@@ -39,7 +39,7 @@ h3,
 }
 
 body {
-  font-family: $body-font-family;;
+  font-family: $body-font-family;
 }
 
 a {
@@ -63,6 +63,11 @@ a {
 
 strong {
   font-weight: 700;
+  color: $bold-color;
+}
+
+.dark strong {
+  color: $dark-bold-color;
 }
 
 em {
