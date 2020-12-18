@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <span class="timer">Eorzea Time: {{ et }}</span>
+    <span class="timer" v-html="timerText + et"></span>
   </client-only>
 </template>
 <script>
@@ -11,7 +11,14 @@ export default {
   computed: {
     ...mapGetters({
       et: 'eorzeaTime/getTime'
-    })
+    }),
+    timerText() {
+      if (typeof window != "undefined"  && window.innerWidth < 700) {
+        return 'ET:&nbsp;';
+      } else {
+        return 'Eorzea Time:&nbsp;';
+      }
+    }
   },
   methods: {
     ...mapActions({

@@ -1150,17 +1150,33 @@ export default {
       th {
         font-weight: 700;
         font-family: $heading-font-family;
-        font-size: rem-calc(20);
+        font-size: rem-calc(10);
         padding: 5px;
         border-bottom: 1px solid $nav-background-color;
+
+        @media screen and (min-width:700px) {
+          font-size: rem-calc(20);
+        }
+
         &.vertical {
           vertical-align: middle;
         }
       }
     
       td {
-        padding: 10px 5px;
+        padding: 2px 0;
         text-align: center;
+
+        @media screen and (min-width:700px) {
+          padding: 10px 5px;
+        }
+        
+        @media screen and (max-width:699px) {
+          img {
+            max-width: 60px;
+            max-height: 15px;
+          }
+        }
         
         &.vertical {
           vertical-align: middle;

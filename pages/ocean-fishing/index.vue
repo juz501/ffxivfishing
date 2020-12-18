@@ -270,8 +270,12 @@ export default {
     }
 
     td {
-      padding: 10px 5px;
+      padding: 2px 1px;
       text-align: center;
+      
+      @media screen and (min-width: 700px) {
+        padding: 10px 5px;
+      }
       
       &.vertical {
         vertical-align: middle;

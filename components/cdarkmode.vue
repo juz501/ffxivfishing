@@ -1,7 +1,7 @@
 <template>
   <client-only>
     <div class="darkmode-toggle">
-      <toggle-button @change="handleDarkMode" :labels="{checked: 'Light Mode', unchecked: 'Dark Mode'}" :css-colors="true" :width="90"/>
+      <toggle-button @change="handleDarkMode" :labels="{checked: toggleLightLabel, unchecked: toggleDarkLabel}" :css-colors="true" :width="toggleWidth"/>
     </div>
   </client-only>
 </template>
@@ -10,6 +10,27 @@ export default {
   name: 'cdarkmode',
   props: {
     handleDarkMode: Function,
+  },
+  computed: {
+    toggleLightLabel() {
+      if (typeof window != "undefined"  && window.innerWidth < 700) {
+        return 'Light';
+      }
+      return 'Light Mode';
+    },
+    toggleDarkLabel() {
+      if (typeof window != "undefined" && window.innerWidth < 700) {
+        return 'Dark';
+      }
+      return 'Dark Mode';
+    },
+    toggleWidth() {
+      if (typeof window != "undefined"  && window.innerWidth < 700) {
+        return 60;
+      } else {
+        return 90;
+      }
+    }
   }
 }
 </script>
