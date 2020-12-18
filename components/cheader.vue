@@ -32,7 +32,13 @@ header {
   }
 
   .darkmode-toggle {
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media screen and (min-width: 700px) {
+      margin-left: 0;
+      margin-right: 50px;
+    }
   }  
 }
 
