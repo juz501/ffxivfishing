@@ -13,6 +13,6 @@
       "layouts/**/*.vue",
       "plugins/**/*.js",
       "functions/**/*.js",
-      "store/**/*.js"
-    ]
+      "store/**/*.js",
+      "content/**/*.js"    ]
   }
