@@ -3,6 +3,11 @@
     <h1 class="h2">Ocean Fishing Reference</h1>
     <div class="filters">
       <div class="filter mainFilter">
+        <h2 class="h3">{{sectionTitles.target}}</h2>
+        <button @click="gotoTargetFish" :class="{ 'filter-on': filters.targetFish}" v-html="targetTitles.fish"></button>
+        <button @click="gotoTargetTitle" :class="{ 'filter-on': filters.targetTitle}" v-html="targetTitles.title"></button>
+      </div>
+      <div class="filter mainFilter" v-if="filters.targetFish">
         <h2 class="h3">{{sectionTitles.type}}</h2>
         <button @click="gotoPerRoute" :class="{ 'filter-on': filters.perRoute}" v-html="typeTitles.route"></button>
         <button @click="gotoPerLocationTime" :class="{ 'filter-on': filters.perLocationTime}" v-html="typeTitles.location"></button>
@@ -11,7 +16,7 @@
         <h2 class="h3">Route Schedule</h2>
         <a href="https://proyebat.github.io/oceancalculator/" target="_blank" rel="nofollow noopener">Ocean Fishing Schedule Calculator</a>
       </div>
-      <div v-if="filters.perRoute">
+      <div v-if="filters.perRoute && filters.targetFish">
         <h2 class="h3">{{sectionTitles.route}}</h2>
         <div class="filter routeFilter">
           <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}" v-html="routeTitles[routes.northernNightDayEveningRoute]"></button>
@@ -34,7 +39,7 @@
           <button @click="gotoBloodbrineSeaEveningNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaEveningNightDayRoute}" v-html="routeTitles[routes.bloodbrineSeaEveningNightDayRoute]"></button>
         </div>
       </div>
-      <div v-if="filters.perLocationTime">
+      <div v-if="filters.perLocationTime && filters.targetFish">
         <h2 class="h3">{{sectionTitles.location}}</h2>
         <div class="filter routeFilter">
           <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }" v-html="locationFilterTitles.gladionBay.day"></button>
@@ -71,12 +76,30 @@
           <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }" v-html="locationFilterTitles.bloodbrineSea.evening"></button>
           <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }" v-html="locationFilterTitles.bloodbrineSea.night"></button>
         </div>
-      </div>      
+      </div>
+      <div v-if="filters.targetTitle">
+        <h2 class="h3">{{sectionTitles.location}}</h2>
+        <div class="filter routeFilter">
+          <button @click="gotoJelly" :class="{ 'filter-on': filters.jellyRoute }" v-html="titleFilterTitles.jelly"></button>
+          <button @click="gotoSeaDragon" :class="{ 'filter-on': filters.seaDragonRoute }" v-html="titleFilterTitles.seaDragon"></button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="gotoOctopus" :class="{ 'filter-on': filters.octopusRoute }" v-html="titleFilterTitles.octopus"></button>
+          <button @click="gotoShark" :class="{ 'filter-on': filters.sharkRoute }" v-html="titleFilterTitles.shark"></button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="gotoCrab" :class="{ 'filter-on': filters.crabRoute }" v-html="titleFilterTitles.crab"></button>
+          <button @click="gotoBalloon" :class="{ 'filter-on': filters.balloonRoute }" v-html="titleFilterTitles.balloon"></button>
+        </div>
+        <div class="filter routeFilter">
+          <button @click="gotoManta" :class="{ 'filter-on': filters.mantaRoute }" v-html="titleFilterTitles.manta"></button>
+        </div>
+      </div>   
     </div>
-    <div v-if="( currentRoute !== null && filters.perRoute ) || ( hasLocations && filters.perLocationTime )">
+    <div v-if="( currentRoute !== null && ( filters.perRoute || filters.targetTitle) ) || ( hasLocations && filters.perLocationTime )">
       <h3 class="h4">{{sectionTitles.strat}}</h3>
       <div class="location-baits-wrapper">
-        <table class="location-baits" v-if="filters.perRoute">
+        <table class="location-baits" v-if="filters.perRoute && filters.targetFish">
           <thead>
             <tr>
               <th v-html="stratHeadings.location"></th>
@@ -98,7 +121,7 @@
             </tr>
           </tbody>
         </table>
-        <table class="location-baits" v-if="filters.perLocationTime">
+        <table class="location-baits" v-if="filters.perLocationTime && filters.targetFish">
           <thead>
             <tr>
               <th v-html="stratHeadings.location"></th>
@@ -120,6 +143,28 @@
             </tr>
           </tbody>
         </table>
+        <table class="location-baits" v-if="filters.targetTitle">
+          <thead>
+            <tr>
+              <th v-html="stratHeadings.location"></th>
+              <th v-html="stratHeadings.phase"></th>
+              <th v-html="stratHeadings.weather"></th>
+              <th v-html="stratHeadings.time"></th>
+              <th v-html="stratHeadings.bait"></th>
+              <th v-html="stratHeadings.strat"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(item, i) in targetTitleOrder" :key="i">
+              <td v-if="item.location && content[item.location]" v-html="content[item.location].location"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].phase"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
+              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>    
   </main>
@@ -131,18 +176,27 @@ export default {
   computed: {
     ...mapState('oceanFishing', ['filters', 'routes', 'currentRoute']),
     ...mapGetters({
+      targetTitles: 'oceanFishing/getTargetTitles',
       sectionTitles: 'oceanFishing/getSectionTitles',
       typeTitles: 'oceanFishing/getTypeTitles',
       routeTitles: 'oceanFishing/getRouteTitles',
       content: 'oceanFishing/getContent',
+      titleFilterTitles: 'oceanFishing/getTitleFilterTitles',
       locationFilterTitles: 'oceanFishing/getLocationFilterTitles',
       stratHeadings: 'oceanFishing/getStratHeadings',
       routeLocationOrder: 'oceanFishing/getRouteLocationOrder',      
       locationTimeOrder: 'oceanFishing/getLocationTimeOrder',
+      targetTitleOrder: 'oceanFishing/getTargetTitleOrder',
       hasLocations: 'oceanFishing/hasLocations'
     })   
   },
   methods: {
+    gotoTargetFish() {
+      this.$store.commit('oceanFishing/updateFilters', { targetFish: true, targetTitle: false });
+    },
+    gotoTargetTitle() {
+      this.$store.commit('oceanFishing/updateFilters', { targetFish: false, targetTitle: true });
+    },
     gotoPerRoute() {
       this.$store.commit('oceanFishing/updateFilters', { perRoute: true, perLocationTime: false });
     },
@@ -184,6 +238,27 @@ export default {
     },
     gotoBloodbrineSeaEveningNightDayRoute() { // Cieldalaes Evening, Northern Night, Bloodbrine Day
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaEveningNightDayRoute);      
+    },
+    gotoJelly() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.jellyRoute);
+    },
+    gotoSeaDragon() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.seaDragonRoute);
+    },
+    gotoOctopus() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.octopusRoute);
+    },
+    gotoShark() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.sharkRoute);
+    },
+    gotoCrab() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.crabRoute);
+    },
+    gotoBalloon() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.balloonRoute);
+    },
+    gotoManta() {
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.mantaRoute);
     },
     toggleGladionBayDay() {
       this.$store.commit('oceanFishing/updateFilters', { gladionBayDay: !this.filters.gladionBayDay });      
