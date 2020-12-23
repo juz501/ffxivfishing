@@ -96,7 +96,7 @@
         </div>
       </div>   
     </div>
-    <div v-if="( currentRoute !== null && ( filters.perRoute || filters.targetTitle) ) || ( hasLocations && filters.perLocationTime )">
+    <div v-if="( currentRoute !== null && filters.perRoute && filters.targetFish ) || ( currentTitleRoute !== null && filters.targetTitle ) || ( hasLocations && filters.perLocationTime && filters.targetFish )">
       <h3 class="h4">{{sectionTitles.strat}}</h3>
       <div class="location-baits-wrapper">
         <table class="location-baits" v-if="filters.perRoute && filters.targetFish">
@@ -174,7 +174,7 @@ import { mapState, mapGetters } from 'vuex';
 
 export default {
   computed: {
-    ...mapState('oceanFishing', ['filters', 'routes', 'currentRoute']),
+    ...mapState('oceanFishing', ['filters', 'routes', 'currentRoute', 'currentTitleRoute']),
     ...mapGetters({
       targetTitles: 'oceanFishing/getTargetTitles',
       sectionTitles: 'oceanFishing/getSectionTitles',
@@ -240,25 +240,25 @@ export default {
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaEveningNightDayRoute);      
     },
     gotoJelly() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.jellyRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.jellyRoute);
     },
     gotoSeaDragon() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.seaDragonRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.seaDragonRoute);
     },
     gotoOctopus() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.octopusRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.octopusRoute);
     },
     gotoShark() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.sharkRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.sharkRoute);
     },
     gotoCrab() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.crabRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.crabRoute);
     },
     gotoBalloon() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.balloonRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.balloonRoute);
     },
     gotoManta() {
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.mantaRoute);
+      this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.mantaRoute);
     },
     toggleGladionBayDay() {
       this.$store.commit('oceanFishing/updateFilters', { gladionBayDay: !this.filters.gladionBayDay });      
