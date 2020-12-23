@@ -88,6 +88,7 @@ export const state = () => (
       mantaRoute: MANTA_ROUTE
     },
     currentRoute: null,
+    currentTitleRoute: null,
     sectionTitles: {
       target: 'Target',
       type: 'Display Type',
@@ -1244,14 +1245,7 @@ export const mutations = {
       rothlytSoundNightDayEveningRoute: false,
       bloodbrineSeaDayEveningNightRoute: false,
       bloodbrineSeaEveningNightDayRoute: false,
-      bloodbrineSeaNightDayEveningRoute: false,
-      jellyRoute: false,
-      seaDragonRoute: false,
-      octopusRoute: false,
-      sharkRoute: false,
-      crabRoute: false,
-      balloonRoute: false,
-      mantaRoute: false
+      bloodbrineSeaNightDayEveningRoute: false      
     };
     switch (currentRoute) {
       case NORTHERN_NIGHT_DAY_EVENING:
@@ -1290,6 +1284,20 @@ export const mutations = {
       case BLOODBRINE_EVENING_NIGHT_DAY:
         state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaEveningNightDayRoute: true }};
       break;
+    }
+  },
+  updateCurrentTitleRoute(state, currentTitleRoute) {
+    state.currentTitleRoute = currentTitleRoute;
+    const resetRouteFilters = {
+      jellyRoute: false,
+      seaDragonRoute: false,
+      octopusRoute: false,
+      sharkRoute: false,
+      crabRoute: false,
+      balloonRoute: false,
+      mantaRoute: false
+    };
+    switch (currentTitleRoute) {
       case JELLY_ROUTE:
         state.filters = {...state.filters, ...resetRouteFilters, ...{ jellyRoute: true }};
       break;
