@@ -17,4 +17,3 @@ JAMStack on Netlify
 
 - Update baits/strategies for 5.4 when found
 - Save settings in localStorage so settings stick when coming back to the site
-- Add title route mode to show strats for specific titles
