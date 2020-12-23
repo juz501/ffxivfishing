@@ -10,10 +10,19 @@ export const ROTHLYT_EVENING_NIGHT_DAY = 8;
 export const BLOODBRINE_NIGHT_DAY_EVENING = 9;
 export const BLOODBRINE_DAY_EVENING_NIGHT = 10;
 export const BLOODBRINE_EVENING_NIGHT_DAY = 11;
+export const JELLY_ROUTE = 12;
+export const SEA_DRAGON_ROUTE = 13;
+export const OCTOPUS_ROUTE = 14;
+export const SHARK_ROUTE = 15;
+export const CRAB_ROUTE = 16;
+export const BALLOON_ROUTE = 17;
+export const MANTA_ROUTE = 18;
 
 export const state = () => (
   {
     filters: {
+      targetFish: true,
+      targetTitle: false,
       perRoute: true,
       perLocationTime: false,
       gladionBayDay: false,
@@ -37,6 +46,13 @@ export const state = () => (
       bloodbrineSeaDay: false,
       bloodbrineSeaEvening: false,
       bloodbrineSeaNight: false,
+      jellyRoute: false,
+      seaDragonRoute: false,
+      octopusRoute: false,
+      sharkRoute: false,
+      crabRoute: false,
+      balloonRoute: false, 
+      mantaRoute: false,     
       rhotanoSeaDayEveningNightRoute: false,
       rhotanoSeaEveningNightDayRoute: false,
       rhotanoSeaNightDayEveningRoute: false,
@@ -62,32 +78,53 @@ export const state = () => (
       rothlytSoundEveningNightDayRoute: ROTHLYT_EVENING_NIGHT_DAY,
       bloodbrineSeaNightDayEveningRoute: BLOODBRINE_NIGHT_DAY_EVENING,
       bloodbrineSeaDayEveningNightRoute: BLOODBRINE_DAY_EVENING_NIGHT,
-      bloodbrineSeaEveningNightDayRoute: BLOODBRINE_EVENING_NIGHT_DAY
+      bloodbrineSeaEveningNightDayRoute: BLOODBRINE_EVENING_NIGHT_DAY,
+      jellyRoute: JELLY_ROUTE,
+      seaDragonRoute: SEA_DRAGON_ROUTE,
+      octopusRoute: OCTOPUS_ROUTE,
+      sharkRoute: SHARK_ROUTE,
+      crabRoute: CRAB_ROUTE,
+      balloonRoute: BALLOON_ROUTE,
+      mantaRoute: MANTA_ROUTE
     },
     currentRoute: null,
     sectionTitles: {
+      target: 'Target',
       type: 'Display Type',
       route: 'Routes',
       location: 'Locations',
       strat: 'Bait & Strategies'
+    },
+    targetTitles: {
+      fish: 'Fish',
+      title: 'Title'
+    },    
+    titleFilterTitles: {
+      jelly: 'Jelled Together - Rhotano&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
+      seaDragon: 'Maritime Dragonslayers - Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening)',
+      octopus: 'Octopus Travelers - Northern&nbsp;Strait (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
+      shark: 'Certifiable Shark Hunters - Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
+      crab: 'Crab Boat Crew - Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
+      balloon: 'Balloon Catchers - Rothlyt&nbsp;Sound (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
+      manta: 'Sticking it to the Manta - Bloodbrine&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)'
     },
     typeTitles: {
       route: 'Per Route',
       location: 'Per Location'
     },
     routeTitles: [
-      'Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Coral',
+      'Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Coral Manta',
       'Northern&nbsp;Strait (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-      'Northern&nbsp;Strait (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Sothis&nbsp;Elasmo',
+      'Northern&nbsp;Strait (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Sothis&nbsp;Elasmosaur',
       'Rhotano&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Sothis&nbsp;Stonescale',
       'Rhotano&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-      'Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Coral',
+      'Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Coral Manta',
       'Rothlyt&nbsp;Sound (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Placodus',
       'Rothlyt&nbsp;Sound (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Stonescale',
       'Rothlyt&nbsp;Sound (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
-      'Bloodbrine&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Elasmo',
+      'Bloodbrine&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Elasmosaur',
       'Bloodbrine&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-      'Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Toad'
+      'Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Seafaring Toad'
     ],
     routeLocationOrder: [
       [ // 'Northern Strait (Night > Day > Evening)'
@@ -340,13 +377,13 @@ export const state = () => (
           weather: 'Normal',
           time: 'Evening',
           bait: 'Ragworm + Mooch, <em>Ragworm</em>',
-          strategy: 'Doublehook&nbsp;!!! (Hi-Aetherlouse&nbsp;! + Roguesaurus&nbsp;!!!), <em>Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs (Sea&nbsp;Nettle&nbsp;!)</em>' },
+          strategy: 'Doublehook&nbsp;!!! (Hi-Aetherlouse&nbsp;! + Roguesaurus&nbsp;!!!)</em>' },
         spectralNight: {
           phase: 'Spectral',
           weather: 'Normal',
           time: 'Night',
-          bait: '(Ragworm + Mooch), (Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
-          strategy: '(Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!), (Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
+          bait: '(Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
+          strategy: '(Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
         afterSpectral: {
           phase: 'After Spectral',
           weather: 'Normal',
@@ -530,10 +567,435 @@ export const state = () => (
           bait: 'Snagging&nbsp;&amp;&nbsp;Ragworm =<strong>Krill</strong>',
           strategy: '(Sunken&nbsp;Mask&nbsp;!!!) =(<strong>Bareface&nbsp;!!!</strong>)'
         }
+      },
+      jellyRouteEvening: {
+        location: 'Southern Strait of Merlthor',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp; (La&nbsp;Noscean&nbsp;Jelly&nbsp;!)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm',
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs (Sea&nbsp;Nettle&nbsp;!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp; (La&nbsp;Noscean&nbsp;Jelly&nbsp;!)'
+        }
+      },
+      jellyRouteNight: {
+        location: 'Rhotano Sea',
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Floating&nbsp;Saucer&nbsp;!)'
+        }
+      },
+      seaDragonRouteNight: {
+        location: 'Southern Strait of Merlthor',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;7secs (Shaggy&nbsp;Seadragon&nbsp;!)'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: '(Ragworm + Mooch)',
+          strategy: 'Double&nbsp;Hook&nbsp;!! (Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;7secs (Shaggy&nbsp;Seadragon&nbsp;!)'
+        }
+      },
+      seaDragonRouteEvening: {
+        location: 'Northrn Strait of Merlthor',
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm',
+          strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;8secs (Coral&nbsp;Seadragon&nbsp;!)'
+        }
+      },
+      octopusRouteEvening: {
+        location: 'Gladion Bay',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Showers (or Normal)',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Cyan&nbsp;Octopus&nbsp;!!)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Merman\'s&nbsp;Mane&nbsp;!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Cyan&nbsp;Octopus&nbsp;!!)'
+        }
+      },
+      octopusRouteNight: {
+        location: 'Northern Strait of Merlthor',
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;5secs (Mopbeard&nbsp;!!)x4'
+        }
+      },
+      sharkRouteEvening: {
+        location: 'Gladion Bay',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Identical&nbsp;Cast when&nbsp;>&nbsp;12secs (Tarnished&nbsp;Shark&nbsp;!!!)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Funnel&nbsp;Shark&nbsp;!!!)x4, Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Ghost&nbsp;Shark&nbsp;!!)x4'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook + Identical&nbsp;Cast when&nbsp;>&nbsp;12secs (Tarnished&nbsp;Shark&nbsp;!!!)'
+        }
+      },
+      sharkRouteDay: {
+        location: 'Rhotano Sea',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!!! (Chrome&nbsp;Hammerhead&nbsp;!!!)'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Executioner&nbsp;!!!)x4, (Sweeper&nbsp;!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Chrome&nbsp;Hammerhead&nbsp;!!!)x4'
+        }
+      },
+      crabRouteEvening: {
+        location: 'Cieldalaes',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Tortoiseshell&nbsp;Crab&nbsp;!!)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Krill',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp<&nbsp;5secs (Titanshell&nbsp;Crab&nbsp;!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Tortoiseshell&nbsp;Crab&nbsp;!!)'
+        }
+      },
+      crabRouteNight: {
+        location: 'Northern Strait of Merlthor',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Net&nbsp;Crawler&nbsp;!!)'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Bartholomew&nbsp;the&nsbp;Chopper&nbsp;!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Net&nbsp;Crawler&nbsp;!!)'
+        }
+      },
+      crabRouteDay: {
+        location: 'Bloodbrine Sea',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Thaliak&nbsp;Crab&nbsp;!) or (Bloodpolish&nbsp;Crab&nbsp;!)'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Oracular&nbsp;Crab&nbsp;!) or (Exterminator&nbsp;!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Thaliak&nbsp;Crab&nbsp;!) or (Bloodpolish&nbsp;Crab&nbsp;!)'
+        }
+      },
+      balloonRouteDay: {
+        location: 'Cieldalaes',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Thunderstorms,<br /><em>Normal</em>',
+          time: 'Any',
+          bait: 'Ragworm,<br /><em>Ragworm</em>',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;<&nbsp;12secs (Metallic&nbsp;Boxfish&nbsp;!),<br /><em>Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Metallic&nbsp;Boxfish&nbsp;!)</em>'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Mythril&nbsp;Boxfish&nbsp;!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm,<br /><em>Ragworm</em>',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;<&nbsp;12secs (Metallic&nbsp;Boxfish&nbsp;!),<br /><em>Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Metallic&nbsp;Boxfish&nbsp;!)</em>'
+        }
+      },
+      balloonRouteEvening: {
+        location: 'Rhotano Sea',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Surface&nbsp;Slap (Rhotano&nbsp;Sardine&nbsp;!) Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;9secs (Lampfish&nbsp;!)'
+        },
+        spectralEvening: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Evening',
+          bait: 'Ragworm',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Silencer&nbsp;!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Surface&nbsp;Slap (Rhotano&nbsp;Sardine&nbsp;!) Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;9secs (Lampfish&nbsp;!)'
+        }
+      },
+      balloonRouteNight: {
+        location: 'Rothlyt Sound',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;12secs (Honeycomb&nbsp;Fish&nbsp;!)'
+        },
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Pearl&nbsp;Bombfish&nbsp;!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Ragworm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;12secs (Honeycomb&nbsp;Fish&nbsp;!)'
+        }
+      },
+      mantaRouteDay: {
+        location: 'Cieldalaes',
+        beforeSpectral: {
+          phase: 'Before Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;14secs (Goobbue&nbsp;Ray&nbsp;!!)'
+        },
+        spectralDay: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Day',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! when&nbsp;<&nbsp;5secs (Jetborne&nbsp;Manta&nbsp;!!!)'
+        },
+        afterSpectral: {
+          phase: 'After Spectral',
+          weather: 'Normal',
+          time: 'Any',
+          bait: 'Plump&nbsp;Worm',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;14secs (Goobbue&nbsp;Ray&nbsp;!!)'
+        }
+      },
+      mantaRouteNight: {
+        location: 'Bloodbrine&nbsp;Sea',
+        spectralNight: {
+          phase: 'Spectral',
+          weather: 'Normal',
+          time: 'Night',
+          bait: 'Krill',
+          strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;6secs (Skaldminni&nbsp;!!)'
+        }
       }
     }
   }
 )
+
+const pushFiltersJelly = (results) => {
+  results.push({ location: 'gladionBay', phase: 'beforeSpectral'})
+  results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' })
+  results.push({ location: 'gladionBay', phase: 'spectralDay'})
+  results.push({ location: 'gladionBay', phase: 'afterSpectral'})
+  results.push({ location: 'jellyRouteEvening', phase: 'beforeSpectral'})
+  results.push({ location: 'jellyRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'jellyRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'rhotanoSea', phase: 'beforeSpectral'})
+  results.push({ location: 'jellyRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'rhotanoSea', phase: 'afterSpectral'})
+  return results;
+}
+
+const pushFiltersSeaDragon = (results) => {
+  results.push({ location: 'seaDragonRouteNight', phase: 'beforeSpectral'})
+  results.push({ location: 'seaDragonRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'seaDragonRouteNight', phase: 'afterSpectral'})
+  results.push({ location: 'gladionBay', phase: 'beforeSpectral'})
+  results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' })
+  results.push({ location: 'gladionBay', phase: 'spectralDay'})
+  results.push({ location: 'gladionBay', phase: 'afterSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
+  results.push({ location: 'seaDragonRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'northern', phase: 'afterSpectral'})
+  return results;
+}
+
+const pushFiltersOctopus = (results) => {
+  results.push({ location: 'southern', phase: 'beforeSpectral'})
+  results.push({ location: 'southern', phase: 'spectralDay'})
+  results.push({ location: 'southern', phase: 'afterSpectral'})
+  results.push({ location: 'octopusRouteEvening', phase: 'beforeSpectral'})
+  results.push({ location: 'octopusRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'octopusRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
+  results.push({ location: 'octopusRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'northern', phase: 'afterSpectral'})
+  return results;
+}
+
+const pushFiltersShark = (results) => {
+  results.push({ location: 'sharkRouteEvening', phase: 'beforeSpectral'})
+  results.push({ location: 'sharkRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'sharkRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'southern', phase: 'beforeSpectral'})
+  results.push({ location: 'southern', phase: 'spectralNight'})
+  results.push({ location: 'southern', phase: 'afterSpectral'})
+  results.push({ location: 'sharkRouteDay', phase: 'beforeSpectral'})
+  results.push({ location: 'sharkRouteDay', phase: 'spectralDay'})
+  results.push({ location: 'sharkRouteDay', phase: 'afterSpectral'})
+  return results;
+}
+
+const pushFiltersCrab = (results) => {
+  results.push({ location: 'crabRouteEvening', phase: 'beforeSpectral'})
+  results.push({ location: 'crabRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'crabRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'crabRouteNight', phase: 'beforeSpectral'})
+  results.push({ location: 'crabRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'crabRouteNight', phase: 'afterSpectral'})
+  results.push({ location: 'crabRouteDay', phase: 'beforeSpectral'})
+  results.push({ location: 'crabRouteDay', phase: 'spectralDay'})
+  results.push({ location: 'crabRouteDay', phase: 'afterSpectral'})
+  
+  return results;
+}
+
+const pushFiltersBalloon = (results) => {
+  results.push({ location: 'balloonRouteDay', phase: 'beforeSpectral'})
+  results.push({ location: 'balloonRouteDay', phase: 'spectralDay'})
+  results.push({ location: 'balloonRouteDay', phase: 'afterSpectral'})
+  results.push({ location: 'balloonRouteEvening', phase: 'beforeSpectral'})
+  results.push({ location: 'balloonRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'balloonRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'balloonRouteNight', phase: 'beforeSpectral'})
+  results.push({ location: 'balloonRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'balloonRouteNight', phase: 'afterSpectral'})
+  return results;
+}
+
+const pushFiltersManta = (results) => {
+  results.push({ location: 'mantaRouteDay', phase: 'beforeSpectral'})
+  results.push({ location: 'mantaRouteDay', phase: 'spectralDay'})
+  results.push({ location: 'mantaRouteDay', phase: 'afterSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectral'})
+  results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
+  results.push({ location: 'northern', phase: 'spectralEvening'})
+  results.push({ location: 'northern', phase: 'afterSpectral'})
+  results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral'})
+  results.push({ location: 'mantaRouteNight', phase: 'spectralNight'})
+  results.push({ location: 'bloodbrineSea', phase: 'afterSpectral'})
+  return results;
+}
 
 const pushFiltersGladionBay = (filters, results) => {
   if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
@@ -673,6 +1135,12 @@ const pushFiltersBloodbrineSea = (filters, results) => {
 }
 
 export const getters = {
+  getTargetTitles(state) {
+    return state.targetTitles;
+  },
+  getTitleFilterTitles(state) {
+    return state.titleFilterTitles;
+  },
   getSectionTitles(state) {
     return state.sectionTitles;
   },
@@ -690,6 +1158,31 @@ export const getters = {
   },
   getStratHeadings(state) {
     return state.stratHeadings;
+  },
+  getTargetTitleOrder(state) {
+    let results = [];
+    if (state.filters.jellyRoute) {
+      results = pushFiltersJelly(results);
+    }
+    if (state.filters.seaDragonRoute) {
+      results = pushFiltersSeaDragon(results);
+    }
+    if (state.filters.octopusRoute) {
+      results = pushFiltersOctopus(results);
+    }
+    if (state.filters.sharkRoute) {
+      results = pushFiltersShark(results);
+    }
+    if (state.filters.crabRoute) {
+      results = pushFiltersCrab(results);
+    }
+    if (state.filters.balloonRoute) {
+      results = pushFiltersBalloon(results);
+    }
+    if (state.filters.mantaRoute) {
+      results = pushFiltersManta(results);
+    }
+    return results;
   },
   getRouteLocationOrder(state) {
     return state.routeLocationOrder;
@@ -751,7 +1244,14 @@ export const mutations = {
       rothlytSoundNightDayEveningRoute: false,
       bloodbrineSeaDayEveningNightRoute: false,
       bloodbrineSeaEveningNightDayRoute: false,
-      bloodbrineSeaNightDayEveningRoute: false
+      bloodbrineSeaNightDayEveningRoute: false,
+      jellyRoute: false,
+      seaDragonRoute: false,
+      octopusRoute: false,
+      sharkRoute: false,
+      crabRoute: false,
+      balloonRoute: false,
+      mantaRoute: false
     };
     switch (currentRoute) {
       case NORTHERN_NIGHT_DAY_EVENING:
@@ -789,6 +1289,27 @@ export const mutations = {
       break;
       case BLOODBRINE_EVENING_NIGHT_DAY:
         state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaEveningNightDayRoute: true }};
+      break;
+      case JELLY_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ jellyRoute: true }};
+      break;
+      case SEA_DRAGON_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ seaDragonRoute: true }};
+      break;
+      case OCTOPUS_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ octopusRoute: true }};
+      break;
+      case SHARK_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ sharkRoute: true }};
+      break;
+      case CRAB_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ crabRoute: true }};
+      break;
+      case BALLOON_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ balloonRoute: true }};
+      break;
+      case MANTA_ROUTE:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ mantaRoute: true }};
       break;
     }
   }
