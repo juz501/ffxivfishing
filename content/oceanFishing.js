@@ -97,9 +97,9 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Megalodon(!!!)</em> >&nbsp;18secs',
-        'Surface&nbsp;Slap <em>Tarnished&nbsp;Shark(!!!)</em>'
+        'Surface&nbsp;Slap <em>Tarnished&nbsp;Shark(!!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     beforeSpectralShowers: {
@@ -108,7 +108,6 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Plump&nbsp;Worm => Spectral&nbsp;Megalodon(!!!)</em>'
       ]
     },
@@ -161,9 +160,9 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Discus(!!!)</em> >&nbsp;18secs',
-        'Surface&nbsp;Slap <em>Momora&nbsp;Mora(!!!)</em>'
+        'Surface&nbsp;Slap <em>Momora&nbsp;Mora(!!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
@@ -216,10 +215,10 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: [
-        'Do not hook (! or !!)',
+      strategy: [        
         '<em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em> >&nbsp;18secs',
-        'Surface&nbsp;Slap <em>Chrome&nbsp;Hammerhead(!!!)</em>'
+        'Surface&nbsp;Slap <em>Chrome&nbsp;Hammerhead(!!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
@@ -270,9 +269,9 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
-        'Surface&nbsp;Slap <em>Megasquid(!!)</em>'
+        'Surface&nbsp;Slap <em>Megasquid(!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     beforeSpectralSnow: {
@@ -281,9 +280,9 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Ragworm => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
-        'Surface&nbsp;Slap <em>Orchon\'s&nbsp;Stone&nbsp;(!!)</em>'
+        'Surface&nbsp;Slap <em>Orchon\'s&nbsp;Stone&nbsp;(!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
@@ -334,9 +333,9 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em> >&nbsp;10secs &amp; <&nbsp;18secs',
         'Surface&nbsp;Slap <em>King&nbsp;Cobrafish(!!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
@@ -389,9 +388,9 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Ragworm => Spectresaur(!!!)</em> >&nbsp;14secs',
-        'Surface&nbsp;Slap <em>Thavnairian&nbsp;Shark(!!!)</em>'
+        'Surface&nbsp;Slap <em>Thavnairian&nbsp;Shark(!!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
@@ -446,9 +445,9 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Eel(!!!)</em> >&nbsp;14secs',
-        'Surface&nbsp;Slap <em>True&nbsp;Scad(!!)</em>'
+        'Surface&nbsp;Slap <em>True&nbsp;Scad(!!)</em>',
+        'Do not hook (! or !!) after Surface Slap'
       ]
     },
     spectralDay: {
