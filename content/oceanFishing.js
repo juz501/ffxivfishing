@@ -623,7 +623,8 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;12secs <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>'
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;12secs <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>',
+        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Megalodon(!!!)</em>'
       ]
     },
     spectralEvening: {
