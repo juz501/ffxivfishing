@@ -485,7 +485,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm, Krill',
       strategy: [
-        '<em>Snagging + Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
+        '<em>Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
         'Intuition: <strong>Krill => Bareface(!!!)</strong>'
       ]
     }
