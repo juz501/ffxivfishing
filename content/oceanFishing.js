@@ -97,7 +97,7 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Megalodon(!!!)</em> >&nbsp;18secs',
         'Surface&nbsp;Slap <em>Tarnished&nbsp;Shark(!!!)</em>'
       ]
@@ -108,7 +108,7 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Plump&nbsp;Worm => Spectral&nbsp;Megalodon(!!!)</em>'
       ]
     },
@@ -161,7 +161,7 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Discus(!!!)</em> >&nbsp;18secs',
         'Surface&nbsp;Slap <em>Momora&nbsp;Mora(!!!)</em>'
       ]
@@ -217,7 +217,7 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em> >&nbsp;18secs',
         'Surface&nbsp;Slap <em>Chrome&nbsp;Hammerhead(!!!)</em>'
       ]
@@ -270,7 +270,7 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
         'Surface&nbsp;Slap <em>Megasquid(!!)</em>'
       ]
@@ -281,7 +281,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Ragworm => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
         'Surface&nbsp;Slap <em>Orchon\'s&nbsp;Stone&nbsp;(!!)</em>'
       ]
@@ -334,7 +334,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em> >&nbsp;10secs &amp; <&nbsp;18secs',
         'Surface&nbsp;Slap <em>King&nbsp;Cobrafish(!!!)</em>',
       ]
@@ -389,7 +389,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Ragworm => Spectresaur(!!!)</em> >&nbsp;14secs',
         'Surface&nbsp;Slap <em>Thavnairian&nbsp;Shark(!!!)</em>'
       ]
@@ -446,7 +446,7 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Patience II to exclude(!)',
+        'Do not hook (! or !!)',
         '<em>Krill => Spectral&nbsp;Eel(!!!)</em> >&nbsp;14secs',
         'Surface&nbsp;Slap <em>True&nbsp;Scad(!!)</em>'
       ]
@@ -499,7 +499,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Patience I to exclude (!!/!!!)',
+        'Do not hook (!! or !!!)',
         'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
       ]
     },
