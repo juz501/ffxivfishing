@@ -96,37 +96,61 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Surface&nbsp;Slap (Tarnished&nbsp;Shark&nbsp;!!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Krill => Spectral&nbsp;Megalodon(!!!)</em> >&nbsp;18secs',
+        'Surface&nbsp;Slap <em>Tarnished&nbsp;Shark(!!!)</em>'
+      ]
+    },
     beforeSpectralShowers: {
       phase: 'Before Spectral',
       weather: 'Showers',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Surface&nbsp;Slap (Gladion&nbsp;Goby&nbsp;! or Gladion&nbsp;Chovy&nbsp;!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Megalodon&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Plump&nbsp;Worm => Spectral&nbsp;Megalodon(!!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
-      strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Casket&nbsp;Oyster&nbsp;! or Nimble&nbsp;Dancer&nbsp;!)' },
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;6secs <em>Ragworm => Casket&nbsp;Oyster(!)</em> or <em>Ragworm => Nimble&nbsp;Dancer(!)</em>',
+      ] 
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Doublehook&nbsp;!!! (Funnel&nbsp;Shark&nbsp;!!!)' },
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!)',
+        '<em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>'
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Krill + Glowworm&nbsp;x2 =&nbsp;<strong>Glowworm</strong>',
-      strategy: '(Navigator\'s&nbsp;Print&nbsp;!) + (Heavenskey&nbsp;!)&nbsp;x2 =&nbsp;<strong>Sothis</strong>' },
+      bait: 'Krill, Glowworm', 
+      strategy: [
+        '<em>Krill => Navigator\'s&nbsp;Print(!)</em>',
+        '<em>Glowworm => Heavenskey(!)</em> twice',
+        'Intuition: Double&nbsp;Hook(!!!) <strong>Glowworm => Sothis(!!!)</strong>'
+      ]  
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Krill&nbsp;x3 =&nbsp;<strong>Krill</strong>',
-      strategy: '(Gladion&nbsp;chovy&nbsp;!)&nbsp;x3 =&nbsp;(<strong>Drunkfish&nbsp;!!!</strong>)'
+      bait: 'Krill', 
+      strategy: [
+        '<em>Krill => Gladion&nbsp;Chovy(!)</em> three times',
+        'Intuition: <strong>Krill => Drunkfish(!!!)</strong>'
+      ]
     }
   },
   southern: {
@@ -136,31 +160,53 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Surface&nbsp;Slap (Momora&nbsp;Mora&nbsp;!!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Discus&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Krill => Spectral&nbsp;Discus(!!!)</em> >&nbsp;18secs',
+        'Surface&nbsp;Slap <em>Momora&nbsp;Mora(!!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;!! @&nbsp;5secs (Mythril&nbsp;Sovereign&nbsp;!!)' },
+      strategy: [
+        '<em>Krill => Mythril&nbsp;Sovereign(!!)</em> (Identical&nbsp;Cast + Double&nbsp;Hook(!!))'
+      ]
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
-      bait: 'Ragworm + Mooch, <em>Ragworm</em>',
-      strategy: 'Doublehook&nbsp;!!! (Hi-Aetherlouse&nbsp;! + Roguesaurus&nbsp;!!!)</em>' },
+      bait: 'Ragworm', 
+      strategy: [
+        '<em>Ragworm => Hi-Aetherlouse(!)</em>',
+        'Mooch + Double&nbsp;Hook(!!!) <em>Hi-Aetherlouse(!) => Rougesaurous(!!!)</em>',
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: '(Ragworm + Mooch)&nbsp;x2 =&nbsp;<strong>Shrimp&nbsp;Cage&nbsp;Feeder</strong>',
-      strategy: '(Hi-Aetherlouse&nbsp;! + Great&nbsp;Grandmarlyn&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Coral&nbsp;Manta&nbsp;!!!)</strong>' },
+      bait: 'Ragworm, Shrimp&nbsp;Cage&nbsp;Feeder',
+      strategy: [
+        '<em>Ragworm => Hi-Aetherlouse(!)</em>',
+        'Mooch <em>Hi-Aetherlouse(!) => Great&nbsp;Grandmarlyn(!!)</em> twice',
+        'Intuition: <strong>Shrimp&nbsp;Cage&nbsp;Feeder => Coral&nbsp;Manta(!!!)</strong>',
+        'Mooch + Double&nbsp;Hook(!!) <em>Hi-Aetherlouse(!) => Aetheric&nbsp;Seadragon(!!)</em>'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Krill&nbsp;+&nbsp;Mooch =&nbsp;<strong>Plump&nbsp;Worm</strong>',
-      strategy: '(Ghoul&nbsp;Barracuda&nbsp;!!) + (Gladdius&nbsp;!!) =&nbsp;<strong>(Little&nbsp;Leviathan&nbsp;!!!)</strong>'
+      bait: 'Krill, Plump&nbsp;Worm',
+      strategy: [
+        '<em>Krill => Ghoul&nbsp;Barracuda(!!)</em>',
+        'Mooch <em>Ghoul&nbsp;Barracuda(!!) => Gladdius(!!)</em>',
+        'Intuition: <strong>Plump&nbsp;Worm => Little&nbsp;Leviathan(!!!)</strong>'
+      ]
     }
   },
   rhotanoSea: {
@@ -170,31 +216,50 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Surface&nbsp;Slap (Chrome&nbsp;Hammerhead&nbsp;!!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Bass&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em> >&nbsp;18secs',
+        'Surface&nbsp;Slap <em>Chrome&nbsp;Hammerhead(!!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Doublehook&nbsp;!!! (Executioner&nbsp;!!!)' },
+      strategy: [
+        '<em>Plump&nbsp;Worm => Executioner(!!!)</em> (Blind&nbsp;Double&nbsp;Hook(!!!))'
+      ]
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
-      bait: 'Ragworm + Rat&nbsp;Tail =&nbsp;<strong>Rat&nbsp;Tail</strong>',
-      strategy: '(Silencer&nbsp;!) + (Deep&nbsp;Sea&nbsp;Eel&nbsp;!!) =&nbsp;<strong>(Stonescale&nbsp;!!!)</strong>' },
+      bait: 'Ragworm, Rat&nbsp;Tail',
+      strategy: [
+        '<em>Ragworm => Silencer(!)</em>',
+        '<em>Rat&nbsp;Tail => Deep&nbsp;Sea&nbsp;Eel(!!)</em>',
+        'Intuition: <strong>Rat&nbsp;Tail => Stonescale(!!!)</strong>'
+      ]
+    },      
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Floating&nbsp;Saucer&nbsp;!)' },
+      strategy: [
+        '<em>Krill => Floating&nbsp;Saucer(!)</em> (Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;6secs)'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Plump&nbsp;Worm&nbsp;x2 =&nbsp;<strong>Krill</strong>',
-      strategy: '(Crimson&nbsp;Monkfish&nbsp;!!)&nbsp;x2 =&nbsp;<strong>(Sabaton&nbsp;!!!)</strong>'
+      bait: 'Plump&nbsp;Worm, Krill',
+      strategy: [
+        '<em>Plump&nbsp;Worm => Crimson&nbsp;Monkfish(!!)</em> twice (Identical&nbsp;Cast)',
+        'Intuition: <strong>Krill => Sabaton(!!!)</strong>'
+      ]
     }
   },
   northern: {
@@ -204,37 +269,61 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Surface&nbsp;Slap (Oschon\'s&nbsp;stone&nbsp;!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Sea&nbsp;Bo&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
+        'Surface&nbsp;Slap <em>Megasquid(!!)</em>'
+      ]
+    },
     beforeSpectralSnow: {
       phase: 'Before Spectral',
       weather: 'Snow/Blizzard',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Surface&nbsp;Slap (Megasquid&nbsp;!!) Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Sea&nbsp;Bo&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Ragworm => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em> >&nbsp;18secs',
+        'Surface&nbsp;Slap <em>Orchon\'s&nbsp;Stone&nbsp;(!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
-      bait: 'Plump&nbsp;Worm&nbsp;x3 =&nbsp;<strong>Heavy&nbsp;Steel&nbsp;Jig</strong>',
-      strategy: '(Gugrusaurus&nbsp;!!!)&nbsp;x3 =&nbsp;<strong>(Elasmosaurus&nbsp;!!!)</strong>' },
+      bait: 'Plump&nbsp;Worm, Heavy&nbsp;Steel&nbsp;Jig',
+      strategy: [
+        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em> three times (Identical&nbsp;Cast + Double&nbsp;Hook(!!!))',
+        'Intuition: <strong>Heavy&nbsp;Steel&nbsp;Jig => Elasmosaurus(!!!)</strong>',
+      ]
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
-      strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Coral&nbsp;Seadragon&nbsp;!)' },
+      strategy: [
+        '<em>Ragworm => Coral&nbsp;Seadragon(!)</em> (Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;6secs)'
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Mopbeard&nbsp;!!)' },
+      strategy: [
+        '<em>Krill => Mopbeard(!!)</em> or <em>Krill => The&nbsp;Fallen&nbsp;One(!!)</em> (Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;4secs)'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Ragworm + Mooch =&nbsp;<strong>Ragworm</strong>',
-      strategy: '(Tossed&nbsp;dagger&nbsp;!) + (Elder&nbsp;Dinicthys&nbsp;!!) =&nbsp;<strong>(Shooting&nbsp;Star&nbsp;!!!)</strong>'
+      bait: 'Ragworm',
+      strategy: [
+        '<em>Ragworm => Tossed&nbsp;Dagger(!)</em>',
+        'Mooch + Double&nbsp;Hook(!!) <em>Tossed&nbsp;Dagger(!) => Elder&nbsp;Dinicthys(!!)</em>',
+        'Intuition: <strong>Ragworm => Shooting&nbsp;Star(!!!)</strong>'
+      ]
     }
   },
   cieldalaes: {
@@ -244,31 +333,52 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Surface&nbsp;Slap (King&nbsp;Cobrafish&nbsp;!!!), (Spectral&nbsp;Butterfly&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em> >&nbsp;10secs &amp; <&nbsp;18secs',
+        'Surface&nbsp;Slap <em>King&nbsp;Cobrafish(!!!)</em>',
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Doublehook&nbsp;!!! when&nbsp;>&nbsp;5secs (Jetborne&nbsp;Manta&nbsp;!!! or Callichthyid&nbsp;!!!)' },
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;<&nbsp;3secs <em>Plump&nbsp;Worm => Jetborne&nbsp;Manta(!!!)</em>',
+        'Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;3secs <em>Plump&nbsp;Worm => Callichthyid(!!!)</em>'
+      ]
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
-      bait: 'Plump&nbsp;Worm, <em>Krill</em>',
-      strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Meandering&nbsp;Mora&nbsp;!!), <em>Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Flaming&nbsp;Eel&nbsp;!!)</em>' },
+      bait: 'Plump&nbsp;Worm',
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;6secs <em>Plump&nbsp;Worm => Meandering&nbsp;Mora(!!)</em> or <em>Plump&nbsp;Worm => Devil\'s&nbsp;Sting(!!)</em>'
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Plump&nbsp;Wormx2 + Krill =<strong>Squid Strip</strong>',
-      strategy: '(Jetborne&nbsp;Manta&nbsp;!!!)&nbsp;x2 + (Mistbeard\'s&nbsp;Cup&nbsp!!) =(<strong>Hafgufa&nbsp;!!!</strong>)' },
+      bait: 'Plump&nbsp;Worm, Krill, Squid&nbsp;Strip',
+      strategy: [
+        '<em>Plump&nbsp;Worm => Jetborn&nbsp;Manta(!!!)</em> (Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;<&nbsp;3secs)',
+        '<em>Krill => Mistbeard\'s&nbsp;Cup(!!)</em>',
+        'Intuition: <strong>Squid&nbsp;Strip => Hafgufa(!!!)</strong>'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Ragworm&nbsp;x3 =<strong>Krill</strong>',
-      strategy: '(Metalic&nbsp;Boxfish&nbsp;!)&nbsp;x3 =(<strong>Cieldalaes&nbsp;Geode&nbsp;!!!</strong>)'
+      bait: 'Ragworm, Krill',
+      strategy: [
+        '<em>Ragworm => Metalic&nbsp;Boxfish(!)</em> three times (Identical&nbsp;Cast + Double&nbsp;Hook(!))',
+        '<strong>Krill => Cieldalaes&nbsp;Geode(!!!)</strong>',
+        'Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;17secs <em>Ragworm => Mamahi-mahi(!!!)</em>'
+      ]
     }
   },
   rothlytSound: {
@@ -278,31 +388,54 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Surface&nbsp;Slap (Thavnairian&nbsp;Shark&nbsp;!!!), (Spectresaur&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Ragworm => Spectresaur(!!!)</em> >&nbsp;14secs',
+        'Surface&nbsp;Slap <em>Thavnairian&nbsp;Shark(!!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Pearl&nbsp;Bombfish&nbsp;!! &amp; Knifejaw&nbsp;!!)' },
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;4secs <em>Krill => Pearl&nbsp;Bombfish(!!)</em>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;6secs <em>Krill => Knifejaw(!!)</em>'
+      ]
+    },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
-      bait: 'Ragworm + Mooch =<strong>Ragworm</strong>',
-      strategy: '(Rothlyt&nbsp;Mussel&nbsp;!!!) + (Trollfish&nbsp;!) =(<strong>Placodus&nbsp;!!!</strong>)' },
+      bait: 'Ragworm, Krill',
+      strategy: [
+        '<em>Ragworm => Rothlyt&nbsp;Mussel(!!!)</em>',
+        'Mooch <em>Rothlyt&nbsp;Mussel(!!!) => Trollfish(!)</em>',
+        'Intuition: <strong>Ragworm => Placodus(!!!)</strong>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;6secs <em>Krill => Knifejaw(!!)</em>'
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Ragworm',
-      strategy: 'Doublehook&nbsp;!! when&nbsp;>&nbsp;5secs (Pearl&nbsp;Bombfish&nbsp;!! &amp; Knifejaw&nbsp;!!)' },
+      bait: 'Krill',
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;4secs <em>Krill => Pearl&nbsp;Bombfish(!!)</em>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) when&nbsp;>&nbsp;6secs <em>Krill => Knifejaw(!!)</em>'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Ragworm&nbsp;x3 =<strong>Ragworm</strong>',
-      strategy: '(Rothlyt&nbsp;Kelp&nbsp;!)&nbsp;x3 =(<strong>Ginkgo&nbsp;Fin&nbsp;!!!</strong>)'
+      bait: 'Ragworm',
+      strategy: [
+        '<em>Ragworm => Rothlyt&nbsp;Kelp(!)</em> three times (Identical&nbsp;Cast + Double&nbsp;Hook(!))',
+        'Intuition: <strong>Ragworm => Ginko&nbsp;Fin(!!!)</strong>',
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;10secs <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ]
     }
   },
   bloodbrineSea: {
@@ -312,31 +445,50 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Surface&nbsp;Slap (True&nbsp;Scad&nbsp;!!), Reel&nbsp;only&nbsp;!!! (Spectral&nbsp;Eel&nbsp;!!!)' },
+      strategy: [
+        'Patience II to exclude(!)',
+        '<em>Krill => Spectral&nbsp;Eel(!!!)</em> >&nbsp;14secs',
+        'Surface&nbsp;Slap <em>True&nbsp;Scad(!!)</em>'
+      ]
+    },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
-      bait: 'Krill&nbsp;x3 =<strong>Pillbug</strong>, <em>Ragworm</em>',
-      strategy: '(Beatific&nbsp;Vision&nbsp;!!)&nbsp;x3 =(<strong>Seafaring&nbsp;Toad&nbsp;!!!</strong>), <em>Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Exterminator&nbsp;!)</em>' },
+      bait: 'Krill, Pillbug, Ragworm',
+      strategy: [
+        '<em>Krill => Beatific&nbsp;Vision(!!)</em> three times',
+        'Intuition: <strong>Pillbug => Seafaring&nbsp;Toad(!!!)</strong>',
+        'Double&nbsp;Hook(!) <em>Ragworm => Exterminator(!)</em>'
+      ]
+    },    
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Doublehook&nbsp;!!! when&nbsp;>&nbsp;5secs (Quartz&nbsp;Hammerhead&nbsp;!!!)' },
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;7secs <em>Plump&nbsp;Worm => Quartz&nbsp;Hammerhead(!!!)</em>'
+      ]
+    },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;!! (Beatific&nbsp;Vision&nbsp;!! or Skaldminni&nbsp;!!)' },
+      strategy: [
+        'Double&nbsp;Hook(!!) <em>Krill => Beatific&nbsp;Vision(!!)</em> or Double&nbsp;Hook(!!) <em>Krill => Skaldminni(!!)</em>'
+      ]
+    },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Snagging&nbsp;&amp;&nbsp;Ragworm =<strong>Krill</strong>',
-      strategy: '(Sunken&nbsp;Mask&nbsp;!!!) =(<strong>Bareface&nbsp;!!!</strong>)'
+      bait: 'Ragworm, Krill',
+      strategy: [
+        '<em>Snagging + Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
+        'Intuition: <strong>Krill => Bareface(!!!)</strong>'
+      ]
     }
   },
   jellyRouteEvening: {
@@ -346,21 +498,28 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp; (La&nbsp;Noscean&nbsp;Jelly&nbsp;!)'
+      strategy: [
+        'Patience I to exclude (!!/!!!)',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
+      ]
     },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
-      strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5&nbsp;secs (Sea&nbsp;Nettle&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;5&nbsp;secs <em>Ragworm => Sea&nbsp;Nettle(!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp; (La&nbsp;Noscean&nbsp;Jelly&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
+      ]
     }
   },
   jellyRouteNight: {
@@ -370,7 +529,9 @@ export const content = {
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Doublehook&nbsp;! when&nbsp;>&nbsp;5secs (Floating&nbsp;Saucer&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;5secs <em>Krill => Floating&nbsp;Saucer(!)</em>'
+      ]
     }
   },
   seaDragonRouteNight: {
@@ -380,21 +541,28 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;7secs (Shaggy&nbsp;Seadragon&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7secs <em>Shaggy&nbsp;Seadragon(!)</em>'
+      ]
     },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: '(Ragworm + Mooch)',
-      strategy: 'Double&nbsp;Hook&nbsp;!! (Hi-Aetherlouse&nbsp;! + Aetheric&nbsp;Seadragon&nbsp;!!)'
+      bait: 'Ragworm',
+      strategy: [
+        '<em>Ragworm => Hi-Aetherlouse(!)',
+        'Mooch + Double&nbsp;Hook&nbsp;!! <em>Hi-Aetherlouse(!) => Aetheric&nbsp;Seadragon(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;7secs (Shaggy&nbsp;Seadragon&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7secs <em>Ragworm => Shaggy&nbsp;Seadragon(!)</em>'
+      ]
     }
   },
   seaDragonRouteEvening: {
@@ -414,21 +582,27 @@ export const content = {
       weather: 'Showers (or Normal)',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Cyan&nbsp;Octopus&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+      ]
     },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Merman\'s&nbsp;Mane&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Merman\'s&nbsp;Mane(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook (Cyan&nbsp;Octopus&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+      ]
     }
   },
   octopusRouteNight: {
@@ -438,7 +612,9 @@ export const content = {
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;5secs (Mopbeard&nbsp;!!)x4'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;5secs <em>Krill => Mopbeard(!!)</em>'
+      ]
     }
   },
   sharkRouteEvening: {
@@ -448,21 +624,28 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Identical&nbsp;Cast when&nbsp;>&nbsp;12secs (Tarnished&nbsp;Shark&nbsp;!!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;12secs <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>'
+      ]
     },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Funnel&nbsp;Shark&nbsp;!!!)x4, Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Ghost&nbsp;Shark&nbsp;!!)x4'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Plump&nbsp;Worm => Ghost&nbsp;Shark(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook + Identical&nbsp;Cast when&nbsp;>&nbsp;12secs (Tarnished&nbsp;Shark&nbsp;!!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast when&nbsp;>&nbsp;12secs <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>'
+      ]
     }
   },
   sharkRouteDay: {
@@ -472,21 +655,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!!! (Chrome&nbsp;Hammerhead&nbsp;!!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) <em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+      ]
     },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Executioner&nbsp;!!!)x4, (Sweeper&nbsp;!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Executioner(!!!)</em> or <em>Plump&nbsp;Worm => Sweeper(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! + Identical&nbsp;Cast (Chrome&nbsp;Hammerhead&nbsp;!!!)x4'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+      ]
     }
   },
   crabRouteEvening: {
@@ -496,21 +685,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Tortoiseshell&nbsp;Crab&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Tortoiseshell&nbsp;Crab(!!)</em>'
+      ]
     },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Krill',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp<&nbsp;5secs (Titanshell&nbsp;Crab&nbsp;!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp<&nbsp;5secs <em>Krill => Titanshell&nbsp;Crab(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Tortoiseshell&nbsp;Crab&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Tortoiseshell&nbsp;Crab(!!)</em>'
+      ]
     }
   },
   crabRouteNight: {
@@ -520,21 +715,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Net&nbsp;Crawler&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Net&nbsp;Crawler(!!)</em>'
+      ]
     },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Bartholomew&nbsp;the&nsbp;Chopper&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Bartholomew&nbsp;the&nsbp;Chopper(!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Net&nbsp;Crawler&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Net&nbsp;Crawler(!!)</em>'
+      ]
     }
   },
   crabRouteDay: {
@@ -544,21 +745,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Thaliak&nbsp;Crab&nbsp;!) or (Bloodpolish&nbsp;Crab&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>'
+      ]
     },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Oracular&nbsp;Crab&nbsp;!) or (Exterminator&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Oracular&nbsp;Crab(!)</em> or <em>Ragworm => Exterminator(!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Thaliak&nbsp;Crab&nbsp;!) or (Bloodpolish&nbsp;Crab&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>'
+      ]
     }
   },
   balloonRouteDay: {
@@ -567,22 +774,30 @@ export const content = {
       phase: 'Before Spectral',
       weather: 'Thunderstorms,<br /><em>Normal</em>',
       time: 'Any',
-      bait: 'Ragworm,<br /><em>Ragworm</em>',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;<&nbsp;12secs (Metallic&nbsp;Boxfish&nbsp;!),<br /><em>Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Metallic&nbsp;Boxfish&nbsp;!)</em>'
+      bait: 'Ragworm',
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;<&nbsp;12secs <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) => <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+      ]
     },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Mythril&nbsp;Boxfish&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Mythril&nbsp;Boxfish(!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Ragworm,<br /><em>Ragworm</em>',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;<&nbsp;12secs (Metallic&nbsp;Boxfish&nbsp;!),<br /><em>Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Metallic&nbsp;Boxfish&nbsp;!)</em>'
+      bait: 'Ragworm',
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;<&nbsp;12secs <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>',
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) => <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+      ]
     }
   },
   balloonRouteEvening: {
@@ -592,21 +807,29 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Surface&nbsp;Slap (Rhotano&nbsp;Sardine&nbsp;!) Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;9secs (Lampfish&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9secs <em>Ragworm => Lampfish(!)</em>',
+        'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>'
+      ]
     },
     spectralEvening: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;! (Silencer&nbsp;!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Silencer(!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Surface&nbsp;Slap (Rhotano&nbsp;Sardine&nbsp;!) Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;9secs (Lampfish&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9secs <em>Ragworm => Lampfish(!)</em>',
+        'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>'
+      ]
     }
   },
   balloonRouteNight: {
@@ -616,21 +839,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;12secs (Honeycomb&nbsp;Fish&nbsp;!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;12secs <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ]
     },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Identical&nbsp;Cast + Double&nbsp;Hook&nbsp;!! (Pearl&nbsp;Bombfish&nbsp;!!)'
+      strategy: [
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Pearl&nbsp;Bombfish(!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Ragworm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;12secs (Honeycomb&nbsp;Fish&nbsp;!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;12secs <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ]
     }
   },
   mantaRouteDay: {
@@ -640,21 +869,27 @@ export const content = {
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;14secs (Goobbue&nbsp;Ray&nbsp;!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14secs <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>'
+      ]
     },
     spectralDay: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!!! when&nbsp;<&nbsp;5secs (Jetborne&nbsp;Manta&nbsp;!!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;<&nbsp;5secs <em>Plump&nbsp;Worm => Jetborne&nbsp;Manta(!!!)</em>'
+      ]
     },
     afterSpectral: {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;>&nbsp;14secs (Goobbue&nbsp;Ray&nbsp;!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14secs <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>'
+      ]
     }
   },
   mantaRouteNight: {
@@ -664,7 +899,9 @@ export const content = {
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
-      strategy: 'Blind&nbsp;Double&nbsp;Hook&nbsp;!! when&nbsp;6secs (Skaldminni&nbsp;!!)'
+      strategy: [
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;6secs <em>Krill => Skaldminni(!!)</em>'
+      ]
     }
   }
 };

@@ -90,3 +90,17 @@ p {
   line-height: 1.2;
   padding-bottom: 0.5rem;
 }
+
+.strat {
+  em {
+    color: $fish-color;
+    font-weight: bold;
+  }
+}
+
+.dark .strat {
+  em {
+    color: $dark-fish-color;
+    font-weight: normal;
+  }
+}
