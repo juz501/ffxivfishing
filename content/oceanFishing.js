@@ -485,7 +485,7 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm, Krill',
       strategy: [
-        '<em>Snagging + Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
+        '<em>Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
         'Intuition: <strong>Krill => Bareface(!!!)</strong>'
       ]
     }
@@ -573,7 +573,9 @@ export const content = {
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
-      strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;8secs (Coral&nbsp;Seadragon&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;8secs <em>Ragworm => Coral&nbsp;Seadragon(!)</em>'
+      ]
     }
   },
   octopusRouteEvening: {
