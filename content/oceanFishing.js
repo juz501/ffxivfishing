@@ -573,7 +573,9 @@ export const content = {
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
-      strategy: 'Double&nbsp;Hook&nbsp;! when&nbsp;>&nbsp;8secs (Coral&nbsp;Seadragon&nbsp;!)'
+      strategy: [
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;8secs <em>Ragworm => Coral&nbsp;Seadragon(!)</em>'
+      ]
     }
   },
   octopusRouteEvening: {
