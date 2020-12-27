@@ -499,7 +499,6 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Do not hook (!! or !!!)',
         'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
       ]
     },
