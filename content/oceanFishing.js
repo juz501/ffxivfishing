@@ -498,7 +498,9 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>',
+        'You are relying on others to proc Spectral <em>Krill => Spectral&nbsp;Discus(!!!)</em>'
+
       ]
     },
     spectralEvening: {
@@ -540,7 +542,8 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7secs <em>Shaggy&nbsp;Seadragon(!)</em>'
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7secs <em>Shaggy&nbsp;Seadragon(!)</em>',
+        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Megalodon(!!!)</em>'
       ]
     },
     spectralNight: {
@@ -685,7 +688,8 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Tortoiseshell&nbsp;Crab(!!)</em>'
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Tortoiseshell&nbsp;Crab(!!)</em>',
+        'You are relying on others to proc Spectral with <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
       ]
     },
     spectralEvening: {
@@ -724,7 +728,8 @@ export const content = {
       time: 'Night',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Bartholomew&nbsp;the&nsbp;Chopper(!)</em>'
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Bartholomew&nbsp;the&nsbp;Chopper(!)</em>',
+        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em>'
       ]
     },
     afterSpectral: {
@@ -745,7 +750,8 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>'
+        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>',
+        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Eel(!!!)</em>'
       ]
     },
     spectralDay: {
@@ -808,7 +814,8 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9secs <em>Ragworm => Lampfish(!)</em>',
-        'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>'
+        'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>',
+        'You are relying on others to proc Spectral with <em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em>'
       ]
     },
     spectralEvening: {
@@ -869,7 +876,8 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14secs <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>'
+        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14secs <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>',
+        'You are relying on others to proc Spectral with <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
       ]
     },
     spectralDay: {
