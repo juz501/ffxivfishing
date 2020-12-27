@@ -117,7 +117,11 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>              
+              <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
+                <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                </ol>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -139,7 +143,11 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>
+              <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
+                <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                </ol>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -161,7 +169,11 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].weather"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].time"></td>
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
-              <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].strategy"></td>
+              <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
+                <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                </ol>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -350,6 +362,14 @@ export default {
       
       @media screen and (min-width: 700px) {
         padding: 10px 5px;
+      }
+
+      &.strat {
+        text-align: left;
+
+        ol {
+          list-style: decimal inside;          
+        }
       }
       
       &.vertical {
