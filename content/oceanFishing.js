@@ -7,13 +7,13 @@ export const sectionTitles = {
 };
 
 export const titleFilterTitles = {
-  jelly: 'Jelled Together - Rhotano&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  seaDragon: 'Maritime Dragonslayers - Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening)',
-  octopus: 'Octopus Travelers - Northern&nbsp;Strait (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  shark: 'Certifiable Shark Hunters - Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
-  crab: 'Crab Boat Crew - Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
-  balloon: 'Balloon Catchers - Rothlyt&nbsp;Sound (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  manta: 'Sticking it to the Manta - Bloodbrine&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)'
+  jelly: 'Jelled Together<br/>Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  seaDragon: 'Maritime Dragonslayers<br/>Northern&nbsp;Strait<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
+  octopus: 'Octopus Travelers<br/>Northern&nbsp;Strait<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  shark: 'Certifiable Shark Hunters<br/>Rhotano&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
+  crab: 'Crab Boat Crew<br/>Bloodbrine&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day',
+  balloon: 'Balloon Catchers<br/>Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  manta: 'Sticking it to the Manta<br/>Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night'
 };
 
 export const targetTitles = {
@@ -27,18 +27,18 @@ export const typeTitles = {
 };
 
 export const routeTitles = [
-  'Northern&nbsp;Strait (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Coral Manta',
-  'Northern&nbsp;Strait (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  'Northern&nbsp;Strait (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Sothis&nbsp;Elasmosaur',
-  'Rhotano&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Sothis&nbsp;Stonescale',
-  'Rhotano&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  'Rhotano&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Coral Manta',
-  'Rothlyt&nbsp;Sound (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Placodus',
-  'Rothlyt&nbsp;Sound (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night) - Stonescale',
-  'Rothlyt&nbsp;Sound (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
-  'Bloodbrine&nbsp;Sea (Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening) - Hafgufa&nbsp;Elasmosaur',
-  'Bloodbrine&nbsp;Sea (Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night)',
-  'Bloodbrine&nbsp;Sea (Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day) - Seafaring Toad'
+  'Northern&nbsp;Strait of Merlthor<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
+  'Northern&nbsp;Strait of Merlthor<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  'Northern&nbsp;Strait of Merlthor<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day',
+  'Rhotano&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
+  'Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  'Rhotano&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day',
+  'Rothlyt&nbsp;Sound<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
+  'Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  'Rothlyt&nbsp;Sound<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>',
+  'Bloodbrine&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
+  'Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
+  'Bloodbrine&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day'
 ];
 
 export const locationFilterTitles = {
@@ -84,6 +84,7 @@ export const stratHeadings = {
   phase: 'Phase',
   weather: 'Weather',
   time: 'Time',
+  conditions: 'Conditions',
   bait: 'Bait',
   strat: 'Strategy'
 };
