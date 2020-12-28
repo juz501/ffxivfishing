@@ -188,7 +188,7 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Ragworm, Shrimp&nbsp;Cage&nbsp;Feeder',
+      bait: 'Ragworm, Shrimp Cage Feeder',
       strategy: [
         '<em>Ragworm => Hi-Aetherlouse(!)</em>',
         'Mooch <em>Hi-Aetherlouse(!) => Great&nbsp;Grandmarlyn(!!)</em> twice',
