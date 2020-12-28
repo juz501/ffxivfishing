@@ -456,7 +456,7 @@ export const content = {
       time: 'Day',
       bait: 'Krill, Pillbug, Ragworm',
       strategy: [
-        '<em>Krill => Beatific&nbsp;Vision(!!)</em> three times',
+        '<em>Krill => Beatific&nbsp;Vision(!!)</em> three times (Identical&nbsp;Cast + Double&nbsp;Hook(!!))',
         'Intuition: <strong>Pillbug => Seafaring&nbsp;Toad(!!!)</strong>',
         'Double&nbsp;Hook(!) <em>Ragworm => Exterminator(!)</em>'
       ]
