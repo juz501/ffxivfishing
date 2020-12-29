@@ -149,10 +149,12 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Krill, Glowworm', 
+      bait: 'Krill, Glowworm, Plump&nbsp;Worm', 
       strategy: [
         '<em>Krill => Navigator\'s&nbsp;Print(!)</em> + <em>Glowworm => Heavenskey(!)</em> twice',
-        'Intuition: <strong>Glowworm => Sothis(!!!)</strong>'
+        'Intuition: <strong>Glowworm => Sothis(!!!)</strong>',
+        '<em>Krill => Merman\'s Mane(!!)</em>',
+        '<em>Plump&nbsp;Worm => Ghost Shark(!!)</em>',
       ],
       doublehook: [
         '<em>Merman\'s Mane(!!)x4</em> 2-6s',
