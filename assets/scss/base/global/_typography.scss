@@ -91,16 +91,20 @@ p {
   padding-bottom: 0.5rem;
 }
 
-.strat {
+.strat,
+.double-hook {
   em {
     color: $fish-color;
     font-weight: bold;
   }
 }
 
-.dark .strat {
-  em {
-    color: $dark-fish-color;
-    font-weight: normal;
+.dark {
+  .strat,
+  .double-hook {
+    em {
+      color: $dark-fish-color;
+      font-weight: normal;
+    }
   }
 }

@@ -123,10 +123,10 @@ export const content = {
         '<em>Ragworm => Nimble&nbsp;Dancer(!)</em>'
       ],
       doublehook: [
-        'Nimble Dancer(!)x2 10-18s [Blind]',
-        'Casket Oyster(!)x2 6-12s [Blind]',
-        'Merman\'s Mane(!!)x4 2-6s',
-        'Ghost Shark(!!)x4 2-7s',
+        '<em>Nimble Dancer(!)x2</em> 10-18s [Blind]',
+        '<em>Casket Oyster(!)x2</em> 6-12s [Blind]',
+        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
+        '<em>Ghost Shark(!!)x4</em> 2-7s',
       ] 
     },
     spectralEvening: {
@@ -139,10 +139,10 @@ export const content = {
         '<em>Plump&nbsp;Worm => Quicksilver&nbsp;Blade(!!!)</em>'
       ],
       doublehook: [
-        'Funnel Shark(!!!)x4 5-10s',
-        'Quicksilver Blade(!!)x2 3-7s',
-        'Merman\'s Mane(!!)x4 2-6s',
-        'Ghost Shark(!!)x4 2-7s',
+        '<em>Funnel Shark(!!!)x4</em> 5-10s',
+        '<em>Quicksilver Blade(!!)x2</em> 3-7s',
+        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
+        '<em>Ghost Shark(!!)x4</em> 2-7s',
       ]
     },
     spectralNight: {
@@ -155,8 +155,8 @@ export const content = {
         'Intuition: <strong>Glowworm => Sothis(!!!)</strong>'
       ],
       doublehook: [
-        'Merman\'s Mane(!!)x4 2-6s',
-        'Ghost Shark(!!)x4 2-7s',
+        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
+        '<em>Ghost Shark(!!)x4</em> 2-7s',
       ]  
     },
     afterSpectral: {
@@ -193,8 +193,8 @@ export const content = {
         'Mooch <em>Hi-Aetherlouse(!) => Great Grandmarlin(!!!)</em>'
       ],
       doublehook: [
-        'Mythril&nbsp;Sovereign(!!)x2 6-8s',
-        'Great Grandmarlin(!!!)x2 2-3s',
+        '<em>Mythril&nbsp;Sovereign(!!)x2</em> 6-8s',
+        '<em>Great Grandmarlin(!!!)x2</em> 2-3s',
       ]
     },
     spectralEvening: {
@@ -208,9 +208,9 @@ export const content = {
         '<em>Ragworm => Hi-Aetherlouse(!) => Great Grandmarlin(!!!)</em>',
       ],
       doublehook: [
-        'Roguesaurus(!!)x2 2-6s',
-        'Sea Nettle(!)x4 4-9s',
-        'Great Grandmarlin(!!!)x2 2-3s',
+        '<em>Roguesaurus(!!)x2</em> 2-6s',
+        '<em>Sea Nettle(!)x4</em> 4-9s',
+        '<em>Great Grandmarlin(!!!)x2</em> 2-3s',
       ]
     },
     spectralNight: {
@@ -224,8 +224,8 @@ export const content = {
         '<em>Ragworm => Hi-Aetherlouse(!) => Aetheric&nbsp;Seadragon(!!)</em>'
       ],
       doublehook: [
-        'Aetheric&nbsp;Seadragon(!!)x2 2-6s',
-        'Great Grandmarlin(!!!)x2 2-3s',
+        '<em>Aetheric&nbsp;Seadragon(!!)x2</em> 2-6s',
+        '<em>Great Grandmarlin(!!!)x2</em> 2-3s',
       ]
     },
     afterSpectral: {
@@ -261,9 +261,9 @@ export const content = {
         '<em>Plump&nbsp;Worm => Executioner(!!!)</em>'
       ],
       doublehook: [
-        'Executioner(!!!)x4 4-10s [Blind]',
-        'Sweeper(!!)x2 3-8s',
-        'Silencer(!)x4 2-8s'
+        '<em>Executioner(!!!)x4</em> 4-10s [Blind >4s]',
+        '<em>Sweeper(!!)x2</em> 3-8s',
+        '<em>Silencer(!)x4</em> 2-8s'
       ]
     },
     spectralEvening: {
@@ -276,7 +276,7 @@ export const content = {
         'Intuition: <strong>Rat&nbsp;Tail => Stonescale(!!!)</strong>'
       ],
       doublehook: [
-        'Silencer(!)x4 2-8s'
+        '<em>Silencer(!)x4</em> 2-8s'
       ]
     },      
     spectralNight: {
@@ -288,9 +288,9 @@ export const content = {
         '<em>Krill => Floating&nbsp;Saucer(!)</em>'
       ],
       doublehook: [
-        'Floating Saucer(!)x4 6-11s [Blind]',
-        'Slipsnail(!)x2 3-8s',
-        'Silencer(!)x4 2-8s'
+        '<em>Floating Saucer(!)x4</em> 6-11s [Blind]',
+        '<em>Slipsnail(!)x2</em> 3-8s',
+        '<em>Silencer(!)x4</em> 2-8s'
       ]
     },
     afterSpectral: {
@@ -338,7 +338,7 @@ export const content = {
         'Intuition: <strong>Heavy&nbsp;Steel&nbsp;Jig => Elasmosaurus(!!!)</strong>',
       ],
       doublehook: [
-        'Gugrusaurus(!!!)x4 2-10s',
+        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
       ]
     },
     spectralEvening: {
@@ -351,9 +351,9 @@ export const content = {
         '<em>Krill => The Fallen One(!!)</em>',
       ],
       doublehook: [
-        'Coral Seadragon(!)x4 5-12s [Blind]',
-        'The Fallen One(!!)x2 6-9s',
-        'Gugrusaurus(!!!)x4 2-10s',
+        '<em>Coral Seadragon(!)x4</em> 5-12s [Blind]',
+        '<em>The Fallen One(!!)x2</em> 6-9s',
+        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
       ]
     },
     spectralNight: {
@@ -366,9 +366,9 @@ export const content = {
         '<em>Krill => Mopbeard(!!)</em>'
       ],
       doublehook: [
-        'Bartholomew the Chopper(!)x4 3-8s',
-        'Mopbeard(!!)x4 4-9s',
-        'Gugrusaurus(!!!)x4 2-10s',
+        '<em>Bartholomew the Chopper(!)x4</em> 3-8s',
+        '<em>Mopbeard(!!)x4</em> 4-9s',
+        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
       ]
     },
     afterSpectral: {
@@ -406,11 +406,11 @@ export const content = {
         '<em>Krill => Devil\'s Sting(!!)</em>'
       ],
       doublehook: [
-        'Devil\'s Sting(!!)x2 5-10s',
-        'Callichthyid(!!!)x2 4-6s',
-        'Titanshell Crab(!!)x4 2-3s',
-        'Jetborne Manta(!!!)x4 2-3s',
-        'Mythril Boxfish(!)x4 2-5s'
+        '<em>Devil\'s Sting(!!)x2</em> 5-10s',
+        '<em>Callichthyid(!!!)x2</em> 4-6s',
+        '<em>Titanshell Crab(!!)x4</em> 2-3s',
+        '<em>Jetborne Manta(!!!)x4</em> 2-3s',
+        '<em>Mythril Boxfish(!)x4</em> 2-5s'
       ]
     },
     spectralEvening: {
@@ -425,11 +425,11 @@ export const content = {
         '<em>Krill => Titanshell Crab(!!)</em>',
       ],
       doublehook: [
-        'Meandering Mora(!!)x2 6-12s [Blind]',
-        'Flaming Eel(!!)x2 6-7s',
-        'Titanshell Crab(!!)x4 2-3s',
-        'Jetborne Manta(!!!)x4 2-3s [Blind]',
-        'Mythril Boxfish(!)x4 2-5s'
+        '<em>Meandering Mora(!!)x2</em> 6-12s [Blind]',
+        '<em>Flaming Eel(!!)x2</em> 6-7s',
+        '<em>Titanshell Crab(!!)x4</em> 2-3s',
+        '<em>Jetborne Manta(!!!)x4</em> 2-3s [Blind]',
+        '<em>Mythril Boxfish(!)x4</em> 2-5s'
       ]
     },
     spectralNight: {
@@ -443,9 +443,9 @@ export const content = {
         '<em>Krill => Titanshell Crab(!!)</em>',
       ],
       doublehook: [
-        'Titanshell Crab(!!)x4 2-3s',
-        'Jetborne Manta(!!!)x4 2-3s [Blind]',
-        'Mythril Boxfish(!)x4 2-5s'
+        '<em>Titanshell Crab(!!)x4</em> 2-3s',
+        '<em>Jetborne Manta(!!!)x4</em> 2-3s [Blind]',
+        '<em>Mythril Boxfish(!)x4</em> 2-5s'
       ]
     },
     afterSpectral: {
@@ -484,11 +484,11 @@ export const content = {
         '<em>Plump&nbsp;Worm => Panoptes(!!)</em>'
       ],
       doublehook: [
-        'Pearl Bombfish(!!)x4 3-6s [Blind]',
-        'Knife Jaw(!!)x2 6-9s [Blind]',
-        'Panoptes(!!)x4 3-6s [Blind]',
-        'Garum Jug(!)x4 2-3s',
-        'Trollfish(!)x2 2-6s'
+        '<em>Pearl Bombfish(!!)x4</em> 3-6s [Blind]',
+        '<em>Knife Jaw(!!)x2</em> 6-9s [Blind]',
+        '<em>Panoptes(!!)x4</em> 3-6s [Blind]',
+        '<em>Garum Jug(!)x4</em> 2-3s',
+        '<em>Trollfish(!)x2</em> 2-6s'
       ]
     },
     spectralEvening: {
@@ -502,8 +502,8 @@ export const content = {
         '<em>Krill => Knifejaw(!!)</em>',
       ],
       doublehook: [
-        'Knife Jaw(!!)x2 6-8s [Blind]',
-        'Trollfish(!)x2 2-6s'
+        '<em>Knife Jaw(!!)x2</em> 6-8s [Blind]',
+        '<em>Trollfish(!)x2</em> 2-6s'
       ]
     },
     spectralNight: {
@@ -516,10 +516,10 @@ export const content = {
         '<em>Krill => Knifejaw(!!)</em>'
       ],
       doublehook: [
-        'Pearl Bombfish(!!)x4 3-6s [Blind]',
-        'Knife Jaw(!!)x2 6-8s [Blind]',
-        'Garum Jug(!)x4 2-3s',
-        'Trollfish(!)x2 2-6s'
+        '<em>Pearl Bombfish(!!)x4</em> 3-6s [Blind]',
+        '<em>Knife Jaw(!!)x2</em> 6-8s [Blind]',
+        '<em>Garum Jug(!)x4</em> 2-3s',
+        '<em>Trollfish(!)x2</em> 2-6s'
       ]
     },
     afterSpectral: {
@@ -558,10 +558,10 @@ export const content = {
         'Double&nbsp;Hook(!) <em>Ragworm => Exterminator(!)</em>'
       ],
       doublehook: [
-        'Exterminator(!)x4 6-7s [Blind]',
-        'Quartz Hammerhead(!!!)x2 7-8s [Blind]',
-        'Oracular Crab(!)x4 2-3s',
-        'Beatific Vision(!!)x4 1-2s'
+        '<em>Exterminator(!)x4</em> 6-7s [Blind]',
+        '<em>Quartz Hammerhead(!!!)x2</em> 7-8s [Blind]',
+        '<em>Oracular Crab(!)x4</em> 2-3s',
+        '<em>Beatific Vision(!!)x4</em> 1-2s'
       ]
     },    
     spectralEvening: {
@@ -573,8 +573,8 @@ export const content = {
         '<em>Plump&nbsp;Worm => Quartz&nbsp;Hammerhead(!!!)</em>'
       ],
       doublehook: [
-        'Quartz Hammerhead(!!!)x2 6-8s [Blind]',
-        'Beatific Vision(!!)x4 2-3s'
+        '<em>Quartz Hammerhead(!!!)x2</em> 6-8s [Blind]',
+        '<em>Beatific Vision(!!)x4</em> 2-3s'
       ]
     },
     spectralNight: {
@@ -587,9 +587,9 @@ export const content = {
         '<em>Krill => Skaldminni(!!)</em>'
       ],
       doublehook: [
-        'Quartz Hammerhead(!!!)x2 6-8s',
-        'Skaldminni(!!)x4 2-7s',
-        'Beatific Vision(!!)x4 2-3s'
+        '<em>Quartz Hammerhead(!!!)x2</em> 6-8s',
+        '<em>Skaldminni(!!)x4</em> 2-7s',
+        '<em>Beatific Vision(!!)x4</em> 2-3s'
       ]
     },
     afterSpectral: {
@@ -611,9 +611,11 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>',
-        'You are relying on others to proc Spectral <em>Krill => Spectral&nbsp;Discus(!!!)</em>'
-
+        '<em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>',
+        'Rely others to Spectral <em>Krill => Spectral&nbsp;Discus(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>La Noscean Jelly(!)x4</em> 2-7s'
       ]
     },
     spectralEvening: {
@@ -622,7 +624,10 @@ export const content = {
       time: 'Evening',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;5&nbsp;s <em>Ragworm => Sea&nbsp;Nettle(!)</em>'
+        '<em>Ragworm => Sea&nbsp;Nettle(!)</em>'
+      ],
+      doublehook: [
+        '<em>Sea Nettle(!)x4</em> 4-9s [Blind]'
       ]
     },
     afterSpectral: {
@@ -631,7 +636,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
+        '<em>Ragworm => La&nbsp;Noscean&nbsp;Jelly(!)</em>'
+      ],
+      doublehook: [
+        '<em>La Noscean Jelly(!)x4</em> 2-7s'
       ]
     }
   },
@@ -643,7 +651,10 @@ export const content = {
       time: 'Night',
       bait: 'Krill',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;5s <em>Krill => Floating&nbsp;Saucer(!)</em>'
+        '<em>Krill => Floating&nbsp;Saucer(!)</em>'
+      ],
+      doublehook: [
+        '<em>Floating Saucer(!)x4</em> 6-11s'
       ]
     }
   },
@@ -655,8 +666,11 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7s <em>Shaggy&nbsp;Seadragon(!)</em>',
-        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Megalodon(!!!)</em>'
+        '<em>Ragworm => Shaggy&nbsp;Seadragon(!)</em>',
+        'Rely others to Spectral <em>Krill => Spectral&nbsp;Megalodon(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Shaggy Seadragon(!)x4</em> 7-22s [Blind >7s]'
       ]
     },
     spectralNight: {
@@ -665,8 +679,10 @@ export const content = {
       time: 'Night',
       bait: 'Ragworm',
       strategy: [
-        '<em>Ragworm => Hi-Aetherlouse(!)',
-        'Mooch + Double&nbsp;Hook&nbsp;!! <em>Hi-Aetherlouse(!) => Aetheric&nbsp;Seadragon(!!)</em>'
+        '<em>Ragworm => Hi-Aetherlouse(!) => Aetheric&nbsp;Seadragon(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Aetheric Seadragon(!!)x2</em> 2-6s'
       ]
     },
     afterSpectral: {
@@ -675,7 +691,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;7s <em>Ragworm => Shaggy&nbsp;Seadragon(!)</em>'
+        '<em>Ragworm => Shaggy&nbsp;Seadragon(!)</em>'
+      ],
+      doublehook: [
+        '<em>Shaggy Seadragon(!)x4</em> 7-22s [Blind >7s]'
       ]
     }
   },
@@ -687,7 +706,10 @@ export const content = {
       time: 'Evening',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;8s <em>Ragworm => Coral&nbsp;Seadragon(!)</em>'
+        '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>'
+      ],
+      doublehook: [
+        '<em>Coral Seadragon(!)x4</em> 5-12s [Blind >8s]'
       ]
     }
   },
@@ -699,7 +721,10 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+        '<em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Cyan Octopus(!!)x4</em> 15-29s [No iso]'
       ]
     },
     spectralEvening: {
@@ -708,7 +733,10 @@ export const content = {
       time: 'Evening',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Merman\'s&nbsp;Mane(!!)</em>'
+        '<em>Krill => Merman\'s&nbsp;Mane(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Merman\'s Mane(!!)x4</em> 2-6s'
       ]
     },
     afterSpectral: {
@@ -717,7 +745,10 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+        '<em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Cyan Octopus(!!)x4</em> 15-29s [No iso]'
       ]
     }
   },
@@ -729,7 +760,10 @@ export const content = {
       time: 'Night',
       bait: 'Krill',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;5s <em>Krill => Mopbeard(!!)</em>'
+        '<em>Krill => Mopbeard(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Mopbeard(!!)x4</em> 4-9s [Blind >5s]',
       ]
     }
   },
@@ -741,8 +775,11 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;12s <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>',
+        '<em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>',
         'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Megalodon(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Tarnished Shark(!!!)x2</em> 12-36s'
       ]
     },
     spectralEvening: {
@@ -751,8 +788,12 @@ export const content = {
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Plump&nbsp;Worm => Ghost&nbsp;Shark(!!)</em>'
+        '<em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
+        '<em>Plump&nbsp;Worm => Ghost&nbsp;Shark(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Funnel Shark(!!!)x4</em> 5-10s [Blind >5s]',
+        '<em>Ghost Shark(!!)x4</em> 2-7s',
       ]
     },
     afterSpectral: {
@@ -761,7 +802,10 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast when&nbsp;>&nbsp;12s <em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Tarnished&nbsp;Shark(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Tarnished Shark(!!!)x2</em> 12-36s [Blind >12s]'
       ]
     }
   },
@@ -773,7 +817,10 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!!) <em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Chrome Hammerhead(!!!)x4</em> 14-33s'
       ]
     },
     spectralDay: {
@@ -782,7 +829,12 @@ export const content = {
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Executioner(!!!)</em> or <em>Plump&nbsp;Worm => Sweeper(!!)</em>'
+        '<em>Plump&nbsp;Worm => Executioner(!!!)</em>',
+        '<em>Plump&nbsp;Worm => Sweeper(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Executioner(!!!)x4</em> 4-10s [Blind >4s]',
+        '<em>Sweeper(!!)x2</em> 3-8s',
       ]
     },
     afterSpectral: {
@@ -791,7 +843,10 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!!) + Identical&nbsp;Cast <em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Chrome Hammerhead(!!!)x4</em> 14-33s [Blind >14s]'
       ]
     }
   },
@@ -803,8 +858,11 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Tortoiseshell&nbsp;Crab(!!)</em>',
-        'You are relying on others to proc Spectral with <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
+        '<em>Krill => Tortoiseshell&nbsp;Crab(!!)</em>',
+        'Relying others to Spectral <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Tortoiseshell Crab(!!)x2</em> 5-15s'
       ]
     },
     spectralEvening: {
@@ -813,7 +871,10 @@ export const content = {
       time: 'Evening',
       bait: 'Krill',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp<&nbsp;5s <em>Krill => Titanshell&nbsp;Crab(!!)</em>'
+        '<em>Krill => Titanshell&nbsp;Crab(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Titanshell Crab(!!)x4</em> 2-3s [Blind]'
       ]
     },
     afterSpectral: {
@@ -822,7 +883,10 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Tortoiseshell&nbsp;Crab(!!)</em>'
+        '<em>Tortoiseshell&nbsp;Crab(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Tortoiseshell Crab(!!)x2</em> 5-15s'
       ]
     }
   },
@@ -834,7 +898,10 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Net&nbsp;Crawler(!!)</em>'
+        '<em>Krill => Net&nbsp;Crawler(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Net Crawler(!!)x2</em> 8-16s [No-iso]'
       ]
     },
     spectralNight: {
@@ -843,8 +910,11 @@ export const content = {
       time: 'Night',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Bartholomew&nbsp;the&nsbp;Chopper(!)</em>',
-        'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em>'
+        '<em>Ragworm => Bartholomew&nbsp;the&nsbp;Chopper(!)</em>',
+        'Rely others to Spectral <em>Krill => Spectral&nbsp;Sea&nbsp;Bo(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Bartholomew the Chopper(!)x4</em> 3-8s',
       ]
     },
     afterSpectral: {
@@ -853,7 +923,10 @@ export const content = {
       time: 'Any',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Net&nbsp;Crawler(!!)</em>'
+        '<em>Krill => Net&nbsp;Crawler(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Net Crawler(!!)x2</em> 8-16s [No-iso]'
       ]
     }
   },
@@ -865,8 +938,13 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>',
+        '<em>Ragworm => Thaliak&nbsp;Crab(!)</em>',
+        '<em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>',
         'You are relying on others to proc Spectral with <em>Krill => Spectral&nbsp;Eel(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Thaliak Crab(!)x2</em> 3-8s',
+        '<em>Bloodpolish Crab(!)x4</em> 14-28s'
       ]
     },
     spectralDay: {
@@ -875,7 +953,10 @@ export const content = {
       time: 'Day',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Oracular&nbsp;Crab(!)</em> or <em>Ragworm => Exterminator(!)</em>'
+        '<em>Ragworm => Oracular&nbsp;Crab(!)</em> or <em>Ragworm => Exterminator(!)</em>'
+      ],
+      doublehook: [
+        '<em>Oracular Crab(!)x4</em> 2-3s'
       ]
     },
     afterSpectral: {
@@ -884,7 +965,12 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Thaliak&nbsp;Crab(!)</em> or <em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>'
+        '<em>Ragworm => Thaliak&nbsp;Crab(!)</em>',
+        '<em>Ragworm => Bloodpolish&nbsp;Crab(!)</em>'
+      ],
+      doublehook: [
+        '<em>Thaliak Crab(!)x2</em> 3-8s',
+        '<em>Bloodpolish Crab(!)x4</em> 14-28s'
       ]
     }
   },
@@ -896,8 +982,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;<&nbsp;12s <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>',
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) => <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+        '<em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Metallic Boxfish(!)x2</em> 5-12s [Blind]'
       ]
     },
     spectralDay: {
@@ -906,7 +994,10 @@ export const content = {
       time: 'Day',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Mythril&nbsp;Boxfish(!)</em>'
+        '<em>Ragworm => Mythril&nbsp;Boxfish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Mythril Boxfish(!)x4</em> 2-5s'
       ]
     },
     afterSpectral: {
@@ -915,8 +1006,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;<&nbsp;12s <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>',
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) => <em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+        '<em>Ragworm => Metallic&nbsp;Boxfish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Metallic Boxfish(!)x2</em> 5-12s [Blind]'
       ]
     }
   },
@@ -928,9 +1021,12 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9s <em>Ragworm => Lampfish(!)</em>',
+        '<em>Ragworm => Lampfish(!)</em>',
         'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>',
-        'You are relying on others to proc Spectral with <em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em>'
+        'Rely others to Spectral <em>Plump&nbsp;Worm => Spectral&nbsp;Bass(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Lampfish(!)x2</em> 9-16s [Blind >9s]'
       ]
     },
     spectralEvening: {
@@ -939,7 +1035,10 @@ export const content = {
       time: 'Evening',
       bait: 'Ragworm',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!) <em>Ragworm => Silencer(!)</em>'
+        '<em>Ragworm => Silencer(!)</em>'
+      ],
+      doublehook: [
+        '<em>Silencer(!)x4</em> 2-8s'
       ]
     },
     afterSpectral: {
@@ -948,8 +1047,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9s <em>Ragworm => Lampfish(!)</em>',
-        'Surface&nbsp;Slap <em>Rhotano&nbsp;Sardine(!)</em>'
+        'Double&nbsp;Hook(!) when&nbsp;>&nbsp;9s <em>Ragworm => Lampfish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Lampfish(!)x2</em> 9-16s [Blind >9s]'
       ]
     }
   },
@@ -961,7 +1062,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;12s <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+        '<em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Honeycomb Fish(!)x4 </em> 12-23s [Blind >12s]'
       ]
     },
     spectralNight: {
@@ -970,7 +1074,10 @@ export const content = {
       time: 'Night',
       bait: 'Krill',
       strategy: [
-        'Identical&nbsp;Cast + Double&nbsp;Hook(!!) <em>Krill => Pearl&nbsp;Bombfish(!!)</em>'
+        '<em>Krill => Pearl&nbsp;Bombfish(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Pearl Bombfish(!!)x4</em> 3-6s'
       ]
     },
     afterSpectral: {
@@ -979,7 +1086,10 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;12s <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+        '<em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Honeycomb Fish(!)x4 </em> 12-23s [Blind >12s]'
       ]
     }
   },
@@ -991,8 +1101,11 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14s <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>',
-        'You are relying on others to proc Spectral with <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>',
+        'Rely others to Spectral <em>Ragworm => Spectral&nbsp;Butterfly(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Goobbue Ray(!!)x2</em> 14-23s [Blind]'
       ]
     },
     spectralDay: {
@@ -1001,7 +1114,10 @@ export const content = {
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!!) when&nbsp;<&nbsp;5s <em>Plump&nbsp;Worm => Jetborne&nbsp;Manta(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Jetborne&nbsp;Manta(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Jetborne Manta(!!!)x4</em> 2-3s [Blind]',
       ]
     },
     afterSpectral: {
@@ -1010,7 +1126,10 @@ export const content = {
       time: 'Any',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;>&nbsp;14s <em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>'
+        '<em>Plump&nbsp;Worm => Goobbue&nbsp;Ray(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Goobbue Ray(!!)x2</em> 14-23s [Blind]'
       ]
     }
   },
@@ -1023,6 +1142,9 @@ export const content = {
       bait: 'Krill',
       strategy: [
         'Blind&nbsp;Double&nbsp;Hook(!!) when&nbsp;6s <em>Krill => Skaldminni(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Skaldminni(!!)x4</em> 2-7s'
       ]
     }
   }
