@@ -44,9 +44,9 @@
       <div v-if="filters.perLocationTime && filters.targetFish">
         <h2 class="h3">{{sectionTitles.location}}</h2>
         <div class="filter locationFilter filterGroup">
-          <button @click="toggleGladionBayDay" :class="{ 'filter-on': filters.gladionBayDay }" v-html="locationFilterTitles.gladionBay.day"></button>
-          <button @click="toggleGladionBayEvening" :class="{ 'filter-on': filters.gladionBayEvening }" v-html="locationFilterTitles.gladionBay.evening"></button>
-          <button @click="toggleGladionBayNight" :class="{ 'filter-on': filters.gladionBayNight }" v-html="locationFilterTitles.gladionBay.night"></button>
+          <button @click="toggleGaladionBayDay" :class="{ 'filter-on': filters.galadionBayDay }" v-html="locationFilterTitles.galadionBay.day"></button>
+          <button @click="toggleGaladionBayEvening" :class="{ 'filter-on': filters.galadionBayEvening }" v-html="locationFilterTitles.galadionBay.evening"></button>
+          <button @click="toggleGaladionBayNight" :class="{ 'filter-on': filters.galadionBayNight }" v-html="locationFilterTitles.galadionBay.night"></button>
           <button @click="toggleSouthernDay" :class="{ 'filter-on': filters.southernDay }" v-html="locationFilterTitles.southern.day"></button>
           <button @click="toggleSouthernEvening" :class="{ 'filter-on': filters.southernEvening }" v-html="locationFilterTitles.southern.evening"></button>
           <button @click="toggleSouthernNight" :class="{ 'filter-on': filters.southernNight }" v-html="locationFilterTitles.southern.night"></button>
@@ -93,6 +93,7 @@
               <th v-html="stratHeadings.conditions"></th>
               <th v-html="stratHeadings.bait"></th>
               <th v-html="stratHeadings.strat"></th>
+              <th v-html="stratHeadings.doublehook"></th>
             </tr>
           </thead>
           <tbody>
@@ -108,7 +109,12 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
               <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
                 <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
-                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="`routestrat-${index}`"></li>
+                </ol>
+              </td>
+              <td class="double-hook" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].doublehook">
+                <ol v-if="Array.isArray(content[item.location][item.phase].doublehook)">
+                  <li v-for="(dh, index) in content[item.location][item.phase].doublehook" v-html="dh" :key="`routedh-${index}`"></li>
                 </ol>
               </td>
             </tr>
@@ -120,6 +126,7 @@
               <th v-html="stratHeadings.conditions"></th>
               <th v-html="stratHeadings.bait"></th>
               <th v-html="stratHeadings.strat"></th>
+              <th v-html="stratHeadings.doublehook"></th>
             </tr>
           </thead>
           <tbody>
@@ -135,7 +142,12 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
               <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
                 <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
-                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="`timestrat-${index}`"></li>
+                </ol>
+              </td>
+              <td class="double-hook" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].doublehook">
+                <ol v-if="Array.isArray(content[item.location][item.phase].doublehook)">
+                  <li v-for="(dh, index) in content[item.location][item.phase].doublehook" v-html="dh" :key="`routedh-${index}`"></li>
                 </ol>
               </td>
             </tr>
@@ -147,6 +159,7 @@
               <th v-html="stratHeadings.conditions"></th>
               <th v-html="stratHeadings.bait"></th>
               <th v-html="stratHeadings.strat"></th>
+              <th v-html="stratHeadings.doublehook"></th>
             </tr>
           </thead>
           <tbody>
@@ -162,7 +175,12 @@
               <td v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase]" v-html="content[item.location][item.phase].bait"></td>
               <td class="strat" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].strategy">
                 <ol v-if="Array.isArray(content[item.location][item.phase].strategy)">
-                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="index"></li>
+                  <li v-for="(strat, index) in content[item.location][item.phase].strategy" v-html="strat" :key="`titlestrat-${index}`"></li>
+                </ol>
+              </td>
+              <td class="double-hook" v-if="item.location && content[item.location] && item.phase && content[item.location][item.phase] && content[item.location][item.phase].doublehook">
+                <ol v-if="Array.isArray(content[item.location][item.phase].doublehook)">
+                  <li v-for="(dh, index) in content[item.location][item.phase].doublehook" v-html="dh" :key="`titledh-${index}`"></li>
                 </ol>
               </td>
             </tr>
@@ -206,22 +224,22 @@ export default {
     gotoPerLocationTime() {
       this.$store.commit('oceanFishing/updateFilters', { perRoute: false, perLocationTime: true });
     },
-    gotoNorthernNightDayEveningRoute() { // Southern Night, Gladion Day, Northern Evening
+    gotoNorthernNightDayEveningRoute() { // Southern Night, Galadion Day, Northern Evening
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernNightDayEveningRoute);
     },
-    gotoNorthernDayEveningNightRoute() { // Southern Day, Gladion Evening, Northern Night
+    gotoNorthernDayEveningNightRoute() { // Southern Day, Galadion Evening, Northern Night
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernDayEveningNightRoute);
     },
-    gotoNorthernEveningNightDayRoute() { // Southern Evening, Gladion Night, Northern Day
+    gotoNorthernEveningNightDayRoute() { // Southern Evening, Galadion Night, Northern Day
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernEveningNightDayRoute);      
     },
-    gotoRhotanoSeaNightDayEveningRoute() { // Gladion Night, Southern Day, Rhotano Evening
+    gotoRhotanoSeaNightDayEveningRoute() { // Galadion Night, Southern Day, Rhotano Evening
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaNightDayEveningRoute);
     },
-    gotoRhotanoSeaDayEveningNightRoute() {  // Gladion Day, Southern Evening, Rhotano Night
+    gotoRhotanoSeaDayEveningNightRoute() {  // Galadion Day, Southern Evening, Rhotano Night
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaDayEveningNightRoute);
     },
-    gotoRhotanoSeaEveningNightDayRoute() { // Gladion Evening, Southern Night, Rhotano Day
+    gotoRhotanoSeaEveningNightDayRoute() { // Galadion Evening, Southern Night, Rhotano Day
       this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaEveningNightDayRoute);      
     },
     gotoRothlytSoundNightDayEveningRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Evening
@@ -263,14 +281,14 @@ export default {
     gotoManta() {
       this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.mantaRoute);
     },
-    toggleGladionBayDay() {
-      this.$store.commit('oceanFishing/updateFilters', { gladionBayDay: !this.filters.gladionBayDay });      
+    toggleGaladionBayDay() {
+      this.$store.commit('oceanFishing/updateFilters', { galadionBayDay: !this.filters.galadionBayDay });      
     },
-    toggleGladionBayEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { gladionBayEvening: !this.filters.gladionBayEvening });
+    toggleGaladionBayEvening() {
+      this.$store.commit('oceanFishing/updateFilters', { galadionBayEvening: !this.filters.galadionBayEvening });
     },
-    toggleGladionBayNight() {
-      this.$store.commit('oceanFishing/updateFilters', { gladionBayNight: !this.filters.gladionBayNight });
+    toggleGaladionBayNight() {
+      this.$store.commit('oceanFishing/updateFilters', { galadionBayNight: !this.filters.galadionBayNight });
     },
     toggleRhotanoSeaDay() {
       this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaDay: !this.filters.rhotanoSeaDay });
@@ -356,6 +374,14 @@ export default {
       }
 
       &.strat {
+        max-width:400px;
+      }
+
+      &.double-hook {
+        white-space: nowrap;
+      }
+
+      &.strat, &.double-hook {
         text-align: left;
 
         ol {

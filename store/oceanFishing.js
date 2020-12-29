@@ -36,9 +36,9 @@ export const state = () => (
       targetTitle: false,
       perRoute: true,
       perLocationTime: false,
-      gladionBayDay: false,
-      gladionBayEvening: false,
-      gladionBayNight: false,
+      galadionBayDay: false,
+      galadionBayEvening: false,
+      galadionBayNight: false,
       rhotanoSeaDay: false,
       rhotanoSeaEvening: false,
       rhotanoSeaNight: false,
@@ -110,10 +110,10 @@ export const state = () => (
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralNight' },
         { location: 'southern', phase: 'afterSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralDay' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralDay' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralEvening' },
@@ -123,10 +123,10 @@ export const state = () => (
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralDay' },
         { location: 'southern', phase: 'afterSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralEvening' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralEvening' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralNight' },
@@ -136,20 +136,20 @@ export const state = () => (
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralEvening' },
         { location: 'southern', phase: 'afterSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralNight' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralNight' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralDay' },
         { location: 'northern', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Night > Day > Evening)'
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralNight' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralNight' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralDay' },
         { location: 'southern', phase: 'afterSpectral' },
@@ -158,10 +158,10 @@ export const state = () => (
         { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Day > Evening > Night)'
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralDay' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralDay' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralEvening' },
         { location: 'southern', phase: 'afterSpectral' },
@@ -170,10 +170,10 @@ export const state = () => (
         { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
       [ // 'Rhotano Sea (Evening > Night > Day)'
-        { location: 'gladionBay', phase: 'beforeSpectral' },
-        { location: 'gladionBay', phase: 'beforeSpectralShowers' },
-        { location: 'gladionBay', phase: 'spectralEvening' },
-        { location: 'gladionBay', phase: 'afterSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectral' },
+        { location: 'galadionBay', phase: 'beforeSpectralShowers' },
+        { location: 'galadionBay', phase: 'spectralEvening' },
+        { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralNight' },
         { location: 'southern', phase: 'afterSpectral' },
@@ -258,10 +258,10 @@ export const state = () => (
 )
 
 const pushFiltersJelly = (results) => {
-  results.push({ location: 'gladionBay', phase: 'beforeSpectral'})
-  results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' })
-  results.push({ location: 'gladionBay', phase: 'spectralDay'})
-  results.push({ location: 'gladionBay', phase: 'afterSpectral'})
+  results.push({ location: 'galadionBay', phase: 'beforeSpectral'})
+  results.push({ location: 'galadionBay', phase: 'beforeSpectralShowers' })
+  results.push({ location: 'galadionBay', phase: 'spectralDay'})
+  results.push({ location: 'galadionBay', phase: 'afterSpectral'})
   results.push({ location: 'jellyRouteEvening', phase: 'beforeSpectral'})
   results.push({ location: 'jellyRouteEvening', phase: 'spectralEvening'})
   results.push({ location: 'jellyRouteEvening', phase: 'afterSpectral'})
@@ -275,10 +275,10 @@ const pushFiltersSeaDragon = (results) => {
   results.push({ location: 'seaDragonRouteNight', phase: 'beforeSpectral'})
   results.push({ location: 'seaDragonRouteNight', phase: 'spectralNight'})
   results.push({ location: 'seaDragonRouteNight', phase: 'afterSpectral'})
-  results.push({ location: 'gladionBay', phase: 'beforeSpectral'})
-  results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' })
-  results.push({ location: 'gladionBay', phase: 'spectralDay'})
-  results.push({ location: 'gladionBay', phase: 'afterSpectral'})
+  results.push({ location: 'galadionBay', phase: 'beforeSpectral'})
+  results.push({ location: 'galadionBay', phase: 'beforeSpectralShowers' })
+  results.push({ location: 'galadionBay', phase: 'spectralDay'})
+  results.push({ location: 'galadionBay', phase: 'afterSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
   results.push({ location: 'seaDragonRouteEvening', phase: 'spectralEvening'})
@@ -354,22 +354,22 @@ const pushFiltersManta = (results) => {
   return results;
 }
 
-const pushFiltersGladionBay = (filters, results) => {
-  if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
-    results.push({ location: 'gladionBay', phase: 'beforeSpectral' });
-    results.push({ location: 'gladionBay', phase: 'beforeSpectralShowers' });
+const pushFiltersGaladionBay = (filters, results) => {
+  if (filters.galadionBayDay || filters.galadionBayEvening || filters.galadionBayNight ) {
+    results.push({ location: 'galadionBay', phase: 'beforeSpectral' });
+    results.push({ location: 'galadionBay', phase: 'beforeSpectralShowers' });
   }
-  if (filters.gladionBayDay) {
-    results.push({ location: 'gladionBay', phase: 'spectralDay' });
+  if (filters.galadionBayDay) {
+    results.push({ location: 'galadionBay', phase: 'spectralDay' });
   }
-  if (filters.gladionBayEvening) {
-    results.push({ location: 'gladionBay', phase: 'spectralEvening' });
+  if (filters.galadionBayEvening) {
+    results.push({ location: 'galadionBay', phase: 'spectralEvening' });
   }
-  if (filters.gladionBayNight) {
-    results.push({ location: 'gladionBay', phase: 'spectralNight' });
+  if (filters.galadionBayNight) {
+    results.push({ location: 'galadionBay', phase: 'spectralNight' });
   }
-  if (filters.gladionBayDay || filters.gladionBayEvening || filters.gladionBayNight ) {
-    results.push({ location: 'gladionBay', phase: 'afterSpectral' });
+  if (filters.galadionBayDay || filters.galadionBayEvening || filters.galadionBayNight ) {
+    results.push({ location: 'galadionBay', phase: 'afterSpectral' });
   }
   return results;
 }
@@ -546,7 +546,7 @@ export const getters = {
   },
   getLocationTimeOrder(state) {
     let results = [];
-    results = pushFiltersGladionBay(state.filters, results);
+    results = pushFiltersGaladionBay(state.filters, results);
     results = pushFiltersSouthern(state.filters, results);
     results = pushFiltersCieldalaes(state.filters, results);
     results = pushFiltersRhotanoSea(state.filters, results);
@@ -558,9 +558,9 @@ export const getters = {
   },
   hasLocations(state) {
     return (
-      state.filters.gladionBayDay ||
-      state.filters.gladionBayEvening ||
-      state.filters.gladionBayNight ||
+      state.filters.galadionBayDay ||
+      state.filters.galadionBayEvening ||
+      state.filters.galadionBayNight ||
       state.filters.southernDay ||
       state.filters.southernEvening ||
       state.filters.southernNight ||
