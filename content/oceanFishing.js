@@ -363,29 +363,27 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>',
-        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em>',
         '<em>Krill => The Fallen One(!!)</em>',
+        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em>',
       ],
       doublehook: [
         '<em>Coral Seadragon(!)x4</em> 5-12s [Blind]',
-        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
         '<em>The Fallen One(!!)x2</em> 6-9s',
+        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
       ]
     },
     spectralNight: {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Ragworm',
+      bait: 'Ragworm, Krill',
       strategy: [
         '<em>Ragworm => Bartholomew the Chopper(!)</em>',
-        '<em>Krill => Mopbeard(!!)</em>',
-        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em>',
+        '<em>Krill => Mopbeard(!!)</em>'
       ],
       doublehook: [
-        '<em>Bartholomew the Chopper(!)x4</em> 3-8s',
-        '<em>Mopbeard(!!)x4</em> 4-9s',
-        '<em>Gugrusaurus(!!!)x4</em> 2-10s',
+        '<em>Bartholomew the Chopper(!)x4</em> 3-5s',
+        '<em>Mopbeard(!!)x4</em> 4-9s'
       ]
     },
     afterSpectral: {
