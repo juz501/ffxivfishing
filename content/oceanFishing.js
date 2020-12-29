@@ -123,10 +123,8 @@ export const content = {
         '<em>Ragworm => Nimble&nbsp;Dancer(!)</em>'
       ],
       doublehook: [
-        '<em>Nimble Dancer(!)x2</em> 10-18s [Blind]',
         '<em>Casket Oyster(!)x2</em> 6-12s [Blind]',
-        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
-        '<em>Ghost Shark(!!)x4</em> 2-7s',
+        '<em>Nimble Dancer(!)x2</em> 10-18s [Blind]',
       ] 
     },
     spectralEvening: {
@@ -136,12 +134,12 @@ export const content = {
       bait: 'Plump&nbsp;Worm',
       strategy: [
         '<em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
-        '<em>Plump&nbsp;Worm => Quicksilver&nbsp;Blade(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Quicksilver&nbsp;Blade(!!!)</em>',
+        '<em>Plump&nbsp;Worm => Ghost Shark(!!)</em>'
       ],
       doublehook: [
         '<em>Funnel Shark(!!!)x4</em> 5-10s',
         '<em>Quicksilver Blade(!!)x2</em> 3-7s',
-        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
         '<em>Ghost Shark(!!)x4</em> 2-7s',
       ]
     },
@@ -149,16 +147,14 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Krill, Glowworm, Plump&nbsp;Worm', 
+      bait: 'Krill, Glowworm', 
       strategy: [
         '<em>Krill => Navigator\'s&nbsp;Print(!)</em> + <em>Glowworm => Heavenskey(!)</em> twice',
         'Intuition: <strong>Glowworm => Sothis(!!!)</strong>',
-        '<em>Krill => Merman\'s Mane(!!)</em>',
-        '<em>Plump&nbsp;Worm => Ghost Shark(!!)</em>',
+        '<em>Krill => Merman\'s Mane(!!)</em>'
       ],
       doublehook: [
-        '<em>Merman\'s Mane(!!)x4</em> 2-6s',
-        '<em>Ghost Shark(!!)x4</em> 2-7s',
+        '<em>Merman\'s Mane(!!)x4</em> 2-6s'
       ]  
     },
     afterSpectral: {
@@ -196,7 +192,7 @@ export const content = {
       bait: 'Krill',
       strategy: [
         '<em>Krill => Mythril&nbsp;Sovereign(!!)</em>',
-        'Mooch <em>Hi-Aetherlouse(!) => Great Grandmarlin(!!!)</em>'
+        '<em>Krill => Hi-Aetherlouse(!) => Great Grandmarlin(!!!)</em>'
       ],
       doublehook: [
         '<em>Mythril&nbsp;Sovereign(!!)x2</em> 6-8s',
@@ -266,9 +262,11 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Day',
-      bait: 'Plump&nbsp;Worm',
+      bait: 'Plump&nbsp;Worm, Ragworm',
       strategy: [
-        '<em>Plump&nbsp;Worm => Executioner(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Executioner(!!!)</em>',
+        '<em>Plump&nbsp;Worm => Sweeper(!!)</em>',
+        '<em>Ragworm => Silencer(!)</em>',
       ],
       doublehook: [
         '<em>Executioner(!!!)x4</em> 4-10s [Blind >4s]',
@@ -293,9 +291,11 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Night',
-      bait: 'Krill',
+      bait: 'Krill, Ragworm',
       strategy: [
-        '<em>Krill => Floating&nbsp;Saucer(!)</em>'
+        '<em>Krill => Floating&nbsp;Saucer(!)</em>',
+        '<em>Ragworm => Slipsnail(!)</em>',
+        '<em>Ragworm => Silencer(!)</em>'
       ],
       doublehook: [
         '<em>Floating Saucer(!)x4</em> 6-11s [Blind]',
@@ -363,12 +363,13 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>',
+        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em>',
         '<em>Krill => The Fallen One(!!)</em>',
       ],
       doublehook: [
         '<em>Coral Seadragon(!)x4</em> 5-12s [Blind]',
-        '<em>The Fallen One(!!)x2</em> 6-9s',
         '<em>Gugrusaurus(!!!)x4</em> 2-10s',
+        '<em>The Fallen One(!!)x2</em> 6-9s',
       ]
     },
     spectralNight: {
@@ -378,7 +379,8 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Bartholomew the Chopper(!)</em>',
-        '<em>Krill => Mopbeard(!!)</em>'
+        '<em>Krill => Mopbeard(!!)</em>',
+        '<em>Plump&nbsp;Worm => Gugrusaurus(!!!)</em>',
       ],
       doublehook: [
         '<em>Bartholomew the Chopper(!)x4</em> 3-8s',
@@ -580,7 +582,8 @@ export const content = {
       strategy: [
         '<em>Krill => Beatific&nbsp;Vision(!!)</em> three times',
         'Intuition: <strong>Pillbug => Seafaring&nbsp;Toad(!!!)</strong>',
-        'Double&nbsp;Hook(!) <em>Ragworm => Exterminator(!)</em>'
+        '<em>Ragworm => Exterminator(!)</em>',
+        '<em>Krill => Beatific&nbsp;Vision(!!)</em>',
       ],
       doublehook: [
         '<em>Exterminator(!)x4</em> 6-7s [Blind]',
@@ -595,7 +598,8 @@ export const content = {
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
       strategy: [
-        '<em>Plump&nbsp;Worm => Quartz&nbsp;Hammerhead(!!!)</em>'
+        '<em>Plump&nbsp;Worm => Quartz&nbsp;Hammerhead(!!!)</em>',
+        '<em>Krill => Beatific&nbsp;Vision(!!)</em>',
       ],
       doublehook: [
         '<em>Quartz Hammerhead(!!!)x2</em> 6-8s [Blind]',
@@ -609,7 +613,7 @@ export const content = {
       bait: 'Krill',
       strategy: [
         '<em>Krill => Beatific&nbsp;Vision(!!)</em>',
-        '<em>Krill => Skaldminni(!!)</em>'
+        '<em>Krill => Skaldminni(!!)</em>',        
       ],
       doublehook: [
         '<em>Quartz Hammerhead(!!!)x2</em> 6-8s',
