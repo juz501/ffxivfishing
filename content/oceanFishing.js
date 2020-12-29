@@ -166,7 +166,11 @@ export const content = {
       bait: 'Krill', 
       strategy: [
         '<em>Krill => Galadion&nbsp;Chovy(!)</em> three times',
-        'Intuition: <strong>Krill => Drunkfish(!!!)</strong>'
+        'Intuition: <strong>Krill => Drunkfish(!!!)</strong>',
+        '<em>Krill => Cyan&nbsp;Octopus(!!)</em>'
+      ],
+      doublehook: [
+        '<em>Cyan Octopus(!!)x4</em> 15-29s [No iso]'
       ]
     }
   },
@@ -232,10 +236,14 @@ export const content = {
       phase: 'After Spectral',
       weather: 'Normal',
       time: 'Any',
-      bait: 'Krill, Plump&nbsp;Worm',
+      bait: 'Krill, Plump&nbsp;Worm, Ragworm',
       strategy: [
         '<em>Krill => Ghoul&nbsp;Barracuda(!!) => Gladdius(!!)</em>',
-        'Intuition: <strong>Plump&nbsp;Worm => Little&nbsp;Leviathan(!!!)</strong>'
+        'Intuition: <strong>Plump&nbsp;Worm => Little&nbsp;Leviathan(!!!)</strong>',
+        '<em>Ragworm => Shaggy&nbsp;Seadragon(!)</em>'
+      ],
+      doublehook: [
+        '<em>Shaggy Seadragon(!)x4</em> 7-22s [Blind >7s]'
       ]
     }
   },
@@ -300,7 +308,12 @@ export const content = {
       bait: 'Plump&nbsp;Worm, Krill',
       strategy: [
         '<em>Plump&nbsp;Worm => Crimson&nbsp;Monkfish(!!)</em> twice',
-        'Intuition: <strong>Krill => Sabaton(!!!)</strong>'
+        'Intuition: <strong>Krill => Sabaton(!!!)</strong>',
+        '<em>Plump&nbsp;Worm => Chrome&nbsp;Hammerhead(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Crimson Monkfish(!!)x4</em> 3-18s',
+        '<em>Chrome Hammerhead(!!!)x4</em> 14-33s'
       ]
     }
   },
@@ -378,7 +391,11 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Tossed&nbsp;Dagger(!) => Elder&nbsp;Dinicthys(!!)</em>',
-        'Intuition: <strong>Ragworm => Shooting&nbsp;Star(!!!)</strong>'
+        'Intuition: <strong>Ragworm => Shooting&nbsp;Star(!!!)</strong>',
+
+      ],
+      doublehook: [
+        '<em>Elder Dinicthys(!!)x2</em> 9-16s [No-iso]'
       ]
     }
   },
@@ -456,7 +473,10 @@ export const content = {
       strategy: [
         '<em>Ragworm => Metalic&nbsp;Boxfish(!)</em> three times',
         '<strong>Krill => Cieldalaes&nbsp;Geode(!!!)</strong>',
-        'Double&nbsp;Hook(!!!) when&nbsp;>&nbsp;17s <em>Ragworm => Mamahi-mahi(!!!)</em>'
+        '<em>Ragworm => Mamahi-mahi(!!!)</em>'
+      ],
+      doublehook: [
+        '<em>Mamahi-mahi(!!!)x2</em> 17-28s [Blind]'
       ]
     }
   },
@@ -530,7 +550,10 @@ export const content = {
       strategy: [
         '<em>Ragworm => Rothlyt&nbsp;Kelp(!)</em> three times',
         'Intuition: <strong>Ragworm => Ginko&nbsp;Fin(!!!)</strong>',
-        'Blind&nbsp;Double&nbsp;Hook(!) when&nbsp;>&nbsp;10s <em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+        '<em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
+      ],
+      doublehook: [
+        '<em>Honeycomb Fish(!)x4 </em> 12-23s [Blind >12s]'
       ]
     }
   },
@@ -598,8 +621,11 @@ export const content = {
       time: 'Any',
       bait: 'Ragworm, Krill',
       strategy: [
-        '<em>Ragworm => Sunken&nbsp;Mask(!!!)</em> (Double&nbsp;Hook(!!!))',
+        '<em>Ragworm => Sunken&nbsp;Mask(!!!)</em>',
         'Intuition: <strong>Krill => Bareface(!!!)</strong>'
+      ],
+      doublehook: [
+        '<em>Sunken Mask (!!!)x2 </em> 16-20s [Blind >16s]'
       ]
     }
   },
