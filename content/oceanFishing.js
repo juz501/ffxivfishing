@@ -603,7 +603,7 @@ export const content = {
       ],
       doublehook: [
         '<em>Quartz Hammerhead(!!!)x2</em> 6-8s [Blind]',
-        '<em>Beatific Vision(!!)x4</em> 2-3s'
+        '<em>Beatific Vision(!!)x4</em> 2-3s',
       ]
     },
     spectralNight: {
@@ -613,12 +613,12 @@ export const content = {
       bait: 'Krill',
       strategy: [
         '<em>Krill => Beatific&nbsp;Vision(!!)</em>',
-        '<em>Krill => Skaldminni(!!)</em>',        
+        '<em>Krill => Skaldminni(!!)</em>',
       ],
       doublehook: [
         '<em>Quartz Hammerhead(!!!)x2</em> 6-8s',
         '<em>Skaldminni(!!)x4</em> 2-7s',
-        '<em>Beatific Vision(!!)x4</em> 2-3s'
+        '<em>Beatific Vision(!!)x4</em> 2-3s',
       ]
     },
     afterSpectral: {
