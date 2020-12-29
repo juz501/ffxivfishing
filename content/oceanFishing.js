@@ -360,7 +360,7 @@ export const content = {
       phase: 'Spectral',
       weather: 'Normal',
       time: 'Evening',
-      bait: 'Ragworm',
+      bait: 'Ragworm, Krill, Plump&nbsp;Worm',
       strategy: [
         '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>',
         '<em>Krill => The Fallen One(!!)</em>',
