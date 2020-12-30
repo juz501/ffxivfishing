@@ -20,7 +20,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { 
         name: 'description',
-        content: 'Making fishing easy with a range of calculators'
+        content: 'Making fishing easy with a range of calculators/tools'
       },
       {
         name: 'theme-color',
