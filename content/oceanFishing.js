@@ -551,7 +551,7 @@ export const content = {
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Rothlyt&nbsp;Kelp(!)</em> three times',
-        'Intuition: <strong>Ragworm => Ginko&nbsp;Fin(!!!)</strong>',
+        'Intuition: <strong>Ragworm => Ginkgo&nbsp;Fin(!!!)</strong>',
         '<em>Ragworm => Honeycomb&nbsp;Fish(!)</em>'
       ],
       doublehook: [
