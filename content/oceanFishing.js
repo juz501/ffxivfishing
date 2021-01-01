@@ -114,7 +114,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
@@ -128,7 +128,7 @@ export const content = {
       ] 
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
@@ -144,7 +144,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill, Glowworm', 
@@ -186,7 +186,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Krill',
@@ -200,7 +200,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm', 
@@ -216,7 +216,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Ragworm, Shrimp Cage Feeder',
@@ -259,7 +259,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm, Ragworm',
@@ -275,7 +275,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm, Rat&nbsp;Tail',
@@ -288,7 +288,7 @@ export const content = {
       ]
     },      
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill, Ragworm',
@@ -344,7 +344,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm, Heavy&nbsp;Steel&nbsp;Jig',
@@ -357,7 +357,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm, Krill, Plump&nbsp;Worm',
@@ -373,7 +373,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Ragworm, Krill',
@@ -415,7 +415,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
@@ -433,7 +433,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm, Krill',
@@ -452,7 +452,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Plump&nbsp;Worm, Krill, Squid&nbsp;Strip',
@@ -496,7 +496,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Krill',
@@ -514,7 +514,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm, Krill',
@@ -529,7 +529,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
@@ -573,7 +573,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Krill, Pillbug, Ragworm',
@@ -591,7 +591,7 @@ export const content = {
       ]
     },    
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
@@ -605,7 +605,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
@@ -649,7 +649,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
@@ -676,7 +676,7 @@ export const content = {
   jellyRouteNight: {
     location: 'Rhotano Sea',
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
@@ -704,7 +704,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Ragworm',
@@ -731,7 +731,7 @@ export const content = {
   seaDragonRouteEvening: {
     location: 'Northrn Strait of Merlthor',
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
@@ -758,7 +758,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Krill',
@@ -785,7 +785,7 @@ export const content = {
   octopusRouteNight: {
     location: 'Northern Strait of Merlthor',
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
@@ -813,7 +813,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Plump&nbsp;Worm',
@@ -854,7 +854,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
@@ -896,7 +896,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Krill',
@@ -935,7 +935,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Ragworm',
@@ -978,7 +978,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
@@ -1019,7 +1019,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Ragworm',
@@ -1060,7 +1060,7 @@ export const content = {
       ]
     },
     spectralEvening: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Evening',
       bait: 'Ragworm',
@@ -1099,7 +1099,7 @@ export const content = {
       ]
     },
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
@@ -1139,7 +1139,7 @@ export const content = {
       ]
     },
     spectralDay: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Day',
       bait: 'Plump&nbsp;Worm',
@@ -1166,7 +1166,7 @@ export const content = {
   mantaRouteNight: {
     location: 'Bloodbrine&nbsp;Sea',
     spectralNight: {
-      phase: 'Spectral',
+      phase: '<strong>Spectral</strong>',
       weather: 'Normal',
       time: 'Night',
       bait: 'Krill',
