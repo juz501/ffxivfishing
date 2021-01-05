@@ -21,49 +21,49 @@
       <div v-if="filters.perRoute && filters.targetFish">
         <h2 class="h3">{{sectionTitles.route}}</h2>
         <div class="filter routeFilter filterGroup">
-          <button @click="gotoNorthernNightDayEveningRoute" :class="{ 'filter-on': filters.northernNightDayEveningRoute}" v-html="routeTitles[routes.northernNightDayEveningRoute]"></button>
-          <button @click="gotoNorthernDayEveningNightRoute" :class="{ 'filter-on': filters.northernDayEveningNightRoute}" v-html="routeTitles[routes.northernDayEveningNightRoute]"></button>
-          <button @click="gotoNorthernEveningNightDayRoute" :class="{ 'filter-on': filters.northernEveningNightDayRoute}" v-html="routeTitles[routes.northernEveningNightDayRoute]"></button>
+          <button @click="gotoNorthernNightDaySunsetRoute" :class="{ 'filter-on': filters.northernNightDaySunsetRoute}" v-html="routeTitles[routes.northernNightDaySunsetRoute]"></button>
+          <button @click="gotonorthernDaySunsetNightRoute" :class="{ 'filter-on': filters.northernDaySunsetNightRoute}" v-html="routeTitles[routes.northernDaySunsetNightRoute]"></button>
+          <button @click="gotonorthernSunsetNightDayRoute" :class="{ 'filter-on': filters.northernSunsetNightDayRoute}" v-html="routeTitles[routes.northernSunsetNightDayRoute]"></button>
         </div>      
         <div class="filter routeFilter filterGroup">
-          <button @click="gotoRhotanoSeaNightDayEveningRoute" :class="{ 'filter-on': filters.rhotanoSeaNightDayEveningRoute}" v-html="routeTitles[routes.rhotanoSeaNightDayEveningRoute]"></button>
-          <button @click="gotoRhotanoSeaDayEveningNightRoute" :class="{ 'filter-on': filters.rhotanoSeaDayEveningNightRoute}" v-html="routeTitles[routes.rhotanoSeaDayEveningNightRoute]"></button>
-          <button @click="gotoRhotanoSeaEveningNightDayRoute" :class="{ 'filter-on': filters.rhotanoSeaEveningNightDayRoute}" v-html="routeTitles[routes.rhotanoSeaEveningNightDayRoute]"></button>
+          <button @click="gotoRhotanoSeaNightDaySunsetRoute" :class="{ 'filter-on': filters.rhotanoSeaNightDaySunsetRoute}" v-html="routeTitles[routes.rhotanoSeaNightDaySunsetRoute]"></button>
+          <button @click="gotoRhotanoSeaDaySunsetNightRoute" :class="{ 'filter-on': filters.rhotanoSeaDaySunsetNightRoute}" v-html="routeTitles[routes.rhotanoSeaDaySunsetNightRoute]"></button>
+          <button @click="gotoRhotanoSeaSunsetNightDayRoute" :class="{ 'filter-on': filters.rhotanoSeaSunsetNightDayRoute}" v-html="routeTitles[routes.rhotanoSeaSunsetNightDayRoute]"></button>
         </div>
         <div class="filter routeFilter filterGroup">
-          <button @click="gotoRothlytSoundNightDayEveningRoute" :class="{ 'filter-on': filters.rothlytSoundNightDayEveningRoute}" v-html="routeTitles[routes.rothlytSoundNightDayEveningRoute]"></button>
-          <button @click="gotoRothlytSoundDayEveningNightRoute" :class="{ 'filter-on': filters.rothlytSoundDayEveningNightRoute}" v-html="routeTitles[routes.rothlytSoundDayEveningNightRoute]"></button>
-          <button @click="gotoRothlytSoundEveningNightDayRoute" :class="{ 'filter-on': filters.rothlytSoundEveningNightDayRoute}" v-html="routeTitles[routes.rothlytSoundEveningNightDayRoute]"></button>
+          <button @click="gotoRothlytSoundNightDaySunsetRoute" :class="{ 'filter-on': filters.rothlytSoundNightDaySunsetRoute}" v-html="routeTitles[routes.rothlytSoundNightDaySunsetRoute]"></button>
+          <button @click="gotoRothlytSoundDaySunsetNightRoute" :class="{ 'filter-on': filters.rothlytSoundDaySunsetNightRoute}" v-html="routeTitles[routes.rothlytSoundDaySunsetNightRoute]"></button>
+          <button @click="gotoRothlytSoundSunsetNightDayRoute" :class="{ 'filter-on': filters.rothlytSoundSunsetNightDayRoute}" v-html="routeTitles[routes.rothlytSoundSunsetNightDayRoute]"></button>
         </div>
         <div class="filter routeFilter filterGroup">
-          <button @click="gotoBloodbrineSeaNightDayEveningRoute" :class="{ 'filter-on': filters.bloodbrineSeaNightDayEveningRoute}" v-html="routeTitles[routes.bloodbrineSeaNightDayEveningRoute]"></button>
-          <button @click="gotoBloodbrineSeaDayEveningNightRoute" :class="{ 'filter-on': filters.bloodbrineSeaDayEveningNightRoute}" v-html="routeTitles[routes.bloodbrineSeaDayEveningNightRoute]"></button>
-          <button @click="gotoBloodbrineSeaEveningNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaEveningNightDayRoute}" v-html="routeTitles[routes.bloodbrineSeaEveningNightDayRoute]"></button>
+          <button @click="gotoBloodbrineSeaNightDaySunsetRoute" :class="{ 'filter-on': filters.bloodbrineSeaNightDaySunsetRoute}" v-html="routeTitles[routes.bloodbrineSeaNightDaySunsetRoute]"></button>
+          <button @click="gotoBloodbrineSeaDaySunsetNightRoute" :class="{ 'filter-on': filters.bloodbrineSeaDaySunsetNightRoute}" v-html="routeTitles[routes.bloodbrineSeaDaySunsetNightRoute]"></button>
+          <button @click="gotoBloodbrineSeaSunsetNightDayRoute" :class="{ 'filter-on': filters.bloodbrineSeaSunsetNightDayRoute}" v-html="routeTitles[routes.bloodbrineSeaSunsetNightDayRoute]"></button>
         </div>
       </div>
       <div v-if="filters.perLocationTime && filters.targetFish">
         <h2 class="h3">{{sectionTitles.location}}</h2>
         <div class="filter locationFilter filterGroup">
           <button @click="toggleGaladionBayDay" :class="{ 'filter-on': filters.galadionBayDay }" v-html="locationFilterTitles.galadionBay.day"></button>
-          <button @click="toggleGaladionBayEvening" :class="{ 'filter-on': filters.galadionBayEvening }" v-html="locationFilterTitles.galadionBay.evening"></button>
+          <button @click="toggleGaladionBaySunset" :class="{ 'filter-on': filters.galadionBaySunset }" v-html="locationFilterTitles.galadionBay.Sunset"></button>
           <button @click="toggleGaladionBayNight" :class="{ 'filter-on': filters.galadionBayNight }" v-html="locationFilterTitles.galadionBay.night"></button>
           <button @click="toggleSouthernDay" :class="{ 'filter-on': filters.southernDay }" v-html="locationFilterTitles.southern.day"></button>
-          <button @click="toggleSouthernEvening" :class="{ 'filter-on': filters.southernEvening }" v-html="locationFilterTitles.southern.evening"></button>
+          <button @click="toggleSouthernSunset" :class="{ 'filter-on': filters.southernSunset }" v-html="locationFilterTitles.southern.Sunset"></button>
           <button @click="toggleSouthernNight" :class="{ 'filter-on': filters.southernNight }" v-html="locationFilterTitles.southern.night"></button>
           <button @click="toggleCieldalaesDay" :class="{ 'filter-on': filters.cieldalaesDay }" v-html="locationFilterTitles.cieldalaes.day"></button>
-          <button @click="toggleCieldalaesEvening" :class="{ 'filter-on': filters.cieldalaesEvening }" v-html="locationFilterTitles.cieldalaes.evening"></button>
+          <button @click="toggleCieldalaesSunset" :class="{ 'filter-on': filters.cieldalaesSunset }" v-html="locationFilterTitles.cieldalaes.Sunset"></button>
           <button @click="toggleCieldalaesNight" :class="{ 'filter-on': filters.cieldalaesNight }" v-html="locationFilterTitles.cieldalaes.night"></button>
           <button @click="toggleRhotanoSeaDay" :class="{ 'filter-on': filters.rhotanoSeaDay }" v-html="locationFilterTitles.rhotanoSea.day"></button>
-          <button @click="toggleRhotanoSeaEvening" :class="{ 'filter-on': filters.rhotanoSeaEvening }" v-html="locationFilterTitles.rhotanoSea.evening"></button>
+          <button @click="toggleRhotanoSeaSunset" :class="{ 'filter-on': filters.rhotanoSeaSunset }" v-html="locationFilterTitles.rhotanoSea.Sunset"></button>
           <button @click="toggleRhotanoSeaNight" :class="{ 'filter-on': filters.rhotanoSeaNight }" v-html="locationFilterTitles.rhotanoSea.night"></button>
           <button @click="toggleNorthernDay" :class="{ 'filter-on': filters.northernDay }" v-html="locationFilterTitles.northern.day"></button>
-          <button @click="toggleNorthernEvening" :class="{ 'filter-on': filters.northernEvening }" v-html="locationFilterTitles.northern.evening"></button>
+          <button @click="toggleNorthernSunset" :class="{ 'filter-on': filters.northernSunset }" v-html="locationFilterTitles.northern.Sunset"></button>
           <button @click="toggleNorthernNight" :class="{ 'filter-on': filters.northernNight }" v-html="locationFilterTitles.northern.night"></button>
           <button @click="toggleRothlytSoundDay" :class="{ 'filter-on': filters.rothlytSoundDay }" v-html="locationFilterTitles.rothlytSound.day"></button>
-          <button @click="toggleRothlytSoundEvening" :class="{ 'filter-on': filters.rothlytSoundEvening }" v-html="locationFilterTitles.rothlytSound.evening"></button>
+          <button @click="toggleRothlytSoundSunset" :class="{ 'filter-on': filters.rothlytSoundSunset }" v-html="locationFilterTitles.rothlytSound.Sunset"></button>
           <button @click="toggleRothlytSoundNight" :class="{ 'filter-on': filters.rothlytSoundNight }" v-html="locationFilterTitles.rothlytSound.night"></button>
           <button @click="toggleBloodbrineSeaDay" :class="{ 'filter-on': filters.bloodbrineSeaDay }" v-html="locationFilterTitles.bloodbrineSea.day"></button>
-          <button @click="toggleBloodbrineSeaEvening" :class="{ 'filter-on': filters.bloodbrineSeaEvening }" v-html="locationFilterTitles.bloodbrineSea.evening"></button>
+          <button @click="toggleBloodbrineSeaSunset" :class="{ 'filter-on': filters.bloodbrineSeaSunset }" v-html="locationFilterTitles.bloodbrineSea.Sunset"></button>
           <button @click="toggleBloodbrineSeaNight" :class="{ 'filter-on': filters.bloodbrineSeaNight }" v-html="locationFilterTitles.bloodbrineSea.night"></button>
         </div>
       </div>
@@ -224,41 +224,41 @@ export default {
     gotoPerLocationTime() {
       this.$store.commit('oceanFishing/updateFilters', { perRoute: false, perLocationTime: true });
     },
-    gotoNorthernNightDayEveningRoute() { // Southern Night, Galadion Day, Northern Evening
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernNightDayEveningRoute);
+    gotoNorthernNightDaySunsetRoute() { // Southern Night, Galadion Day, Northern Sunset
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernNightDaySunsetRoute);
     },
-    gotoNorthernDayEveningNightRoute() { // Southern Day, Galadion Evening, Northern Night
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernDayEveningNightRoute);
+    gotonorthernDaySunsetNightRoute() { // Southern Day, Galadion Sunset, Northern Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernDaySunsetNightRoute);
     },
-    gotoNorthernEveningNightDayRoute() { // Southern Evening, Galadion Night, Northern Day
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernEveningNightDayRoute);      
+    gotonorthernSunsetNightDayRoute() { // Southern Sunset, Galadion Night, Northern Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.northernSunsetNightDayRoute);      
     },
-    gotoRhotanoSeaNightDayEveningRoute() { // Galadion Night, Southern Day, Rhotano Evening
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaNightDayEveningRoute);
+    gotoRhotanoSeaNightDaySunsetRoute() { // Galadion Night, Southern Day, Rhotano Sunset
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaNightDaySunsetRoute);
     },
-    gotoRhotanoSeaDayEveningNightRoute() {  // Galadion Day, Southern Evening, Rhotano Night
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaDayEveningNightRoute);
+    gotoRhotanoSeaDaySunsetNightRoute() {  // Galadion Day, Southern Sunset, Rhotano Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaDaySunsetNightRoute);
     },
-    gotoRhotanoSeaEveningNightDayRoute() { // Galadion Evening, Southern Night, Rhotano Day
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaEveningNightDayRoute);      
+    gotoRhotanoSeaSunsetNightDayRoute() { // Galadion Sunset, Southern Night, Rhotano Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rhotanoSeaSunsetNightDayRoute);      
     },
-    gotoRothlytSoundNightDayEveningRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Evening
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundNightDayEveningRoute);      
+    gotoRothlytSoundNightDaySunsetRoute() { // Cieldalaes Night, Rhotano Day, Rothlyt Sunset
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundNightDaySunsetRoute);      
     },
-    gotoRothlytSoundDayEveningNightRoute() { // Cieldalaes Day, Rhotano Evening, Rothlyt Night
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundDayEveningNightRoute);
+    gotoRothlytSoundDaySunsetNightRoute() { // Cieldalaes Day, Rhotano Sunset, Rothlyt Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundDaySunsetNightRoute);
     },
-    gotoRothlytSoundEveningNightDayRoute() { // Cieldalaes Evening, Rhotano Night, Rothlyt Day
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundEveningNightDayRoute);      
+    gotoRothlytSoundSunsetNightDayRoute() { // Cieldalaes Sunset, Rhotano Night, Rothlyt Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.rothlytSoundSunsetNightDayRoute);      
     },
-    gotoBloodbrineSeaNightDayEveningRoute() { // Cieldalaes Night, Northrn Day, Bloodbrine Evening
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaNightDayEveningRoute);      
+    gotoBloodbrineSeaNightDaySunsetRoute() { // Cieldalaes Night, Northrn Day, Bloodbrine Sunset
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaNightDaySunsetRoute);      
     },
-    gotoBloodbrineSeaDayEveningNightRoute() { // Cieldalaes Day, Northern Evening, Bloodbrine Night
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaDayEveningNightRoute);
+    gotoBloodbrineSeaDaySunsetNightRoute() { // Cieldalaes Day, Northern Sunset, Bloodbrine Night
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaDaySunsetNightRoute);
     },
-    gotoBloodbrineSeaEveningNightDayRoute() { // Cieldalaes Evening, Northern Night, Bloodbrine Day
-      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaEveningNightDayRoute);      
+    gotoBloodbrineSeaSunsetNightDayRoute() { // Cieldalaes Sunset, Northern Night, Bloodbrine Day
+      this.$store.commit('oceanFishing/updateCurrentRoute', this.routes.bloodbrineSeaSunsetNightDayRoute);      
     },
     gotoJelly() {
       this.$store.commit('oceanFishing/updateCurrentTitleRoute', this.routes.jellyRoute);
@@ -284,8 +284,8 @@ export default {
     toggleGaladionBayDay() {
       this.$store.commit('oceanFishing/updateFilters', { galadionBayDay: !this.filters.galadionBayDay });      
     },
-    toggleGaladionBayEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { galadionBayEvening: !this.filters.galadionBayEvening });
+    toggleGaladionBaySunset() {
+      this.$store.commit('oceanFishing/updateFilters', { galadionBaySunset: !this.filters.galadionBaySunset });
     },
     toggleGaladionBayNight() {
       this.$store.commit('oceanFishing/updateFilters', { galadionBayNight: !this.filters.galadionBayNight });
@@ -293,8 +293,8 @@ export default {
     toggleRhotanoSeaDay() {
       this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaDay: !this.filters.rhotanoSeaDay });
     },
-    toggleRhotanoSeaEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaEvening: !this.filters.rhotanoSeaEvening });
+    toggleRhotanoSeaSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaSunset: !this.filters.rhotanoSeaSunset });
     },
     toggleRhotanoSeaNight() {
       this.$store.commit('oceanFishing/updateFilters', { rhotanoSeaNight: !this.filters.rhotanoSeaNight });
@@ -302,8 +302,8 @@ export default {
     toggleNorthernDay() {
       this.$store.commit('oceanFishing/updateFilters', { northernDay: !this.filters.northernDay });
     },
-    toggleNorthernEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { northernEvening: !this.filters.northernEvening });
+    toggleNorthernSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { northernSunset: !this.filters.northernSunset });
     },
     toggleNorthernNight() {
       this.$store.commit('oceanFishing/updateFilters', { northernNight: !this.filters.northernNight });
@@ -311,8 +311,8 @@ export default {
     toggleSouthernDay() {
       this.$store.commit('oceanFishing/updateFilters', { southernDay: !this.filters.southernDay });
     },
-    toggleSouthernEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { southernEvening: !this.filters.southernEvening });
+    toggleSouthernSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { southernSunset: !this.filters.southernSunset });
     },
     toggleSouthernNight() {
       this.$store.commit('oceanFishing/updateFilters', { southernNight: !this.filters.southernNight });
@@ -320,8 +320,8 @@ export default {
     toggleCieldalaesDay() {
       this.$store.commit('oceanFishing/updateFilters', { cieldalaesDay: !this.filters.cieldalaesDay });
     },
-    toggleCieldalaesEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { cieldalaesEvening: !this.filters.cieldalaesEvening });
+    toggleCieldalaesSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { cieldalaesSunset: !this.filters.cieldalaesSunset });
     },
     toggleCieldalaesNight() {
       this.$store.commit('oceanFishing/updateFilters', { cieldalaesNight: !this.filters.cieldalaesNight });
@@ -329,8 +329,8 @@ export default {
     toggleRothlytSoundDay() {
       this.$store.commit('oceanFishing/updateFilters', { rothlytSoundDay: !this.filters.rothlytSoundDay });
     },
-    toggleRothlytSoundEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { rothlytSoundEvening: !this.filters.rothlytSoundEvening });
+    toggleRothlytSoundSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { rothlytSoundSunset: !this.filters.rothlytSoundSunset });
     },
     toggleRothlytSoundNight() {
       this.$store.commit('oceanFishing/updateFilters', { rothlytSoundNight: !this.filters.rothlytSoundNight });      
@@ -338,8 +338,8 @@ export default {
     toggleBloodbrineSeaDay() {
       this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaDay: !this.filters.bloodbrineSeaDay });
     },
-    toggleBloodbrineSeaEvening() {
-      this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaEvening: !this.filters.bloodbrineSeaEvening });
+    toggleBloodbrineSeaSunset() {
+      this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaSunset: !this.filters.bloodbrineSeaSunset });
     },
     toggleBloodbrineSeaNight() {
       this.$store.commit('oceanFishing/updateFilters', { bloodbrineSeaNight: !this.filters.bloodbrineSeaNight });
