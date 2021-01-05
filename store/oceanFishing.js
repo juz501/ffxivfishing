@@ -9,18 +9,18 @@ import {
   stratHeadings
 } from '../content/oceanFishing';
 
-export const NORTHERN_NIGHT_DAY_EVENING = 0;
-export const NORTHERN_DAY_EVENING_NIGHT = 1;
-export const NORTHERN_EVENING_NIGHT_DAY = 2;
-export const RHOTANO_NIGHT_DAY_EVENING = 3;
-export const RHOTANO_DAY_EVENING_NIGHT = 4;
-export const RHOTANO_EVENING_NIGHT_DAY = 5;
-export const ROTHLYT_NIGHT_DAY_EVENING = 6;
-export const ROTHLYT_DAY_EVENING_NIGHT = 7;
-export const ROTHLYT_EVENING_NIGHT_DAY = 8;
-export const BLOODBRINE_NIGHT_DAY_EVENING = 9;
-export const BLOODBRINE_DAY_EVENING_NIGHT = 10;
-export const BLOODBRINE_EVENING_NIGHT_DAY = 11;
+export const NORTHERN_NIGHT_DAY_SUNSET = 0;
+export const NORTHERN_DAY_SUNSET_NIGHT = 1;
+export const NORTHERN_SUNSET_NIGHT_DAY = 2;
+export const RHOTANO_NIGHT_DAY_SUNSET = 3;
+export const RHOTANO_DAY_SUNSET_NIGHT = 4;
+export const RHOTANO_SUNSET_NIGHT_DAY = 5;
+export const ROTHLYT_NIGHT_DAY_SUNSET = 6;
+export const ROTHLYT_DAY_SUNSET_NIGHT = 7;
+export const ROTHLYT_SUNSET_NIGHT_DAY = 8;
+export const BLOODBRINE_NIGHT_DAY_SUNSET = 9;
+export const BLOODBRINE_DAY_SUNSET_NIGHT = 10;
+export const BLOODBRINE_SUNSET_NIGHT_DAY = 11;
 export const JELLY_ROUTE = 12;
 export const SEA_DRAGON_ROUTE = 13;
 export const OCTOPUS_ROUTE = 14;
@@ -37,25 +37,25 @@ export const state = () => (
       perRoute: true,
       perLocationTime: false,
       galadionBayDay: false,
-      galadionBayEvening: false,
+      galadionBaySunset: false,
       galadionBayNight: false,
       rhotanoSeaDay: false,
-      rhotanoSeaEvening: false,
+      rhotanoSeaSunset: false,
       rhotanoSeaNight: false,
       northernDay: false,
-      northernEvening: false,
+      northernSunset: false,
       northernNight: false,
       southernDay: false,
-      southernEvening: false,
+      southernSunset: false,
       southernNight: false,
       cieldalaesDay: false,
-      cieldalaesEvening: false,
+      cieldalaesSunset: false,
       cieldalaesNight: false,
       rothlytSoundDay: false,
-      rothlytSoundEvening: false,
+      rothlytSoundSunset: false,
       rothlytSoundNight: false,
       bloodbrineSeaDay: false,
-      bloodbrineSeaEvening: false,
+      bloodbrineSeaSunset: false,
       bloodbrineSeaNight: false,
       jellyRoute: false,
       seaDragonRoute: false,
@@ -64,32 +64,32 @@ export const state = () => (
       crabRoute: false,
       balloonRoute: false, 
       mantaRoute: false,     
-      rhotanoSeaDayEveningNightRoute: false,
-      rhotanoSeaEveningNightDayRoute: false,
-      rhotanoSeaNightDayEveningRoute: false,
-      northernDayEveningNightRoute: false,
-      northernEveningNightDayRoute: false,
-      northernNightDayEveningRoute: false,
-      rothlytSoundDayEveningNightRoute: false,
-      rothlytSoundEveningNightDayRoute: false,
-      rothlytSoundNightDayEveningRoute: false,
-      bloodbrineSeaDayEveningNightRoute: false,
-      bloodbrineSeaEveningNightDayRoute: false,
-      bloodbrineSeaNightDayEveningRoute: false
+      rhotanoSeaDaySunsetNightRoute: false,
+      rhotanoSeaSunsetNightDayRoute: false,
+      rhotanoSeaNightDaySunsetRoute: false,
+      northernDaySunsetNightRoute: false,
+      northernSunsetNightDayRoute: false,
+      northernNightDaySunsetRoute: false,
+      rothlytSoundDaySunsetNightRoute: false,
+      rothlytSoundSunsetNightDayRoute: false,
+      rothlytSoundNightDaySunsetRoute: false,
+      bloodbrineSeaDaySunsetNightRoute: false,
+      bloodbrineSeaSunsetNightDayRoute: false,
+      bloodbrineSeaNightDaySunsetRoute: false
     },
     routes: {
-      northernNightDayEveningRoute: NORTHERN_NIGHT_DAY_EVENING,
-      northernDayEveningNightRoute: NORTHERN_DAY_EVENING_NIGHT,
-      northernEveningNightDayRoute: NORTHERN_EVENING_NIGHT_DAY,
-      rhotanoSeaNightDayEveningRoute: RHOTANO_NIGHT_DAY_EVENING,
-      rhotanoSeaDayEveningNightRoute: RHOTANO_DAY_EVENING_NIGHT,
-      rhotanoSeaEveningNightDayRoute: RHOTANO_EVENING_NIGHT_DAY,
-      rothlytSoundNightDayEveningRoute: ROTHLYT_NIGHT_DAY_EVENING,
-      rothlytSoundDayEveningNightRoute: ROTHLYT_DAY_EVENING_NIGHT,
-      rothlytSoundEveningNightDayRoute: ROTHLYT_EVENING_NIGHT_DAY,
-      bloodbrineSeaNightDayEveningRoute: BLOODBRINE_NIGHT_DAY_EVENING,
-      bloodbrineSeaDayEveningNightRoute: BLOODBRINE_DAY_EVENING_NIGHT,
-      bloodbrineSeaEveningNightDayRoute: BLOODBRINE_EVENING_NIGHT_DAY,
+      northernNightDaySunsetRoute: NORTHERN_NIGHT_DAY_SUNSET,
+      northernDaySunsetNightRoute: NORTHERN_DAY_SUNSET_NIGHT,
+      northernSunsetNightDayRoute: NORTHERN_SUNSET_NIGHT_DAY,
+      rhotanoSeaNightDaySunsetRoute: RHOTANO_NIGHT_DAY_SUNSET,
+      rhotanoSeaDaySunsetNightRoute: RHOTANO_DAY_SUNSET_NIGHT,
+      rhotanoSeaSunsetNightDayRoute: RHOTANO_SUNSET_NIGHT_DAY,
+      rothlytSoundNightDaySunsetRoute: ROTHLYT_NIGHT_DAY_SUNSET,
+      rothlytSoundDaySunsetNightRoute: ROTHLYT_DAY_SUNSET_NIGHT,
+      rothlytSoundSunsetNightDayRoute: ROTHLYT_SUNSET_NIGHT_DAY,
+      bloodbrineSeaNightDaySunsetRoute: BLOODBRINE_NIGHT_DAY_SUNSET,
+      bloodbrineSeaDaySunsetNightRoute: BLOODBRINE_DAY_SUNSET_NIGHT,
+      bloodbrineSeaSunsetNightDayRoute: BLOODBRINE_SUNSET_NIGHT_DAY,
       jellyRoute: JELLY_ROUTE,
       seaDragonRoute: SEA_DRAGON_ROUTE,
       octopusRoute: OCTOPUS_ROUTE,
@@ -106,7 +106,7 @@ export const state = () => (
     typeTitles,
     routeTitles,
     routeLocationOrder: [
-      [ // 'Northern Strait (Night > Day > Evening)'
+      [ // 'Northern Strait (Night > Day > Sunset)'
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralNight' },
         { location: 'southern', phase: 'afterSpectral' },
@@ -116,25 +116,25 @@ export const state = () => (
         { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
-        { location: 'northern', phase: 'spectralEvening' },
+        { location: 'northern', phase: 'spectralSunset' },
         { location: 'northern', phase: 'afterSpectral' }
       ],
-      [ // 'Northern Strait (Day > Evening > Night)'
+      [ // 'Northern Strait (Day > Sunset > Night)'
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralDay' },
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectralShowers' },
-        { location: 'galadionBay', phase: 'spectralEvening' },
+        { location: 'galadionBay', phase: 'spectralSunset' },
         { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
         { location: 'northern', phase: 'spectralNight' },
         { location: 'northern', phase: 'afterSpectral' }
       ],
-      [ // 'Northern Strait (Evening > Night > Day)'
+      [ // 'Northern Strait (Sunset > Night > Day)'
         { location: 'southern', phase: 'beforeSpectral' },
-        { location: 'southern', phase: 'spectralEvening' },
+        { location: 'southern', phase: 'spectralSunset' },
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectralShowers' },
@@ -145,7 +145,7 @@ export const state = () => (
         { location: 'northern', phase: 'spectralDay' },
         { location: 'northern', phase: 'afterSpectral' }
       ],
-      [ // 'Rhotano Sea (Night > Day > Evening)'
+      [ // 'Rhotano Sea (Night > Day > Sunset)'
         { location: 'galadionBay', phase: 'beforeSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectralShowers' },
         { location: 'galadionBay', phase: 'spectralNight' },
@@ -154,25 +154,25 @@ export const state = () => (
         { location: 'southern', phase: 'spectralDay' },
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
-        { location: 'rhotanoSea', phase: 'spectralEvening' },
+        { location: 'rhotanoSea', phase: 'spectralSunset' },
         { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
-      [ // 'Rhotano Sea (Day > Evening > Night)'
+      [ // 'Rhotano Sea (Day > Sunset > Night)'
         { location: 'galadionBay', phase: 'beforeSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectralShowers' },
         { location: 'galadionBay', phase: 'spectralDay' },
         { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'southern', phase: 'beforeSpectral' },
-        { location: 'southern', phase: 'spectralEvening' },
+        { location: 'southern', phase: 'spectralSunset' },
         { location: 'southern', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
         { location: 'rhotanoSea', phase: 'spectralNight' },
         { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
-      [ // 'Rhotano Sea (Evening > Night > Day)'
+      [ // 'Rhotano Sea (Sunset > Night > Day)'
         { location: 'galadionBay', phase: 'beforeSpectral' },
         { location: 'galadionBay', phase: 'beforeSpectralShowers' },
-        { location: 'galadionBay', phase: 'spectralEvening' },
+        { location: 'galadionBay', phase: 'spectralSunset' },
         { location: 'galadionBay', phase: 'afterSpectral' },
         { location: 'southern', phase: 'beforeSpectral' },
         { location: 'southern', phase: 'spectralNight' },
@@ -181,7 +181,7 @@ export const state = () => (
         { location: 'rhotanoSea', phase: 'spectralDay' },
         { location: 'rhotanoSea', phase: 'afterSpectral' }
       ],
-      [ // 'Rothlyt Sound (Night > Day > Evening)'
+      [ // 'Rothlyt Sound (Night > Day > Sunset)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
         { location: 'cieldalaes', phase: 'spectralNight' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
@@ -189,23 +189,23 @@ export const state = () => (
         { location: 'rhotanoSea', phase: 'spectralDay' },
         { location: 'rhotanoSea', phase: 'afterSpectral' },
         { location: 'rothlytSound', phase: 'beforeSpectral' },
-        { location: 'rothlytSound', phase: 'spectralEvening' },
+        { location: 'rothlytSound', phase: 'spectralSunset' },
         { location: 'rothlytSound', phase: 'afterSpectral' }
       ],
-      [ // 'Rothlyt Sound (Day > Evening > Night)'
+      [ // 'Rothlyt Sound (Day > Sunset > Night)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
         { location: 'cieldalaes', phase: 'spectralDay' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
-        { location: 'rhotanoSea', phase: 'spectralEvening' },
+        { location: 'rhotanoSea', phase: 'spectralSunset' },
         { location: 'rhotanoSea', phase: 'afterSpectral' },
         { location: 'rothlytSound', phase: 'beforeSpectral' },
         { location: 'rothlytSound', phase: 'spectralNight' },
         { location: 'rothlytSound', phase: 'afterSpectral' }
       ],
-      [ // 'Rothlyt Sound (Evening > Night > Day)'
+      [ // 'Rothlyt Sound (Sunset > Night > Day)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
-        { location: 'cieldalaes', phase: 'spectralEvening' },
+        { location: 'cieldalaes', phase: 'spectralSunset' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
         { location: 'rhotanoSea', phase: 'beforeSpectral' },
         { location: 'rhotanoSea', phase: 'spectralNight' },
@@ -214,7 +214,7 @@ export const state = () => (
         { location: 'rothlytSound', phase: 'spectralDay' },
         { location: 'rothlytSound', phase: 'afterSpectral' }
       ],
-      [ // 'Bloodbrine Sea (Night > Day > Evening)'
+      [ // 'Bloodbrine Sea (Night > Day > Sunset)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
         { location: 'cieldalaes', phase: 'spectralNight' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
@@ -223,24 +223,24 @@ export const state = () => (
         { location: 'northern', phase: 'spectralDay' },
         { location: 'northern', phase: 'afterSpectral' },
         { location: 'bloodbrineSea', phase: 'beforeSpectral' },
-        { location: 'bloodbrineSea', phase: 'spectralEvening' },
+        { location: 'bloodbrineSea', phase: 'spectralSunset' },
         { location: 'bloodbrineSea', phase: 'afterSpectral' }
       ],
-      [ // 'Bloodbrine Sea (Day > Evening > Night)'
+      [ // 'Bloodbrine Sea (Day > Sunset > Night)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
         { location: 'cieldalaes', phase: 'spectralDay' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
-        { location: 'northern', phase: 'spectralEvening' },
+        { location: 'northern', phase: 'spectralSunset' },
         { location: 'northern', phase: 'afterSpectral' },
         { location: 'bloodbrineSea', phase: 'beforeSpectral' },
         { location: 'bloodbrineSea', phase: 'spectralNight' },
         { location: 'bloodbrineSea', phase: 'afterSpectral' }
       ],
-      [ // 'Bloodbrine Sea (Evening > Night > Day)'
+      [ // 'Bloodbrine Sea (Sunset > Night > Day)'
         { location: 'cieldalaes', phase: 'beforeSpectral' },
-        { location: 'cieldalaes', phase: 'spectralEvening' },
+        { location: 'cieldalaes', phase: 'spectralSunset' },
         { location: 'cieldalaes', phase: 'afterSpectral' },
         { location: 'northern', phase: 'beforeSpectral' },
         { location: 'northern', phase: 'beforeSpectralSnow' },
@@ -262,9 +262,9 @@ const pushFiltersJelly = (results) => {
   results.push({ location: 'galadionBay', phase: 'beforeSpectralShowers' })
   results.push({ location: 'galadionBay', phase: 'spectralDay'})
   results.push({ location: 'galadionBay', phase: 'afterSpectral'})
-  results.push({ location: 'jellyRouteEvening', phase: 'beforeSpectral'})
-  results.push({ location: 'jellyRouteEvening', phase: 'spectralEvening'})
-  results.push({ location: 'jellyRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'jellyRouteSunset', phase: 'beforeSpectral'})
+  results.push({ location: 'jellyRouteSunset', phase: 'spectralSunset'})
+  results.push({ location: 'jellyRouteSunset', phase: 'afterSpectral'})
   results.push({ location: 'rhotanoSea', phase: 'beforeSpectral'})
   results.push({ location: 'jellyRouteNight', phase: 'spectralNight'})
   results.push({ location: 'rhotanoSea', phase: 'afterSpectral'})
@@ -281,7 +281,7 @@ const pushFiltersSeaDragon = (results) => {
   results.push({ location: 'galadionBay', phase: 'afterSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
-  results.push({ location: 'seaDragonRouteEvening', phase: 'spectralEvening'})
+  results.push({ location: 'seaDragonRouteSunset', phase: 'spectralSunset'})
   results.push({ location: 'northern', phase: 'afterSpectral'})
   return results;
 }
@@ -290,9 +290,9 @@ const pushFiltersOctopus = (results) => {
   results.push({ location: 'southern', phase: 'beforeSpectral'})
   results.push({ location: 'southern', phase: 'spectralDay'})
   results.push({ location: 'southern', phase: 'afterSpectral'})
-  results.push({ location: 'octopusRouteEvening', phase: 'beforeSpectral'})
-  results.push({ location: 'octopusRouteEvening', phase: 'spectralEvening'})
-  results.push({ location: 'octopusRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'octopusRouteSunset', phase: 'beforeSpectral'})
+  results.push({ location: 'octopusRouteSunset', phase: 'spectralSunset'})
+  results.push({ location: 'octopusRouteSunset', phase: 'afterSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
   results.push({ location: 'octopusRouteNight', phase: 'spectralNight'})
@@ -301,9 +301,9 @@ const pushFiltersOctopus = (results) => {
 }
 
 const pushFiltersShark = (results) => {
-  results.push({ location: 'sharkRouteEvening', phase: 'beforeSpectral'})
-  results.push({ location: 'sharkRouteEvening', phase: 'spectralEvening'})
-  results.push({ location: 'sharkRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'sharkRouteSunset', phase: 'beforeSpectral'})
+  results.push({ location: 'sharkRouteSunset', phase: 'spectralSunset'})
+  results.push({ location: 'sharkRouteSunset', phase: 'afterSpectral'})
   results.push({ location: 'southern', phase: 'beforeSpectral'})
   results.push({ location: 'southern', phase: 'spectralNight'})
   results.push({ location: 'southern', phase: 'afterSpectral'})
@@ -314,9 +314,9 @@ const pushFiltersShark = (results) => {
 }
 
 const pushFiltersCrab = (results) => {
-  results.push({ location: 'crabRouteEvening', phase: 'beforeSpectral'})
-  results.push({ location: 'crabRouteEvening', phase: 'spectralEvening'})
-  results.push({ location: 'crabRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'crabRouteSunset', phase: 'beforeSpectral'})
+  results.push({ location: 'crabRouteSunset', phase: 'spectralSunset'})
+  results.push({ location: 'crabRouteSunset', phase: 'afterSpectral'})
   results.push({ location: 'crabRouteNight', phase: 'beforeSpectral'})
   results.push({ location: 'crabRouteNight', phase: 'spectralNight'})
   results.push({ location: 'crabRouteNight', phase: 'afterSpectral'})
@@ -331,9 +331,9 @@ const pushFiltersBalloon = (results) => {
   results.push({ location: 'balloonRouteDay', phase: 'beforeSpectral'})
   results.push({ location: 'balloonRouteDay', phase: 'spectralDay'})
   results.push({ location: 'balloonRouteDay', phase: 'afterSpectral'})
-  results.push({ location: 'balloonRouteEvening', phase: 'beforeSpectral'})
-  results.push({ location: 'balloonRouteEvening', phase: 'spectralEvening'})
-  results.push({ location: 'balloonRouteEvening', phase: 'afterSpectral'})
+  results.push({ location: 'balloonRouteSunset', phase: 'beforeSpectral'})
+  results.push({ location: 'balloonRouteSunset', phase: 'spectralSunset'})
+  results.push({ location: 'balloonRouteSunset', phase: 'afterSpectral'})
   results.push({ location: 'balloonRouteNight', phase: 'beforeSpectral'})
   results.push({ location: 'balloonRouteNight', phase: 'spectralNight'})
   results.push({ location: 'balloonRouteNight', phase: 'afterSpectral'})
@@ -346,7 +346,7 @@ const pushFiltersManta = (results) => {
   results.push({ location: 'mantaRouteDay', phase: 'afterSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectral'})
   results.push({ location: 'northern', phase: 'beforeSpectralSnow' });
-  results.push({ location: 'northern', phase: 'spectralEvening'})
+  results.push({ location: 'northern', phase: 'spectralSunset'})
   results.push({ location: 'northern', phase: 'afterSpectral'})
   results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral'})
   results.push({ location: 'mantaRouteNight', phase: 'spectralNight'})
@@ -355,137 +355,137 @@ const pushFiltersManta = (results) => {
 }
 
 const pushFiltersGaladionBay = (filters, results) => {
-  if (filters.galadionBayDay || filters.galadionBayEvening || filters.galadionBayNight ) {
+  if (filters.galadionBayDay || filters.galadionBaySunset || filters.galadionBayNight ) {
     results.push({ location: 'galadionBay', phase: 'beforeSpectral' });
     results.push({ location: 'galadionBay', phase: 'beforeSpectralShowers' });
   }
   if (filters.galadionBayDay) {
     results.push({ location: 'galadionBay', phase: 'spectralDay' });
   }
-  if (filters.galadionBayEvening) {
-    results.push({ location: 'galadionBay', phase: 'spectralEvening' });
+  if (filters.galadionBaySunset) {
+    results.push({ location: 'galadionBay', phase: 'spectralSunset' });
   }
   if (filters.galadionBayNight) {
     results.push({ location: 'galadionBay', phase: 'spectralNight' });
   }
-  if (filters.galadionBayDay || filters.galadionBayEvening || filters.galadionBayNight ) {
+  if (filters.galadionBayDay || filters.galadionBaySunset || filters.galadionBayNight ) {
     results.push({ location: 'galadionBay', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersSouthern = (filters, results) => {
-  if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
+  if (filters.southernDay || filters.southernSunset || filters.southernNight ) {
     results.push({ location: 'southern', phase: 'beforeSpectral' });      
   }
   if (filters.southernDay) {
     results.push({ location: 'southern', phase: 'spectralDay' });
   }
-  if (filters.southernEvening) {
-    results.push({ location: 'southern', phase: 'spectralEvening' });
+  if (filters.southernSunset) {
+    results.push({ location: 'southern', phase: 'spectralSunset' });
   }
   if (filters.southernNight) {
     results.push({ location: 'southern', phase: 'spectralNight' });
   }
-  if (filters.southernDay || filters.southernEvening || filters.southernNight ) {
+  if (filters.southernDay || filters.southernSunset || filters.southernNight ) {
     results.push({ location: 'southern', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersCieldalaes = (filters, results) => {
-  if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+  if (filters.cieldalaesDay || filters.cieldalaesSunset || filters.cieldalaesNight ) {
     results.push({ location: 'cieldalaes', phase: 'beforeSpectral' });      
   }
   if (filters.cieldalaesDay) {
     results.push({ location: 'cieldalaes', phase: 'spectralDay' });
   }
-  if (filters.cieldalaesEvening) {
-    results.push({ location: 'cieldalaes', phase: 'spectralEvening' });
+  if (filters.cieldalaesSunset) {
+    results.push({ location: 'cieldalaes', phase: 'spectralSunset' });
   }
   if (filters.cieldalaesNight) {
     results.push({ location: 'cieldalaes', phase: 'spectralNight' });
   }
-  if (filters.cieldalaesDay || filters.cieldalaesEvening || filters.cieldalaesNight ) {
+  if (filters.cieldalaesDay || filters.cieldalaesSunset || filters.cieldalaesNight ) {
     results.push({ location: 'cieldalaes', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersRhotanoSea = (filters, results) => {
-  if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
+  if (filters.rhotanoSeaDay || filters.rhotanoSeaSunset || filters.rhotanoSeaNight ) {
     results.push({ location: 'rhotanoSea', phase: 'beforeSpectral' });      
   }
   if (filters.rhotanoSeaDay) {
     results.push({ location: 'rhotanoSea', phase: 'spectralDay' });
   }
-  if (filters.rhotanoSeaEvening) {
-    results.push({ location: 'rhotanoSea', phase: 'spectralEvening' });
+  if (filters.rhotanoSeaSunset) {
+    results.push({ location: 'rhotanoSea', phase: 'spectralSunset' });
   }
   if (filters.rhotanoSeaNight) {
     results.push({ location: 'rhotanoSea', phase: 'spectralNight' });
   }
-  if (filters.rhotanoSeaDay || filters.rhotanoSeaEvening || filters.rhotanoSeaNight ) {
+  if (filters.rhotanoSeaDay || filters.rhotanoSeaSunset || filters.rhotanoSeaNight ) {
     results.push({ location: 'rhotanoSea', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersNorthern = (filters, results) => {
-  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+  if (filters.northernDay || filters.northernSunset || filters.northernNight ) {
     results.push({ location: 'northern', phase: 'beforeSpectral' });      
   }
-  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+  if (filters.northernDay || filters.northernSunset || filters.northernNight ) {
     results.push({ location: 'northern', phase: 'beforeSpectralSnow' });      
   }
   if (filters.northernDay) {
     results.push({ location: 'northern', phase: 'spectralDay' });
   }
-  if (filters.northernEvening) {
-    results.push({ location: 'northern', phase: 'spectralEvening' });
+  if (filters.northernSunset) {
+    results.push({ location: 'northern', phase: 'spectralSunset' });
   }
   if (filters.northernNight) {
     results.push({ location: 'northern', phase: 'spectralNight' });
   }
-  if (filters.northernDay || filters.northernEvening || filters.northernNight ) {
+  if (filters.northernDay || filters.northernSunset || filters.northernNight ) {
     results.push({ location: 'northern', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersRothlytSound = (filters, results) => {
-  if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+  if (filters.rothlytSoundDay || filters.rothlytSoundSunset || filters.rothlytSoundNight ) {
     results.push({ location: 'rothlytSound', phase: 'beforeSpectral' });      
   }
   if (filters.rothlytSoundDay) {
     results.push({ location: 'rothlytSound', phase: 'spectralDay' });
   }
-  if (filters.rothlytSoundEvening) {
-    results.push({ location: 'rothlytSound', phase: 'spectralEvening' });
+  if (filters.rothlytSoundSunset) {
+    results.push({ location: 'rothlytSound', phase: 'spectralSunset' });
   }
   if (filters.rothlytSoundNight) {
     results.push({ location: 'rothlytSound', phase: 'spectralNight' });
   }
-  if (filters.rothlytSoundDay || filters.rothlytSoundEvening || filters.rothlytSoundNight ) {
+  if (filters.rothlytSoundDay || filters.rothlytSoundSunset || filters.rothlytSoundNight ) {
     results.push({ location: 'rothlytSound', phase: 'afterSpectral' });
   }
   return results;
 }
 
 const pushFiltersBloodbrineSea = (filters, results) => {
-  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaSunset || filters.bloodbrineSeaNight ) {
     results.push({ location: 'bloodbrineSea', phase: 'beforeSpectral' });      
   }
   if (filters.bloodbrineSeaDay) {
     results.push({ location: 'bloodbrineSea', phase: 'spectralDay' });
   }
-  if (filters.bloodbrineSeaEvening) {
-    results.push({ location: 'bloodbrineSea', phase: 'spectralEvening' });
+  if (filters.bloodbrineSeaSunset) {
+    results.push({ location: 'bloodbrineSea', phase: 'spectralSunset' });
   }
   if (filters.bloodbrineSeaNight) {
     results.push({ location: 'bloodbrineSea', phase: 'spectralNight' });
   }
-  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaEvening || filters.bloodbrineSeaNight ) {
+  if (filters.bloodbrineSeaDay || filters.bloodbrineSeaSunset || filters.bloodbrineSeaNight ) {
     results.push({ location: 'bloodbrineSea', phase: 'afterSpectral' });
   }
   return results;
@@ -559,25 +559,25 @@ export const getters = {
   hasLocations(state) {
     return (
       state.filters.galadionBayDay ||
-      state.filters.galadionBayEvening ||
+      state.filters.galadionBaySunset ||
       state.filters.galadionBayNight ||
       state.filters.southernDay ||
-      state.filters.southernEvening ||
+      state.filters.southernSunset ||
       state.filters.southernNight ||
       state.filters.rhotanoSeaDay ||
-      state.filters.rhotanoSeaEvening ||
+      state.filters.rhotanoSeaSunset ||
       state.filters.rhotanoSeaNight ||
       state.filters.northernDay ||
-      state.filters.northernEvening ||
+      state.filters.northernSunset ||
       state.filters.northernNight ||
       state.filters.cieldalaesDay ||
-      state.filters.cieldalaesEvening ||
+      state.filters.cieldalaesSunset ||
       state.filters.cieldalaesNight ||
       state.filters.rothlytSoundDay ||
-      state.filters.rothlytSoundEvening ||
+      state.filters.rothlytSoundSunset ||
       state.filters.rothlytSoundNight ||
       state.filters.bloodbrineSeaDay ||
-      state.filters.bloodbrineSeaEvening ||
+      state.filters.bloodbrineSeaSunset ||
       state.filters.bloodbrineSeaNight
     );
   }
@@ -590,55 +590,55 @@ export const mutations = {
   updateCurrentRoute(state, currentRoute) {
     state.currentRoute = currentRoute;
     const resetRouteFilters = {
-      rhotanoSeaDayEveningNightRoute: false,
-      rhotanoSeaEveningNightDayRoute: false,
-      rhotanoSeaNightDayEveningRoute: false,
-      northernDayEveningNightRoute: false,
-      northernEveningNightDayRoute: false,
-      northernNightDayEveningRoute: false,
-      rothlytSoundDayEveningNightRoute: false,
-      rothlytSoundEveningNightDayRoute: false,
-      rothlytSoundNightDayEveningRoute: false,
-      bloodbrineSeaDayEveningNightRoute: false,
-      bloodbrineSeaEveningNightDayRoute: false,
-      bloodbrineSeaNightDayEveningRoute: false      
+      rhotanoSeaDaySunsetNightRoute: false,
+      rhotanoSeaSunsetNightDayRoute: false,
+      rhotanoSeaNightDaySunsetRoute: false,
+      northernDaySunsetNightRoute: false,
+      northernSunsetNightDayRoute: false,
+      northernNightDaySunsetRoute: false,
+      rothlytSoundDaySunsetNightRoute: false,
+      rothlytSoundSunsetNightDayRoute: false,
+      rothlytSoundNightDaySunsetRoute: false,
+      bloodbrineSeaDaySunsetNightRoute: false,
+      bloodbrineSeaSunsetNightDayRoute: false,
+      bloodbrineSeaNightDaySunsetRoute: false      
     };
     switch (currentRoute) {
-      case NORTHERN_NIGHT_DAY_EVENING:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernNightDayEveningRoute: true }};
+      case NORTHERN_NIGHT_DAY_SUNSET:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernNightDaySunsetRoute: true }};
       break;
-      case NORTHERN_DAY_EVENING_NIGHT:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernDayEveningNightRoute: true }};
+      case NORTHERN_DAY_SUNSET_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernDaySunsetNightRoute: true }};
       break;
-      case NORTHERN_EVENING_NIGHT_DAY:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernEveningNightDayRoute: true }};
+      case NORTHERN_SUNSET_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ northernSunsetNightDayRoute: true }};
       break;
-      case RHOTANO_NIGHT_DAY_EVENING:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaNightDayEveningRoute: true }};
+      case RHOTANO_NIGHT_DAY_SUNSET:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaNightDaySunsetRoute: true }};
       break;
-      case RHOTANO_DAY_EVENING_NIGHT:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaDayEveningNightRoute: true }};
+      case RHOTANO_DAY_SUNSET_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaDaySunsetNightRoute: true }};
       break;
-      case RHOTANO_EVENING_NIGHT_DAY:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaEveningNightDayRoute: true }};
+      case RHOTANO_SUNSET_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rhotanoSeaSunsetNightDayRoute: true }};
       break;
-      case ROTHLYT_NIGHT_DAY_EVENING:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundNightDayEveningRoute: true }};
+      case ROTHLYT_NIGHT_DAY_SUNSET:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundNightDaySunsetRoute: true }};
       break;
-      case ROTHLYT_DAY_EVENING_NIGHT:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundDayEveningNightRoute: true }};
+      case ROTHLYT_DAY_SUNSET_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundDaySunsetNightRoute: true }};
       break;
-      case ROTHLYT_EVENING_NIGHT_DAY:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundEveningNightDayRoute: true }};
+      case ROTHLYT_SUNSET_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ rothlytSoundSunsetNightDayRoute: true }};
       break;
-      case BLOODBRINE_NIGHT_DAY_EVENING:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaNightDayEveningRoute: true }};
+      case BLOODBRINE_NIGHT_DAY_SUNSET:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaNightDaySunsetRoute: true }};
       break;
-      case BLOODBRINE_DAY_EVENING_NIGHT:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaDayEveningNightRoute: true }};
+      case BLOODBRINE_DAY_SUNSET_NIGHT:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaDaySunsetNightRoute: true }};
       break;
-      case BLOODBRINE_EVENING_NIGHT_DAY:
-        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaEveningNightDayRoute: true }};
+      case BLOODBRINE_SUNSET_NIGHT_DAY:
+        state.filters = {...state.filters, ...resetRouteFilters, ...{ bloodbrineSeaSunsetNightDayRoute: true }};
       break;
     }
   },

@@ -7,13 +7,13 @@ export const sectionTitles = {
 };
 
 export const titleFilterTitles = {
-  jelly: 'Jelled Together<br/>Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  seaDragon: 'Maritime Dragonslayers<br/>Northern&nbsp;Strait<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening',
-  octopus: 'Octopus Travelers<br/>Northern&nbsp;Strait<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  shark: 'Certifiable Shark Hunters<br/>Rhotano&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
-  crab: 'Crab Boat Crew<br/>Bloodbrine&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day',
-  balloon: 'Balloon Catchers<br/>Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  manta: 'Sticking it to the Manta<br/>Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night'
+  jelly: 'Jelled Together<br/>Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  seaDragon: 'Maritime Dragonslayers<br/>Northern&nbsp;Strait<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Sunset',
+  octopus: 'Octopus Travelers<br/>Northern&nbsp;Strait<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  shark: 'Certifiable Shark Hunters<br/>Rhotano&nbsp;Sea<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day)',
+  crab: 'Crab Boat Crew<br/>Bloodbrine&nbsp;Sea<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day',
+  balloon: 'Balloon Catchers<br/>Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  manta: 'Sticking it to the Manta<br/>Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night'
 };
 
 export const targetTitles = {
@@ -27,54 +27,54 @@ export const typeTitles = {
 };
 
 export const routeTitles = [
-  'Northern&nbsp;Strait of Merlthor<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening<br/>Coral Manta',
-  'Northern&nbsp;Strait of Merlthor<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  'Northern&nbsp;Strait of Merlthor<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Sothis',
-  'Rhotano&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening<br />Stonescale',
-  'Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  'Rhotano&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Coral Manta',
-  'Rothlyt&nbsp;Sound<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening<br/>Hafgufa + Placodus',
-  'Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night<br/>Stonescale',
-  'Rothlyt&nbsp;Sound<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>',
-  'Bloodbrine&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Evening<br/>Hafgufa + Elasmosaurus',
-  'Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Evening&nbsp;>&nbsp;Night',
-  'Bloodbrine&nbsp;Sea<br/>Evening&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Seafaring Toad'
+  'Northern&nbsp;Strait of Merlthor<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Sunset<br/>Coral Manta',
+  'Northern&nbsp;Strait of Merlthor<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  'Northern&nbsp;Strait of Merlthor<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Sothis',
+  'Rhotano&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Sunset<br />Stonescale',
+  'Rhotano&nbsp;Sea<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  'Rhotano&nbsp;Sea<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Coral Manta',
+  'Rothlyt&nbsp;Sound<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Sunset<br/>Hafgufa + Placodus',
+  'Rothlyt&nbsp;Sound<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night<br/>Stonescale',
+  'Rothlyt&nbsp;Sound<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>',
+  'Bloodbrine&nbsp;Sea<br/>Night&nbsp;>&nbsp;Day&nbsp;>&nbsp;Sunset<br/>Hafgufa + Elasmosaurus',
+  'Bloodbrine&nbsp;Sea<br/>Day&nbsp;>&nbsp;Sunset&nbsp;>&nbsp;Night',
+  'Bloodbrine&nbsp;Sea<br/>Sunset&nbsp;>&nbsp;Night&nbsp;>&nbsp;Day<br/>Seafaring Toad'
 ];
 
 export const locationFilterTitles = {
   galadionBay: {
     day: 'Galadion&nbsp;Bay (Day)',
-    evening: 'Galadion&nbsp;Bay (Evening)',
+    Sunset: 'Galadion&nbsp;Bay (Sunset)',
     night: 'Galadion&nbsp;Bay (Night)'
   },
   southern: {
     day: 'Southern&nbsp;Strait of Merlthor (Day)',
-    evening: 'Southern&nbsp;Strait of Merlthor (Evening)',
+    Sunset: 'Southern&nbsp;Strait of Merlthor (Sunset)',
     night: 'Southern&nbsp;Strait of Merlthor (Night)'
   },
   rhotanoSea: {
     day: 'Rhotano&nbsp;Sea (Day)',
-    evening: 'Rhotano&nbsp;Sea (Evening)',
+    Sunset: 'Rhotano&nbsp;Sea (Sunset)',
     night: 'Rhotano&nbsp;Sea (Night)'
   },
   northern: {
     day: 'Northern&nbsp;Strait of Merlthor (Day)',
-    evening: 'Northern&nbsp;Strait of Merlthor (Evening)',
+    Sunset: 'Northern&nbsp;Strait of Merlthor (Sunset)',
     night: 'Northern&nbsp;Strait of Merlthor (Night)'
   },
   cieldalaes: {
     day: 'Cieldalaes (Day)',
-    evening: 'Cieldalaes (Evening)',
+    Sunset: 'Cieldalaes (Sunset)',
     night: 'Cieldalaes (Night)'
   },
   rothlytSound: {
     day: 'Rothlyt&nbsp;Sound (Day)',
-    evening: 'Rothlyt&nbsp;Sound (Evening)',
+    Sunset: 'Rothlyt&nbsp;Sound (Sunset)',
     night: 'Rothlyt&nbsp;Sound (Night)'
   },
   bloodbrineSea: {
     day: 'Bloodbrine&nbsp;Sea (Day)',
-    evening: 'Bloodbrine&nbsp;Sea (Evening)',
+    Sunset: 'Bloodbrine&nbsp;Sea (Sunset)',
     night: 'Bloodbrine&nbsp;Sea (Night)'
   }
 };
@@ -127,10 +127,10 @@ export const content = {
         '<em>Nimble Dancer(!)x2</em> 10-18s [Blind]',
       ] 
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Plump&nbsp;Worm',
       strategy: [
         '<em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
@@ -199,10 +199,10 @@ export const content = {
         '<em>Great Grandmarlin(!!!)x2</em> 2-3s',
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm', 
       strategy: [
         '<em>Ragworm => Hi-Aetherlouse(!) => Rougesaurus(!!!)</em>',
@@ -274,10 +274,10 @@ export const content = {
         '<em>Silencer(!)x4</em> 2-8s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm, Rat&nbsp;Tail',
       strategy: [
         '<em>Ragworm => Silencer(!)</em> + <em>Rat&nbsp;Tail => Deep&nbsp;Sea&nbsp;Eel(!!)</em>',
@@ -356,10 +356,10 @@ export const content = {
         '<em>Gugrusaurus(!!!)x4</em> 2-10s',
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm, Krill, Plump&nbsp;Worm',
       strategy: [
         '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>',
@@ -432,10 +432,10 @@ export const content = {
         '<em>Mythril Boxfish(!)x4</em> 2-5s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Plump&nbsp;Worm, Krill',
       strategy: [
         '<em>Plump&nbsp;Worm => Meandering&nbsp;Mora(!!)</em>',
@@ -513,10 +513,10 @@ export const content = {
         '<em>Trollfish(!)x2</em> 2-6s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm, Krill',
       strategy: [
         '<em>Ragworm => Rothlyt&nbsp;Mussel(!!!) => Trollfish(!)</em>',
@@ -590,10 +590,10 @@ export const content = {
         '<em>Beatific Vision(!!)x4</em> 1-2s'
       ]
     },    
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Plump&nbsp;Worm',
       strategy: [
         '<em>Plump&nbsp;Worm => Quartz&nbsp;Hammerhead(!!!)</em>',
@@ -633,7 +633,7 @@ export const content = {
       ]
     }
   },
-  jellyRouteEvening: {
+  jellyRouteSunset: {
     location: 'Southern Strait of Merlthor',
     beforeSpectral: {
       phase: 'Before Spectral',
@@ -648,10 +648,10 @@ export const content = {
         '<em>La Noscean Jelly(!)x4</em> 2-7s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Sea&nbsp;Nettle(!)</em>'
@@ -728,12 +728,12 @@ export const content = {
       ]
     }
   },
-  seaDragonRouteEvening: {
+  seaDragonRouteSunset: {
     location: 'Northrn Strait of Merlthor',
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Coral&nbsp;Seadragon(!)</em>'
@@ -743,7 +743,7 @@ export const content = {
       ]
     }
   },
-  octopusRouteEvening: {
+  octopusRouteSunset: {
     location: 'Galadion Bay',
     beforeSpectral: {
       phase: 'Before Spectral',
@@ -757,10 +757,10 @@ export const content = {
         '<em>Cyan Octopus(!!)x4</em> 15-29s [No iso]'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Krill',
       strategy: [
         '<em>Krill => Merman\'s&nbsp;Mane(!!)</em>'
@@ -797,7 +797,7 @@ export const content = {
       ]
     }
   },
-  sharkRouteEvening: {
+  sharkRouteSunset: {
     location: 'Galadion Bay',
     beforeSpectral: {
       phase: 'Before Spectral',
@@ -812,10 +812,10 @@ export const content = {
         '<em>Tarnished Shark(!!!)x2</em> 12-36s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Plump&nbsp;Worm',
       strategy: [
         '<em>Plump&nbsp;Worm => Funnel&nbsp;Shark(!!!)</em>',
@@ -880,7 +880,7 @@ export const content = {
       ]
     }
   },
-  crabRouteEvening: {
+  crabRouteSunset: {
     location: 'Cieldalaes',
     beforeSpectral: {
       phase: 'Before Spectral',
@@ -895,10 +895,10 @@ export const content = {
         '<em>Tortoiseshell Crab(!!)x2</em> 5-15s'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Krill',
       strategy: [
         '<em>Krill => Titanshell&nbsp;Crab(!!)</em>'
@@ -1043,7 +1043,7 @@ export const content = {
       ]
     }
   },
-  balloonRouteEvening: {
+  balloonRouteSunset: {
     location: 'Rhotano Sea',
     beforeSpectral: {
       phase: 'Before Spectral',
@@ -1059,10 +1059,10 @@ export const content = {
         '<em>Lampfish(!)x2</em> 9-16s [Blind >9s]'
       ]
     },
-    spectralEvening: {
+    spectralSunset: {
       phase: '<strong>Spectral</strong>',
       weather: 'Normal',
-      time: 'Evening',
+      time: 'Sunset',
       bait: 'Ragworm',
       strategy: [
         '<em>Ragworm => Silencer(!)</em>'
